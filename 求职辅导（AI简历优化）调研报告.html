@@ -1,0 +1,530 @@
+	<!DOCTYPE html>
+	<html lang="zh-CN">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>战略终极研判：求职AI市场灰度报告 V6.0</title>
+	    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	    <style>
+	        :root {
+	            --bg: #050505;
+	            --card-bg: #0f1115;
+	            --card-border: #1f2229;
+	            --accent: #00f2ea;
+	            --accent-dim: #008f8a;
+	            --text-main: #e0e0e0;
+	            --text-muted: #8b9bb4;
+	            --danger: #ff2a6d;
+	            --warning: #ffc107;
+	            --success: #05ffa1;
+	            --purple: #bd00ff;
+	            --font-ui: 'Noto Sans SC', sans-serif;
+	            --font-code: 'JetBrains Mono', monospace;
+	            --ease: cubic-bezier(0.16, 1, 0.3, 1);
+	        }
+	        * { box-sizing: border-box; margin: 0; padding: 0; outline: none; }
+	        body {
+	            background-color: var(--bg);
+	            color: var(--text-main);
+	            font-family: var(--font-ui);
+	            line-height: 1.6;
+	            overflow-x: hidden;
+	            background-image: 
+	                linear-gradient(rgba(0, 242, 234, 0.03) 1px, transparent 1px),
+	                linear-gradient(90deg, rgba(0, 242, 234, 0.03) 1px, transparent 1px);
+	            background-size: 40px 40px;
+	        }
+	        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+	        /* --- 动画 --- */
+	        .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.8s var(--ease); }
+	        .fade-up.visible { opacity: 1; transform: translateY(0); }
+	        /* --- Header --- */
+	        header { padding: 6rem 0 4rem; border-bottom: 1px solid var(--card-border); margin-bottom: 4rem; }
+	        .header-content h1 {
+	            font-size: clamp(3rem, 5vw, 5rem);
+	            font-weight: 900;
+	            color: #fff;
+	            letter-spacing: -2px;
+	            margin-bottom: 1rem;
+	        }
+	        .header-content h1 span { color: var(--accent); text-shadow: 0 0 30px rgba(0,242,234,0.4); }
+	        /* --- 杀手级指标展示 (优化版) --- */
+	        .metrics-grid {
+	            display: grid;
+	            grid-template-columns: repeat(4, 1fr);
+	            gap: 1.5rem;
+	            margin-top: 3rem;
+	            border-top: 1px solid var(--card-border);
+	            padding-top: 2rem;
+	        }
+	        .metric-card { background: rgba(255,255,255,0.02); border-radius: 8px; padding: 1.5rem; transition: 0.3s; border: 1px solid transparent; }
+	        .metric-card:hover { border-color: var(--accent); background: rgba(0, 242, 234, 0.02); }
+	        .metric-main { font-size: 2rem; font-weight: 900; font-family: var(--font-code); margin-bottom: 0.5rem; display: flex; align-items: baseline; gap: 5px; }
+	        .metric-label { font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 1rem; }
+	        .metric-desc { font-size: 0.8rem; color: #ccc; border-left: 2px solid #333; padding-left: 10px; }
+	        /* 对比条形图 */
+	        .bar-compare { display: flex; flex-direction: column; gap: 8px; margin-top: 5px; }
+	        .bc-row { display: flex; align-items: center; gap: 10px; font-size: 0.7rem; font-family: var(--font-code); }
+	        .bc-bar-bg { flex: 1; height: 6px; background: #222; border-radius: 3px; overflow: hidden; } /* 加深背景 */
+	        .bc-bar-fill { height: 100%; border-radius: 3px; }
+	        .bc-val { width: 35px; text-align: right; color: #fff; }
+	        /* --- 核心网格布局 --- */
+	        .dashboard-grid {
+	            display: grid;
+	            grid-template-columns: repeat(12, 1fr);
+	            gap: 1.5rem;
+	            margin-bottom: 4rem;
+	        }
+	        .card {
+	            background: var(--card-bg);
+	            border: 1px solid var(--card-border);
+	            border-radius: 12px;
+	            padding: 2rem;
+	            position: relative;
+	            transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+	        }
+	        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); border-color: #333; }
+	        .card-header {
+	            display: flex;
+	            justify-content: space-between;
+	            align-items: flex-start;
+	            margin-bottom: 1.5rem;
+	            border-bottom: 1px solid rgba(255,255,255,0.05);
+	            padding-bottom: 1rem;
+	        }
+	        .card-title { font-size: 1.1rem; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; }
+	        .card-icon { color: var(--text-muted); }
+	        .col-3 { grid-column: span 3; }
+	        .col-4 { grid-column: span 4; }
+	        .col-6 { grid-column: span 6; }
+	        .col-8 { grid-column: span 8; }
+	        .col-12 { grid-column: span 12; }
+	        /* --- 战略组件：市场规模 (TAM) --- */
+	        .tam-visual { display: flex; align-items: flex-end; height: 150px; gap: 10px; margin-top: 2rem; padding-bottom: 5px; border-bottom: 1px solid #333; }
+	        .tam-bar { flex: 1; background: rgba(255,255,255,0.05); border-radius: 4px 4px 0 0; position: relative; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; transition: height 1s var(--ease); }
+	        .tam-bar.active { background: var(--purple); }
+	        .tam-bar span { font-size: 0.8rem; color: #fff; margin-bottom: 10px; font-weight: bold; }
+	        .tam-label { position: absolute; bottom: -30px; font-size: 0.7rem; color: var(--text-muted); width: 100%; text-align: center; }
+	        /* --- 战略组件：差异化矩阵 --- */
+	        .diff-matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; height: 200px; margin-top: 1rem; }
+	        .matrix-quadrant { border: 1px dashed #333; border-radius: 8px; padding: 1rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; font-size: 0.85rem; transition: all 0.3s; }
+	        .matrix-quadrant.highlight { background: rgba(0, 242, 234, 0.05); border-color: var(--accent); border-style: solid; }
+	        .matrix-quadrant strong { display: block; margin-bottom: 0.5rem; color: #fff; font-size: 1rem; }
+	        /* --- 战略组件：竞品表 --- */
+	        .competitor-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+	        .competitor-table th { text-align: left; color: var(--text-muted); font-weight: 400; padding-bottom: 1rem; border-bottom: 1px solid #333; }
+	        .competitor-table td { padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: top; }
+	        .competitor-name { font-weight: bold; color: #fff; font-size: 1rem; display: block; }
+	        .competitor-desc { font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; }
+	        .price-tag { font-family: var(--font-code); color: var(--accent); font-weight: bold; }
+	        .weakness { color: var(--danger); font-size: 0.8rem; display: block; margin-top: 4px; }
+	        /* --- 战略组件：技术痛点 (重构) --- */
+	        .tech-pain-list { display: flex; flex-direction: column; gap: 1.5rem; }
+	        .pain-item { position: relative; padding-left: 2.5rem; }
+	        .pain-item::before {
+	            content: '!'; position: absolute; left: 0; top: 0; width: 24px; height: 24px;
+	            background: var(--danger); color: #fff; border-radius: 50%; font-weight: bold;
+	            display: flex; align-items: center; justify-content: center; font-size: 0.8rem;
+	        }
+	        .pain-title { font-weight: bold; color: #fff; margin-bottom: 0.5rem; font-size: 1rem; }
+	        .pain-desc { font-size: 0.85rem; color: var(--text-muted); background: rgba(255,255,255,0.02); padding: 0.8rem; border-radius: 6px; border-left: 2px solid var(--danger); }
+	        /* --- 响应式 --- */
+	        @media (max-width: 1024px) {
+	            .metrics-grid { grid-template-columns: 1fr 1fr; }
+	            .dashboard-grid { display: flex; flex-direction: column; }
+	            .diff-matrix { height: auto; }
+	            .matrix-quadrant { min-height: 100px; }
+	        }
+	        @media (max-width: 600px) {
+	            .metrics-grid { grid-template-columns: 1fr; }
+	        }
+	    </style>
+	</head>
+	<body>
+	<div class="container">
+	    <!-- Header -->
+	    <header class="fade-up">
+	        <div class="header-content">
+	            <div style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+	                <span class="tag" style="border: 1px solid var(--accent); color: var(--accent); padding: 2px 8px; border-radius: 4px; font-family: var(--font-code); font-size: 0.7rem; font-weight: bold;">STRATEGIC INTELLIGENCE V6.0</span>
+	                <span style="color: var(--text-muted); font-family: var(--font-code); font-size: 0.8rem;">DATE: 2025-12-23</span>
+	            </div>
+	            <h1>求职AI市场<br><span>战略终极研判</span></h1>
+	            <p style="max-width: 700px; color: var(--text-muted); font-size: 1.1rem;">
+	                宏观市场规模、中观竞争战略与微观技术痛点全景透视。
+	            </p>
+	            <!-- 修复后的核心指标体系 -->
+	            <div class="metrics-grid">
+	                <!-- 指标1：通过率落差 -->
+	                <div class="metric-card">
+	                    <div class="metric-label">简历通过率落差</div>
+	                    <div class="metric-main" style="color: var(--warning);">
+	                        <i class="fas fa-arrow-down" style="font-size: 1rem;"></i> 70%
+	                    </div>
+	                    <div class="bar-compare">
+	                        <div class="bc-row"><span style="width: 60px;">AI通用</span><div class="bc-bar-bg"><div class="bc-bar-fill" style="width: 15%; background: #555;"></div></div><span class="bc-val">15%</span></div>
+	                        <div class="bc-row"><span style="width: 60px;">专家润色</span><div class="bc-bar-bg"><div class="bc-bar-fill" style="width: 85%; background: var(--success);"></div></div><span class="bc-val">85%</span></div>
+	                    </div>
+	                    <div class="metric-desc" style="margin-top: 10px;">
+	                        纯AI简历因“同质化”被HR系统秒拒的惨烈现状。
+	                    </div>
+	                </div>
+	                <!-- 指标2：ARPU -->
+	                <div class="metric-card">
+	                    <div class="metric-label">混合服务市场 ARPU</div>
+	                    <div class="metric-main" style="color: var(--accent);">
+	                        ¥385
+	                    </div>
+	                    <div class="metric-desc">
+	                        远超纯SaaS工具(¥99)，且显著低于人工咨询(¥3000)，处于最佳价格甜蜜点。
+	                    </div>
+	                </div>
+	                <!-- 指标3：信任赤字 -->
+	                <div class="metric-card">
+	                    <div class="metric-label">用户信任赤字</div>
+	                    <div class="metric-main" style="color: var(--danger);">
+	                        68%
+	                    </div>
+	                    <div class="metric-desc">
+	                        用户担心AI“无中生有”导致背调挂掉。信任危机是目前最大的转化阻碍。
+	                    </div>
+	                </div>
+	                <!-- 指标4：渗透率 -->
+	                <div class="metric-card">
+	                    <div class="metric-label">赛道渗透率</div>
+	                    <div class="metric-main" style="color: var(--purple);">
+	                        12%
+	                    </div>
+	                    <div class="metric-desc">
+	                        市场仍处于早期爆发阶段，尚未出现垄断性巨头，存在巨大窗口期。
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+	    <div class="dashboard-grid">
+	        <!-- 模块 1：市场规模测算 -->
+	        <div class="card col-6 fade-up">
+	            <div class="card-header">
+	                <span class="card-title"><i class="fas fa-chart-pie"></i> 01. 市场规模测算 (TAM/SAM/SOM)</span>
+	            </div>
+	            <p style="color: var(--text-muted); font-size: 0.9rem;">
+	                全球人力资源科技市场庞大，但真正的机会在于中国AI垂直优化赛道。
+	            </p>
+	            <div class="tam-visual">
+	                <div class="tam-bar" style="height: 100%;">
+	                    <span>¥120B</span>
+	                    <div class="tam-label">TAM<br>(全球HR科技)</div>
+	                </div>
+	                <div class="tam-bar" style="height: 70%;">
+	                    <span>¥15B</span>
+	                    <div class="tam-label">SAM<br>(中国简历服务)</div>
+	                </div>
+	                <div class="tam-bar active" style="height: 30%;">
+	                    <span>¥800M</span>
+	                    <div class="tam-label">SOM<br>(AI垂直优化)</div>
+	                </div>
+	            </div>
+	            <div style="margin-top: 2.5rem; font-size: 0.85rem;">
+	                <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+	                    <span>当前渗透率</span>
+	                    <span class="text-accent">12%</span>
+	                </div>
+	                <div style="height:4px; background:#333; border-radius:2px;">
+	                    <div style="width:12%; height:100%; background:var(--accent); border-radius:2px;"></div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- 模块 2：差异化战略矩阵 -->
+	        <div class="card col-6 fade-up">
+	            <div class="card-header">
+	                <span class="card-title"><i class="fas fa-chess-board"></i> 02. 竞争战略：寻找蓝海</span>
+	            </div>
+	            <p style="color: var(--text-muted); font-size: 0.9rem;">
+	                通用工具已无路可走，唯有“垂直+混合服务”能构建护城河。
+	            </p>
+	            <div class="diff-matrix">
+	                <div class="matrix-quadrant">
+	                    <strong>通用工具</strong>
+	                    <span style="color:var(--text-muted);">ChatGPT / WPS</span>
+	                    <span style="font-size:0.7rem; color:var(--danger); margin-top:5px;">同质化红海</span>
+	                </div>
+	                <div class="matrix-quadrant highlight">
+	                    <strong>垂直+混合</strong>
+	                    <span style="color:#fff;">AI 医疗/金融润色</span>
+	                    <span style="font-size:0.7rem; color:var(--accent); margin-top:5px;">高溢价蓝海</span>
+	                </div>
+	                <div class="matrix-quadrant highlight">
+	                    <strong>工具+人审</strong>
+	                    <span style="color:#fff;">去幻觉智能质检</span>
+	                    <span style="font-size:0.7rem; color:var(--accent); margin-top:5px;">信任护城河</span>
+	                </div>
+	                <div class="matrix-quadrant">
+	                    <strong>平台撮合</strong>
+	                    <span style="color:var(--text-muted);">招聘平台增值包</span>
+	                    <span style="font-size:0.7rem; color:var(--warning); margin-top:5px;">巨头垄断</span>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- 模块 3：竞品全景 -->
+	        <div class="card col-12 fade-up">
+	            <div class="card-header">
+	                <span class="card-title"><i class="fas fa-users"></i> 03. 竞品全景：服务体系与定价</span>
+	            </div>
+	            <table class="competitor-table">
+	                <thead>
+	                    <tr>
+	                        <th style="width: 20%">竞品类型/代表</th>
+	                        <th style="width: 25%">服务体系核心</th>
+	                        <th style="width: 15%">定价策略 (ARPU)</th>
+	                        <th style="width: 25%">核心策略打法</th>
+	                        <th style="width: 15%">战略软肋</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                    <tr>
+	                        <td>
+	                            <span class="competitor-name">通用 SaaS (WPS/AI)</span>
+	                            <span class="competitor-desc">办公软件内置功能</span>
+	                        </td>
+	                        <td>模板化生成 + 格式美化。无人工介入。</td>
+	                        <td><span class="price-tag">¥69 - ¥199 /年</span></td>
+	                        <td>流量导入。利用办公软件的高频入口进行捆绑销售，强调“效率”。</td>
+	                        <td><span class="weakness">内容同质化严重，无法解决“通过率”问题。</span></td>
+	                    </tr>
+	                    <tr>
+	                        <td>
+	                            <span class="competitor-name">平台型</span>
+	                            <span class="competitor-desc">Boss直聘/猎聘增值包</span>
+	                        </td>
+	                        <td>简历曝光优先权 + AI诊断报告。</td>
+	                        <td><span class="price-tag">¥128 - ¥688 /次</span></td>
+	                        <td>闭环生态。基于真实的HR行为数据，提供最精准的“关键词优化”建议。</td>
+	                        <td><span class="weakness">数据孤岛，仅针对本平台有效，缺乏跨平台通用性。</span></td>
+	                    </tr>
+	                    <tr style="background: rgba(0, 242, 234, 0.03);">
+	                        <td>
+	                            <span class="competitor-name" style="color:var(--accent);">高端咨询 (猎头/求职辅导)</span>
+	                            <span class="competitor-desc">传统中介或工作室</span>
+	                        </td>
+	                        <td>1v1深度咨询 + 模拟面试 + 人脉内推。</td>
+	                        <td><span class="price-tag">¥3,000 - ¥20,000</span></td>
+	                        <td>信任背书。强调“专家人工”而非AI，主打保Offer承诺。</td>
+	                        <td><span class="weakness">非标服务，难以规模化，成本极高。</span></td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	        <!-- 模块 4：行业技术痛点调研 (重构) -->
+	        <div class="card col-6 fade-up">
+	            <div class="card-header">
+	                <span class="card-title"><i class="fas fa-bug"></i> 04. 行业技术痛点调研</span>
+	            </div>
+	            <div class="tech-pain-list">
+	                <div class="pain-item">
+	                    <div class="pain-title">用户经历“冷启动”难题</div>
+	                    <div class="pain-desc">
+	                        <strong>核心痛点：</strong> 生成优质简历的前提是详细的用户输入。但用户往往“不知道该说什么”或“懒于打字”。
+	                        <br><strong>现状：</strong> 绝大多数 AI 工具仅提供简单输入框，导致模型只能生成“高效沟通”、“团队合作”等空话，无法还原真实项目细节。
+	                    </div>
+	                </div>
+	                <div class="pain-item">
+	                    <div class="pain-title">ATS 解析格式陷阱</div>
+	                    <div class="pain-desc">
+	                        <strong>核心痛点：</strong> 市面上存在几十种不同的 ATS 系统（如 Greenhouse, Lever, Taleo），对双栏、图表、字体的解析能力天差地别。
+	                        <br><strong>现状：</strong> 通用 AI 生成花哨的排版，直接导致上传到某些公司官网时格式乱码、内容丢失，被判为无效简历。
+	                    </div>
+	                </div>
+	                <div class="pain-item">
+	                    <div class="pain-title">幻觉风险与隐私壁垒</div>
+	                    <div class="pain-desc">
+	                        <strong>核心痛点：</strong> 用户担心商业机密泄露，不愿上传源代码或详细文档；而缺乏输入又导致 AI 容易产生“无中生有”的幻觉，导致背调挂掉。
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- 模块 5：用户画像 -->
+	        <div class="card col-6 fade-up">
+	            <div class="card-header">
+	                <span class="card-title"><i class="fas fa-user-tag"></i> 05. 目标用户洞察 (渠道/动机)</span>
+	            </div>
+	            <div class="persona-grid" style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+	                <div style="background: rgba(255,255,255,0.02); border: 1px solid #333; padding: 1rem; border-radius: 8px;">
+	                    <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+	                        <span style="font-weight:bold; color:#fff;">海归留学生</span>
+	                        <span style="font-size:0.7rem; color:var(--purple);">高焦虑/高净值</span>
+	                    </div>
+	                    <p style="font-size:0.8rem; color:#ccc; margin-bottom:5px;"><strong>动机：</strong> 恐惧“水土不服”，极度介意背调风险。</p>
+	                    <p style="font-size:0.75rem; color:var(--accent-dim); font-family:var(--font-code);"><i class="fas fa-map-marker-alt"></i> 渠道：小红书 / 留学生家长群</p>
+	                </div>
+	                <div style="background: rgba(255,255,255,0.02); border: 1px solid #333; padding: 1rem; border-radius: 8px;">
+	                    <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+	                        <span style="font-weight:bold; color:#fff;">校招小白</span>
+	                        <span style="font-size:0.7rem; color:var(--warning);">迷茫/价格敏感</span>
+	                    </div>
+	                    <p style="font-size:0.8rem; color:#ccc; margin-bottom:5px;"><strong>动机：</strong> 缺乏框架，不知道写什么，急需过 ATS 初筛。</p>
+	                    <p style="font-size:0.75rem; color:var(--accent-dim); font-family:var(--font-code);"><i class="fas fa-university"></i> 渠道：高校 BBS / 抖音教程</p>
+	                </div>
+	                <div style="background: rgba(255,255,255,0.02); border: 1px solid #333; padding: 1rem; border-radius: 8px;">
+	                    <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+	                        <span style="font-weight:bold; color:#fff;">跳槽老兵</span>
+	                        <span style="font-size:0.7rem; color:var(--success);">结果导向/忙碌</span>
+	                    </div>
+	                    <p style="font-size:0.8rem; color:#ccc; margin-bottom:5px;"><strong>动机：</strong> “包装过去”，挖掘亮点以实现薪资涨幅。</p>
+	                    <p style="font-size:0.75rem; color:var(--accent-dim); font-family:var(--font-code);"><i class="fab fa-linkedin"></i> 渠道：脉脉 / 知乎</p>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- 模块 6：ATS 智能体检中心 (重构模型) -->
+	        <div class="card col-12 fade-up">
+	            <div class="card-header">
+	                <span class="card-title"><i class="fas fa-microchip"></i> 06. ATS 智能体检中心 (交互验证)</span>
+	            </div>
+	            <div class="ats-simulator" style="background: #000; border: 1px solid var(--accent-dim); border-radius: 8px; overflow: hidden; min-height: 400px; display: flex; flex-direction: column;">
+	                <div class="ats-interface" style="padding: 2rem; flex: 1; display: flex; flex-direction: column; gap: 1.5rem; position: relative; z-index: 2;">
+	                    <div class="input-group" style="display:flex; gap:1rem; background:rgba(255,255,255,0.05); padding:1rem; border-radius:8px; align-items:center;">
+	                        <i class="fas fa-search" style="color:var(--text-muted);"></i>
+	                        <select id="role-select" style="background:transparent; border:none; color:#fff; font-family:var(--font-code); font-size:1rem; flex:1; cursor:pointer;">
+	                            <option value="" disabled selected>选择目标岗位进行诊断模拟...</option>
+	                            <option value="pm">字节跳动 - 资深产品经理</option>
+	                            <option value="fe">腾讯 - 高级前端开发</option>
+	                            <option value="ops">阿里 - 用户运营专家</option>
+	                            <option value="algo">商汤 - 算法工程师</option>
+	                        </select>
+	                        <button class="btn-analyze" onclick="runDiagnosis()" style="background:var(--accent); color:#000; border:none; padding:0.8rem 2rem; font-family:var(--font-code); font-weight:700; border-radius:4px; cursor:pointer; text-transform:uppercase;">
+	                            运行诊断
+	                        </button>
+	                    </div>
+	                    <!-- 重构后的图例 -->
+	                    <div class="ats-legend" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; background: rgba(255,255,255,0.02); padding: 0.8rem; border-radius: 6px;">
+	                        <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.75rem; color:var(--text-muted);"><div style="width:8px; height:8px; border-radius:50%; background:var(--danger);"></div> 关键词匹配</div>
+	                        <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.75rem; color:var(--text-muted);"><div style="width:8px; height:8px; border-radius:50%; background:var(--warning);"></div> 结果量化度</div>
+	                        <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.75rem; color:var(--text-muted);"><div style="width:8px; height:8px; border-radius:50%; background:var(--success);"></div> 行为动词力度</div>
+	                        <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.75rem; color:var(--text-muted);"><div style="width:8px; height:8px; border-radius:50%; background:var(--purple);"></div> 格式合规性</div>
+	                    </div>
+	                    <div class="result-panel" id="result-panel" style="display: none; grid-template-columns: 1fr 2fr; gap: 2rem; animation: fadeIn 0.5s var(--ease);">
+	                        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; border-right:1px solid #333; padding-right:2rem;">
+	                            <div class="score-circle" style="width:120px; height:120px; border-radius:50%; border:4px solid var(--card-border); display:flex; flex-direction:column; align-items:center; justify-content:center; margin:0 auto;">
+	                                <span class="score-val" id="score-val" style="font-size:2.5rem; font-weight:900; color:#fff; line-height:1;">0</span>
+	                                <span class="score-label" style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase;">匹配度</span>
+	                            </div>
+	                            <div id="score-verdict" style="margin-top:1rem; font-weight:bold; letter-spacing:1px;">PENDING</div>
+	                        </div>
+	                        <div style="padding-left:1rem;">
+	                            <h4 style="color:#fff; margin-bottom:1rem; border-bottom:1px solid #333; padding-bottom:0.5rem;">ATS 能力模型评估</h4>
+	                            <div style="display:flex; flex-direction:column; gap:0.8rem;">
+	                                <div style="display:flex; align-items:center; gap:1rem; font-size:0.85rem;">
+	                                    <span style="width:80px; color:var(--text-muted);">关键词</span>
+	                                    <div style="flex:1; height:6px; background:#333; border-radius:3px; overflow:hidden;"><div id="bar-keywords" style="height:100%; background:var(--danger); width:0; transition:width 1s var(--ease);"></div></div>
+	                                    <span id="num-keywords" style="width:30px; text-align:right; font-family:var(--font-code);">0%</span>
+	                                </div>
+	                                <div style="display:flex; align-items:center; gap:1rem; font-size:0.85rem;">
+	                                    <span style="width:80px; color:var(--text-muted);">量化结果</span>
+	                                    <div style="flex:1; height:6px; background:#333; border-radius:3px; overflow:hidden;"><div id="bar-quant" style="height:100%; background:var(--warning); width:0; transition:width 1s var(--ease);"></div></div>
+	                                    <span id="num-quant" style="width:30px; text-align:right; font-family:var(--font-code);">0%</span>
+	                                </div>
+	                                <div style="display:flex; align-items:center; gap:1rem; font-size:0.85rem;">
+	                                    <span style="width:80px; color:var(--text-muted);">行为动词</span>
+	                                    <div style="flex:1; height:6px; background:#333; border-radius:3px; overflow:hidden;"><div id="bar-action" style="height:100%; background:var(--success); width:0; transition:width 1s var(--ease);"></div></div>
+	                                    <span id="num-action" style="width:30px; text-align:right; font-family:var(--font-code);">0%</span>
+	                                </div>
+	                                <div style="display:flex; align-items:center; gap:1rem; font-size:0.85rem;">
+	                                    <span style="width:80px; color:var(--text-muted);">格式</span>
+	                                    <div style="flex:1; height:6px; background:#333; border-radius:3px; overflow:hidden;"><div id="bar-format" style="height:100%; background:var(--purple); width:0; transition:width 1s var(--ease);"></div></div>
+	                                    <span id="num-format" style="width:30px; text-align:right; font-family:var(--font-code);">0%</span>
+	                                </div>
+	                            </div>
+	                            <div id="ai-suggestion" style="font-size:0.9rem; color:#ccc; background:rgba(255,255,255,0.02); padding:1rem; border-radius:4px; border-left:2px solid var(--accent); margin-top:1rem;">
+	                                正在分析竞品 JD 逻辑...
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--card-border); margin-top: 4rem;">
+	        <p>STRATEGIC INTELLIGENCE V6.0 // FINAL EDITION</p>
+	        <p style="margin-top: 0.5rem; opacity: 0.5;">GENERATED FOR BOARD REVIEW</p>
+	    </footer>
+	</div>
+	<script>
+	    document.addEventListener('DOMContentLoaded', () => {
+	        const observer = new IntersectionObserver((entries) => {
+	            entries.forEach(entry => {
+	                if(entry.isIntersecting) {
+	                    entry.target.classList.add('visible');
+	                }
+	            });
+	        }, { threshold: 0.1 });
+	        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+	    });
+	    function runDiagnosis() {
+	        const select = document.getElementById('role-select');
+	        const role = select.value;
+	        const resultPanel = document.getElementById('result-panel');
+	        const controlPanel = document.querySelector('.input-group');
+	        if (!role) { alert("请先选择一个目标岗位"); return; }
+	        resultPanel.style.display = 'none';
+	        controlPanel.style.borderColor = 'var(--accent)';
+	        setTimeout(() => {
+	            controlPanel.style.borderColor = 'transparent';
+	            resultPanel.style.display = 'grid';
+	            updateMetrics(0, 0, 0, 0, 0); // Reset all 4 bars
+	            setTimeout(() => {
+	                let data = {};
+	                switch(role) {
+	                    case 'pm':
+	                        data = { 
+	                            score: 68, color: '#ffc107', verdict: '需优化', 
+	                            keywords: 90, quant: 30, action: 70, format: 95,
+	                            text: '检测到简历缺乏具体“用户增长”量化数据。JD中高频出现“商业化”与“闭环”，建议增加“转化率提升X%”等数据支撑，减少通用职责罗列。' 
+	                        }; 
+	                        break;
+	                    case 'fe':
+	                        data = { 
+	                            score: 85, color: '#05ffa1', verdict: '匹配度高', 
+	                            keywords: 95, quant: 80, action: 85, format: 90,
+	                            text: '技术栈关键词匹配优秀。但在“工程化”与“性能优化”维度的描述过于单薄。建议补充 Webpack/Vite 配置或首屏时间优化的具体数值。' 
+	                        }; 
+	                        break;
+	                    case 'ops':
+	                        data = { 
+	                            score: 72, color: '#ffc107', verdict: '中等', 
+	                            keywords: 85, quant: 45, action: 60, format: 100,
+	                            text: '“私域”与“SOP”关键词命中率高，但严重缺乏“数据驱动”的案例支撑。建议用漏斗转化数据代替“提升了用户活跃度”等定性描述。' 
+	                        }; 
+	                        break;
+	                    case 'algo':
+	                        data = { 
+	                            score: 55, color: '#ff2a6d', verdict: '高风险', 
+	                            keywords: 50, quant: 20, action: 40, format: 100,
+	                            text: '严重警告！JD 强调“顶会论文”与“手推算法”，当前简历侧重工程落地，关键词命中率不足，且缺乏量化成果，容易被 HR 初筛过滤。' 
+	                        }; 
+	                        break;
+	                }
+	                updateMetrics(data.score, data.keywords, data.quant, data.action, data.format);
+	                const circle = document.querySelector('.score-circle');
+	                circle.style.borderColor = data.color;
+	                document.getElementById('score-val').style.color = data.color;
+	                document.getElementById('score-verdict').innerText = data.verdict;
+	                document.getElementById('score-verdict').style.color = data.color;
+	                document.getElementById('ai-suggestion').innerText = data.text;
+	            }, 100);
+	        }, 800);
+	    }
+	    function updateMetrics(score, k, q, a, f) {
+	        // Animate Score
+	        const obj = document.getElementById('score-val'); let start = 0; const dur = 1000;
+	        const step = (ts) => { if(!start) start=ts; const p = Math.min((ts-start)/dur,1); obj.innerHTML=Math.floor(p*(score-start)+start); if(p<1) requestAnimationFrame(step); };
+	        requestAnimationFrame(step);
+	        // Animate Bars
+	        document.getElementById('bar-keywords').style.width = k + "%"; document.getElementById('num-keywords').innerText = k + "%";
+	        document.getElementById('bar-quant').style.width = q + "%"; document.getElementById('num-quant').innerText = q + "%";
+	        document.getElementById('bar-action').style.width = a + "%"; document.getElementById('num-action').innerText = a + "%";
+	        document.getElementById('bar-format').style.width = f + "%"; document.getElementById('num-format').innerText = f + "%";
+	    }
+	</script>
+	</body>
+	</html>
