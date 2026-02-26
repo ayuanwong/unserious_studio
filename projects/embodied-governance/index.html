@@ -28,7 +28,8 @@
             font-family: 'Noto Serif SC', serif;
             background: var(--bg);
             color: var(--text);
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
             line-height: 1.8;
         }
         
@@ -36,9 +37,10 @@
         .story-container {
             max-width: 480px;
             margin: 0 auto;
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
         }
         
         /* 顶部时间地点 */
@@ -70,8 +72,9 @@
         /* 故事内容区 */
         .story-content {
             flex: 1;
-            padding: 20px 16px;
+            padding: 20px 16px 120px;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
         
         /* 对话气泡 */
@@ -165,7 +168,7 @@
         
         /* 选择按钮区 */
         .choices {
-            padding: 16px;
+            padding: 16px 16px 100px;
             background: linear-gradient(0deg, var(--bg), transparent);
             border-top: 1px solid var(--border);
         }
