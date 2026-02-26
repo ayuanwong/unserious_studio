@@ -50,12 +50,12 @@
             z-index: 10;
         }
         
-        /* 滚动内容区 */
+        /* 滚动内容区 - 包含故事和选项 */
         .scrollable-content {
             flex: 1;
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
-            padding-bottom: 80px;
+            padding: 20px 16px 100px;
         }
         
         /* 顶部时间地点 */
@@ -84,12 +84,9 @@
             margin-top: 4px;
         }
         
-        /* 故事内容区 */
+        /* 故事内容 */
         .story-content {
-            flex: 1;
-            padding: 20px 16px 120px;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
+            padding: 0;
         }
         
         /* 对话气泡 */
@@ -183,9 +180,9 @@
         
         /* 选择按钮区 */
         .choices {
-            padding: 16px 16px 100px;
-            background: linear-gradient(0deg, var(--bg), transparent);
+            padding-top: 20px;
             border-top: 1px solid var(--border);
+            margin-top: 20px;
         }
         
         .choice-btn {
