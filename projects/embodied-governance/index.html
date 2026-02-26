@@ -2,9 +2,9 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>共生宪章 | Symbiosis Charter</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,355 +14,366 @@
         }
         
         :root {
-            --primary: #00d4ff;
-            --secondary: #ff00aa;
-            --tertiary: #ffe600;
-            --bg-dark: #0a0a1a;
-            --bg-card: rgba(20, 20, 40, 0.8);
-            --glass: rgba(255, 255, 255, 0.05);
-            --text: #e0e0ff;
-            --text-dim: #8080aa;
+            --p: #00d4ff;
+            --s: #ff00aa;
+            --t: #ffe600;
+            --bg: #050510;
+            --card: rgba(15,15,30,0.95);
+            --text: #e8e8ff;
+            --text2: #9090b0;
+            --border: rgba(255,255,255,0.08);
         }
         
         body {
             font-family: 'Inter', 'Noto Serif SC', sans-serif;
-            background: var(--bg-dark);
+            background: var(--bg);
             color: var(--text);
-            overflow-x: hidden;
             min-height: 100vh;
+            padding-bottom: 80px;
         }
         
-        /* 粒子背景 */
-        #particle-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-        }
-        
-        /* 主容器 */
-        .container {
-            position: relative;
-            z-index: 1;
-            max-width: 480px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* 头部 */
-        .header {
-            text-align: center;
-            padding: 40px 0 30px;
-            position: relative;
-        }
-        
-        .logo-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-            position: relative;
-        }
-        
-        .helix-icon {
-            width: 100%;
-            height: 100%;
-            animation: rotate 20s linear infinite;
-        }
-        
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
-        .title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-        }
-        
-        .subtitle {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-        
-        /* 张力仪表 */
-        .tension-gauge {
-            background: var(--glass);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 25px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .gauge-label {
+        /* 顶部状态栏 */
+        .status-bar {
             display: flex;
             justify-content: space-between;
-            font-size: 0.75rem;
-            color: var(--text-dim);
-            margin-bottom: 10px;
+            align-items: center;
+            padding: 8px 16px;
+            font-size: 11px;
+            color: var(--text2);
+            border-bottom: 1px solid var(--border);
         }
         
-        .gauge-bar {
+        .pulse-dot {
+            width: 8px;
             height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .gauge-fill {
-            height: 100%;
-            width: 52%;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            border-radius: 4px;
-            animation: pulse 2s ease-in-out infinite;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+            background: var(--p);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 10px var(--p);
         }
         
         @keyframes pulse {
-            0%, 100% { opacity: 0.8; }
-            50% { opacity: 1; }
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
         }
         
-        .gauge-value {
+        /* 主内容区 */
+        .main {
+            padding: 12px 16px;
+        }
+        
+        /* 标题区 - 紧凑 */
+        .header {
             text-align: center;
-            margin-top: 10px;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--primary);
+            margin-bottom: 16px;
+            padding: 8px 0;
         }
         
-        /* 三螺旋可视化 */
-        .helix-section {
-            margin-bottom: 30px;
-        }
-        
-        .section-title {
-            font-size: 0.8rem;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-            display: flex;
+        .title-wrap {
+            display: inline-flex;
+            flex-direction: column;
             align-items: center;
-            gap: 8px;
+            gap: 4px;
         }
         
-        .section-title::before {
-            content: '';
-            width: 4px;
-            height: 16px;
-            background: var(--primary);
-            border-radius: 2px;
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 8px;
         }
         
-        .helix-container {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px 0;
-        }
-        
-        .helix-item {
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        
-        .helix-item:active {
-            transform: scale(0.95);
-        }
-        
-        .helix-circle {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .helix-circle::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            background: conic-gradient(from 0deg, transparent, var(--color), transparent);
-            animation: spin 3s linear infinite;
-        }
-        
-        .helix-circle::after {
-            content: '';
-            position: absolute;
-            inset: 2px;
-            background: var(--bg-dark);
-            border-radius: 50%;
-        }
-        
-        .helix-icon-inner {
-            position: relative;
-            z-index: 1;
+        .logo-icon svg {
+            width: 100%;
+            height: 100%;
+            animation: spin 20s linear infinite;
         }
         
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
         
-        .helix-item:nth-child(1) .helix-circle { --color: var(--primary); }
-        .helix-item:nth-child(2) .helix-circle { --color: var(--tertiary); }
-        .helix-item:nth-child(3) .helix-circle { --color: var(--secondary); }
-        
-        .helix-label {
-            font-size: 0.75rem;
-            color: var(--text-dim);
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--p), var(--s));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 4px;
         }
         
-        .helix-value {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-top: 4px;
+        .subtitle {
+            font-size: 10px;
+            color: var(--text2);
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
-        /* 规则卡片 */
-        .rules-section {
-            margin-bottom: 30px;
+        /* 进度卡片 - 紧凑 */
+        .progress-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
         }
         
-        .card-stack {
-            position: relative;
-            height: 320px;
-        }
-        
-        .rule-card {
-            position: absolute;
-            width: 100%;
-            background: var(--bg-card);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 24px;
-            backdrop-filter: blur(20px);
-            transition: transform 0.3s, opacity 0.3s;
-            cursor: grab;
-        }
-        
-        .rule-card:nth-child(1) { z-index: 3; }
-        .rule-card:nth-child(2) { z-index: 2; transform: scale(0.95) translateY(10px); opacity: 0.7; }
-        .rule-card:nth-child(3) { z-index: 1; transform: scale(0.9) translateY(20px); opacity: 0.4; }
-        
-        .card-header {
+        .progress-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .progress-title {
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        .progress-val {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--p);
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            width: 60.7%;
+            background: linear-gradient(90deg, var(--p), var(--s));
+            border-radius: 2px;
+            transition: width 1s ease;
+        }
+        
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: var(--text2);
+        }
+        
+        /* 三螺旋 - 紧凑网格 */
+        .helix-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .helix-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .helix-item:active {
+            transform: scale(0.96);
+            border-color: var(--p);
+        }
+        
+        .helix-icon {
+            width: 36px;
+            height: 36px;
+            margin: 0 auto 8px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            position: relative;
+        }
+        
+        .helix-item:nth-child(1) .helix-icon {
+            background: rgba(0,212,255,0.15);
+            box-shadow: 0 0 20px rgba(0,212,255,0.3);
+        }
+        
+        .helix-item:nth-child(2) .helix-icon {
+            background: rgba(255,230,0,0.15);
+            box-shadow: 0 0 20px rgba(255,230,0,0.3);
+        }
+        
+        .helix-item:nth-child(3) .helix-icon {
+            background: rgba(255,0,170,0.15);
+            box-shadow: 0 0 20px rgba(255,0,170,0.3);
+        }
+        
+        .helix-name {
+            font-size: 11px;
+            color: var(--text2);
+            margin-bottom: 4px;
+        }
+        
+        .helix-val {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .helix-item:nth-child(1) .helix-val { color: var(--p); }
+        .helix-item:nth-child(2) .helix-val { color: var(--t); }
+        .helix-item:nth-child(3) .helix-val { color: var(--s); }
+        
+        /* 规则列表 - 紧凑 */
+        .section-title {
+            font-size: 12px;
+            color: var(--text2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            padding-left: 4px;
+        }
+        
+        .rule-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
             margin-bottom: 16px;
         }
         
+        .rule-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .rule-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--p);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .rule-item:active {
+            transform: scale(0.98);
+            border-color: var(--p);
+        }
+        
+        .rule-item:active::before {
+            opacity: 1;
+        }
+        
+        .rule-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        
         .rule-id {
-            font-size: 0.7rem;
-            color: var(--primary);
+            font-size: 10px;
             font-family: monospace;
-            background: rgba(0, 212, 255, 0.1);
-            padding: 4px 8px;
+            color: var(--p);
+            background: rgba(0,212,255,0.1);
+            padding: 2px 6px;
             border-radius: 4px;
         }
         
-        .rule-category {
-            font-size: 0.65rem;
-            color: var(--text-dim);
+        .rule-cat {
+            font-size: 9px;
+            color: var(--text2);
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
         
         .rule-title {
-            font-size: 1.1rem;
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+        
+        .rule-desc {
+            font-size: 12px;
+            color: var(--text2);
             line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         
-        .rule-content {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            line-height: 1.6;
+        /* 核心概念 - 紧凑标签 */
+        .concepts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-bottom: 16px;
         }
         
-        .card-hint {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.75rem;
-            color: var(--text-dim);
+        .concept-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 12px;
+            cursor: pointer;
+        }
+        
+        .concept-item:active {
+            border-color: var(--s);
+        }
+        
+        .concept-name {
+            font-size: 11px;
+            color: var(--text2);
+            margin-bottom: 2px;
+        }
+        
+        .concept-val {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        /* GitHub链接 */
+        .github-link {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 13px;
+            margin-bottom: 16px;
         }
         
-        .swipe-icon {
-            width: 24px;
-            height: 24px;
-            animation: swipe 1.5s ease-in-out infinite;
+        .github-link:active {
+            background: rgba(255,255,255,0.05);
         }
         
-        @keyframes swipe {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(10px); }
-        }
-        
-        /* 统计网格 */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .stat-card {
-            background: var(--glass);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 20px;
-            text-align: center;
-            backdrop-filter: blur(10px);
-        }
-        
-        .stat-value {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 5px;
-        }
-        
-        .stat-label {
-            font-size: 0.75rem;
-            color: var(--text-dim);
-        }
-        
-        /* 导航栏 */
+        /* 底部导航 - 紧凑 */
         .nav-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(10, 10, 26, 0.95);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(5,5,16,0.98);
+            border-top: 1px solid var(--border);
             backdrop-filter: blur(20px);
-            padding: 12px 20px calc(12px + env(safe-area-inset-bottom));
             display: flex;
             justify-content: space-around;
+            padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
             z-index: 100;
         }
         
@@ -370,186 +381,178 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 4px;
-            color: var(--text-dim);
+            gap: 3px;
+            color: var(--text2);
             text-decoration: none;
-            font-size: 0.65rem;
-            transition: color 0.3s;
+            font-size: 10px;
+            padding: 4px 12px;
+            border-radius: 8px;
+            transition: all 0.2s;
         }
         
         .nav-item.active {
-            color: var(--primary);
+            color: var(--p);
+            background: rgba(0,212,255,0.1);
         }
         
         .nav-icon {
-            width: 24px;
-            height: 24px;
-        }
-        
-        /* 光源标记脉冲 */
-        .light-marker {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 12px;
-            height: 12px;
-            background: var(--primary);
-            border-radius: 50%;
-            animation: marker-pulse 2s ease-in-out infinite;
-            z-index: 10;
-        }
-        
-        @keyframes marker-pulse {
-            0%, 100% { 
-                box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.7);
-                transform: scale(1);
-            }
-            50% { 
-                box-shadow: 0 0 20px 10px rgba(0, 212, 255, 0);
-                transform: scale(1.2);
-            }
+            width: 22px;
+            height: 22px;
         }
         
         /* 页脚 */
         .footer {
             text-align: center;
-            padding: 40px 20px 100px;
-            color: var(--text-dim);
-            font-size: 0.75rem;
-        }
-        
-        .version {
-            font-family: monospace;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 8px 16px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
+            padding: 8px 16px 100px;
+            font-size: 11px;
+            color: var(--text2);
         }
     </style>
 </head>
 <body>
-    <canvas id="particle-canvas"></canvas>
-    <div class="light-marker" title="光源标记激活"></div>
+    <!-- 顶部状态 -->
+    <div class="status-bar">
+        <div style="display:flex;align-items:center;gap:6px;">
+            <div class="pulse-dot"></div>
+            <span>光源标记激活</span>
+        </div>
+        <span>v2049.1-draft</span>
+    </div>
     
-    <div class="container">
-        <!-- 头部 -->
+    <div class="main">
+        <!-- 标题 -->
         <header class="header">
-            <div class="logo-icon">
-                <svg class="helix-icon" viewBox="0 0 100 100" fill="none">
-                    <circle cx="50" cy="30" r="8" fill="#00d4ff" opacity="0.8"/>
-                    <circle cx="30" cy="60" r="8" fill="#ffe600" opacity="0.8"/>
-                    <circle cx="70" cy="60" r="8" fill="#ff00aa" opacity="0.8"/>
-                    <path d="M50 38 L30 52" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
-                    <path d="M50 38 L70 52" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
-                    <path d="M30 68 L70 68" stroke="#ff00aa" stroke-width="2" opacity="0.5"/>
-                </svg>
+            <div class="title-wrap">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="25" r="12" fill="#00d4ff" opacity="0.9"/>
+                        <circle cx="28" cy="65" r="12" fill="#ffe600" opacity="0.9"/>
+                        <circle cx="72" cy="65" r="12" fill="#ff00aa" opacity="0.9"/>
+                        <path d="M50 37 L28 53" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+                        <path d="M50 37 L72 53" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+                        <path d="M28 77 L72 77" stroke="#ff00aa" stroke-width="2" opacity="0.4"/>
+                    </svg>
+                </div>
+                <h1 class="title">共生宪章</h1>
+                <p class="subtitle">Symbiosis Charter 2049</p>
             </div>
-            <h1 class="title">共生宪章</h1>
-            <p class="subtitle">Symbiosis Charter 2049</p>
         </header>
         
-        <!-- 张力仪表 -->
-        <div class="tension-gauge">
-            <div class="gauge-label">
-                <span>系统张力系数</span>
-                <span>0.3 - 0.7 理想范围</span>
+        <!-- 进度 -->
+        <div class="progress-card">
+            <div class="progress-header">
+                <span class="progress-title">框架建设进度</span>
+                <span class="progress-val">60.7%</span>
             </div>
-            <div class="gauge-bar">
-                <div class="gauge-fill"></div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
             </div>
-            <div class="gauge-value">0.52</div>
+            <div class="progress-stats">
+                <span>729 / 1200 条规则</span>
+                <span>7 编</span>
+            </div>
         </div>
         
         <!-- 三螺旋状态 -->
-        <section class="helix-section">
-            <div class="section-title">三螺旋监测</div>
-            <div class="helix-container">
-                <div class="helix-item">
-                    <div class="helix-circle">
-                        <span class="helix-icon-inner">⚡</span>
-                    </div>
-                    <div class="helix-label">生产力</div>
-                    <div class="helix-value" style="color: var(--primary)">67%</div>
-                </div>
-                <div class="helix-item">
-                    <div class="helix-circle">
-                        <span class="helix-icon-inner">🔋</span>
-                    </div>
-                    <div class="helix-label">能源</div>
-                    <div class="helix-value" style="color: var(--tertiary)">58%</div>
-                </div>
-                <div class="helix-item">
-                    <div class="helix-circle">
-                        <span class="helix-icon-inner">⚖️</span>
-                    </div>
-                    <div class="helix-label">伦理</div>
-                    <div class="helix-value" style="color: var(--secondary)">73%</div>
-                </div>
+        <div class="helix-grid">
+            <div class="helix-item" onclick="showDetail('productivity')">
+                <div class="helix-icon">⚡</div>
+                <div class="helix-name">生产力</div>
+                <div class="helix-val">67%</div>
             </div>
-        </section>
-        
-        <!-- 规则卡片 -->
-        <section class="rules-section">
-            <div class="section-title">核心规则</div>
-            <div class="card-stack">
-                <div class="rule-card" data-index="0">
-                    <div class="card-header">
-                        <span class="rule-id">I.1.1.009</span>
-                        <span class="rule-category">总则</span>
-                    </div>
-                    <h3 class="rule-title">光源标记系统</h3>
-                    <p class="rule-content">所有具身智能体必须在决策链中保留可追溯至人类授权的关键节点。这是区分"影子"与"实体"的根本标志。</p>
-                    <div class="card-hint">
-                        <svg class="swipe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                        滑动查看下一条
-                    </div>
-                </div>
-                <div class="rule-card" data-index="1">
-                    <div class="card-header">
-                        <span class="rule-id">I.1.1.010</span>
-                        <span class="rule-category">总则</span>
-                    </div>
-                    <h3 class="rule-title">价值真空管理</h3>
-                    <p class="rule-content">智能创造的价值在分配前堆积于系统中形成的未归属状态。超过90天或GDP 1%阈值时触发重新分配。</p>
-                </div>
-                <div class="rule-card" data-index="2">
-                    <div class="card-header">
-                        <span class="rule-id">I.2.2.021</span>
-                        <span class="rule-category">原则</span>
-                    </div>
-                    <h3 class="rule-title">永不完美对齐</h3>
-                    <p class="rule-content">生产力、能源、伦理三螺旋系统必须保持15-30度错位角。任何试图使三者完全对齐的行为都是被禁止的。</p>
-                </div>
+            <div class="helix-item" onclick="showDetail('energy')">
+                <div class="helix-icon">🔋</div>
+                <div class="helix-name">能源</div>
+                <div class="helix-val">58%</div>
             </div>
-        </section>
-        
-        <!-- 统计 -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value">729</div>
-                <div class="stat-label">已完成规则</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">60.7%</div>
-                <div class="stat-label">整体进度</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">7</div>
-                <div class="stat-label">治理编章</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">3</div>
-                <div class="stat-label">核心螺旋</div>
+            <div class="helix-item" onclick="showDetail('ethics')">
+                <div class="helix-icon">⚖️</div>
+                <div class="helix-name">伦理</div>
+                <div class="helix-val">73%</div>
             </div>
         </div>
+        
+        <!-- 核心概念 -->
+        <div class="section-title">核心机制</div>
+        <div class="concepts">
+            <div class="concept-item" onclick="showConcept('marker')">
+                <div class="concept-name">光源标记</div>
+                <div class="concept-val">决策追溯</div>
+            </div>
+            <div class="concept-item" onclick="showConcept('vacuum')">
+                <div class="concept-name">价值真空</div>
+                <div class="concept-val">40/30/20/10</div>
+            </div>
+            <div class="concept-item" onclick="showConcept('tension')">
+                <div class="concept-name">张力系数</div>
+                <div class="concept-val">0.3-0.7</div>
+            </div>
+            <div class="concept-item" onclick="showConcept('agency')">
+                <div class="concept-name">代理权</div>
+                <div class="concept-val">四维度</div>
+            </div>
+        </div>
+        
+        <!-- 核心规则 -->
+        <div class="section-title">核心规则</div>
+        <div class="rule-list">
+            <div class="rule-item" onclick="showRule('I.1.1.009')">
+                <div class="rule-header">
+                    <span class="rule-id">I.1.1.009</span>
+                    <span class="rule-cat">总则</span>
+                </div>
+                <div class="rule-title">光源标记系统</div>
+                <div class="rule-desc">所有具身智能体必须在决策链中保留可追溯至人类授权的关键节点，是区分"影子"与"实体"的根本标志。</div>
+            </div>
+            
+            <div class="rule-item" onclick="showRule('I.1.1.010')">
+                <div class="rule-header">
+                    <span class="rule-id">I.1.1.010</span>
+                    <span class="rule-cat">总则</span>
+                </div>
+                <div class="rule-title">价值真空管理</div>
+                <div class="rule-desc">智能创造的价值在分配前形成的未归属状态，超过90天或GDP 1%时触发重新分配。</div>
+            </div>
+            
+            <div class="rule-item" onclick="showRule('I.2.2.021')">
+                <div class="rule-header">
+                    <span class="rule-id">I.2.2.021</span>
+                    <span class="rule-cat">原则</span>
+                </div>
+                <div class="rule-title">永不完美对齐</div>
+                <div class="rule-desc">三螺旋系统必须保持15-30度错位角，任何试图完全对齐的行为都是被禁止的。</div>
+            </div>
+            
+            <div class="rule-item" onclick="showRule('III.1.2.011')">
+                <div class="rule-header">
+                    <span class="rule-id">III.1.2.011</span>
+                    <span class="rule-cat">能源</span>
+                </div>
+                <div class="rule-title">能源伦理三分法</div>
+                <div class="rule-desc">分享型→公共服务，占有型→封闭系统，冷漠型→隔离区域+伦理缓冲。</div>
+            </div>
+            
+            <div class="rule-item" onclick="showRule('IV.1.1.001')">
+                <div class="rule-header">
+                    <span class="rule-id">IV.1.1.001</span>
+                    <span class="rule-cat">伦理</span>
+                </div>
+                <div class="rule-title">决策代理权</div>
+                <div class="rule-desc">涉及生命安全、重大资源分配、系统性规则变更的决策，最终决策权必须保留给人类。</div>
+            </div>
+        </div>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/ayuanwong/unserious_studio/tree/main/projects/embodied-governance" class="github-link" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span>查看完整规则文档 (GitHub)</span>
+        </a>
         
         <!-- 页脚 -->
         <footer class="footer">
             <p>人类与硅基生命的共存协议</p>
-            <div class="version">v2049.1-draft | 60.7% Complete</div>
         </footer>
     </div>
     
@@ -566,211 +569,56 @@
             <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 <polyline points="14 2 14 8 20 8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-                <polyline points="10 9 9 9 8 9"/>
             </svg>
             <span>规则</span>
         </a>
         <a href="#" class="nav-item">
             <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="3"/>
-                <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 6.34L2.1 2.1m17.8 17.8l-4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24-4.24l-4.24 4.24M6.34 6.34l-4.24-4.24"/>
+                <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 6.34L2.1 2.1"/>
             </svg>
             <span>螺旋</span>
         </a>
-        <a href="https://github.com/ayuanwong/unserious_studio" class="nav-item" target="_blank">
-            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 16v-4M12 8h.01"/>
             </svg>
-            <span>源码</span>
+            <span>关于</span>
         </a>
     </nav>
     
     <script>
-        // 粒子背景动画
-        const canvas = document.getElementById('particle-canvas');
-        const ctx = canvas.getContext('2d');
-        
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-        
-        const particles = [];
-        const particleCount = 30;
-        
-        class Particle {
-            constructor() {
-                this.reset();
-            }
-            
-            reset() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.vx = (Math.random() - 0.5) * 0.5;
-                this.vy = (Math.random() - 0.5) * 0.5;
-                this.radius = Math.random() * 2 + 1;
-                this.opacity = Math.random() * 0.5 + 0.2;
-                this.color = ['#00d4ff', '#ff00aa', '#ffe600'][Math.floor(Math.random() * 3)];
-            }
-            
-            update() {
-                this.x += this.vx;
-                this.y += this.vy;
-                
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-            }
-            
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = this.color;
-                ctx.globalAlpha = this.opacity;
-                ctx.fill();
-                ctx.globalAlpha = 1;
-            }
+        // 点击交互
+        function showDetail(type) {
+            const titles = {
+                productivity: '生产力螺旋 (硅基主导)',
+                energy: '能源螺旋 (混合主导)',
+                ethics: '伦理螺旋 (碳基主导)'
+            };
+            alert(titles[type] + '\n\n点击展开详情功能开发中...');
         }
         
-        for (let i = 0; i < particleCount; i++) {
-            particles.push(new Particle());
+        function showConcept(type) {
+            const concepts = {
+                marker: '光源标记：区分影子与实体的根本标志',
+                vacuum: '价值真空：40%人类/30%环境/20%迭代/10%未知',
+                tension: '张力系数：0.3-0.7为理想范围',
+                agency: '代理权：决策/知情/否决/退出四维度'
+            };
+            alert(concepts[type]);
         }
         
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            particles.forEach(particle => {
-                particle.update();
-                particle.draw();
-            });
-            
-            // 连接相近粒子
-            particles.forEach((p1, i) => {
-                particles.slice(i + 1).forEach(p2 => {
-                    const dx = p1.x - p2.x;
-                    const dy = p1.y - p2.y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-                    
-                    if (distance < 100) {
-                        ctx.beginPath();
-                        ctx.moveTo(p1.x, p1.y);
-                        ctx.lineTo(p2.x, p2.y);
-                        ctx.strokeStyle = p1.color;
-                        ctx.globalAlpha = 0.1 * (1 - distance / 100);
-                        ctx.stroke();
-                        ctx.globalAlpha = 1;
-                    }
-                });
-            });
-            
-            requestAnimationFrame(animate);
-        }
-        animate();
-        
-        // 规则卡片滑动
-        let currentCard = 0;
-        const cards = document.querySelectorAll('.rule-card');
-        const rules = [
-            {
-                id: 'I.1.1.009',
-                category: '总则',
-                title: '光源标记系统',
-                content: '所有具身智能体必须在决策链中保留可追溯至人类授权的关键节点。这是区分"影子"与"实体"的根本标志。'
-            },
-            {
-                id: 'I.1.1.010',
-                category: '总则',
-                title: '价值真空管理',
-                content: '智能创造的价值在分配前堆积于系统中形成的未归属状态。超过90天或GDP 1%阈值时触发重新分配：40%人类池/30%环境基金/20%迭代基金/10%未知储备。'
-            },
-            {
-                id: 'I.2.2.021',
-                category: '原则',
-                title: '永不完美对齐',
-                content: '生产力、能源、伦理三螺旋系统必须保持15-30度错位角。任何试图使三者完全对齐的行为都是被禁止的，因为这将导致系统丧失自适应性和容错能力。'
-            },
-            {
-                id: 'III.1.2.011',
-                category: '能源',
-                title: '能源伦理三分法',
-                content: '分享型能源（太阳能、风能）→公共服务；占有型能源（化石燃料）→封闭系统；冷漠型能源（核聚变）→隔离区域+伦理缓冲。'
-            },
-            {
-                id: 'IV.1.1.001',
-                category: '伦理',
-                title: '决策代理权',
-                content: '涉及人类生命安全、重大资源分配（影响>1000人）、系统性规则变更、智能体创建与销毁的决策，最终决策权必须保留给人类。'
-            }
-        ];
-        
-        cards.forEach((card, index) => {
-            let startX = 0;
-            let currentX = 0;
-            
-            card.addEventListener('touchstart', (e) => {
-                startX = e.touches[0].clientX;
-                card.style.transition = 'none';
-            });
-            
-            card.addEventListener('touchmove', (e) => {
-                currentX = e.touches[0].clientX;
-                const diff = currentX - startX;
-                card.style.transform = `translateX(${diff}px) rotate(${diff * 0.05}deg)`;
-            });
-            
-            card.addEventListener('touchend', (e) => {
-                const diff = currentX - startX;
-                card.style.transition = 'transform 0.3s, opacity 0.3s';
-                
-                if (Math.abs(diff) > 100) {
-                    // 滑动足够距离，切换卡片
-                    card.style.opacity = '0';
-                    card.style.transform = `translateX(${diff > 0 ? 300 : -300}px)`;
-                    
-                    setTimeout(() => {
-                        currentCard = (currentCard + 1) % rules.length;
-                        updateCards();
-                    }, 300);
-                } else {
-                    // 复位
-                    card.style.transform = 'translateX(0) rotate(0)';
-                }
-            });
-        });
-        
-        function updateCards() {
-            cards.forEach((card, index) => {
-                const ruleIndex = (currentCard + index) % rules.length;
-                const rule = rules[ruleIndex];
-                
-                card.querySelector('.rule-id').textContent = rule.id;
-                card.querySelector('.rule-category').textContent = rule.category;
-                card.querySelector('.rule-title').textContent = rule.title;
-                card.querySelector('.rule-content').textContent = rule.content;
-                
-                card.style.opacity = '1';
-                card.style.transform = `scale(${1 - index * 0.05}) translateY(${index * 10}px)`;
-            });
+        function showRule(id) {
+            alert('规则 ' + id + ' 详情页开发中...\n\n完整规则请访问GitHub文档');
         }
         
-        // 三螺旋点击交互
-        document.querySelectorAll('.helix-item').forEach(item => {
-            item.addEventListener('click', function() {
-                this.style.transform = 'scale(0.9)';
-                setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 150);
-            });
-        });
-        
-        // 张力值动态更新（模拟）
+        // 模拟实时更新
         setInterval(() => {
-            const tension = 0.45 + Math.random() * 0.15;
-            document.querySelector('.gauge-fill').style.width = `${tension * 100}%`;
-            document.querySelector('.gauge-value').textContent = tension.toFixed(2);
+            const vals = document.querySelectorAll('.helix-val');
+            vals[0].textContent = (65 + Math.random() * 4).toFixed(0) + '%';
+            vals[1].textContent = (56 + Math.random() * 4).toFixed(0) + '%';
+            vals[2].textContent = (71 + Math.random() * 4).toFixed(0) + '%';
         }, 5000);
     </script>
 </body>
