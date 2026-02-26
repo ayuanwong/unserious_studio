@@ -497,19 +497,8 @@
         </div>
         
             <!-- 选择区 -->
-            <div class="choices">
-                <button class="choice-btn" onclick="makeChoice(1)">
-                    <div>"查看我的授权内容"</div>
-                    <div class="choice-hint">了解智能体掌握了哪些数据</div>
-                </button>
-                <button class="choice-btn" onclick="makeChoice(2)">
-                    <div>"我接受建议，去B出口"</div>
-                    <div class="choice-hint">信任智能体的建议，但保持警惕</div>
-                </button>
-                <button class="choice-btn" onclick="makeChoice(3)">
-                    <div>"我要乘磁悬浮，不要管我"</div>
-                    <div class="choice-hint">行使自主选择权，拒绝算法推荐</div>
-                </button>
+            <div class="choices" id="choicesContainer">
+                <!-- 按钮将由JavaScript动态生成 -->
             </div>
         </div>
     </div>
@@ -586,6 +575,34 @@
     <script>
         // 当前章节
         let currentChapter = 1;
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化第一章的按钮
+            initChapter1Choices();
+        });
+        
+        // 初始化第一章按钮
+        function initChapter1Choices() {
+            const choicesDiv = document.getElementById('choicesContainer');
+            choicesDiv.innerHTML = '';
+            
+            const choices = [
+                { text: '"查看我的授权内容"', hint: '了解智能体掌握了哪些数据', choiceNum: 1 },
+                { text: '"我接受建议，去B出口"', hint: '信任智能体的建议，但保持警惕', choiceNum: 2 },
+                { text: '"我要乘磁悬浮，不要管我"', hint: '行使自主选择权，拒绝算法推荐', choiceNum: 3 }
+            ];
+            
+            choices.forEach(c => {
+                const btn = document.createElement('button');
+                btn.className = 'choice-btn';
+                btn.innerHTML = `<div>${c.text}</div><div class="choice-hint">${c.hint}</div>`;
+                btn.addEventListener('click', function() {
+                    makeChoice(c.choiceNum);
+                });
+                choicesDiv.appendChild(btn);
+            });
+        }
         
         // 章节数据
         const chapters = [
