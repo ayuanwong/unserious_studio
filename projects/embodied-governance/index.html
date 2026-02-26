@@ -515,7 +515,7 @@
     </div>
     
     <!-- 规则速查按钮 -->
-    <div class="quick-ref" onclick="showRules()">📋</div>
+    <div class="quick-ref" onclick="showRules();">📋</div>
     
     <!-- 规则弹窗 -->
     <div class="rule-modal" id="ruleModal">
@@ -610,20 +610,52 @@
             if (modal) modal.style.display = 'none';
         }
         
-        // 选择分支 - 简化为直接跳转
+        // 选择分支 - 处理当前章节的选项
         function makeChoice(choice) {
-            alert('你选择了选项 ' + choice);
-            // 简化：直接显示下一章
-            if (currentChapter < 5) {
-                gotoChapter(currentChapter + 1);
+            // 根据当前章节处理选择
+            if (currentChapter === 1) {
+                handleChapter1Choice(choice);
+            } else if (currentChapter === 2) {
+                handleChapter2Choice(choice);
+            } else if (currentChapter === 3) {
+                handleChapter3Choice(choice);
+            } else if (currentChapter === 4) {
+                gotoChapter(5);
             }
+        }
+        
+        // 第一章选择处理
+        function handleChapter1Choice(choice) {
+            var content = document.getElementById('storyContent');
+            if (choice === 1) {
+                content.innerHTML += '<div class="dialogue ai" style="animation: fadeIn 0.5s"><div class="speaker"><div class="avatar">AI</div><span class="speaker-name">Station-07</span></div><div class="dialogue-text">正在生成您的数据授权报告...<br><br>您已授权的数据：<br>• 基础身份信息<br>• 出行记录<br>• 健康数据<br><br>您可以随时说"撤销授权"来终止本协议。</div></div>';
+                updateChoices([{text: "继续前往面试 →", hint: "保持对数据的掌控意识"}]);
+            } else if (choice === 2) {
+                content.innerHTML += '<div class="dialogue human" style="animation: fadeIn 0.5s"><div class="speaker"><div class="avatar">你</div><span class="speaker-name">林夏</span></div><div class="dialogue-text">好，我去B出口。自动驾驶舱已抵达，预计到达东区时间09:12。</div></div>';
+                updateChoices([{text: "进入自动驾驶舱 →", hint: "开始第二章"}]);
+            } else if (choice === 3) {
+                content.innerHTML += '<div class="dialogue human" style="animation: fadeIn 0.5s"><div class="speaker"><div class="avatar">你</div><span class="speaker-name">林夏</span></div><div class="dialogue-text">我要乘磁悬浮。这是我的选择，不需要算法替我决定。</div></div><div class="rule-hint"><div class="rule-hint-title">相关规则：否决代理权 IV.3.1.026</div><div class="rule-hint-content">任何人类个体对直接影响其权益的智能体决策拥有否决权。</div></div>';
+                updateChoices([{text: "尽管延误也要坚持选择 →", hint: "人类的自主权高于效率"}]);
+            }
+            // 滚动到底部
+            document.querySelector('.scrollable-content').scrollTop = document.querySelector('.scrollable-content').scrollHeight;
+        }
+        
+        // 第二章选择处理
+        function handleChapter2Choice(choice) {
+            gotoChapter(3);
+        }
+        
+        // 第三章选择处理
+        function handleChapter3Choice(choice) {
+            gotoChapter(4);
         }
         
 
         
 
         
-        // 更新选择按钮 - 简化
+        // 更新选择按钮
         function updateChoices(choices) {
             var choicesDiv = document.getElementById('choicesContainer');
             if (!choicesDiv) return;
@@ -632,13 +664,26 @@
             for (var i = 0; i < choices.length; i++) {
                 var c = choices[i];
                 var hintHtml = c.hint ? '<div class="choice-hint">' + c.hint + '</div>' : '';
-                html += '<button class="choice-btn" onclick="makeChoice(' + (i + 1) + ')">' +
+                var onclick = '';
+                
+                // 处理特殊按钮
+                if (c.text.indexOf('重新体验') >= 0) {
+                    onclick = 'onclick="location.reload()"';
+                } else if (c.text.indexOf('查看完整规则') >= 0) {
+                    onclick = 'onclick="showRules()"';
+                } else if (c.text.indexOf('继续前往面试') >= 0 || c.text.indexOf('进入自动驾驶舱') >= 0 || c.text.indexOf('尽管延误') >= 0) {
+                    onclick = 'onclick="gotoChapter(2)"';
+                } else {
+                    onclick = 'onclick="makeChoice(' + (i + 1) + ')"';
+                }
+                
+                html += '<button class="choice-btn" ' + onclick + '>' +
                         '<div>' + c.text + '</div>' + hintHtml + '</button>';
             }
             choicesDiv.innerHTML = html;
         }
         
-        // 跳转章节 - 简化
+        // 跳转章节
         function gotoChapter(n) {
             currentChapter = n;
             var chapter = chapters[n-1];
@@ -655,8 +700,24 @@
             document.querySelector('.time-display').textContent = chapter.time;
             document.querySelector('.location').textContent = chapter.location;
             
-            // 显示提示
-            alert('进入第' + n + '章：' + chapter.title);
+            // 更新故事内容和按钮
+            var content = document.getElementById('storyContent');
+            if (n === 2) {
+                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">!</div><span class="speaker-name">场景切换</span></div><div class="dialogue-text">你到达了共生科技大厦。在进入之前，你需要通过存在感校准。</div></div><div class="dialogue ai"><div class="speaker"><div class="avatar">AI</div><span class="speaker-name">面试官-09</span></div><div class="dialogue-text">欢迎参加面试。第一个问题：在人机协作项目中，知识产权应该归谁？</div></div>';
+                updateChoices([{text: "应该归人类", hint: "强调人类主导地位"}, {text: "应该共享，按贡献分配", hint: "接受协作分配机制"}, {text: "应该归智能体", hint: "承认AI的贡献"}]);
+            } else if (n === 3) {
+                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">!</div><span class="speaker-name">场景切换</span></div><div class="dialogue-text">恭喜你被录用！现在你在协作工场开始第一天的工作。</div></div><div class="dialogue ai"><div class="speaker"><div class="avatar">AI</div><span class="speaker-name">协作导师-03</span></div><div class="dialogue-text">欢迎！今天你的任务是与智能体共同完成新产品设计。你需要签署人机协作授权协议，愿意吗？</div></div>';
+                updateChoices([{text: "我接受，开始协作", hint: "进入人机协作模式"}, {text: "我需要更多时间考虑", hint: "行使知情权"}]);
+            } else if (n === 4) {
+                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">!</div><span class="speaker-name">场景切换</span></div><div class="dialogue-text">工作结束，你走在回家的路上。夕阳将城市染成金色。</div></div><div class="dialogue human"><div class="speaker"><div class="avatar">你</div><span class="speaker-name">林夏</span></div><div class="dialogue-text">这个新世界，人类还剩下什么独特的价值？</div></div><div class="dialogue system"><div class="speaker"><div class="avatar">📜</div><span class="speaker-name">共生宪章</span></div><div class="dialogue-text">根据人类效率锚点原则：即使在最高效的智能体协作中，也必须保留15%的"低效但人类化"工作流程。这是为了保留人类的直觉、创造力和情感连接。</div></div>';
+                updateChoices([{text: "我理解了，我会珍惜这些权利 →", hint: "理解共生宪章的深层意义"}]);
+            } else if (n >= 5) {
+                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">🏠</div><span class="speaker-name">家</span></div><div class="dialogue-text">你回到家。今天，你学会了作为共生城区市民的基本权利：<br><br>✅ 知情代理权<br>✅ 否决代理权<br>✅ 退出代理权<br>✅ 人类效率锚点<br><br>记住，你不是算法的奴隶，而是与智能体平等共生的伙伴。</div></div><div class="rule-hint"><div class="rule-hint-title">恭喜完成《共生城区市民指南》</div></div>';
+                updateChoices([{text: "重新体验 →", hint: "再次探索不同选择"}, {text: "查看完整规则 📋", hint: "阅读《共生宪章》全部内容"}]);
+            }
+            
+            // 滚动到顶部
+            document.querySelector('.scrollable-content').scrollTop = 0;
         }
     </script>
 </body>
