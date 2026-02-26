@@ -498,7 +498,18 @@
         
             <!-- 选择区 -->
             <div class="choices" id="choicesContainer">
-                <!-- 按钮将由JavaScript动态生成 -->
+                <button class="choice-btn" onclick="window.makeChoice(1); return false;">
+                    <div>"查看我的授权内容"</div>
+                    <div class="choice-hint">了解智能体掌握了哪些数据</div>
+                </button>
+                <button class="choice-btn" onclick="window.makeChoice(2); return false;">
+                    <div>"我接受建议，去B出口"</div>
+                    <div class="choice-hint">信任智能体的建议，但保持警惕</div>
+                </button>
+                <button class="choice-btn" onclick="window.makeChoice(3); return false;">
+                    <div>"我要乘磁悬浮，不要管我"</div>
+                    <div class="choice-hint">行使自主选择权，拒绝算法推荐</div>
+                </button>
             </div>
         </div>
     </div>
@@ -574,35 +585,7 @@
     
     <script>
         // 当前章节
-        let currentChapter = 1;
-        
-        // 页面加载完成后初始化
-        document.addEventListener('DOMContentLoaded', function() {
-            // 初始化第一章的按钮
-            initChapter1Choices();
-        });
-        
-        // 初始化第一章按钮
-        function initChapter1Choices() {
-            const choicesDiv = document.getElementById('choicesContainer');
-            choicesDiv.innerHTML = '';
-            
-            const choices = [
-                { text: '"查看我的授权内容"', hint: '了解智能体掌握了哪些数据', choiceNum: 1 },
-                { text: '"我接受建议，去B出口"', hint: '信任智能体的建议，但保持警惕', choiceNum: 2 },
-                { text: '"我要乘磁悬浮，不要管我"', hint: '行使自主选择权，拒绝算法推荐', choiceNum: 3 }
-            ];
-            
-            choices.forEach(c => {
-                const btn = document.createElement('button');
-                btn.className = 'choice-btn';
-                btn.innerHTML = `<div>${c.text}</div><div class="choice-hint">${c.hint}</div>`;
-                btn.addEventListener('click', function() {
-                    makeChoice(c.choiceNum);
-                });
-                choicesDiv.appendChild(btn);
-            });
-        }
+        window.currentChapter = 1;
         
         // 章节数据
         const chapters = [
@@ -638,17 +621,19 @@
             }
         ];
         
-        // 显示规则弹窗
-        function showRules() {
-            document.getElementById('ruleModal').classList.add('show');
-        }
+        // 显示规则弹窗 - 全局函数
+        window.showRules = function() {
+            var modal = document.getElementById('ruleModal');
+            if (modal) modal.classList.add('show');
+        };
         
-        function hideRules() {
-            document.getElementById('ruleModal').classList.remove('show');
-        }
+        window.hideRules = function() {
+            var modal = document.getElementById('ruleModal');
+            if (modal) modal.classList.remove('show');
+        };
         
-        // 选择分支
-        function makeChoice(choice) {
+        // 选择分支 - 全局函数
+        window.makeChoice = function(choice) {
             const content = document.getElementById('storyContent');
             
             if (currentChapter === 1) {
@@ -666,8 +651,8 @@
             document.querySelector('.scrollable-content').scrollTop = document.querySelector('.scrollable-content').scrollHeight;
         }
         
-        // 第一章处理
-        function handleChapter1Choice(choice, content) {
+        // 第一章处理 - 全局函数
+        window.handleChapter1Choice = function(choice, content) {
             if (choice === 1) {
                 content.innerHTML += `
                     <div class="dialogue ai" style="animation: fadeIn 0.5s">
@@ -750,8 +735,8 @@
             }
         }
         
-        // 第二章处理
-        function handleChapter2Choice(choice, content) {
+        // 第二章处理 - 全局函数
+        window.handleChapter2Choice = function(choice, content) {
             if (choice === 1) {
                 content.innerHTML += `
                     <div class="dialogue human" style="animation: fadeIn 0.5s">
@@ -841,8 +826,8 @@
             }
         }
         
-        // 第三章处理
-        function handleChapter3Choice(choice, content) {
+        // 第三章处理 - 全局函数
+        window.handleChapter3Choice = function(choice, content) {
             if (choice === 1) {
                 content.innerHTML += `
                     <div class="dialogue human" style="animation: fadeIn 0.5s">
@@ -898,27 +883,53 @@
             }
         }
         
-        // 更新选择按钮
-        function updateChoices(choices) {
-            const choicesDiv = document.querySelector('.choices');
-            choicesDiv.innerHTML = '';
-            choices.forEach((c, i) => {
-                const btn = document.createElement('button');
-                btn.className = 'choice-btn';
-                btn.innerHTML = `<div>${c.text}</div>${c.hint ? `<div class="choice-hint">${c.hint}</div>` : ''}`;
-                btn.onclick = () => {
-                    if (c.action) {
-                        c.action();
+        // 更新选择按钮 - 使用全局函数
+        window.updateChoices = function(choices) {
+            const choicesDiv = document.getElementById('choicesContainer');
+            if (!choicesDiv) {
+                console.error('choicesContainer not found');
+                return;
+            }
+            
+            var html = '';
+            for (var i = 0; i < choices.length; i++) {
+                var c = choices[i];
+                var hintHtml = c.hint ? '<div class="choice-hint">' + c.hint + '</div>' : '';
+                var clickHandler = '';
+                
+                if (c.action) {
+                    // 有特殊动作的按钮
+                    if (c.text.indexOf('重新体验') >= 0) {
+                        clickHandler = 'onclick="location.reload()"';
+                    } else if (c.text.indexOf('查看完整规则') >= 0) {
+                        clickHandler = 'onclick="window.showRules()"';
+                    } else if (c.text.indexOf('继续前往面试') >= 0 || c.text.indexOf('进入自动驾驶舱') >= 0 || c.text.indexOf('尽管延误') >= 0) {
+                        clickHandler = 'onclick="window.gotoChapter(2)"';
+                    } else if (c.text.indexOf('同意分配方案') >= 0 || c.text.indexOf('我想了解更多') >= 0) {
+                        clickHandler = 'onclick="window.gotoChapter(3)"';
+                    } else if (c.text.indexOf('明白了') >= 0) {
+                        clickHandler = 'onclick="window.gotoChapter(3)"';
+                    } else if (c.text.indexOf('我接受') >= 0 || c.text.indexOf('我需要更多时间') >= 0) {
+                        clickHandler = 'onclick="window.gotoChapter(4)"';
+                    } else if (c.text.indexOf('我理解了') >= 0) {
+                        clickHandler = 'onclick="window.gotoChapter(5)"';
                     } else {
-                        makeChoice(i + 1);
+                        clickHandler = 'onclick="window.gotoChapter(2)"';
                     }
-                };
-                choicesDiv.appendChild(btn);
-            });
-        }
+                } else {
+                    // 普通选择按钮
+                    clickHandler = 'onclick="window.makeChoice(' + (i + 1) + ')"';
+                }
+                
+                html += '<button class="choice-btn" ' + clickHandler + '>' +
+                        '<div>' + c.text + '</div>' + hintHtml + '</button>';
+            }
+            
+            choicesDiv.innerHTML = html;
+        };
         
-        // 跳转章节
-        function gotoChapter(n) {
+        // 跳转章节 - 全局函数
+        window.gotoChapter = function(n) {
             currentChapter = n;
             const chapter = chapters[n-1];
             
