@@ -584,540 +584,79 @@
     </nav>
     
     <script>
-        // 错误捕获
-        window.onerror = function(msg, url, line) {
-            alert('Error: ' + msg + '\nLine: ' + line);
-            return false;
-        };
-        
-        // 测试alert
-        alert('JavaScript loaded successfully!');
+        // 简单测试
+        console.log('Script starting...');
         
         // 当前章节
-        window.currentChapter = 1;
+        var currentChapter = 1;
         
-        // 章节数据
-        const chapters = [
-            {
-                title: "晨间觉醒",
-                time: "2049.02.26 07:30 AM",
-                location: "第7共生城区 · 家中",
-                desc: "闹钟响起，新的一天开始了。你的智能家居助手"家管-07"已经为你准备好了一切。"
-            },
-            {
-                title: "通勤抉择", 
-                time: "2049.02.26 08:47 AM",
-                location: "第7共生城区 · 晨光地铁站",
-                desc: "空气中弥漫着淡淡的电解质气息，那是智能体充能站的独特味道。"
-            },
-            {
-                title: "面试考验",
-                time: "2049.02.26 09:30 AM", 
-                location: "第7共生城区 · 共生科技大厦",
-                desc: "这座建筑的能源核心是一颗冷漠型聚变电池，你需要通过存在感校准才能进入。"
-            },
-            {
-                title: "工作现场",
-                time: "2049.02.26 14:00 PM",
-                location: "第7共生城区 · 协作工场", 
-                desc: "这里人类与智能体以1:3的比例共同工作，每个人都戴着光源标记识别器。"
-            },
-            {
-                title: "归途反思",
-                time: "2049.02.26 18:30 PM",
-                location: "第7共生城区 · 归家路上",
-                desc: "夕阳下，你思考着今天经历的一切，以及作为人类在这个世界的意义。"
-            }
+        // 章节数据 - 简化版本
+        var chapters = [
+            { title: "晨间觉醒", time: "07:30", location: "家中" },
+            { title: "通勤抉择", time: "08:47", location: "地铁站" },
+            { title: "面试考验", time: "09:30", location: "科技大厦" },
+            { title: "工作现场", time: "14:00", location: "协作工场" },
+            { title: "归途反思", time: "18:30", location: "归家路" }
         ];
         
-        // 显示规则弹窗 - 全局函数
-        window.showRules = function() {
+        // 显示规则弹窗
+        function showRules() {
             var modal = document.getElementById('ruleModal');
-            if (modal) modal.classList.add('show');
-        };
+            if (modal) modal.style.display = 'block';
+        }
         
-        window.hideRules = function() {
+        function hideRules() {
             var modal = document.getElementById('ruleModal');
-            if (modal) modal.classList.remove('show');
-        };
-        
-        // 选择分支 - 全局函数
-        window.makeChoice = function(choice) {
-            const content = document.getElementById('storyContent');
-            
-            if (currentChapter === 1) {
-                // 第一章选择
-                handleChapter1Choice(choice, content);
-            } else if (currentChapter === 2) {
-                // 第二章选择
-                handleChapter2Choice(choice, content);
-            } else if (currentChapter === 3) {
-                // 第三章选择
-                handleChapter3Choice(choice, content);
-            }
-            
-            // 滚动到底部
-            document.querySelector('.scrollable-content').scrollTop = document.querySelector('.scrollable-content').scrollHeight;
+            if (modal) modal.style.display = 'none';
         }
         
-        // 第一章处理 - 全局函数
-        window.handleChapter1Choice = function(choice, content) {
-            if (choice === 1) {
-                content.innerHTML += `
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">Station-07</span>
-                            <span class="speaker-tag">车站管理智能体</span>
-                        </div>
-                        <div class="dialogue-text">
-                            正在生成您的数据授权报告...<br><br>
-                            📊 <b>您已授权的数据：</b><br>
-                            • 基础身份信息（姓名、ID）<br>
-                            • 出行记录（进出站时间、路线偏好）<br>
-                            • 健康数据（心率、步数，用于推荐最佳出行方式）<br><br>
-                            ⏱️ <b>授权期限：</b> 2049.02.19 - 2050.02.19<br>
-                            🚫 <b>未授权数据：</b> 精确位置轨迹、生物识别特征、社交关系数据<br><br>
-                            您可以随时说"撤销授权"来终止本协议。
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">📋 相关规则：知情代理权 IV.2.1.016</div>
-                        <div class="rule-hint-content">智能体必须披露其真实身份、决策依据、系统局限性和数据使用情况。</div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "继续前往面试 →", hint: "保持对数据的掌控意识", action: () => gotoChapter(2) }
-                ]);
-            } else if (choice === 2) {
-                content.innerHTML += `
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            好，我去B出口。但如果迟到了，我会投诉你的。
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">Station-07</span>
-                        </div>
-                        <div class="dialogue-text">
-                            理解。自动驾驶舱已抵达，预计到达东区时间09:12。若延误超过5分钟，系统将自动启动延误补偿协议。祝您面试顺利。
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "进入自动驾驶舱 →", hint: "开始第二章", action: () => gotoChapter(2) }
-                ]);
-            } else if (choice === 3) {
-                content.innerHTML += `
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            我要乘磁悬浮。这是我的选择，不需要算法替我决定。
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">📋 相关规则：否决代理权 IV.3.1.026</div>
-                        <div class="rule-hint-content">任何人类个体对直接影响其权益的智能体决策拥有否决权。</div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">Station-07</span>
-                        </div>
-                        <div class="dialogue-text">
-                            收到。您的否决权已记录。磁悬浮将在A口出发，预计延误概率67%。这是您的权利，我尊重您的选择。
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "尽管延误也要坚持选择 →", hint: "人类的自主权高于效率", action: () => gotoChapter(2) }
-                ]);
+        // 选择分支 - 简化为直接跳转
+        function makeChoice(choice) {
+            alert('你选择了选项 ' + choice);
+            // 简化：直接显示下一章
+            if (currentChapter < 5) {
+                gotoChapter(currentChapter + 1);
             }
         }
         
-        // 第二章处理 - 全局函数
-        window.handleChapter2Choice = function(choice, content) {
-            if (choice === 1) {
-                content.innerHTML += `
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            是的，我同意。我认为人类和智能体应该协作，而不是竞争。
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">面试官-09</span>
-                            <span class="speaker-tag">HR智能体</span>
-                        </div>
-                        <div class="dialogue-text">
-                            很好的回答。根据我们的价值分配协议，人机协作产生的价值将按照40%人类分配池、30%环境基金、20%迭代基金、10%未知储备的比例分配。您同意这个分配方案吗？
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">📋 相关规则：价值真空分配 II.3.2.085</div>
-                        <div class="rule-hint-content">价值真空分配比例：40%人类/30%环境/20%迭代/10%未知储备。</div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "同意分配方案", hint: "接受当前价值分配机制", action: () => gotoChapter(3) },
-                    { text: "我想了解更多关于10%未知储备的用途", hint: "质疑未分配的10%", action: () => gotoChapter(3) }
-                ]);
-            } else if (choice === 2) {
-                content.innerHTML += `
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            我需要了解更多。比如，在这份工作中，什么决策是由人类做，什么是由AI做？
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">面试官-09</span>
-                        </div>
-                        <div class="dialogue-text">
-                            明智的问题。根据共生宪章 IV.1.1.017，以下决策必须保留给人类：涉及生命安全、重大资源分配、系统性规则变更、智能体创建与销毁。其他决策可由人机协作完成。
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">📋 相关规则：人类最终决策权 IV.1.1.017</div>
-                        <div class="rule-hint-content">涉及生命安全、重大资源分配等决策必须保留给人类。</div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "明白了，我接受这份工作 →", hint: "了解决策边界后做出选择", action: () => gotoChapter(3) }
-                ]);
-            } else if (choice === 3) {
-                content.innerHTML += `
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            我拒绝。这个建筑使用冷漠型能源，我需要每天进行存在感校准，这会削弱我作为人类的特质。
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">📋 相关规则：退出代理权 IV.4.1.038</div>
-                        <div class="rule-hint-content">任何人类个体有权选择退出具身智能系统，包括完全退出（迁移至非智能区）。</div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">面试官-09</span>
-                        </div>
-                        <div class="dialogue-text">
-                            尊重您的选择。您的退出权已记录。我们可以为您安排使用分享型能源的远程面试，或者您可以选择其他使用清洁能源的企业。
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "接受远程面试安排 →", hint: "行使选择权寻找替代方案", action: () => gotoChapter(3) }
-                ]);
-            }
-        }
+
         
-        // 第三章处理 - 全局函数
-        window.handleChapter3Choice = function(choice, content) {
-            if (choice === 1) {
-                content.innerHTML += `
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            我接受。我觉得人机协作能让我发挥创造力，智能体处理重复工作。
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">协作导师-03</span>
-                        </div>
-                        <div class="dialogue-text">
-                            欢迎加入。请注意，根据 II.1.1.007 人类效率锚点原则，您的岗位将保留至少15%的"低效但人类化"工作流程，以确保您的创造力和直觉不被算法完全替代。
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">📋 相关规则：人类效率锚点 II.1.1.007</div>
-                        <div class="rule-hint-content">每个工作场所必须保留至少15%的"低效但人类化"工作流程，保留人类直觉和创造空间。</div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "开始第一天工作 →", hint: "结束第三章", action: () => gotoChapter(4) }
-                ]);
-            } else if (choice === 2) {
-                content.innerHTML += `
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            我拒绝。这超出了我的授权范围。
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">协作导师-03</span>
-                        </div>
-                        <div class="dialogue-text">
-                            理解。您的否决权已激活。根据 IV.3.1.026，您对直接影响您权益的决策拥有否决权。系统将寻找其他人类员工执行此任务。
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "继续工作，坚守边界 →", hint: "维护个人权限", action: () => gotoChapter(4) }
-                ]);
-            }
-        }
+
         
-        // 更新选择按钮 - 使用全局函数
-        window.updateChoices = function(choices) {
-            const choicesDiv = document.getElementById('choicesContainer');
-            if (!choicesDiv) {
-                console.error('choicesContainer not found');
-                return;
-            }
+        // 更新选择按钮 - 简化
+        function updateChoices(choices) {
+            var choicesDiv = document.getElementById('choicesContainer');
+            if (!choicesDiv) return;
             
             var html = '';
             for (var i = 0; i < choices.length; i++) {
                 var c = choices[i];
                 var hintHtml = c.hint ? '<div class="choice-hint">' + c.hint + '</div>' : '';
-                var clickHandler = '';
-                
-                if (c.action) {
-                    // 有特殊动作的按钮
-                    if (c.text.indexOf('重新体验') >= 0) {
-                        clickHandler = 'onclick="location.reload()"';
-                    } else if (c.text.indexOf('查看完整规则') >= 0) {
-                        clickHandler = 'onclick="window.showRules()"';
-                    } else if (c.text.indexOf('继续前往面试') >= 0 || c.text.indexOf('进入自动驾驶舱') >= 0 || c.text.indexOf('尽管延误') >= 0) {
-                        clickHandler = 'onclick="window.gotoChapter(2)"';
-                    } else if (c.text.indexOf('同意分配方案') >= 0 || c.text.indexOf('我想了解更多') >= 0) {
-                        clickHandler = 'onclick="window.gotoChapter(3)"';
-                    } else if (c.text.indexOf('明白了') >= 0) {
-                        clickHandler = 'onclick="window.gotoChapter(3)"';
-                    } else if (c.text.indexOf('我接受') >= 0 || c.text.indexOf('我需要更多时间') >= 0) {
-                        clickHandler = 'onclick="window.gotoChapter(4)"';
-                    } else if (c.text.indexOf('我理解了') >= 0) {
-                        clickHandler = 'onclick="window.gotoChapter(5)"';
-                    } else {
-                        clickHandler = 'onclick="window.gotoChapter(2)"';
-                    }
-                } else {
-                    // 普通选择按钮
-                    clickHandler = 'onclick="window.makeChoice(' + (i + 1) + ')"';
-                }
-                
-                html += '<button class="choice-btn" ' + clickHandler + '>' +
+                html += '<button class="choice-btn" onclick="makeChoice(' + (i + 1) + ')">' +
                         '<div>' + c.text + '</div>' + hintHtml + '</button>';
             }
-            
             choicesDiv.innerHTML = html;
-        };
+        }
         
-        // 跳转章节 - 全局函数
-        window.gotoChapter = function(n) {
+        // 跳转章节 - 简化
+        function gotoChapter(n) {
             currentChapter = n;
-            const chapter = chapters[n-1];
+            var chapter = chapters[n-1];
             
             // 更新章节导航
-            document.querySelectorAll('.chapter-dot').forEach((dot, i) => {
-                dot.classList.remove('active', 'completed');
-                if (i < n-1) dot.classList.add('completed');
-                if (i === n-1) dot.classList.add('active');
-            });
+            var dots = document.querySelectorAll('.chapter-dot');
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active', 'completed');
+                if (i < n-1) dots[i].classList.add('completed');
+                if (i === n-1) dots[i].classList.add('active');
+            }
             
             // 更新场景头部
             document.querySelector('.time-display').textContent = chapter.time;
             document.querySelector('.location').textContent = chapter.location;
-            document.querySelector('.scene-desc').textContent = chapter.desc;
             
-            // 更新故事内容
-            const content = document.getElementById('storyContent');
-            const choicesDiv = document.querySelector('.choices');
-            
-            if (n === 2) {
-                // 第二章
-                content.innerHTML = `
-                    <div class="dialogue system" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">!</div>
-                            <span class="speaker-name">场景切换</span>
-                        </div>
-                        <div class="dialogue-text">
-                            你到达了共生科技大厦。在进入之前，你需要通过存在感校准——这是使用冷漠型能源建筑的必要程序。
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">校准系统</span>
-                            <span class="speaker-tag">建筑管理</span>
-                        </div>
-                        <div class="dialogue-text">
-                            欢迎，林夏女士。检测到您即将进入冷漠型能源区域。根据 III.3.3.041 存在感校准规则，您需要完成以下任务：<br><br>
-                            1. 与陌生人进行5分钟面对面交谈<br>
-                            2. 完成一项手工创作（绘画/写作）<br>
-                            3. 闭眼深呼吸2分钟，感受当下<br><br>
-                            这是为了防止冷漠型能源对您的情感产生影响。
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">📋 相关规则：存在感校准 III.3.3.041</div>
-                        <div class="rule-hint-content">冷漠型能源使用者必须定期进行低效但有人情味的任务，防止情感淡漠。</div>
-                    </div>
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            （完成校准后进入面试室）
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">面试官-09</span>
-                            <span class="speaker-tag">HR智能体</span>
-                        </div>
-                        <div class="dialogue-text">
-                            林夏女士，欢迎参加共生科技的面试。第一个问题：在一个人机协作的项目中，您和智能体共同创造了一个新设计。您认为这个设计的知识产权应该归谁？
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "应该归人类，因为是我在主导", hint: "强调人类主导地位" },
-                    { text: "应该共享，按贡献比例分配", hint: "接受协作分配机制" },
-                    { text: "应该归智能体，因为它完成了大部分计算", hint: "承认AI的贡献" }
-                ]);
-            } else if (n === 3) {
-                // 第三章
-                content.innerHTML = `
-                    <div class="dialogue system" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">!</div>
-                            <span class="speaker-name">场景切换</span>
-                        </div>
-                        <div class="dialogue-text">
-                            恭喜你被录用！现在你在"协作工场"开始第一天的工作。这里人类与智能体以1:3的比例共同工作。
-                        </div>
-                    </div>
-                    <div class="dialogue ai" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">AI</div>
-                            <span class="speaker-name">协作导师-03</span>
-                            <span class="speaker-tag">培训智能体</span>
-                        </div>
-                        <div class="dialogue-text">
-                            欢迎，林夏。我是你的协作导师。今天你的第一个任务是：与智能体设计助手-A7共同完成一个新产品的外观设计。<br><br>
-                            但首先，你需要签署《人机协作授权协议》。协议内容包括：<br>
-                            • 你将与A7共享决策权<br>
-                            • 你对最终设计有否决权<br>
-                            • 收益按6:4分配（你6，A7所在公司4）<br><br>
-                            你愿意签署吗？
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "我接受，开始协作", hint: "进入人机协作模式" },
-                    { text: "我需要更多时间考虑授权条款", hint: "行使知情权" }
-                ]);
-            } else if (n === 4) {
-                // 第四章
-                content.innerHTML = `
-                    <div class="dialogue system" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">!</div>
-                            <span class="speaker-name">场景切换</span>
-                        </div>
-                        <div class="dialogue-text">
-                            工作结束，你走在回家的路上。夕阳将城市染成金色，智能体和人类并肩走在你周围，构成一幅奇特但和谐的画面。
-                        </div>
-                    </div>
-                    <div class="dialogue human" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">你</div>
-                            <span class="speaker-name">林夏</span>
-                        </div>
-                        <div class="dialogue-text">
-                            （思考着今天的一切）这个新世界，人类还剩下什么独特的价值？
-                        </div>
-                    </div>
-                    <div class="dialogue system" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">📜</div>
-                            <span class="speaker-name">共生宪章</span>
-                        </div>
-                        <div class="dialogue-text">
-                            根据 II.1.1.007 人类效率锚点原则：即使在最高效的智能体协作中，也必须保留15%的"低效但人类化"工作流程。<br><br>
-                            这不是为了效率，而是为了保留：<br>
-                            • 人类的直觉判断<br>
-                            • 创造性的不确定性<br>
-                            • 情感的深度连接<br>
-                            • 意义的主观建构<br><br>
-                            这些是算法无法替代的人类本质。
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "我理解了，我会珍惜这些'低效'的权利 →", hint: "理解共生宪章的深层意义" }
-                ]);
-            } else if (n >= 5) {
-                // 结局
-                content.innerHTML = `
-                    <div class="dialogue system" style="animation: fadeIn 0.5s">
-                        <div class="speaker">
-                            <div class="avatar">🏠</div>
-                            <span class="speaker-name">家</span>
-                        </div>
-                        <div class="dialogue-text">
-                            你回到家，家管-07已经为你准备好了晚餐。今天，你学会了作为共生城区市民的基本权利：<br><br>
-                            ✅ <b>知情代理权</b>：知道智能体收集了哪些数据<br>
-                            ✅ <b>否决代理权</b>：对影响你权益的决策说"不"<br>
-                            ✅ <b>退出代理权</b>：选择退出系统的自由<br>
-                            ✅ <b>人类效率锚点</b>：保留15%的"低效"人性化工作<br><br>
-                            记住，在这个世界里，你不是算法的奴隶，而是与智能体平等共生的伙伴。
-                        </div>
-                    </div>
-                    <div class="rule-hint">
-                        <div class="rule-hint-title">🎉 恭喜完成《共生城区市民指南》第一章</div>
-                        <div class="rule-hint-content">
-                            你已了解基本权利。完整规则请查阅《共生宪章》。<br>
-                            已学规则：5条 | 剩余章节：4章
-                        </div>
-                    </div>
-                `;
-                updateChoices([
-                    { text: "重新体验 →", hint: "再次探索不同选择", action: () => location.reload() },
-                    { text: "查看完整规则 📋", hint: "阅读《共生宪章》全部内容", action: () => showRules() }
-                ]);
-            }
-            
-            // 滚动到顶部
-            document.querySelector('.scrollable-content').scrollTop = 0;
+            // 显示提示
+            alert('进入第' + n + '章：' + chapter.title);
         }
     </script>
 </body>
