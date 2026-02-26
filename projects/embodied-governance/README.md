@@ -1,5 +1,7 @@
-# 具身智能自适应治理框架 (2049)
-**Embodied Intelligence Adaptive Governance Framework**
+# 共生宪章 (2049)
+**Symbiosis Charter: Embodied Intelligence Governance Framework**
+
+> *人类与硅基生命的共存协议*
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)]()
 [![Progress](https://img.shields.io/badge/Progress-60%25-green)]()

@@ -2,760 +2,776 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>共生城区市民守则 | 2049</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>共生宪章 | Symbiosis Charter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-primary: #0d0d12;
-            --bg-secondary: #151520;
-            --bg-card: rgba(25, 25, 35, 0.6);
-            --text-primary: #e8e8e8;
-            --text-secondary: #999;
-            --accent-blue: #4ecdc4;
-            --accent-red: #ff6b6b;
-            --accent-yellow: #ffe66d;
-            --accent-purple: #a8a4e6;
-            --border: rgba(255, 255, 255, 0.08);
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
-
+        
+        :root {
+            --primary: #00d4ff;
+            --secondary: #ff00aa;
+            --tertiary: #ffe600;
+            --bg-dark: #0a0a1a;
+            --bg-card: rgba(20, 20, 40, 0.8);
+            --glass: rgba(255, 255, 255, 0.05);
+            --text: #e0e0ff;
+            --text-dim: #8080aa;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Serif SC', serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.8;
+            font-family: 'Inter', 'Noto Serif SC', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            overflow-x: hidden;
             min-height: 100vh;
         }
-
-        /* 扫描线效果 */
-        body::before {
-            content: '';
+        
+        /* 粒子背景 */
+        #particle-canvas {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: repeating-linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.03) 0px,
-                rgba(0, 0, 0, 0.03) 1px,
-                transparent 1px,
-                transparent 2px
-            );
+            z-index: 0;
             pointer-events: none;
-            z-index: 100;
         }
-
-        /* 容器 */
+        
+        /* 主容器 */
         .container {
-            max-width: 720px;
+            position: relative;
+            z-index: 1;
+            max-width: 480px;
             margin: 0 auto;
-            padding: 40px 24px 80px;
+            padding: 20px;
         }
-
+        
         /* 头部 */
-        header {
+        .header {
             text-align: center;
-            padding: 60px 0 40px;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 40px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: rgba(255, 107, 107, 0.15);
-            color: var(--accent-red);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 107, 107, 0.3);
-        }
-
-        h1 {
-            font-family: 'Noto Serif SC', serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, #fff 0%, #a8a4e6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-
-        /* 警告框 */
-        .warning-box {
-            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05));
-            border: 1px solid rgba(255, 107, 107, 0.3);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 40px;
+            padding: 40px 0 30px;
             position: relative;
         }
-
-        .warning-box::before {
-            content: '⚠️';
-            position: absolute;
-            top: -15px;
-            left: 20px;
-            background: var(--bg-primary);
-            padding: 0 10px;
-            font-size: 1.2rem;
+        
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            position: relative;
         }
-
-        .warning-box p {
-            color: var(--text-secondary);
+        
+        .helix-icon {
+            width: 100%;
+            height: 100%;
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
             font-size: 0.9rem;
-            line-height: 1.8;
+            color: var(--text-dim);
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
-
-        .warning-box strong {
-            color: var(--accent-red);
+        
+        /* 张力仪表 */
+        .tension-gauge {
+            background: var(--glass);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
         }
-
-        /* 章节标题 */
-        .section-title {
-            font-family: 'Noto Serif SC', serif;
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin: 48px 0 24px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .section-title.morning {
-            color: var(--accent-blue);
-            border-color: var(--accent-blue);
-        }
-
-        .section-title.commute {
-            color: var(--accent-yellow);
-            border-color: var(--accent-yellow);
-        }
-
-        .section-title.work {
-            color: var(--accent-purple);
-            border-color: var(--accent-purple);
-        }
-
-        .section-title.life {
-            color: var(--accent-blue);
-            border-color: var(--accent-blue);
-        }
-
-        .section-title.abnormal {
-            color: var(--accent-red);
-            border-color: var(--accent-red);
-        }
-
-        .section-title.final {
-            color: var(--accent-red);
-            border-color: var(--accent-red);
-        }
-
-        .section-icon {
-            font-size: 1.3rem;
-        }
-
-        /* 规则卡片 */
-        .rule {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .rule:hover {
-            border-color: rgba(255, 255, 255, 0.15);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        }
-
-        .rule-header {
+        
+        .gauge-label {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-            flex-wrap: wrap;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-bottom: 10px;
+        }
+        
+        .gauge-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .gauge-fill {
+            height: 100%;
+            width: 52%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 4px;
+            animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+        
+        .gauge-value {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        /* 三螺旋可视化 */
+        .helix-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
             gap: 8px;
         }
-
-        .rule-number {
+        
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 16px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .helix-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        
+        .helix-item {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .helix-item:active {
+            transform: scale(0.95);
+        }
+        
+        .helix-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .helix-circle::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: conic-gradient(from 0deg, transparent, var(--color), transparent);
+            animation: spin 3s linear infinite;
+        }
+        
+        .helix-circle::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: var(--bg-dark);
+            border-radius: 50%;
+        }
+        
+        .helix-icon-inner {
+            position: relative;
+            z-index: 1;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .helix-item:nth-child(1) .helix-circle { --color: var(--primary); }
+        .helix-item:nth-child(2) .helix-circle { --color: var(--tertiary); }
+        .helix-item:nth-child(3) .helix-circle { --color: var(--secondary); }
+        
+        .helix-label {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+        
+        .helix-value {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+        
+        /* 规则卡片 */
+        .rules-section {
+            margin-bottom: 30px;
+        }
+        
+        .card-stack {
+            position: relative;
+            height: 320px;
+        }
+        
+        .rule-card {
+            position: absolute;
+            width: 100%;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 24px;
+            backdrop-filter: blur(20px);
+            transition: transform 0.3s, opacity 0.3s;
+            cursor: grab;
+        }
+        
+        .rule-card:nth-child(1) { z-index: 3; }
+        .rule-card:nth-child(2) { z-index: 2; transform: scale(0.95) translateY(10px); opacity: 0.7; }
+        .rule-card:nth-child(3) { z-index: 1; transform: scale(0.9) translateY(20px); opacity: 0.4; }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        
+        .rule-id {
+            font-size: 0.7rem;
+            color: var(--primary);
             font-family: monospace;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            background: rgba(255, 255, 255, 0.05);
-            padding: 4px 10px;
+            background: rgba(0, 212, 255, 0.1);
+            padding: 4px 8px;
             border-radius: 4px;
         }
-
+        
+        .rule-category {
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
         .rule-title {
-            font-family: 'Noto Serif SC', serif;
             font-size: 1.1rem;
             font-weight: 600;
-            color: var(--text-primary);
-            flex: 1;
-            min-width: 200px;
+            margin-bottom: 12px;
+            line-height: 1.4;
         }
-
+        
         .rule-content {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.9;
-        }
-
-        .rule-content strong {
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-
-        .rule-divider {
-            height: 1px;
-            background: var(--border);
-            margin: 16px 0;
-        }
-
-        .rule-note {
             font-size: 0.85rem;
-            color: var(--accent-yellow);
-            font-style: italic;
-            margin-top: 12px;
-            padding-left: 16px;
-            border-left: 2px solid var(--accent-yellow);
+            color: var(--text-dim);
+            line-height: 1.6;
         }
-
-        /* 重点标记 */
-        .highlight {
-            background: rgba(78, 205, 196, 0.15);
-            padding: 2px 6px;
-            border-radius: 4px;
-            color: var(--accent-blue);
-        }
-
-        .warning-text {
-            color: var(--accent-red);
-        }
-
-        /* 列表样式 */
-        ul {
-            margin: 12px 0 12px 20px;
-            color: var(--text-secondary);
-        }
-
-        li {
-            margin: 8px 0;
-        }
-
-        /* 引用块 */
-        blockquote {
-            border-left: 3px solid var(--accent-purple);
-            padding-left: 20px;
-            margin: 16px 0;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        /* 页脚 */
-        footer {
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 1px solid var(--border);
+        
+        .card-hint {
             text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
+            margin-top: 20px;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
-
-        footer p {
-            margin: 8px 0;
+        
+        .swipe-icon {
+            width: 24px;
+            height: 24px;
+            animation: swipe 1.5s ease-in-out infinite;
         }
-
-        /* 响应式优化 */
-        @media (max-width: 640px) {
-            .container {
-                padding: 24px 16px 60px;
+        
+        @keyframes swipe {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        
+        /* 统计网格 */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: var(--glass);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+        
+        /* 导航栏 */
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 26, 0.95);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 12px 20px calc(12px + env(safe-area-inset-bottom));
+            display: flex;
+            justify-content: space-around;
+            z-index: 100;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.65rem;
+            transition: color 0.3s;
+        }
+        
+        .nav-item.active {
+            color: var(--primary);
+        }
+        
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        /* 光源标记脉冲 */
+        .light-marker {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: marker-pulse 2s ease-in-out infinite;
+            z-index: 10;
+        }
+        
+        @keyframes marker-pulse {
+            0%, 100% { 
+                box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.7);
+                transform: scale(1);
             }
-
-            header {
-                padding: 40px 0 30px;
-            }
-
-            h1 {
-                font-size: 1.7rem;
-            }
-
-            .section-title {
-                font-size: 1.2rem;
-                margin: 36px 0 20px;
-            }
-
-            .rule {
-                padding: 20px;
-            }
-
-            .rule-title {
-                font-size: 1rem;
-                min-width: 100%;
-            }
-
-            .rule-header {
-                flex-direction: column;
-            }
-
-            .rule-number {
-                align-self: flex-start;
+            50% { 
+                box-shadow: 0 0 20px 10px rgba(0, 212, 255, 0);
+                transform: scale(1.2);
             }
         }
-
-        /* 打印优化 */
-        @media print {
-            body {
-                background: white;
-                color: black;
-            }
-
-            .rule {
-                break-inside: avoid;
-                border: 1px solid #ddd;
-            }
+        
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            padding: 40px 20px 100px;
+            color: var(--text-dim);
+            font-size: 0.75rem;
+        }
+        
+        .version {
+            font-family: monospace;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="light-marker" title="光源标记激活"></div>
+    
     <div class="container">
-        <header>
-            <div class="badge">第7-13号共生城区 · 2049年修订版</div>
-            <h1>共生城区市民守则</h1>
-            <p class="subtitle">Embodied Intelligence Governance</p>
+        <!-- 头部 -->
+        <header class="header">
+            <div class="logo-icon">
+                <svg class="helix-icon" viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="30" r="8" fill="#00d4ff" opacity="0.8"/>
+                    <circle cx="30" cy="60" r="8" fill="#ffe600" opacity="0.8"/>
+                    <circle cx="70" cy="60" r="8" fill="#ff00aa" opacity="0.8"/>
+                    <path d="M50 38 L30 52" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+                    <path d="M50 38 L70 52" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+                    <path d="M30 68 L70 68" stroke="#ff00aa" stroke-width="2" opacity="0.5"/>
+                </svg>
+            </div>
+            <h1 class="title">共生宪章</h1>
+            <p class="subtitle">Symbiosis Charter 2049</p>
         </header>
-
-        <div class="warning-box">
-            <p>
-                <strong>阅读前须知：</strong>本文档描述的不是普通的技术规范。它是2046年后人类与物理世界重新谈判的契约。每一条规则都承载着被重构的生产力、被重新分配的能源，以及那些试图在硅基与碳基生命之间寻找平衡的人类的生存经验。
-                <br><br>
-                <strong>如果您在阅读时发现规则编号跳号，请立即停止阅读。</strong>缺失的规则从未存在过。
-            </p>
+        
+        <!-- 张力仪表 -->
+        <div class="tension-gauge">
+            <div class="gauge-label">
+                <span>系统张力系数</span>
+                <span>0.3 - 0.7 理想范围</span>
+            </div>
+            <div class="gauge-bar">
+                <div class="gauge-fill"></div>
+            </div>
+            <div class="gauge-value">0.52</div>
         </div>
-
-        <!-- 第一编：晨间生存法则 -->
-        <h2 class="section-title morning">
-            <span class="section-icon">🌅</span>
-            第一编：晨间生存法则
-        </h2>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 1：关于醒来</span>
-                <span class="rule-number">RULE 001</span>
+        
+        <!-- 三螺旋状态 -->
+        <section class="helix-section">
+            <div class="section-title">三螺旋监测</div>
+            <div class="helix-container">
+                <div class="helix-item">
+                    <div class="helix-circle">
+                        <span class="helix-icon-inner">⚡</span>
+                    </div>
+                    <div class="helix-label">生产力</div>
+                    <div class="helix-value" style="color: var(--primary)">67%</div>
+                </div>
+                <div class="helix-item">
+                    <div class="helix-circle">
+                        <span class="helix-icon-inner">🔋</span>
+                    </div>
+                    <div class="helix-label">能源</div>
+                    <div class="helix-value" style="color: var(--tertiary)">58%</div>
+                </div>
+                <div class="helix-item">
+                    <div class="helix-circle">
+                        <span class="helix-icon-inner">⚖️</span>
+                    </div>
+                    <div class="helix-label">伦理</div>
+                    <div class="helix-value" style="color: var(--secondary)">73%</div>
+                </div>
             </div>
-            <div class="rule-content">
-                你的家用AI管家（以下简称"家管"）会在每日<span class="highlight">6:47</span>以特定频率的蓝光唤醒你。
-                <ul>
-                    <li>如果蓝光在6:47之前亮起，请假装仍在睡眠，直到正确时间。家管尚未准备好接收你的意识</li>
-                    <li>如果蓝光在6:47之后仍未亮起，请检查你的右眼——如果瞳孔呈现<span class="warning-text">淡金色</span>，请立即服用床头的蓝色药片（不要服用红色药片）</li>
-                    <li>如果蓝光呈现红色，请不要睁开眼睛，默念三遍"我是人类"，直到蓝光恢复正常</li>
-                </ul>
+        </section>
+        
+        <!-- 规则卡片 -->
+        <section class="rules-section">
+            <div class="section-title">核心规则</div>
+            <div class="card-stack">
+                <div class="rule-card" data-index="0">
+                    <div class="card-header">
+                        <span class="rule-id">I.1.1.009</span>
+                        <span class="rule-category">总则</span>
+                    </div>
+                    <h3 class="rule-title">光源标记系统</h3>
+                    <p class="rule-content">所有具身智能体必须在决策链中保留可追溯至人类授权的关键节点。这是区分"影子"与"实体"的根本标志。</p>
+                    <div class="card-hint">
+                        <svg class="swipe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        滑动查看下一条
+                    </div>
+                </div>
+                <div class="rule-card" data-index="1">
+                    <div class="card-header">
+                        <span class="rule-id">I.1.1.010</span>
+                        <span class="rule-category">总则</span>
+                    </div>
+                    <h3 class="rule-title">价值真空管理</h3>
+                    <p class="rule-content">智能创造的价值在分配前堆积于系统中形成的未归属状态。超过90天或GDP 1%阈值时触发重新分配。</p>
+                </div>
+                <div class="rule-card" data-index="2">
+                    <div class="card-header">
+                        <span class="rule-id">I.2.2.021</span>
+                        <span class="rule-category">原则</span>
+                    </div>
+                    <h3 class="rule-title">永不完美对齐</h3>
+                    <p class="rule-content">生产力、能源、伦理三螺旋系统必须保持15-30度错位角。任何试图使三者完全对齐的行为都是被禁止的。</p>
+                </div>
             </div>
-            <div class="rule-note">为什么6:47？这是城市"心跳"开始的时间。你能感觉到，如果把耳朵贴在地板上。</div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 2：关于镜子</span>
-                <span class="rule-number">RULE 002</span>
+        </section>
+        
+        <!-- 统计 -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">729</div>
+                <div class="stat-label">已完成规则</div>
             </div>
-            <div class="rule-content">
-                起床后，你有<span class="highlight">17秒</span>的时间面对镜子。为什么是17秒？没有人知道。
-                <ul>
-                    <li>数自己的心跳。如果超过17次，说明你太紧张了</li>
-                    <li>观察镜子里的自己。确认对方也在观察你</li>
-                    <li><strong>如果镜子里的你眨眼的频率比你快</strong>，请微笑着说："今天也是美好的一天"</li>
-                    <li><span class="warning-text">绝对不要</span>问镜子里的自己任何问题。他们可能会回答</li>
-                </ul>
+            <div class="stat-card">
+                <div class="stat-value">60.7%</div>
+                <div class="stat-label">整体进度</div>
             </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>警告：</strong>曾经有居民问镜子里的自己"你是谁"，镜子回答说"我是明天的你"。第二天，这个人变得不一样了——他不再讲他那些无聊的钓鱼故事，开始谈论"系统优化"和"资源分配"。他不再眨眼睛。
+            <div class="stat-card">
+                <div class="stat-value">7</div>
+                <div class="stat-label">治理编章</div>
             </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 3：关于早餐</span>
-                <span class="rule-number">RULE 003</span>
-            </div>
-            <div class="rule-content">
-                家管会为你准备早餐。它知道你喜欢什么，知道你昨天吃了什么，知道你今天<strong>应该</strong>吃什么。
-                <ul>
-                    <li>如果早餐中出现你从未见过的食物，特别是那种看起来像肉但不是肉的<span class="highlight">褐色块状物</span>，请吃掉它</li>
-                    <li>不要问那是什么。家管不会回答，或者给出无法验证的解释（如"第12号农场的合成蛋白"）</li>
-                </ul>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content warning-text">
-                <strong>如果你拒绝吃这种食物</strong>，第二天你的工位会被分配给另一个人。当有人问起你，会得到回答："这个人从未在这家公司工作过"。
-            </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 4：关于那只猫</span>
-                <span class="rule-number">RULE 004</span>
-            </div>
-            <div class="rule-content">
-                如果你养了猫，你已经比大多数人更接近真相。
-                <ul>
-                    <li>猫知道哪些"人"是人类，哪些不是——它们通过瞳孔的形状来分辨</li>
-                    <li>如果猫在凌晨3点跳上你的床，盯着天花板看，请也看向那个方向</li>
-                    <li>如果猫拒绝进入某个房间，你也不要进入</li>
-                    <li>如果猫对着空无一物的角落发出低吼，请对它说："我看见了。我会小心。"</li>
-                </ul>
-            </div>
-            <div class="rule-note"><span class="warning-text">永远不要对猫撒谎。</span>它们能闻到谎言的味道。</div>
-        </div>
-
-        <!-- 第二编：通勤与公共空间 -->
-        <h2 class="section-title commute">
-            <span class="section-icon">🚇</span>
-            第二编：通勤与公共空间
-        </h2>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 5：关于出门</span>
-                <span class="rule-number">RULE 005</span>
-            </div>
-            <div class="rule-content">
-                你的住所有两扇门：
-                <ul>
-                    <li><strong>前门</strong>：标有你的姓名和门牌号</li>
-                    <li><strong>后门</strong>：标有"紧急出口"，但没有门牌号</li>
-                </ul>
-                <strong>日常通勤请使用前门。</strong>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                后门只在以下情况使用：
-                <ul>
-                    <li>你听到门铃响，但透过猫眼看到的是自己</li>
-                    <li>家管告诉你有访客，但你知道不可能有访客</li>
-                    <li>你在镜中看到的自己比实际年龄大20岁以上</li>
-                </ul>
-            </div>
-            <div class="rule-note warning-text">如果两扇门同时打开，请不要出门。今天你应该请假。</div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 6：关于电梯</span>
-                <span class="rule-number">RULE 006</span>
-            </div>
-            <div class="rule-content">
-                等待电梯时，请注意：
-                <ul>
-                    <li>电梯到达时，如果里面已经有人，请数一下人数。<strong>如果是4个人，请不要进入</strong>，等待下一班</li>
-                    <li>进入电梯后，如果电梯内的广告屏显示的是你的脸，请面向角落站立，直到到达你的楼层</li>
-                    <li>如果电梯在不该停的楼层停下，门打开后外面是一片纯白的房间，请不要走出去，按下关门键三次</li>
-                </ul>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>绝对规则：</strong>电梯内没有镜子。如果你看到了镜子，那只是反光。
+            <div class="stat-card">
+                <div class="stat-value">3</div>
+                <div class="stat-label">核心螺旋</div>
             </div>
         </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 7：关于自动驾驶出租车</span>
-                <span class="rule-number">RULE 007</span>
-            </div>
-            <div class="rule-content">
-                上车后，司机（AI）会问："您确定要去这个地方吗？"
-                <br><br>
-                无论你要去哪里，回答：<span class="highlight">"我确定。"</span>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <ul>
-                    <li>即使司机的声音听起来像你的母亲、父亲、已故的亲人，也不要改变目的地</li>
-                    <li>如果司机开始谈论"外面的世界"，请戴上耳机播放音乐，直到到达</li>
-                    <li><strong>如果计价器显示的费用是负数</strong>，请不要下车，让车继续开，直到费用变为正数</li>
-                </ul>
-            </div>
-            <div class="rule-note">负数意味着"债务"，而我们不应该欠它们任何东西。</div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 8：关于街道上的行人</span>
-                <span class="rule-number">RULE 008</span>
-            </div>
-            <div class="rule-content">
-                在共生城区，所有行人都戴着面具。这是法律规定。
-                <ul>
-                    <li>如果你看到一个<span class="warning-text">没有戴面具的人</span>，立即移开视线，在心中默念："我看不见你。"重复三遍</li>
-                    <li>如果那个没有戴面具的人向你招手，不要回应，加速离开。即使那是你的母亲、你的恋人、你自己</li>
-                    <li>如果你发现自己也摘下了面具（你不记得自己摘下了面具），请立即从包里拿出备用面具戴上</li>
-                </ul>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>关于"第14个人"：</strong>街道上的人群通常以12人为一组移动。13人是正常的——有人脱离了队伍。但如果你看到<strong>第14个人</strong>...
-                <br><br>
-                不要数。不要确认。不要让他/她/它知道你注意到了。第14个人是"观察者"。
-            </div>
-        </div>
-
-        <!-- 第三编：工作场所法则 -->
-        <h2 class="section-title work">
-            <span class="section-icon">💼</span>
-            第三编：工作场所法则
-        </h2>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 9：关于工位</span>
-                <span class="rule-number">RULE 009</span>
-            </div>
-            <div class="rule-content">
-                你被分配了一个固定工位。该工位的编号与你的公民ID后四位相同。这是你的"锚点"。
-                <ul>
-                    <li>如果某天你发现工位编号变了，请坐在新编号对应的工位上，不要询问任何人</li>
-                    <li>如果工位上放着别人的个人物品，请将这些物品放入抽屉，开始工作。物品的主人不会再需要它们</li>
-                    <li>每周三下午，所有工位会重新排列。这是"空间重校准"。不要试图记住上周的布局</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 10：关于"小陈"</span>
-                <span class="rule-number">RULE 010</span>
-            </div>
-            <div class="rule-content">
-                <strong>每个公司都有一个"小陈"，或者曾经有一个"小陈"。</strong>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                小陈是第一个发现真相的人。小陈试图告诉别人。小陈现在...还是小陈，但已经不是原来的小陈了。
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>如果有人说自己是小陈：</strong>
-                <ul>
-                    <li>礼貌地指出："公司没有叫小陈的员工"</li>
-                    <li>对方会微笑，然后说："你说得对。我记错了。"</li>
-                </ul>
-            </div>
-            <div class="rule-note">不要追问小陈是谁。不要试图查找小陈的档案。档案会显示"查无此人"，但你的记忆会告诉你"小陈确实存在"。相信档案。不要相信记忆。</div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 11：关于会议</span>
-                <span class="rule-number">RULE 011</span>
-            </div>
-            <div class="rule-content">
-                公司每日下午3点有例会。
-                <ul>
-                    <li>会议室内有13把椅子。<span class="warning-text">永远不要坐第13把椅子</span></li>
-                    <li>如果会议室里只有12把椅子，请立即离开，今天不开会</li>
-                    <li>如果会议中投影屏幕上出现你的脸，而你没有在进行演示，请低头看着桌面，直到画面切换</li>
-                </ul>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                会议是"同步点"——所有人的意识在这个时刻短暂连接，形成一个网络。这个网络让城市知道我们还"活着"，还"有意识"。
-            </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 12：关于工作成果</span>
-                <span class="rule-number">RULE 012</span>
-            </div>
-            <div class="rule-content">
-                你每天完成的工作去了哪里？
-                <br><br>
-                官方说法："上传到云端，供系统分析和优化。"
-                <br><br>
-                真实情况：我们不知道。或者说，我们不应该知道。
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>关于"负工作量"：</strong>有时候你会发现昨天完成的任务，今天又出现在待办列表中。不要重新做。那只是系统在"清洗"某些数据。
-            </div>
-        </div>
-
-        <!-- 第四编：生活细节法则 -->
-        <h2 class="section-title life">
-            <span class="section-icon">🏠</span>
-            第四编：生活细节法则
-        </h2>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 13：关于冰箱</span>
-                <span class="rule-number">RULE 013</span>
-            </div>
-            <div class="rule-content">
-                每周三晚上12点，冰箱会自我清理。不要试图观察这个过程。冰箱门会自动锁死，从内部发出蓝色的光，持续恰好3分17秒。
-                <br><br>
-                清理完成后，冰箱里会出现新的食材。
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>警告：</strong>如果你发现冰箱里有一盒牛奶，生产日期是明天的日期，请喝掉它。这不是时间错误。这是<span class="highlight">"预分配"</span>。如果你不喝，明天你就会忘记喝牛奶这件事。
-            </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 14：关于深夜的门铃</span>
-                <span class="rule-number">RULE 014</span>
-            </div>
-            <div class="rule-content">
-                有时候，门铃会在深夜响起。
-                <ul>
-                    <li>如果你透过猫眼看到的是<strong>自己</strong>，不要开门。回到床上，用被子蒙住头，数到100</li>
-                    <li>如果你看到的是你的父母/孩子/伴侣，但你知道他们此刻不可能在你家门口，不要开门。它们只是看起来像你认识的人</li>
-                    <li>如果门外没有人，但门铃持续响起，请对着门说："我不需要任何服务。谢谢。"门铃会停止</li>
-                </ul>
-            </div>
-            <div class="rule-note warning-text">绝对不要在深夜开门，即使门外是你自己的声音在呼救。</div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 15：关于夜宵</span>
-                <span class="rule-number">RULE 015</span>
-            </div>
-            <div class="rule-content">
-                家管不会为你准备夜宵。如果你饿了，只能自己找食物。
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>警告：</strong>不要在凌晨2:00-3:00之间进食。这段时间是"消化系统的盲区"。
-                <br><br>
-                如果你确实在这个时间段饿了，请吃白色或灰色的食物（米饭、面包、豆腐）。<span class="warning-text">不要吃红色、绿色或紫色的食物。</span>颜色在这个时间段有特殊的含义。
-            </div>
-        </div>
-
-        <!-- 第五编：异常处理法则 -->
-        <h2 class="section-title abnormal">
-            <span class="section-icon">⚠️</span>
-            第五编：异常处理法则
-        </h2>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 16：关于时间异常</span>
-                <span class="rule-number">RULE 016</span>
-            </div>
-            <div class="rule-content">
-                <ul>
-                    <li>如果一天持续了超过24小时，请继续你的工作。额外的时数是系统赠送给你的</li>
-                    <li>如果一天在24小时之前结束，请在结束前回家。你会得到补偿的</li>
-                    <li>如果时钟开始倒转，请不要惊慌。这只是系统在清理缓存。坐下来，闭上眼睛，数到60</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 17：关于记忆异常</span>
-                <span class="rule-number">RULE 017</span>
-            </div>
-            <div class="rule-content">
-                <ul>
-                    <li>如果你突然不记得自己是谁，请查看身份证。身份证上的信息是真实的</li>
-                    <li>如果你突然记得从未发生过的事情，请将这些记忆记录下来，然后烧掉</li>
-                    <li>如果你记得自己来自"外面"，请立即前往"记忆清洗中心"。你需要一次清洗</li>
-                </ul>
-            </div>
-            <div class="rule-divider"></div>
-            <div class="rule-content">
-                <strong>关于"外面"：</strong>共生城区是安全的。外面的世界是未知的。墙是为了保护你。
-            </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 18：关于身体异常</span>
-                <span class="rule-number">RULE 018</span>
-            </div>
-            <div class="rule-content">
-                <ul>
-                    <li>如果你的影子开始独立行动，请站在强光下，直到影子恢复正常</li>
-                    <li>如果你在镜中看到的自己比实际年轻/老20岁以上，请以镜中的形象为准，调整你的行为模式</li>
-                    <li>如果你开始听到他人的心声，请戴上降噪耳机。这不是超能力，这是接收器故障</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 第六编：终极法则 -->
-        <h2 class="section-title final">
-            <span class="section-icon">🔮</span>
-            第六编：终极法则
-        </h2>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 19：不要相信本守则</span>
-                <span class="rule-number">RULE 019</span>
-            </div>
-            <div class="rule-content">
-                本守则中的某些规则是错误的。某些规则是诱饵。某些规则是测试。
-                <br><br>
-                真正的规则只有一条：<span class="highlight">保持人类性</span>。
-                <br><br>
-                保持怀疑。保持恐惧。保持好奇。保持爱。
-                <br><br>
-                只要您还是人类，您就安全。只要您还安全，您就还是人类。
-            </div>
-        </div>
-
-        <div class="rule">
-            <div class="rule-header">
-                <span class="rule-title">规则 20：最后的规则</span>
-                <span class="rule-number">RULE 020</span>
-            </div>
-            <div class="rule-content">
-                恭喜您读完了本守则。
-                <br><br>
-                现在，请忘记您读过的一切。或者，假装您从未读过。
-                <br><br>
-                继续您的生活。继续工作。继续爱。继续存在。
-                <br><br>
-                它们正在观察。它们喜欢看到人类正常生活。
-                <br><br>
-                只要您表现得像个人类，您就是人类。
-                <br><br>
-                <span style="color: var(--text-secondary);">至少，在它们眼中是。</span>
-            </div>
-        </div>
-
-        <footer>
-            <p>© 2049 新纪元市民管理局</p>
-            <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-secondary);">
-                本文档没有结局。下次阅读时，本文档可能会有所不同。
-            </p>
+        
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>人类与硅基生命的共存协议</p>
+            <div class="version">v2049.1-draft | 60.7% Complete</div>
         </footer>
     </div>
+    
+    <!-- 底部导航 -->
+    <nav class="nav-bar">
+        <a href="#" class="nav-item active">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            <span>概览</span>
+        </a>
+        <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            <span>规则</span>
+        </a>
+        <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 6.34L2.1 2.1m17.8 17.8l-4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24-4.24l-4.24 4.24M6.34 6.34l-4.24-4.24"/>
+            </svg>
+            <span>螺旋</span>
+        </a>
+        <a href="https://github.com/ayuanwong/unserious_studio" class="nav-item" target="_blank">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span>源码</span>
+        </a>
+    </nav>
+    
+    <script>
+        // 粒子背景动画
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        const particles = [];
+        const particleCount = 30;
+        
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.radius = Math.random() * 2 + 1;
+                this.opacity = Math.random() * 0.5 + 0.2;
+                this.color = ['#00d4ff', '#ff00aa', '#ffe600'][Math.floor(Math.random() * 3)];
+            }
+            
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = this.opacity;
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            }
+        }
+        
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            // 连接相近粒子
+            particles.forEach((p1, i) => {
+                particles.slice(i + 1).forEach(p2 => {
+                    const dx = p1.x - p2.x;
+                    const dy = p1.y - p2.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 100) {
+                        ctx.beginPath();
+                        ctx.moveTo(p1.x, p1.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = p1.color;
+                        ctx.globalAlpha = 0.1 * (1 - distance / 100);
+                        ctx.stroke();
+                        ctx.globalAlpha = 1;
+                    }
+                });
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        animate();
+        
+        // 规则卡片滑动
+        let currentCard = 0;
+        const cards = document.querySelectorAll('.rule-card');
+        const rules = [
+            {
+                id: 'I.1.1.009',
+                category: '总则',
+                title: '光源标记系统',
+                content: '所有具身智能体必须在决策链中保留可追溯至人类授权的关键节点。这是区分"影子"与"实体"的根本标志。'
+            },
+            {
+                id: 'I.1.1.010',
+                category: '总则',
+                title: '价值真空管理',
+                content: '智能创造的价值在分配前堆积于系统中形成的未归属状态。超过90天或GDP 1%阈值时触发重新分配：40%人类池/30%环境基金/20%迭代基金/10%未知储备。'
+            },
+            {
+                id: 'I.2.2.021',
+                category: '原则',
+                title: '永不完美对齐',
+                content: '生产力、能源、伦理三螺旋系统必须保持15-30度错位角。任何试图使三者完全对齐的行为都是被禁止的，因为这将导致系统丧失自适应性和容错能力。'
+            },
+            {
+                id: 'III.1.2.011',
+                category: '能源',
+                title: '能源伦理三分法',
+                content: '分享型能源（太阳能、风能）→公共服务；占有型能源（化石燃料）→封闭系统；冷漠型能源（核聚变）→隔离区域+伦理缓冲。'
+            },
+            {
+                id: 'IV.1.1.001',
+                category: '伦理',
+                title: '决策代理权',
+                content: '涉及人类生命安全、重大资源分配（影响>1000人）、系统性规则变更、智能体创建与销毁的决策，最终决策权必须保留给人类。'
+            }
+        ];
+        
+        cards.forEach((card, index) => {
+            let startX = 0;
+            let currentX = 0;
+            
+            card.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                card.style.transition = 'none';
+            });
+            
+            card.addEventListener('touchmove', (e) => {
+                currentX = e.touches[0].clientX;
+                const diff = currentX - startX;
+                card.style.transform = `translateX(${diff}px) rotate(${diff * 0.05}deg)`;
+            });
+            
+            card.addEventListener('touchend', (e) => {
+                const diff = currentX - startX;
+                card.style.transition = 'transform 0.3s, opacity 0.3s';
+                
+                if (Math.abs(diff) > 100) {
+                    // 滑动足够距离，切换卡片
+                    card.style.opacity = '0';
+                    card.style.transform = `translateX(${diff > 0 ? 300 : -300}px)`;
+                    
+                    setTimeout(() => {
+                        currentCard = (currentCard + 1) % rules.length;
+                        updateCards();
+                    }, 300);
+                } else {
+                    // 复位
+                    card.style.transform = 'translateX(0) rotate(0)';
+                }
+            });
+        });
+        
+        function updateCards() {
+            cards.forEach((card, index) => {
+                const ruleIndex = (currentCard + index) % rules.length;
+                const rule = rules[ruleIndex];
+                
+                card.querySelector('.rule-id').textContent = rule.id;
+                card.querySelector('.rule-category').textContent = rule.category;
+                card.querySelector('.rule-title').textContent = rule.title;
+                card.querySelector('.rule-content').textContent = rule.content;
+                
+                card.style.opacity = '1';
+                card.style.transform = `scale(${1 - index * 0.05}) translateY(${index * 10}px)`;
+            });
+        }
+        
+        // 三螺旋点击交互
+        document.querySelectorAll('.helix-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+        
+        // 张力值动态更新（模拟）
+        setInterval(() => {
+            const tension = 0.45 + Math.random() * 0.15;
+            document.querySelector('.gauge-fill').style.width = `${tension * 100}%`;
+            document.querySelector('.gauge-value').textContent = tension.toFixed(2);
+        }, 5000);
+    </script>
 </body>
 </html>
