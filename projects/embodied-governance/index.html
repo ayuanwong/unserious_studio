@@ -884,12 +884,20 @@
         // 更新选择按钮
         function updateChoices(choices) {
             const choicesDiv = document.querySelector('.choices');
-            choicesDiv.innerHTML = choices.map((c, i) => `
-                <button class="choice-btn" onclick="${c.action ? c.action.toString().replace('() => gotoChapter', 'gotoChapter') : `makeChoice(${i+1})`}">
-                    <div>${c.text}</div>
-                    ${c.hint ? `<div class="choice-hint">${c.hint}</div>` : ''}
-                </button>
-            `).join('');
+            choicesDiv.innerHTML = '';
+            choices.forEach((c, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'choice-btn';
+                btn.innerHTML = `<div>${c.text}</div>${c.hint ? `<div class="choice-hint">${c.hint}</div>` : ''}`;
+                btn.onclick = () => {
+                    if (c.action) {
+                        c.action();
+                    } else {
+                        makeChoice(i + 1);
+                    }
+                };
+                choicesDiv.appendChild(btn);
+            });
         }
         
         // 跳转章节
