@@ -584,6 +584,15 @@
     </nav>
     
     <script>
+        // 错误捕获
+        window.onerror = function(msg, url, line) {
+            alert('Error: ' + msg + '\nLine: ' + line);
+            return false;
+        };
+        
+        // 测试alert
+        alert('JavaScript loaded successfully!');
+        
         // 当前章节
         window.currentChapter = 1;
         
