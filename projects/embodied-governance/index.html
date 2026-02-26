@@ -41,6 +41,21 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            position: relative;
+        }
+        
+        /* 固定顶部区域 */
+        .top-fixed {
+            flex-shrink: 0;
+            z-index: 10;
+        }
+        
+        /* 滚动内容区 */
+        .scrollable-content {
+            flex: 1;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 80px;
         }
         
         /* 顶部时间地点 */
@@ -390,24 +405,29 @@
 </head>
 <body>
     <div class="story-container">
-        <!-- 章节导航 -->
-        <div class="chapter-nav">
-            <div class="chapter-dot completed" onclick="gotoChapter(0)">晨</div>
-            <div class="chapter-dot active" onclick="gotoChapter(1)">行</div>
-            <div class="chapter-dot" onclick="gotoChapter(2)">工</div>
-            <div class="chapter-dot" onclick="gotoChapter(3)">归</div>
-            <div class="chapter-dot" onclick="gotoChapter(4)">夜</div>
+        <!-- 固定顶部 -->
+        <div class="top-fixed">
+            <!-- 章节导航 -->
+            <div class="chapter-nav">
+                <div class="chapter-dot completed" onclick="gotoChapter(0)">晨</div>
+                <div class="chapter-dot active" onclick="gotoChapter(1)">行</div>
+                <div class="chapter-dot" onclick="gotoChapter(2)">工</div>
+                <div class="chapter-dot" onclick="gotoChapter(3)">归</div>
+                <div class="chapter-dot" onclick="gotoChapter(4)">夜</div>
+            </div>
+            
+            <!-- 场景头部 -->
+            <div class="scene-header">
+                <div class="time-display">2049.02.26 08:47 AM</div>
+                <div class="location">第7共生城区 · 晨光地铁站</div>
+                <div class="scene-desc">空气中弥漫着淡淡的电解质气息，那是智能体充能站的独特味道</div>
+            </div>
         </div>
         
-        <!-- 场景头部 -->
-        <div class="scene-header">
-            <div class="time-display">2049.02.26 08:47 AM</div>
-            <div class="location">第7共生城区 · 晨光地铁站</div>
-            <div class="scene-desc">空气中弥漫着淡淡的电解质气息，那是智能体充能站的独特味道</div>
-        </div>
-        
-        <!-- 故事内容 -->
-        <div class="story-content" id="storyContent">
+        <!-- 可滚动内容区 -->
+        <div class="scrollable-content">
+            <!-- 故事内容 -->
+            <div class="story-content" id="storyContent">
             <!-- 对话1 -->
             <div class="dialogue human">
                 <div class="speaker">
@@ -479,20 +499,21 @@
             </div>
         </div>
         
-        <!-- 选择区 -->
-        <div class="choices">
-            <button class="choice-btn" onclick="makeChoice(1)">
-                <div>"查看我的授权内容"</div>
-                <div class="choice-hint">了解智能体掌握了哪些数据</div>
-            </button>
-            <button class="choice-btn" onclick="makeChoice(2)">
-                <div>"我接受建议，去B出口"</div>
-                <div class="choice-hint">信任智能体的建议，但保持警惕</div>
-            </button>
-            <button class="choice-btn" onclick="makeChoice(3)">
-                <div>"我要乘磁悬浮，不要管我"</div>
-                <div class="choice-hint">行使自主选择权，拒绝算法推荐</div>
-            </button>
+            <!-- 选择区 -->
+            <div class="choices">
+                <button class="choice-btn" onclick="makeChoice(1)">
+                    <div>"查看我的授权内容"</div>
+                    <div class="choice-hint">了解智能体掌握了哪些数据</div>
+                </button>
+                <button class="choice-btn" onclick="makeChoice(2)">
+                    <div>"我接受建议，去B出口"</div>
+                    <div class="choice-hint">信任智能体的建议，但保持警惕</div>
+                </button>
+                <button class="choice-btn" onclick="makeChoice(3)">
+                    <div>"我要乘磁悬浮，不要管我"</div>
+                    <div class="choice-hint">行使自主选择权，拒绝算法推荐</div>
+                </button>
+            </div>
         </div>
     </div>
     
