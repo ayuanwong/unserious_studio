@@ -24,14 +24,6 @@
 - 以及需要复杂伦理判断的工作（司法裁决
 - 医疗诊断）。这一原则确保技术发展首先解放人类于苦役，而非剥夺人类的工作意义。The substitution of human labor by embodied intelligence agents must follow the "Hazardous Substitution First" principle, the fundamental criterion ensuring technological progress serves human welfare. This principle establishes clear priorities for labor substitution: first priority—substituting labor harmful to human health, including but not limited to high-temperature environments (metallurgy, glass manufacturing), toxic substance exposure (chemical industry, mining), high-altitude work (building exterior cleaning, power line maintenance), and high-intensity physical labor (port handling, warehouse moving); second priority—substituting labor damaging to human dignity, i.e., highly repetitive, low-value, uncreative work (assembly line work, data entry) that often leads to "human alienation"; third priority—substituting labor humans are unwilling to perform, objectively reflected through market mechanisms (vacancy rates, recruitment difficulty, wage premiums); strictly limiting substitution of labor requiring uniquely human capabilities, including creative work (artistic creation, scientific research), emotional work (psychological counseling, hospice care), and work requiring complex ethical judgment (judicial decisions, medical diagnosis). This principle ensures technology first liberates humans from drudgery rather than depriving work of meaning.
 
-**原则 (Principle):** 替代边界原则确立了技术进步的伦理方向——科技应当解放人类于苦役，而非剥夺工作的意义。这一原则防止资本单纯追求效率最大化而忽视人的尊严。
-
-**示例 (Example):** 某化工厂按照替代边界原则进行自动化改造：首先用机器人替代有毒环境下的投料作业（有害劳动），其次用自动化系统替代重复性的质量检测记录（低尊严劳动），但保留了工艺工程师的岗位（需要人类创造力），且明确规定AI仅辅助而非替代心理咨询师（情感劳动）。
-
-**边界 (Boundary):** "有害劳动"清单由职业健康部门每年更新；"独特人类能力"的判定存在争议时提交伦理院仲裁。
-
-**情境 (Context):** 适用于劳动替代决策、自动化项目规划和职业转型政策制定。
-
 **规则 II.1.1.002【替代率上限】**
 **Rule II.1.1.002 [Substitution Rate Ceiling]**
 
@@ -51,14 +43,6 @@ d) Creative industries: 30% — protecting the core position of human creativity
 e) Education and healthcare: 40% — maintaining the humanistic essence of teacher-student and doctor-patient relationships
 Exceeding thresholds requires special application and approval by the Ethics Council, demonstrating that substitution will not cause social harm and that adequate compensation mechanisms exist.
 
-**原则 (Principle):** 替代率上限是防止社会结构崩塌的防火墙。完全自动化虽然效率最高，但会摧毁就业市场和社会稳定。适度保留人类岗位是投资社会韧性的必要成本。
-
-**示例 (Example):** 某汽车厂自动化率达到75%，触发监管警报。经审查发现，该厂过度自动化导致关键工艺问题无法及时发现——机器检测不到人类感官能察觉的异常声响。最终裁定缩减至68%，恢复关键岗位的人类监督。
-
-**边界 (Boundary):** 单个企业的替代率计算以直接雇佣员工为基数；外包和劳务派遣人员按比例折算。
-
-**情境 (Context):** 适用于企业自动化规划、产业政策制定和社会保障压力评估。
-
 **规则 II.1.1.003【替代补偿机制】**
 **Rule II.1.1.003 [Substitution Compensation Mechanism]**
 
@@ -73,14 +57,6 @@ a) Basic living security allowance: 60% of original wages for up to 24 months, e
 b) Retraining allowance: full funding for new skill training, including tuition, materials, and living subsidies during training
 c) Psychological support services: free vocational transition counseling, mental health coaching, and peer support groups
 d) Entrepreneurship support: low-interest loans (rates 50% below market), business guidance, and first-year tax incentives
-
-**原则 (Principle):** 补偿机制体现了"技术红利共享"原则——自动化的收益不应仅归资本所有，被替代者有权分享技术进步的红利，这是社会契约的基本要求。
-
-**示例 (Example):** 某物流中心工人小王被自动化分拣系统替代后，获得：原工资60%的生活保障金（24个月）、全额资助的无人机操作培训、免费的职业心理咨询，以及创业低息贷款。18个月后，小王转型为无人机配送操作员，收入较之前提高20%。
-
-**边界 (Boundary):** 补偿权益不可转让；自愿离职者仅享受部分补偿；因违纪被替代者可能丧失补偿资格。
-
-**情境 (Context):** 适用于劳动替代实施、社会保障体系运行和劳资协商。
 
 **规则 II.1.1.004【过渡期保护】**
 **Rule II.1.1.004 [Transition Period Protection]**
@@ -346,7 +322,6 @@ a) 有权组织或加入工会
 c) 就智能体部署进行协商
 d) 罢工权：在合法权益被严重侵害时
 
-
 #
 
 **规则 II.2.2.061【价值贡献评估】**
@@ -532,7 +507,6 @@ a) 公平性：避免马太效应
 c) 可持续性：兼顾当前与未来
 d) 透明性：算法公开可审计
 
-
 ### 3.3 分配算法规范
 
 **规则 II.3.3.091【分配公平性】**
@@ -673,7 +647,6 @@ a) 预案分类分级
 c) 资源保障到位
 d) 定期演练更新
 
-
 #，该时限不得超过30日。
 
 **规则 II.1.3.141【人机协作定义】**
@@ -745,7 +718,6 @@ a) 探索性定义：结果不确定的前瞻性劳动
 )b) 风险分担：建立风险分担机制
 c) 失败宽容：建立失败宽容机制
 d) 成功奖励：对成功探索给予额外奖励
-
 
 ### 1.4 人机协作标准
 
@@ -890,7 +862,6 @@ a) 救助标准：合理确定救助标准
 )b) 快速响应：建立快速响应机制
 c) 临时救助：完善临时救助制度
 d) 慈善衔接：与慈善救助衔接
-
 
 ### 2.4 职业转型支持
 
@@ -1111,7 +1082,6 @@ a) 标准对接：对接国际劳工标准
 c) 信息共享：国际就业信息共享
 d) 合作机制：建立合作机制
 
-
 ### 4.4 区域协调发展
 
 **规则 II.4.4.201【区域产业布局】**
@@ -1256,7 +1226,6 @@ a) 监管科技：运用监管科技
 c) 国际协调：跨境沙盒协调
 d) 持续改进：监管机制持续改进
 
-
 ### 5.4 失败容忍机制
 
 **规则 II.5.4.221【失败分类】**
@@ -1366,7 +1335,6 @@ a) 替代部分：替代部分现有福利
 c) 补充部分：作为其他福利补充
 d) 不替代：UBI不替代的权利
 
-
 ### 6.2 工作权保障
 
 **规则 II.6.2.236【工作权定义】**
@@ -1440,7 +1408,6 @@ a) 学习机会：提供终身学习机会
 )b) 学习支持：学习支持服务
 c) 学分银行：建立学分银行
 d) 能力认证：能力认证体系
-
 
 ### 7.2 人机共生模式
 

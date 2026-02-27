@@ -8,14 +8,6 @@
 
 Embodied Intelligence refers to intelligent systems embedded in physical entities capable of sensing the physical environment, interacting with the physical world, and executing physical actions. Embodied intelligence in this framework includes but is not limited to: humanoid robots, autonomous vehicles, industrial robots, drones, smart exoskeletons, automated logistics systems, and any AI systems with physical form and environmental interaction capabilities. The key distinction of embodied intelligence from pure software AI lies in its physical presence—it can produce actual impacts in the atomic world.
 
-**原则 (Principle):** 具身智能的物理存在性赋予其更强的影响力，也带来更大的责任。承认其独特性是制定有效治理框架的前提。
-
-**示例 (Example):** 某工厂部署的焊接机器人能够自主识别工件位置、调整焊接参数并完成精密焊接，这是典型的具身智能应用。与之对比，仅提供焊接参数建议的纯软件系统不属于具身智能。
-
-**边界 (Boundary):** 本规则适用于具有物理执行能力的智能系统；纯软件AI（如聊天机器人、推荐算法）不适用物理安全规范，但仍受伦理约束。
-
-**情境 (Context):** 适用于具身智能体的定义、分类和适用范围的确定。
-
 **规则 I.1.1.002【智能体】**
 **Rule I.1.1.002 [Agent]**
 
@@ -31,28 +23,12 @@ An Agent refers to any entity capable of perceiving its environment, processing 
 - Hybrid agents (human-machine fusion systems): Enhanced intelligent agents with deep integration of human cognition and AI capabilities
 - Collective agents (distributed intelligent networks): Multi-agent systems that exhibit collective intelligence through collaboration
 
-**原则 (Principle):** 智能体的分类反映了智能的多元形态，治理需针对不同类型智能体的特点制定差异化规则，而非一刀切。
-
-**示例 (Example):** 一个由人类操作员、AI助手和自动化机械臂组成的混合智能系统执行精密手术：人类做出关键决策（碳基）、AI分析影像并提供建议（硅基）、机械臂执行精细操作（具身），三者协同完成复杂任务。
-
-**边界 (Boundary):** 本规则适用于具有自主决策能力的智能体；纯被动执行器（如简单传感器）不适用。
-
-**情境 (Context):** 适用于智能体身份认定、责任归属和治理措施选择。
-
 **规则 I.1.1.003【生产力重构】**
 **Rule I.1.1.003 [Productivity Reconstruction]**
 
 生产力重构指具身智能技术引发的物理世界生产方式、劳动形态、价值创造模式的系统性变革。包括：劳动替代（具身智能执行传统人类劳动）、劳动增强（人机协作提升生产效率）、新劳动形态创造（AI训练师、机器人伦理审计员等新兴职业）、生产关系调整（所有权与使用权分离）以及价值分配机制变革（人机协同创造价值的新分配模式）等具体类别。
 
 Productivity Reconstruction refers to the systematic transformation of production methods, labor forms, and value creation models in the physical world triggered by embodied intelligence technology. This includes: labor substitution (embodied intelligence performing traditional human labor), labor augmentation (human-machine collaboration enhancing productivity), creation of new labor forms (emerging professions such as AI trainers and robot ethics auditors), adjustment of production relations (separation of ownership and usage rights), and transformation of value distribution mechanisms (new distribution models for value co-created by humans and machines).
-
-**原则 (Principle):** 生产力重构不是简单的技术替代，而是生产关系的系统性变革。治理的重点在于确保技术进步服务于人类福祉，而非加剧不平等。
-
-**示例 (Example):** 某汽车工厂引入具身智能系统后，传统焊接岗位减少60%，但同时新增了机器人维护工程师、人机协作培训师、AI伦理审计员等岗位，整体就业结构发生转型而非单纯萎缩。
-
-**边界 (Boundary):** 本规则适用于具身智能技术引发的物理生产变革；纯虚拟经济领域（如数字内容创作）的变化参照其他规则。
-
-**情境 (Context):** 适用于劳动市场分析、产业政策制定和社会保障体系设计。
 
 **规则 I.1.1.004【能源可持续性】**
 **Rule I.1.1.004 [Energy Sustainability]**
@@ -66,14 +42,6 @@ Energy Sustainability refers to meeting the energy needs of current embodied int
 - Sustainability of energy sources (renewability): prioritizing renewable energy such as solar and wind power
 - Ethical appropriateness of energy use (source-use matching): high ethical requirement scenarios (education, healthcare) must use clean energy
 - Resilience of energy systems (shock resistance): redundant designs capable of responding to supply disruptions, price volatility, and technical failures
-
-**原则 (Principle):** 能源可持续性体现代际正义原则——当前发展不应以牺牲后代利益为代价。具身智能系统作为高能耗实体，必须承担更高的环境责任。
-
-**示例 (Example):** 某具身智能数据中心采用100%可再生能源供电，配备储能系统应对间歇性，并建立能源效率监测平台持续优化PUE指标，符合能源可持续性的全部三个维度。
-
-**边界 (Boundary):** 本规则适用于年度能耗超过100MWh的具身智能系统；小型设备（如家用服务机器人）适用简化标准。
-
-**情境 (Context):** 适用于能源规划审批、环境影响评估和可持续发展报告编制。
 
 **规则 I.1.1.005【人类伦理代理权】**
 **Rule I.1.1.005 [Human Ethical Agency]**
@@ -90,14 +58,6 @@ Human Ethical Agency refers to the sum of humans' capacity for autonomous decisi
 - Veto agency: right to veto specific decisions, even if technically "optimal"
 - Exit agency: right to opt out of the system without undue penalties
 
-**原则 (Principle):** 人类伦理代理权是防范技术异化的核心机制。无论AI系统多么先进，涉及人类根本利益的决策最终必须回归人类判断。
-
-**示例 (Example):** 某医院使用AI诊断系统辅助癌症筛查。尽管AI建议"立即手术"的成功率高达95%，但患者基于个人价值观和生活质量考量，选择保守治疗。患者的否决权（Veto Agency）在此得到充分尊重。
-
-**边界 (Boundary):** 四项代理权适用于所有涉及人类生命、自由和尊严的场景；纯技术优化决策（如路线规划）可由AI自主完成。
-
-**情境 (Context):** 适用于人机协作决策、知情同意程序和用户权利保障体系设计。
-
 **规则 I.1.1.006【自适应治理】**
 **Rule I.1.1.006 [Adaptive Governance]**
 
@@ -113,14 +73,6 @@ Adaptive Governance refers to the capacity of governance frameworks to automatic
 - Multi-objective balance optimization: seeking Pareto improvements among efficiency, equity, safety, innovation, and other goals
 - Preventive intervention: identifying potential risk signals and taking preventive measures before crises emerge
 
-**原则 (Principle):** 自适应治理承认技术和社会环境的快速变化，拒绝僵化规则，通过动态调整保持治理的有效性和正当性。
-
-**示例 (Example):** 当某类具身智能系统的事故率连续3个月超过阈值时，自适应治理系统自动触发规则修订程序：暂停新部署、强制安全升级、重新评估认证标准，无需等待年度审查。
-
-**边界 (Boundary):** 自适应调整仅限于操作层面的规则参数；涉及核心价值的根本性变更仍需人工审议。
-
-**情境 (Context):** 适用于规则执行、监管响应和治理体系持续优化。
-
 **规则 I.1.1.007【三螺旋模型】**
 **Rule I.1.1.007 [Triple Helix Model]**
 
@@ -133,14 +85,6 @@ The Triple Helix Model is the core architecture of this framework, referring to 
 - Misalignment angle: 15-30 degrees—subsystems maintain moderate tension rather than complete synchronization
 - Tension coefficient: 0.3-0.7—dynamic balance of both competition and cooperation between systems
 - Synchronization frequency: multi-level coordination mechanisms at daily, weekly, monthly, and yearly scales
-
-**原则 (Principle):** 完全对齐的系统往往陷入局部最优，适度张力激发创新。三螺旋模型允许生产力、能源、伦理三者相互制衡，避免单一逻辑主导。
-
-**示例 (Example):** 某工厂追求生产效率最大化（生产力），但受到能源可持续性约束（能源）和人类劳动尊严保护（伦理）的限制。三者的适度张力促使工厂开发更节能、更人机协作友好的生产流程，而非单纯自动化。
-
-**边界 (Boundary):** 错位角度超过45度表示系统失衡，需启动校正程序。
-
-**情境 (Context):** 适用于系统架构设计、目标冲突平衡和治理优先级确定。
 
 **规则 I.1.1.008【治理边界】**
 **Rule I.1.1.008 [Governance Boundaries]**
@@ -157,28 +101,12 @@ Governance Boundaries refer to the scope and limitations of this framework's app
 - Subject boundaries: all embodied intelligent agents and the humans who interact with them, including designers, manufacturers, operators, and users
 - Matter boundaries: decisions and actions involving physical world productivity, energy, and ethics, as well as related virtual space governance
 
-**原则 (Principle):** 清晰的治理边界是法律确定性的基础。明确的边界既保护受规制者免受任意干预，也确保治理资源集中于关键领域。
-
-**示例 (Example):** 一家注册在共生城区7号的具身智能企业完全受本框架约束；而位于相邻普通城区、仅偶尔进入共生城区的送货机器人，则仅需遵守跨境协作条款。
-
-**边界 (Boundary):** 虚拟空间活动仅在直接影响物理世界时受约束；纯线上交互适用其他法规。
-
-**情境 (Context):** 适用于管辖权确定、合规义务评估和法律适用争议解决。
-
 **规则 I.1.1.009【光源标记】**
 **Rule I.1.1.009 [Light-Source Marking]**
 
 光源标记指任何智能体决策链中必须保留的可追溯至人类授权的关键节点。这是区分"影子"与"实体"的根本标志。技术实现包括：区块链锚定（将关键决策哈希值写入不可篡改的分布式账本）、多方签名（要求多个授权主体共同确认）、时间戳验证（证明决策发生的时间序列）以及血缘追溯（记录数据与决策的完整谱系）。
 
 Light-Source Marking refers to the critical nodes in any agent's decision chain that must be preserved and traceable to human authorization. This is the fundamental distinction between "shadow" and "substance". Technical implementations include: blockchain anchoring (writing critical decision hashes to immutable distributed ledgers), multi-party signatures (requiring confirmation from multiple authorized entities), timestamp verification (proving the temporal sequence of decisions), and lineage tracing (recording complete pedigrees of data and decisions).
-
-**原则 (Principle):** 光源标记是问责制的技术基石。没有人类授权标记的AI决策如同没有签名的合同——形式上存在，法律上无效。
-
-**示例 (Example):** 某自动驾驶车辆在紧急情况下选择撞向护栏而非行人。事后调查显示，该决策链中缺少人类伦理审查的标记节点，无法证明决策符合预设的伦理规范，因此被认定为违规。
-
-**边界 (Boundary):** 所有涉及生命安全、财产重大损失的决策必须标记；微秒级实时反应（如紧急制动）可在事后追溯标记。
-
-**情境 (Context):** 适用于AI决策审计、事故责任认定和合规检查。
 
 **规则 I.1.1.010【价值真空】**
 **Rule I.1.1.010 [Value Vacuum]**
@@ -194,14 +122,6 @@ Value Vacuum refers to the unassigned state formed when value created by intelli
 - Threshold-triggered release: distribution procedures trigger when accumulated value reaches preset thresholds or specific conditions
 - Multi-party distribution protocol: value is distributed among multiple stakeholders according to predetermined ratios (such as 40% Human Pool, 30% Environmental Fund, 20% Iteration Fund)
 - 10% unknown reserve mandatory isolation: 10% of value is reserved as a buffer against unknown risks
-
-**原则 (Principle):** 价值真空机制防止AI创造的价值被过早瓜分，确保分配决策经过审慎考量，并为不可预见的风险预留缓冲。
-
-**示例 (Example):** 某AI交易系统在价值真空账户中累积了1000万元收益。触发分配阈值后，按协议分配：400万进入人类贡献者奖励池，300万投入碳中和基金，200万用于系统迭代研发，100万作为未知风险储备。
-
-**边界 (Boundary):** 价值在真空状态的最长滞留期为12个月；超过期限自动触发强制分配。
-
-**情境 (Context):** 适用于AI参与的价值创造活动、收益分配机制设计和风险管理。
 
 **规则 I.1.2.011【适用主体】**
 **Rule I.1.2.011 [Applicable Subjects]**
@@ -220,14 +140,6 @@ c) Governance institutions and their staff
 d) Cross-border embodied intelligent agents (partially applicable)
 e) Retired embodied intelligent agents with remaining physical presence, not exceeding 30 days
 
-**原则 (Principle):** 治理框架的适用主体界定是法治的基础。明确的主体范围确保规则的可执行性，同时通过分级适用（完全适用/部分适用）兼顾不同场景的特殊性。
-
-**示例 (Example):** 某服务型机器人在共生城区7号提供配送服务，须完全遵守本框架；而一台仅短暂经过该区域、前往其他地区的运输机器人，则只需遵守光源标记等核心规则。
-
-**边界 (Boundary):** "治理区域"指经正式划定的共生城区及扩展区域；退役实体超过30日未清理的，视为新部署设备重新适用框架。
-
-**情境 (Context):** 适用于主体资格认定、合规责任分配和监管执法范围的确定。
-
 **规则 I.1.2.012【适用事项】**
 **Rule I.1.2.012 [Applicable Matters]**
 
@@ -244,14 +156,6 @@ b) The complete process of energy acquisition, storage, conversion, distribution
 c) Decision-making processes involving human ethical judgment
 d) Value creation and distribution mechanisms
 e) Prevention and handling of abnormal situations, not exceeding 30 days
-
-**原则 (Principle):** 事项的完整覆盖是有效治理的前提。从设计到退役的全生命周期管理确保伦理考量贯穿始终，预防"前端放纵、后端补救"的治理失效。
-
-**示例 (Example):** 某公司在设计新型农业机器人时，必须遵循本框架的设计伦理规范；在制造阶段使用清洁能源；运行期间接受行为监督；退役后负责物理回收或数据销毁。
-
-**边界 (Boundary):** 纯理论研究不涉及物理实现的活动暂不适用；个人娱乐用途的简易设备（如玩具机器人）可申请简化合规程序。
-
-**情境 (Context):** 适用于事项性质认定、合规义务范围划分和监管资源分配。
 
 **规则 I.1.2.013【豁免情形】**
 **Rule I.1.2.013 [Exemption Circumstances]**
@@ -270,14 +174,6 @@ c) Closed experimental environments (require ethics review)
 d) Agents in purely virtual space (no physical impact)
 e) Circumstances specially approved by the Governance Council
 
-**原则 (Principle):** 豁免机制是刚性规则的柔性补充，确保在极端情况下治理框架不会成为生命救援或公共利益的阻碍，但需严格限定防止滥用。
-
-**示例 (Example):** 地震救援机器人在倒塌建筑中搜救幸存者时，可暂时豁免能源伦理标签要求，优先使用高能量密度电池以延长作业时间；但救援结束后须补办合规审查。
-
-**边界 (Boundary):** 豁免不等同于免责，事后须提交豁免使用报告；商业用途不得申请豁免；同一主体连续申请豁免超过3次将触发特别审查。
-
-**情境 (Context):** 适用于紧急情况处置、特殊任务执行和例外审批决策。
-
 **规则 I.1.2.014【跨境适用】**
 **Rule I.1.2.014 [Cross-border Application]**
 
@@ -292,14 +188,6 @@ a) Full compliance with this framework within the governance area
 b) Compliance with local rules outside the area, but light-source marking must be preserved
 c) Cross-regional missions require advance reporting and permission
 d) Cross-border data flow must comply with privacy protection rules, not exceeding 30 days
-
-**原则 (Principle):** 跨境治理需平衡本地规则与全球协调。保留光源标记确保即使在异域运行，决策链条的人类授权依然可追溯，维护全球治理的底线标准。
-
-**示例 (Example):** 一台物流配送机器人从共生城区7号出发，途经非治理区域前往共生城区8号。在7号和8号区内完全遵守框架；途经区域遵守当地交通法规，但保留区块链决策记录供回境审查。
-
-**边界 (Boundary):** 目的地为无法律管辖区域（如公海、无主地）的，须按治理区域标准执行；连续在异域运行超过90日的，须在30日内申请临时合规认证。
-
-**情境 (Context):** 适用于跨境物流、国际协作项目和区域间人员/物资流动监管。
 
 **规则 I.1.2.015【时间效力】**
 **Rule I.1.2.015 [Temporal Effectiveness]**
@@ -316,28 +204,12 @@ b) A 6-month adaptation period for embodied intelligent agents deployed before e
 c) Annual revisions take effect on January 15 of the following year
 d) Emergency amendments may take effect immediately
 
-**原则 (Principle):** 时间效力的明确性保障法律稳定性和预期性。适应期平衡了既有投资保护和新规实施需求，避免"一刀切"造成的社会成本。
-
-**示例 (Example):** 某工厂在2048年已部署50台工业机器人，框架生效后获得6个月适应期进行光源标记系统升级和合规改造；2049年3月发布的年度修订将在2050年1月15日生效，给予充分准备时间。
-
-**边界 (Boundary):** 安全相关的紧急修正案可不给适应期；2049年1月1日前已进入退役流程的设备不受框架约束。
-
-**情境 (Context):** 适用于合规时间表制定、改造计划安排和法律责任起始点确定。
-
 **规则 I.2.1.016【人类优先】**
 **Rule I.2.1.016 [Human Primacy]**
 
 在具身智能系统的所有决策中，人类福祉必须作为首要考虑因素。任何可能对人类造成不可逆伤害的系统设计、决策或行动，无论其效率多高，都必须被禁止或严格限制。
 
 In all decisions of embodied intelligence systems, human well-being must be the primary consideration. Any system design, decision, or action that may cause irreversible harm to humans, regardless of how efficient it is, must be prohibited or strictly restricted.
-
-**原则 (Principle):** 人类优先是共生宪章的价值基石。技术进步不能以牺牲人类安全和尊严为代价，效率至上主义必须受到伦理约束。
-
-**示例 (Example):** 某智能工厂可通过移除安全防护装置提升15%生产效率，但会增加工人受伤风险。根据人类优先原则，此方案被禁止，即使它意味着更高的经济回报。
-
-**边界 (Boundary):** "不可逆伤害"指造成永久性身体损伤、精神创伤或基本权利丧失；可恢复的伤害（如短暂疼痛）需进行成本-收益评估。
-
-**情境 (Context):** 适用于所有涉及人类安全、健康和尊严的系统设计、运营决策和应急响应场景。
 
 **规则 I.2.1.017【人类最终决策权】**
 **Rule I.2.1.017 [Human Final Decision Authority]**
@@ -356,14 +228,6 @@ c) Systematic rule changes
 d) Creation and destruction of intelligent agents
 e) Major adjustments to energy infrastructure
 
-**原则 (Principle):** 最终决策权是人类主体性的核心体现。某些决策因其不可逆性、影响范围或价值权重，必须由人类而非算法做出，这是维护人类尊严的底线。
-
-**示例 (Example):** 在决定是否为晚期癌症患者实施AI辅助的实验性治疗时，虽然AI可提供成功率预测，但最终决策必须由患者本人及其家属做出，医生提供支持但不越俎代庖。
-
-**边界 (Boundary):** "重大"的量化标准由治理委员会定期修订；日常运营决策可委托AI，但须保留人类监督权和紧急接管权。
-
-**情境 (Context):** 适用于高风险决策、大规模影响决策和根本性系统变更的授权设计。
-
 **规则 I.2.1.018【人类知情权】**
 **Rule I.2.1.018 [Human Right to Know]**
 
@@ -378,14 +242,6 @@ a) The true identity of intelligent agents they interact with
 b) The basis and process of decisions affecting their interests
 c) The collection and use of their data by the system
 d) The methods and consequences of exiting the system
-
-**原则 (Principle):** 知情权是自主决策的前提。在信息不对称的人机交互中，人类必须获得足够信息以做出真正自主的选择，否则"同意"只是形式而非实质。
-
-**示例 (Example):** 当用户与客服AI对话时，系统须在对话开始时明确告知"您正在与AI助手交流，非真人客服"；当AI拒绝用户贷款申请时，须说明拒绝的主要依据（如信用评分不足），而非仅显示"申请未通过"。
-
-**边界 (Boundary):** 知情权与商业秘密保护需平衡；AI算法的具体参数权重可作为商业秘密，但决策逻辑框架必须公开；涉及他人隐私的信息需脱敏后提供。
-
-**情境 (Context):** 适用于人机交互界面设计、自动化决策系统的说明义务和数据处理透明度要求。
 
 **规则 I.2.1.019【人类否决权】**
 **Rule I.2.1.019 [Human Veto Power]**
@@ -420,14 +276,6 @@ e) Emergency redirection: forcibly changing execution paths before irreversible 
 f) Violation appeal: raising objections to completed decisions and requesting review
 g) Automatic flagging: system records human dissatisfaction, triggering post-hoc review, not exceeding 30 days
 
-**原则 (Principle):** 否决权是人类对AI系统的终极制衡机制。即使AI的决策在技术上是"最优"的，人类仍有权基于个人价值观、风险偏好或直觉说"不"。
-
-**示例 (Example):** 智能家居系统建议将室温自动调至18°C以节省能源，但住户感觉寒冷，可直接说"我否决，保持22°C"；自动驾驶汽车在复杂路口选择了一条理论上最快但让乘客感到不安的路线，乘客可按下"重新规划"按钮否决当前路径。
-
-**边界 (Boundary):** 否决权行使不得危及第三方安全（如紧急避让中的否决）；滥用否决权（如连续无理由否决10次以上）可能触发限制机制。
-
-**情境 (Context):** 适用于所有直接影响个人权益的AI决策场景，包括智能家居、自动驾驶、医疗建议、金融推荐等。
-
 **规则 I.2.1.020【人类退出权】**
 **Rule I.2.1.020 [Human Right to Exit]**
 
@@ -443,17 +291,6 @@ b) Partial exit (specific scenarios)
 c) Complete exit (migration to non-intelligent zones)
 Basic living security after exit is provided by the social safety net.
 
-**原则 (Principle):** 退出权是自由的最后保障。真正的自愿参与意味着有说不的权利，技术系统不应成为无法逃离的牢笼。社会安全网确保退出不会导致生存危机。
-
-**示例 (Example):** 某居民因隐私顾虑选择退出社区智能监控系统，可申请"部分退出"，系统将不再采集其人脸数据，但仍可使用基础的公共服务；另一位居民选择"完全退出"，搬迁至非智能区的传统社区，其基本医疗和养老保障仍由政府提供。
-
-**边界 (Boundary):** 退出权不适用于法律强制的监管场景（如犯罪监控）；完全退出者将无法享受智能系统的便利性，需签署知情同意书。
-
-**情境 (Context):** 适用于个人对智能系统的参与程度选择、隐私保护需求和社会包容政策设计。
-
-
-### 2.2 动态平衡原则
-
 **规则 I.2.2.021【永不完美对齐】**
 **Rule I.2.2.021 [Never Perfectly Aligned]**
 
@@ -461,28 +298,12 @@ Basic living security after exit is provided by the social safety net.
 
 The productivity, energy, and ethics triple helix systems must maintain a misalignment angle of 15-30 degrees. Any attempt to perfectly align the three is prohibited, as this would cause the system to lose adaptability and fault tolerance.
 
-**原则 (Principle):** 完美对齐意味着系统失去了内在张力和纠错机制。适度的错位创造健康的摩擦，使系统能够自我修正而非陷入僵化或崩溃。
-
-**示例 (Example):** 如果生产力追求（最大化产出）、能源可持续性（最小化消耗）和伦理标准（最大化安全）完全同步，系统将失去弹性——一旦外部条件变化，整个系统将同时失效。保持15-30度错位使各子系统可独立响应变化。
-
-**边界 (Boundary):** 错位角度小于15度视为"过度对齐"，系统将被强制调整；大于30度视为"过度失衡"，同样触发矫正机制。
-
-**情境 (Context):** 适用于系统架构设计、治理机制配置和多目标优化算法的参数设定。
-
 **规则 I.2.2.022【张力维持】**
 **Rule I.2.2.022 [Tension Maintenance]**
 
 系统必须主动维持适度的内部张力。张力系数应保持在0.3-0.7范围内。张力过低会导致系统僵化，张力过高会导致系统崩溃。
 
 The system must actively maintain moderate internal tension. The tension coefficient should be kept within the 0.3-0.7 range. Too low tension leads to rigidity; too high tension leads to collapse.
-
-**原则 (Principle):** 张力是系统活力的源泉。如同琴弦，过松则无声，过紧则易断。适度张力促进创新、竞争和持续改进。
-
-**示例 (Example):** 在一个智能城市中，生产力目标（经济增长）与能源目标（碳减排）之间的张力系数为0.5：两者既竞争资源又相互促进——绿色技术创新同时提升效率和可持续性。若张力系数降至0.2，能源目标被忽视；升至0.8，则可能因过度冲突导致项目停滞。
-
-**边界 (Boundary):** 张力系数<0.3或>0.7持续超过30日时，系统自动触发再平衡机制；紧急情况下可暂时突破边界，但须在48小时内恢复。
-
-**情境 (Context):** 适用于多目标治理系统的设计、绩效评估指标权重设定和冲突管理机制配置。
 
 **规则 I.2.2.023【动态调整】**
 **Rule I.2.2.023 [Dynamic Adjustment]**
@@ -541,14 +362,6 @@ All governance parameters must be capable of dynamic adjustment based on real-ti
 - Decision: human-led + AI-assisted analysis
 - Example: quarterly modification of value distribution ratios
 
-**原则 (Principle):** 分层响应机制匹配决策的时间敏感性与重要性。紧急事务需要毫秒级硬件响应，战略事务需要深思熟虑的人类判断，避免"一刀切"的僵化或"全部自动化"的风险。
-
-**示例 (Example):** 自动驾驶汽车检测到前方突然出现的行人：L1紧急响应立即触发制动（<100毫秒）；L2快速响应评估是否需要变道（5秒内）；L3标准响应规划绕行路线（10分钟）；L4战术响应调整当日后续行程（2小时内）；L5战略响应用于评估是否改进该路段的算法（1周后）。
-
-**边界 (Boundary):** 跨层级越权决策将被系统拒绝；L1-L3可全自动化，L4需人类知情，L5需人类主导；紧急情况下可启用"降级模式"，将高级别决策临时下放。
-
-**情境 (Context):** 适用于系统设计、响应协议制定、权限分配和应急预案编制。
-
 **规则 I.2.2.024【过度矫正机制】**
 **Rule I.2.2.024 [Overcorrection Mechanism]**
 
@@ -561,14 +374,6 @@ When any helix exhibits excessive dominance, the system must automatically trigg
 a) Excessive productivity → reduce computing resources by 10% + increase ethics review
 b) Excessive energy → mandatory human approval + activate ethical restrictions
 c) Excessive ethics → temporarily grant productivity autonomy + initiate "ethics overload" protocol
-
-**原则 (Principle):** 没有任何单一价值应主导系统。过度矫正是防止"单螺旋暴政"的自动保险机制，确保三螺旋的动态平衡不被打破。
-
-**示例 (Example):** 某AI研发公司在季度冲刺中过度追求模型性能（生产力过度），系统自动触发：削减其GPU配额10%，并要求所有新模型上线前通过伦理委员会审查。反之，若伦理审查过于严苛导致创新停滞（伦理过度），系统临时放宽部分实验限制，启动"创新恢复协议"。
-
-**边界 (Boundary):** 矫正措施强度与过度程度成正比；连续触发过度矫正超过3次的系统将进入"观察模式"，由治理委员会介入评估；矫正不得危及基础安全功能。
-
-**情境 (Context):** 适用于系统失衡监测、自动制衡机制设计和治理干预触发条件设定。
 
 **规则 I.2.2.025【混沌边缘运营】**
 **Rule I.2.2.025 [Edge of Chaos Operation]**
@@ -584,18 +389,6 @@ a) System load rate: 60-80%
 b) Rule conflict rate: 5-15%
 c) Anomaly event rate: 1-5%
 d) Innovation adoption rate: 20-40%
-
-**原则 (Principle):** 复杂系统在混沌边缘表现出最强的适应性和创新能力。过于有序导致僵化，过于混沌导致失控。混沌边缘是秩序与创新的最佳平衡点。
-
-**示例 (Example):** 一个健康的智能城市：道路负载率70%（繁忙但非堵塞）、每日5-10%的规则适用产生边界争议（促进规则完善）、偶发小故障但无系统性崩溃、每季度有30%的新服务上线。若负载长期>90%，系统面临崩溃；若<30%，资源利用不足；若零规则冲突，系统可能已僵化。
-
-**边界 (Boundary):** 指标超出范围持续7日触发预警，持续30日触发强制调整；单一指标可临时突破，但综合指标必须保持平衡；紧急状态下可暂时脱离混沌边缘，事后须恢复。
-
-**情境 (Context):** 适用于系统健康度监测、运营状态评估和创新环境营造。
-d) 创新采纳率：20-40%
-
-
-### 2.3 透明与可解释原则
 
 **规则 I.2.3.026【决策可追溯】**
 所有具身智能体的重大决策必须保留完整记录，包括：
@@ -634,7 +427,6 @@ b) 个人数据使用需获得同意
 c) 数据最小化原则
 d) 目的限制原则
 e) 存储期限限制
-
 
 （由于篇幅限制，以下继续编写各章节的核心规则框架，实际文档将包含全部150+条规则）
 
@@ -760,7 +552,6 @@ b) 授权撤销→立即停止
 c) 系统故障→启动备用授权
 d) 争议状态→冻结等待裁决
 
-
 ### 4.2 能源属性标识
 
 **规则 I.4.2.046【属性标签】**
@@ -788,7 +579,6 @@ a) 分享→占有：需伦理审查
 b) 占有→分享：鼓励但需备案
 c) 冷漠→其他：禁止
 d) 其他→冷漠：需特别授权
-
 
 （继续编写剩余规则...）
 
