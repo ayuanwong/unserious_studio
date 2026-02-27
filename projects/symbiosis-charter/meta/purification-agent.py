@@ -273,7 +273,7 @@ class RulePurifier:
         return improved.strip()
     
     def purify_article(self, article_name: str) -> Dict:
-        """Purify a single article file"""
+        """Purify and improve a single article file"""
         file_path = self.rules_dir / article_name
         if not file_path.exists():
             return {'status': 'error', 'message': f'File not found: {article_name}'}
@@ -286,14 +286,28 @@ class RulePurifier:
         if not pure_rules:
             return {'status': 'error', 'message': 'No rules found'}
         
-        # Analyze each rule
+        # Analyze and improve each rule
         quality_reports = []
-        for rule in pure_rules:
+        improved_count = 0
+        
+        for i, rule in enumerate(pure_rules):
             report = self.analyze_rule_quality(rule)
+            
+            # If rule needs improvement and we have improved version, apply it
+            if report['needs_improvement'] and report['improved_version']:
+                old_content = rule['content']
+                new_content = report['improved_version']
+                
+                # Only apply if significantly different
+                if new_content != old_content and len(new_content) > 20:
+                    pure_rules[i]['content'] = new_content
+                    improved_count += 1
+                    self.log(f"  → Improved {rule['id']}: {report['score']}pts → better expression")
+            
             if report['issues']:
                 quality_reports.append(report)
         
-        # Rebuild rules document (only rules, no supplementary)
+        # Rebuild rules document with improvements
         original_content = file_path.read_text(encoding='utf-8')
         header_match = re.match(r'^(.*?)(?=\*\*规则\s+[IV]+\.\d+\.\d+\.\d+【|## |$)', original_content, re.MULTILINE | re.DOTALL)
         file_header = header_match.group(1) if header_match else ""
@@ -302,7 +316,7 @@ class RulePurifier:
         for rule in pure_rules:
             new_content += f"{rule['header']}\n{rule['content']}\n\n"
         
-        # Write purified rules
+        # Write improved rules
         file_path.write_text(new_content, encoding='utf-8')
         
         # Write supplementary to annotations
@@ -313,6 +327,7 @@ class RulePurifier:
         return {
             'status': 'success',
             'rules_preserved': len(pure_rules),
+            'rules_improved': improved_count,
             'supplementary_moved': len(supp_doc) > 0,
             'quality_issues': len(quality_reports),
             'details': quality_reports
