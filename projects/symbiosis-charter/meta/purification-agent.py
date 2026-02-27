@@ -157,49 +157,120 @@ class RulePurifier:
         return pure_rules, supp_doc
     
     def analyze_rule_quality(self, rule: Dict) -> Dict:
-        """Deep analysis of rule quality"""
+        """Deep analysis of rule quality - returns score and improvement flag"""
         analysis = {
             'id': rule['id'],
             'title': rule['title'],
             'word_count': len(rule['content']),
+            'score': 100,
+            'needs_improvement': False,
             'issues': [],
-            'suggestions': []
+            'improved_version': None
         }
         
         content = rule['content']
+        original_content = content
         
-        # Check 1: Length appropriateness
-        if len(content) < 50:
-            analysis['issues'].append('Too short')
-            analysis['suggestions'].append('Expand to clarify scope and requirements')
-        elif len(content) > 500:
-            analysis['issues'].append('Too long')
-            analysis['suggestions'].append('Consider splitting into multiple rules')
+        # Check 1: Length appropriateness (-10 to -20 points)
+        if len(content) < 30:
+            analysis['score'] -= 20
+            analysis['issues'].append('Too short - lacks clarity')
+            analysis['needs_improvement'] = True
+        elif len(content) > 400:
+            analysis['score'] -= 15
+            analysis['issues'].append('Too long - needs conciseness')
+            analysis['needs_improvement'] = True
         
-        # Check 2: Clarity of requirements
-        if not re.search(r'[必须|应当|禁止|允许]', content):
-            analysis['issues'].append('No clear obligation')
-            analysis['suggestions'].append('Add clear directive (must/should/shall)')
+        # Check 2: Clarity of requirements (-15 points)
+        if not re.search(r'[必须|应当|禁止|不得|允许]', content):
+            analysis['score'] -= 15
+            analysis['issues'].append('No clear directive (必须/应当/禁止)')
+            analysis['needs_improvement'] = True
         
-        # Check 3: Specificity
-        vague_terms = ['适当', '合理', '必要', '相关']
+        # Check 3: Specificity (-10 per vague term)
+        vague_terms = ['适当', '合理', '必要', '相关', '等', '等等']
         found_vague = [t for t in vague_terms if t in content]
         if found_vague:
+            analysis['score'] -= min(10 * len(found_vague), 30)
             analysis['issues'].append(f'Vague terms: {found_vague}')
-            analysis['suggestions'].append('Replace with quantifiable criteria')
+            analysis['needs_improvement'] = True
         
-        # Check 4: Structure
-        if content.count('。') > 5:
-            analysis['issues'].append('Too many sentences')
-            analysis['suggestions'].append('Consider bullet points for clarity')
+        # Check 4: Structure (-5 points)
+        if content.count('。') > 6:
+            analysis['score'] -= 5
+            analysis['issues'].append('Overly complex structure')
         
-        # Check 5: Redundancy
-        sentences = content.split('。')
-        unique_sentences = set(s.strip() for s in sentences if len(s.strip()) > 10)
-        if len(sentences) != len(unique_sentences):
-            analysis['issues'].append('Potential redundancy')
+        # Check 5: Repetition (-10 points)
+        sentences = [s.strip() for s in content.split('。') if len(s.strip()) > 5]
+        if len(sentences) != len(set(sentences)):
+            analysis['score'] -= 10
+            analysis['issues'].append('Redundant content')
+            analysis['needs_improvement'] = True
+        
+        # Check 6: Completeness
+        if '包括' in content and '：' not in content and ':' not in content:
+            analysis['score'] -= 5
+            analysis['issues'].append('Incomplete enumeration')
+        
+        analysis['score'] = max(0, analysis['score'])
+        
+        # Generate improved version if needed
+        if analysis['needs_improvement'] and analysis['score'] < 70:
+            analysis['improved_version'] = self.generate_improved_rule(rule, analysis)
         
         return analysis
+    
+    def generate_improved_rule(self, rule: Dict, analysis: Dict) -> str:
+        """Generate improved rule expression based on quality analysis"""
+        original = rule['content']
+        issues = analysis['issues']
+        title = rule['title']
+        
+        # Core improvement logic based on issues
+        improved = original
+        
+        # Fix 1: Add directive if missing
+        if 'No clear directive' in str(issues):
+            if '禁止' not in improved and '不得' not in improved:
+                improved = re.sub(r'^(.{10,30})([，。])', r'\1必须\2', improved)
+        
+        # Fix 2: Remove vague terms and add specificity
+        vague_replacements = {
+            '适当的': '明确量化的',
+            '合理的': '符合标准的',
+            '必要的': '关键性的',
+            '相关的': '直接关联的',
+            '等。': '等具体类别。',
+            '等等': '及其他明确规定的情形'
+        }
+        
+        for vague, specific in vague_replacements.items():
+            improved = improved.replace(vague, specific)
+        
+        # Fix 3: Improve structure with bullet points for lists
+        if '：' in improved or ':' in improved:
+            parts = re.split(r'([：:])', improved, 1)
+            if len(parts) >= 3:
+                intro = parts[0] + parts[1]
+                items = parts[2]
+                # Convert comma-separated to bullet points if long
+                if len(items) > 60 and '、' in items:
+                    items = items.replace('、', '\n- ')
+                    improved = intro + '\n- ' + items
+        
+        # Fix 4: Remove redundancy
+        sentences = [s.strip() for s in improved.split('。') if s.strip()]
+        unique_sentences = []
+        for s in sentences:
+            if s not in unique_sentences:
+                unique_sentences.append(s)
+        improved = '。'.join(unique_sentences) + '。'
+        
+        # Ensure proper ending
+        if not improved.endswith('。') and not improved.endswith('：'):
+            improved += '。'
+        
+        return improved.strip()
     
     def purify_article(self, article_name: str) -> Dict:
         """Purify a single article file"""
