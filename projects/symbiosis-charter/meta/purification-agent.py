@@ -214,8 +214,9 @@ class RulePurifier:
         
         analysis['score'] = max(0, analysis['score'])
         
-        # Generate improved version if needed
-        if analysis['needs_improvement'] and analysis['score'] < 70:
+        # Generate improved version if needed (threshold: 80 instead of 70)
+        if analysis['score'] < 80:
+            analysis['needs_improvement'] = True
             analysis['improved_version'] = self.generate_improved_rule(rule, analysis)
         
         return analysis
@@ -407,20 +408,22 @@ class PurificationDaemon:
         self.running = False
     
     def execute_purification(self):
-        """Execute one purification cycle"""
+        """Execute one purification and improvement cycle"""
         self.iteration += 1
         self.log(f"\n{'='*70}")
-        self.log(f"🧹 PURIFICATION ITERATION #{self.iteration}")
+        self.log(f"🧹 PURIFICATION & IMPROVEMENT ITERATION #{self.iteration}")
         self.log(f"{'='*70}")
         
-        # Run purification
-        rules_count, issues_count = self.purifier.run_purification_cycle()
+        # Run purification and improvement
+        rules_count, improved_count, issues_count = self.purifier.run_purification_cycle()
         
-        # Commit changes
-        self.commit_changes()
+        # Commit changes if improvements were made
+        if improved_count > 0:
+            self.commit_changes()
+            self.log(f"✓ Committed {improved_count} rule improvements")
         
         self.log(f"{'='*70}")
-        self.log(f"✓ Iteration #{self.iteration} complete")
+        self.log(f"✓ Iteration #{self.iteration} complete: {improved_count} rules improved")
         self.log(f"{'='*70}")
     
     def commit_changes(self):
