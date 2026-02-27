@@ -1,23 +1,23 @@
 {
   "total_rules": 161,
-  "high_quality_count": 0,
-  "needs_improvement_count": 161,
-  "current_bilingual_pct": 0.0,
+  "high_quality_count": 5,
+  "needs_improvement_count": 156,
+  "current_bilingual_pct": 3.1,
   "target_bilingual_pct": 80.0,
   "score_distribution": {
     "90-100": 0,
-    "80-89": 0,
-    "70-79": 0,
+    "80-89": 2,
+    "70-79": 3,
     "60-69": 0,
     "50-59": 0,
-    "<50": 161
+    "<50": 156
   },
   "feature_coverage": {
-    "principles": 0,
-    "examples": 0,
-    "boundaries": 1,
-    "context": 0,
-    "english": 0
+    "principles": 5,
+    "examples": 5,
+    "boundaries": 6,
+    "context": 5,
+    "english": 5
   },
   "all_rules": [
     {

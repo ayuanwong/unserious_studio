@@ -590,12 +590,58 @@ e) 数据质量评级
 数据须可追溯可验证。
 
 **规则 III.5.1.074【碳足迹计算工具】**
-使用标准化计算工具：
-a) 国家认证计算软件
-b) 国际通用计算平台
-c) 区块链存证系统
-d) 第三方验证接口
-工具须经过校准验证。
+**Rule III.5.1.074 [Carbon Footprint Calculation Tools]**
+
+碳足迹核算必须使用经过标准化认证的专业计算工具，这是确保核算结果科学性、可比性和公信力的技术基础。本规则要求所有具身智能系统采用四类标准化工具：
+- 国家认证计算软件（通过生态环境部或相关主管部门认证的碳核算软件，符合国内法规和标准）
+- 国际通用计算平台（如GHG Protocol计算工具
+- ISO 14064配套软件，支持国际互认）
+- 区块链存证系统（确保碳排放数据不可篡改
+- 全程可追溯，防止数据造假）
+- 以及第三方验证接口（便于独立核查机构接入审计）。所有工具必须经过定期校准验证，包括与权威数据库的比对测试
+- 与手工计算的结果交叉验证
+- 以及版本更新后的功能测试。禁止使用未经认证的自制工具或已过期的软件版本进行正式核算。Carbon footprint accounting must utilize standardized and certified professional calculation tools—this is the technical foundation ensuring scientific rigor, comparability, and credibility of accounting results. This rule requires all embodied intelligence systems to employ four categories of standardized tools: nationally certified calculation software (carbon accounting software certified by the Ministry of Ecology and Environment or relevant authorities, compliant with domestic regulations and standards); internationally recognized calculation platforms (such as GHG Protocol tools, ISO 14064 software, supporting international mutual recognition); blockchain attestation systems (ensuring carbon emissions data is tamper-proof and fully traceable, preventing data fraud); and third-party verification interfaces (facilitating access for independent audit institutions). All tools must undergo regular calibration and validation, including benchmarking against authoritative databases, cross-validation with manual calculations, and functional testing after version updates. The use of uncertified homemade tools or expired software versions for formal accounting is prohibited.
+
+---
+
+**【原理 | Principle】**
+
+碳足迹计算工具标准化的必要性源于"测量即管理"（You can't manage what you don't measure）的管理学原理和计量学的可溯源性原则。碳核算涉及复杂的排放因子选择
+- 活动数据归集
+- 计算模型应用，不同工具可能产生显著差异的结果。标准化工具确保：计算方法的一致性（同样输入产生同样输出）
+- 排放因子的权威性（使用经审核的国家或国际因子）
+- 计算过程的可审计性（每一步都有记录）
+- 以及结果的可比性（跨企业
+- 跨时期比较有效）。区块链技术引入解决了碳数据信任问题——传统的中心化数据存储存在篡改风险，而区块链的分布式账本和加密特性确保"数据一经记录，不可抵赖"。The necessity of standardizing carbon footprint calculation tools stems from the management principle "You can't manage what you don't measure" and metrological traceability principles. Carbon accounting involves complex emission factor selection, activity data collection, and calculation model application—different tools may produce significantly different results. Standardized tools ensure: consistency in calculation methods (same inputs produce same outputs); authority of emission factors (using audited national or international factors); auditability of calculation processes (every step is recorded); and comparability of results (cross-enterprise and cross-period comparisons are valid). Blockchain technology addresses carbon data trust issues—traditional centralized data storage carries tampering risks, while blockchain's distributed ledger and cryptographic features ensure that "once data is recorded, it cannot be repudiated."
+
+**【案例 | Examples】**
+
+✓ **正面案例**：某跨国制造企业统一采用GHG Protocol的SCOPE计算平台，并结合国内生态环境部推荐的排放因子库，实现了全球30个工厂碳足迹数据的标准化核算。第三方审计时，通过区块链存证系统可追溯到每笔数据的原始凭证，审计效率提升70%，且获得国际碳披露项目（CDP）的最高评级。✓ **Positive Example**: A multinational manufacturing enterprise uniformly adopted the GHG Protocol's SCOPE calculation platform, combined with emission factor databases recommended by the Ministry of Ecology and Environment, achieving standardized carbon footprint accounting across 30 global factories. During third-party audits, the blockchain attestation system enabled tracing of each data point to original vouchers, improving audit efficiency by 70% and earning the highest rating from the Carbon Disclosure Project (CDP).
+
+✗ **反面案例**：某小型物流企业为节省成本，使用自行开发的Excel表格进行碳核算，其中排放因子来源于网络搜索的未经核实数据，计算公式存在错误。在监管抽查中被发现其报告的碳排放量比实际值低估60%，被认定为虚假报告，面临高额罚款并列入失信名单。✗ **Negative Example**: A small logistics company, seeking cost savings, used a self-developed Excel spreadsheet for carbon accounting, with emission factors sourced from unverified online searches and calculation formulas containing errors. During regulatory spot checks, its reported carbon emissions were found to be 60% underestimated compared to actual values. The company was identified as making false reports, facing substantial fines and placement on a dishonesty list.
+
+**【边界 | Boundaries】**
+
+本规则对计算工具的规范边界包括：
+a) 适用范围：年碳排放量超过1000吨二氧化碳当量的具身智能系统必须使用认证工具；小型系统（<1000吨）可使用简化工具但须说明方法
+b) 认证层级：国家级认证适用于国内报告；国际项目（如CDP披露
+- 碳边境税申报）须使用国际通用平台
+c) 过渡期：新发布的软件版本给予3个月过渡期，之后旧版本不再适用于正式核算
+d) 豁免情形：纯研发性质的碳核算实验可使用非认证工具，但结果不得用于对外报告或合规申报
+e) 数据主权：使用国际平台时，须确保原始数据存储在境内服务器或获得数据出境安全评估
+
+The regulatory boundaries for calculation tools in this rule include:
+a) Applicability: embodied intelligence systems with annual carbon emissions exceeding 1,000 tons CO2e must use certified tools; small systems (<1,000 tons) may use simplified tools but must disclose methodologies
+b) Certification tiers: national certification suitable for domestic reporting; international projects (such as CDP disclosure, carbon border tax filings) require internationally recognized platforms
+c) Transition periods: new software versions receive 3-month transition periods, after which old versions are no longer suitable for formal accounting
+d) Exemptions: experimental carbon accounting for pure R&D may use non-certified tools, but results cannot be used for external reporting or compliance declarations
+e) Data sovereignty: when using international platforms, raw data must be stored on domestic servers or have passed data cross-border security assessments
+
+**【背景 | Context】**
+
+碳足迹计算工具的标准化进程始于2010年代的自愿碳市场混乱期。当时各企业使用各异的计算方法，同一企业用不同工具计算结果差异可达50%以上，严重削弱碳数据的公信力。2016年，ISO 14064标准发布，首次系统规范了碳核算方法学。2021年，中国发布《企业温室气体排放核算方法与报告指南》，建立了国家级的排放因子库和核算规范。2030年代，随着碳关税（CBAM）等机制的实施，对碳数据质量的要求进一步提高。区块链技术的引入始于2025年，旨在解决碳数据造假问题。本规则在2049年版本中整合了这些发展成果，形成了覆盖工具选择
+- 使用
+- 验证的完整体系，成为全球具身智能碳治理的技术基础设施。
 
 **规则 III.5.1.075【碳足迹边界设定】**
 **Rule III.5.1.075 [Carbon Footprint Boundary Setting]**
