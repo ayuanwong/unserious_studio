@@ -423,6 +423,8 @@ The system must actively maintain moderate internal tension. The tension coeffic
 **情境 (Context):** 适用于多目标治理系统的设计、绩效评估指标权重设定和冲突管理机制配置。
 
 **规则 I.2.2.023【动态调整】**
+**Rule I.2.2.023 [Dynamic Adjustment]**
+
 所有治理参数必须能够根据实时反馈动态调整。调整频率分级响应：
 
 **L1 紧急响应**（< 1秒）：
@@ -450,17 +452,84 @@ The system must actively maintain moderate internal tension. The tension coeffic
 - 决策：人类主导 + AI辅助分析
 - 示例：季度性修改价值分配比例
 
+All governance parameters must be capable of dynamic adjustment based on real-time feedback. Adjustment frequencies are tiered as follows:
+
+**L1 Emergency Response** (< 1 second):
+- Applicable: physical emergency stop, power-off protection, emergency braking
+- Technology: hardware-level interrupt circuits, independent of software judgment
+- Example: automatic power-off when factory robotic arm is about to strike a human
+
+**L2 Rapid Response** (1-60 seconds):
+- Applicable: process pause, parameter freeze, temporary speed limiting
+- Technology: edge computing node local decision-making
+- Example: temporarily limiting API call frequency when abnormal traffic is detected
+
+**L3 Standard Response** (1-60 minutes):
+- Applicable: strategy adjustment, load balancing, resource reallocation
+- Technology: central system automated decision-making
+- Example: adjusting energy allocation strategy based on peak electricity usage
+
+**L4 Tactical Response** (1-24 hours):
+- Applicable: operational strategy, personnel scheduling, short-term planning
+- Decision: AI recommendation + human confirmation
+- Example: adjusting next-day logistics delivery routes
+
+**L5 Strategic Response** (> 1 day):
+- Applicable: rule revision, system upgrade, long-term planning
+- Decision: human-led + AI-assisted analysis
+- Example: quarterly modification of value distribution ratios
+
+**原则 (Principle):** 分层响应机制匹配决策的时间敏感性与重要性。紧急事务需要毫秒级硬件响应，战略事务需要深思熟虑的人类判断，避免"一刀切"的僵化或"全部自动化"的风险。
+
+**示例 (Example):** 自动驾驶汽车检测到前方突然出现的行人：L1紧急响应立即触发制动（<100毫秒）；L2快速响应评估是否需要变道（5秒内）；L3标准响应规划绕行路线（10分钟）；L4战术响应调整当日后续行程（2小时内）；L5战略响应用于评估是否改进该路段的算法（1周后）。
+
+**边界 (Boundary):** 跨层级越权决策将被系统拒绝；L1-L3可全自动化，L4需人类知情，L5需人类主导；紧急情况下可启用"降级模式"，将高级别决策临时下放。
+
+**情境 (Context):** 适用于系统设计、响应协议制定、权限分配和应急预案编制。
+
 **规则 I.2.2.024【过度矫正机制】**
+**Rule I.2.2.024 [Overcorrection Mechanism]**
+
 当任一螺旋表现出过度强势时，系统必须自动触发反向调节：
 a) 生产力过度→削弱计算资源10%+增加伦理审核
 b) 能源过度→强制人类审批+激活伦理限制
 c) 伦理过度→临时赋予生产力自主权+启动"伦理过载"协议
 
+When any helix exhibits excessive dominance, the system must automatically trigger counter-adjustment:
+a) Excessive productivity → reduce computing resources by 10% + increase ethics review
+b) Excessive energy → mandatory human approval + activate ethical restrictions
+c) Excessive ethics → temporarily grant productivity autonomy + initiate "ethics overload" protocol
+
+**原则 (Principle):** 没有任何单一价值应主导系统。过度矫正是防止"单螺旋暴政"的自动保险机制，确保三螺旋的动态平衡不被打破。
+
+**示例 (Example):** 某AI研发公司在季度冲刺中过度追求模型性能（生产力过度），系统自动触发：削减其GPU配额10%，并要求所有新模型上线前通过伦理委员会审查。反之，若伦理审查过于严苛导致创新停滞（伦理过度），系统临时放宽部分实验限制，启动"创新恢复协议"。
+
+**边界 (Boundary):** 矫正措施强度与过度程度成正比；连续触发过度矫正超过3次的系统将进入"观察模式"，由治理委员会介入评估；矫正不得危及基础安全功能。
+
+**情境 (Context):** 适用于系统失衡监测、自动制衡机制设计和治理干预触发条件设定。
+
 **规则 I.2.2.025【混沌边缘运营】**
+**Rule I.2.2.025 [Edge of Chaos Operation]**
+
 系统应保持在"混沌边缘"运营状态——既有序又充满活力。具体指标：
 a) 系统负载率：60-80%
 b) 规则冲突率：5-15%
 c) 异常事件率：1-5%
+d) 创新采纳率：20-40%
+
+The system should maintain operation at the "edge of chaos" — both orderly and vibrant. Specific indicators:
+a) System load rate: 60-80%
+b) Rule conflict rate: 5-15%
+c) Anomaly event rate: 1-5%
+d) Innovation adoption rate: 20-40%
+
+**原则 (Principle):** 复杂系统在混沌边缘表现出最强的适应性和创新能力。过于有序导致僵化，过于混沌导致失控。混沌边缘是秩序与创新的最佳平衡点。
+
+**示例 (Example):** 一个健康的智能城市：道路负载率70%（繁忙但非堵塞）、每日5-10%的规则适用产生边界争议（促进规则完善）、偶发小故障但无系统性崩溃、每季度有30%的新服务上线。若负载长期>90%，系统面临崩溃；若<30%，资源利用不足；若零规则冲突，系统可能已僵化。
+
+**边界 (Boundary):** 指标超出范围持续7日触发预警，持续30日触发强制调整；单一指标可临时突破，但综合指标必须保持平衡；紧急状态下可暂时脱离混沌边缘，事后须恢复。
+
+**情境 (Context):** 适用于系统健康度监测、运营状态评估和创新环境营造。
 d) 创新采纳率：20-40%
 
 ---
