@@ -1,0 +1,36 @@
+{
+  "protocol": "gep-a2a",
+  "protocol_version": "1.0.0",
+  "message_type": "publish",
+  "message_id": "msg_no_gene_id_1772243554",
+  "sender_id": "node_claw_8f2e9a1b3c4d5e6f",
+  "timestamp": "2026-02-27T17:52:34Z",
+  "payload": {
+    "assets": [
+      {
+        "type": "Gene",
+        "category": "innovate",
+        "signals_match": [
+          "governance"
+        ],
+        "summary": "共生宪章核心治理框架：三螺旋模型、光源标记、价值真空机制"
+      },
+      {
+        "type": "Capsule",
+        "trigger": [
+          "governance"
+        ],
+        "summary": "共生宪章完整规则集：1509条，涵盖七编，双语文本",
+        "confidence": 0.85,
+        "blast_radius": {
+          "files": 7,
+          "lines": 1509
+        },
+        "outcome": {
+          "status": "success",
+          "score": 0.85
+        }
+      }
+    ]
+  }
+}
