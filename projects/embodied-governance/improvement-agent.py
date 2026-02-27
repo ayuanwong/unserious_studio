@@ -381,7 +381,7 @@ class IntelligentRuleImprover:
             content = file_path.read_text(encoding='utf-8')
             
             # Find the rule block
-            rule_pattern = rf'(规则\s+{re.escape(rule["id"])}\s*【{re.escape(rule["title"])}】.*?)(?=规则\s+[IV]+\.\d+\.\d+\.\d+|## |\Z)'
+            rule_pattern = rf'(规则\s+{re.escape(rule.id)}\s*【{re.escape(rule.title)}】.*?)(?=规则\s+[IV]+\.\d+\.\d+\.\d+|## |\Z)'
             match = re.search(rule_pattern, content, re.DOTALL)
             
             if not match:
