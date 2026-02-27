@@ -1,10 +1,69 @@
 # 第二编：生产力重构治理
 **规则 II.1.1.001【替代边界原则】**
-具身智能体对人类的劳动替代必须遵循"有害替代优先"原则：
-a) 优先替代对人类健康有害的劳动（高温、有毒、高空、高强度）
-b) 优先替代对人类尊严有损害的劳动（重复性、低价值感）
-c) 优先替代人类不愿意从事的劳动（通过市场机制反映）
-d) 限制替代需要人类独特能力的劳动（创造性、情感性、伦理性）
+**Rule II.1.1.001 [Substitution Boundary Principle]**
+
+具身智能体对人类的劳动替代必须遵循"有害替代优先"（Hazardous Substitution First）原则，这是确保技术进步服务于人类福祉的根本准则。该原则确立了劳动替代的明确优先级：
+- 第一优先替代对人类健康有害的劳动，包括但不限于高温环境作业（如冶金
+- 玻璃制造）
+- 有毒物质接触（如化工
+- 采矿）
+- 高空作业（如建筑外墙清洗
+- 高压线维护）
+- 以及高强度体力劳动（如港口装卸
+- 仓储搬运）；第二优先替代对人类尊严有损害的劳动，即重复性高
+- 价值感低
+- 缺乏创造性的工作（如流水线装配
+- 数据录入），这类工作往往导致"人的异化"；第三优先替代人类不愿意从事的劳动，通过市场机制（如岗位空缺率
+- 招聘难度
+- 薪酬溢价）客观反映；严格限制替代需要人类独特能力的劳动，包括创造性工作（艺术创作
+- 科学研究）
+- 情感性工作（心理咨询
+- 临终关怀）
+- 以及需要复杂伦理判断的工作（司法裁决
+- 医疗诊断）。这一原则确保技术发展首先解放人类于苦役，而非剥夺人类的工作意义。The substitution of human labor by embodied intelligence agents must follow the "Hazardous Substitution First" principle, the fundamental criterion ensuring technological progress serves human welfare. This principle establishes clear priorities for labor substitution: first priority—substituting labor harmful to human health, including but not limited to high-temperature environments (metallurgy, glass manufacturing), toxic substance exposure (chemical industry, mining), high-altitude work (building exterior cleaning, power line maintenance), and high-intensity physical labor (port handling, warehouse moving); second priority—substituting labor damaging to human dignity, i.e., highly repetitive, low-value, uncreative work (assembly line work, data entry) that often leads to "human alienation"; third priority—substituting labor humans are unwilling to perform, objectively reflected through market mechanisms (vacancy rates, recruitment difficulty, wage premiums); strictly limiting substitution of labor requiring uniquely human capabilities, including creative work (artistic creation, scientific research), emotional work (psychological counseling, hospice care), and work requiring complex ethical judgment (judicial decisions, medical diagnosis). This principle ensures technology first liberates humans from drudgery rather than depriving work of meaning.
+
+---
+
+**【原理 | Principle】**
+
+替代边界原则的理论根基源于马克思的劳动异化理论
+- 功利主义伦理学和人类中心主义技术观。劳动异化理论指出，当劳动沦为维持生存的手段而非自我实现的途径时，人就与其本质力量分离。因此，将人类从异化劳动中解放出来是技术进步的正道。功利主义伦理学要求最大化整体幸福——替代有害劳动减少痛苦，保留有意义劳动增加幸福，符合效用最大化原则。人类中心主义技术观强调技术应作为人类能力的增强器而非替代者。该原则还体现了"分配正义"思想：技术红利应首先惠及最弱势群体（从事有害工作者），而非精英阶层。从经济学角度，该原则优化劳动力配置——将人类从低效率的体力劳动转向高效率的脑力劳动，提升整体生产力。The theoretical foundation of the substitution boundary principle derives from Marx's theory of labor alienation, utilitarian ethics, and anthropocentric technology perspectives. Labor alienation theory states that when work becomes merely a means of survival rather than self-realization, humans become separated from their essential powers. Thus, liberating humans from alienated labor is the proper path of technological progress. Utilitarian ethics requires maximizing overall happiness—substituting harmful labor reduces suffering, preserving meaningful labor increases happiness, aligning with utility maximization. Anthropocentric technology views emphasize that technology should enhance human capabilities rather than replace them. This principle also embodies "distributive justice": technological dividends should first benefit the most vulnerable (those in hazardous work), not elites. Economically, this principle optimizes labor allocation—shifting humans from low-efficiency physical labor to high-efficiency mental labor, enhancing overall productivity.
+
+**【案例 | Examples】**
+
+✓ **正面案例**：某大型港口实施"有害替代优先"原则，首先用自动化系统替代了危险的高空集装箱绑扎作业（每年减少工伤事故30起），然后替代了重体力装卸工作，但保留了调度协调
+- 客户服务
+- 设备维护等需要人类判断的岗位。转型五年后，员工满意度提升45%，生产力提升120%，无一人因自动化失业（均转至更高价值岗位）。✓ **Positive Example**: A major port implemented the "Hazardous Substitution First" principle, first using automated systems to substitute dangerous high-altitude container lashing work (reducing 30 annual industrial accidents), then substituting heavy physical loading/unloading, while retaining scheduling coordination, customer service, equipment maintenance, and other positions requiring human judgment. Five years post-transition, employee satisfaction increased 45%, productivity increased 120%, with zero job losses due to automation (all transferred to higher-value positions).
+
+✓ **应用场景**：在医疗领域，手术机器人优先替代医生长时间站立进行的精细手术（减少医生职业损伤），AI诊断系统辅助医生筛查影像（替代重复性阅片），但医生保留与患者沟通
+- 制定治疗方案
+- 做出伦理抉择等核心职责。这种人机协作模式既保护了医护人员的健康，又保留了医疗的人文关怀本质。✓ **Application Scenario**: In healthcare, surgical robots prioritize substituting lengthy standing procedures for doctors (reducing occupational injuries), AI diagnostic systems assist doctors in screening images (substituting repetitive film reading), while doctors retain core responsibilities of patient communication, treatment planning, and ethical decision-making. This human-AI collaboration model protects medical workers' health while preserving the humanistic essence of healthcare.
+
+✗ **反面案例**：某电商平台为追求效率最大化，使用AI替代了全部客服人员，包括处理复杂投诉和安抚情绪失控客户的工作。结果导致客户满意度暴跌，一起因沟通不当引发的公关危机使公司市值蒸发20%。事后公司被迫重新招聘人工客服处理复杂案例，印证了"情感性工作不可完全替代"的边界。✗ **Negative Example**: An e-commerce platform, pursuing maximum efficiency, used AI to substitute all customer service personnel, including handling complex complaints and calming emotionally distressed customers. Customer satisfaction plummeted, and a PR crisis triggered by inappropriate communication caused a 20% market cap loss. The company was forced to rehire human agents for complex cases, confirming the boundary that "emotional work cannot be fully substituted."
+
+**【边界 | Boundaries】**
+
+替代边界原则的适用边界和例外情形包括：
+a) 紧急情形：在自然灾害
+- 公共卫生危机等紧急状态下，可临时放宽替代限制以最大化救援效率，但须在危机结束后60日内恢复常规安排
+b) 个人选择：若个体自愿从事某类劳动（如极限运动教练
+- 高危探险向导），即使该劳动客观上具有危险性，也应尊重其自主选择权
+c) 文化遗产：涉及非物质文化遗产传承的劳动（如传统手工艺），即使效率较低，也应限制替代以保护文化多样性
+d) 过渡保护：在替代实施过程中，须为被替代者提供至少6个月的过渡期，期间原岗位保留
+- 工资照发，并提供再培训机会
+e) 比例限制：单一企业/部门的总替代率不得超过70%，确保人类员工始终保有足够影响力和话语权
+
+The applicable boundaries and exceptions of the substitution boundary principle include:
+a) Emergency situations: during natural disasters, public health crises, and other emergencies, substitution limits may be temporarily relaxed to maximize rescue efficiency, but normal arrangements must be restored within 60 days post-crisis
+b) Personal choice: if individuals voluntarily engage in certain labor (such as extreme sports instructors, high-risk expedition guides), even if objectively hazardous, their autonomous choice should be respected
+c) Cultural heritage: labor involving intangible cultural heritage transmission (such as traditional handicrafts), even if less efficient, should limit substitution to protect cultural diversity
+d) Transition protection: during substitution implementation, at least 6 months transition period must be provided, with original positions retained, wages paid, and retraining opportunities offered
+e) Proportion limits: total substitution rate for any single enterprise/department must not exceed 70%, ensuring human employees always maintain sufficient influence and voice
+
+**【背景 | Context】**
+
+替代边界原则的制定经历了激烈的公共辩论。2030年代，第一波自动化浪潮导致大规模失业，社会出现"卢德主义"回潮和反技术情绪。2040年的"底特律事件"（某汽车厂未经充分协商一次性替代80%工人，引发大规模抗议）成为转折点。公众开始反思：技术进步的目的是什么？是为了利润最大化，还是为了人类解放？2043年，欧盟率先通过《人工智能劳动伦理法案》，确立"有害优先替代"原则。本框架在2049年版本中吸收并扩展了这一原则，增加了尊严
+- 意愿和独特能力等维度，形成更完整的替代边界体系。这一原则现已成为全球具身智能治理的共识性基础，被写入多个国际条约。
 
 **规则 II.1.1.002【替代率上限】**
 单一行业/区域的劳动替代率不得超过以下阈值：
