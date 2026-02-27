@@ -139,6 +139,8 @@ Value Vacuum refers to the unassigned state formed when value created by intelli
 ---
 
 **规则 I.1.2.011【适用主体】**
+**Rule I.1.2.011 [Applicable Subjects]**
+
 本框架适用于：
 a) 所有在治理区域内运行的具身智能体
 b) 与具身智能体交互的所有人类
@@ -146,7 +148,24 @@ c) 治理机构及其工作人员
 d) 跨境运行的具身智能体（部分适用）
 e) 退役但仍有物理存在的具身智能体，该时限不得超过30日。
 
+This framework applies to:
+a) All embodied intelligent agents operating within the governance area
+b) All humans who interact with embodied intelligent agents
+c) Governance institutions and their staff
+d) Cross-border embodied intelligent agents (partially applicable)
+e) Retired embodied intelligent agents with remaining physical presence, not exceeding 30 days
+
+**原则 (Principle):** 治理框架的适用主体界定是法治的基础。明确的主体范围确保规则的可执行性，同时通过分级适用（完全适用/部分适用）兼顾不同场景的特殊性。
+
+**示例 (Example):** 某服务型机器人在共生城区7号提供配送服务，须完全遵守本框架；而一台仅短暂经过该区域、前往其他地区的运输机器人，则只需遵守光源标记等核心规则。
+
+**边界 (Boundary):** "治理区域"指经正式划定的共生城区及扩展区域；退役实体超过30日未清理的，视为新部署设备重新适用框架。
+
+**情境 (Context):** 适用于主体资格认定、合规责任分配和监管执法范围的确定。
+
 **规则 I.1.2.012【适用事项】**
+**Rule I.1.2.012 [Applicable Matters]**
+
 本框架规制的事项包括：
 a) 具身智能体的设计、制造、部署、运行、退役全生命周期
 b) 能源的获取、存储、转换、分配、使用全流程
@@ -154,7 +173,24 @@ c) 涉及人类伦理判断的决策过程
 d) 价值创造与分配机制
 e) 异常情况的预防与处理，该时限不得超过30日。
 
+This framework governs the following matters:
+a) The full lifecycle of embodied intelligent agents: design, manufacturing, deployment, operation, and retirement
+b) The complete process of energy acquisition, storage, conversion, distribution, and use
+c) Decision-making processes involving human ethical judgment
+d) Value creation and distribution mechanisms
+e) Prevention and handling of abnormal situations, not exceeding 30 days
+
+**原则 (Principle):** 事项的完整覆盖是有效治理的前提。从设计到退役的全生命周期管理确保伦理考量贯穿始终，预防"前端放纵、后端补救"的治理失效。
+
+**示例 (Example):** 某公司在设计新型农业机器人时，必须遵循本框架的设计伦理规范；在制造阶段使用清洁能源；运行期间接受行为监督；退役后负责物理回收或数据销毁。
+
+**边界 (Boundary):** 纯理论研究不涉及物理实现的活动暂不适用；个人娱乐用途的简易设备（如玩具机器人）可申请简化合规程序。
+
+**情境 (Context):** 适用于事项性质认定、合规义务范围划分和监管资源分配。
+
 **规则 I.1.2.013【豁免情形】**
+**Rule I.1.2.013 [Exemption Circumstances]**
+
 以下情形部分或全部豁免本框架：
 a) 紧急救援场景（时间窗口<1小时）
 b) 军事应用（需特殊授权）
@@ -162,19 +198,66 @@ c) 封闭实验环境（需伦理审查）
 d) 纯粹虚拟空间的智能体（无物理影响）
 e) 经治理委员会特别批准的情形
 
+The following circumstances are partially or fully exempt from this framework:
+a) Emergency rescue scenarios (time window < 1 hour)
+b) Military applications (require special authorization)
+c) Closed experimental environments (require ethics review)
+d) Agents in purely virtual space (no physical impact)
+e) Circumstances specially approved by the Governance Council
+
+**原则 (Principle):** 豁免机制是刚性规则的柔性补充，确保在极端情况下治理框架不会成为生命救援或公共利益的阻碍，但需严格限定防止滥用。
+
+**示例 (Example):** 地震救援机器人在倒塌建筑中搜救幸存者时，可暂时豁免能源伦理标签要求，优先使用高能量密度电池以延长作业时间；但救援结束后须补办合规审查。
+
+**边界 (Boundary):** 豁免不等同于免责，事后须提交豁免使用报告；商业用途不得申请豁免；同一主体连续申请豁免超过3次将触发特别审查。
+
+**情境 (Context):** 适用于紧急情况处置、特殊任务执行和例外审批决策。
+
 **规则 I.1.2.014【跨境适用】**
+**Rule I.1.2.014 [Cross-border Application]**
+
 跨境运行的具身智能体适用规则：
 a) 在治理区域内遵守本框架全部规则
 b) 在区域外遵守当地规则，但须保留光源标记
 c) 跨区域任务需提前报备并获得许可
 d) 数据跨境流动需符合隐私保护规则，该时限不得超过30日。
 
+Cross-border embodied intelligent agents shall comply with the following rules:
+a) Full compliance with this framework within the governance area
+b) Compliance with local rules outside the area, but light-source marking must be preserved
+c) Cross-regional missions require advance reporting and permission
+d) Cross-border data flow must comply with privacy protection rules, not exceeding 30 days
+
+**原则 (Principle):** 跨境治理需平衡本地规则与全球协调。保留光源标记确保即使在异域运行，决策链条的人类授权依然可追溯，维护全球治理的底线标准。
+
+**示例 (Example):** 一台物流配送机器人从共生城区7号出发，途经非治理区域前往共生城区8号。在7号和8号区内完全遵守框架；途经区域遵守当地交通法规，但保留区块链决策记录供回境审查。
+
+**边界 (Boundary):** 目的地为无法律管辖区域（如公海、无主地）的，须按治理区域标准执行；连续在异域运行超过90日的，须在30日内申请临时合规认证。
+
+**情境 (Context):** 适用于跨境物流、国际协作项目和区域间人员/物资流动监管。
+
 **规则 I.1.2.015【时间效力】**
+**Rule I.1.2.015 [Temporal Effectiveness]**
+
 本框架的时间效力规则：
 a) 自2049年1月1日起生效
 b) 对生效前已部署的具身智能体给予6个月适应期
 c) 年度修订在次年1月15日生效
 d) 紧急修正案可即时生效
+
+The temporal effectiveness rules of this framework:
+a) Effective from January 1, 2049
+b) A 6-month adaptation period for embodied intelligent agents deployed before effectiveness
+c) Annual revisions take effect on January 15 of the following year
+d) Emergency amendments may take effect immediately
+
+**原则 (Principle):** 时间效力的明确性保障法律稳定性和预期性。适应期平衡了既有投资保护和新规实施需求，避免"一刀切"造成的社会成本。
+
+**示例 (Example):** 某工厂在2048年已部署50台工业机器人，框架生效后获得6个月适应期进行光源标记系统升级和合规改造；2049年3月发布的年度修订将在2050年1月15日生效，给予充分准备时间。
+
+**边界 (Boundary):** 安全相关的紧急修正案可不给适应期；2049年1月1日前已进入退役流程的设备不受框架约束。
+
+**情境 (Context):** 适用于合规时间表制定、改造计划安排和法律责任起始点确定。
 
 ---
 
