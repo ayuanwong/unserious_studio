@@ -30,13 +30,13 @@
 
 | 编 | 章节 | 规则数 | 状态 | 文件 |
 |---|------|--------|------|------|
-| **第一编** | 总则与基础架构 | 150条 | ✅ 已完成 | [I-general-principles.md](I-general-principles.md) |
-| **第二编** | 生产力重构治理 | 250条 | ✅ 已完成 | [II-productivity-governance.md](II-productivity-governance.md) |
-| **第三编** | 能源可持续性治理 | 60条 | ⚠️ 示例版 | [III-energy-governance.md](III-energy-governance.md) |
-| **第四编** | 人类伦理代理权治理 | 50条 | ⚠️ 示例版 | [IV-ethics-governance.md](IV-ethics-governance.md) |
-| **第五编** | 自适应机制 | 27条 | ⚠️ 示例版 | [V-adaptive-mechanisms.md](V-adaptive-mechanisms.md) |
-| **第六编** | 异常处理 | 22条 | ⚠️ 示例版 | [VI-exception-handling.md](VI-exception-handling.md) |
-| **第七编** | 监督评估 | 20条 | ⚠️ 示例版 | [VII-oversight-evaluation.md](VII-oversight-evaluation.md) |
+| **第一编** | 总则与基础架构 | 150条 | ✅ 已完成 | [I-总则与基础架构.md](I-总则与基础架构.md) |
+| **第二编** | 生产力重构治理 | 250条 | ✅ 已完成 | [II-生产力重构治理.md](II-生产力重构治理.md) |
+| **第三编** | 能源可持续性治理 | 60条 | ⚠️ 示例版 | [III-能源可持续性治理.md](III-能源可持续性治理.md) |
+| **第四编** | 人类伦理代理权治理 | 50条 | ⚠️ 示例版 | [IV-人类伦理代理权治理.md](IV-人类伦理代理权治理.md) |
+| **第五编** | 自适应机制 | 27条 | ⚠️ 示例版 | [V-自适应机制.md](V-自适应机制.md) |
+| **第六编** | 异常处理 | 22条 | ⚠️ 示例版 | [VI-异常处理.md](VI-异常处理.md) |
+| **第七编** | 监督评估 | 20条 | ⚠️ 示例版 | [VII-监督评估.md](VII-监督评估.md) |
 
 **当前总计：729条 / 目标1200条（60.7%）**
 
@@ -86,10 +86,10 @@
 
 ```
 embodied-governance/
-├── 00-framework-overview.md          # 框架概述、三螺旋模型、核心概念
-├── 00-rules-roadmap.md               # 完整1200条规则规划（总览）
+├── 00-总纲.md                          # 框架概述、三螺旋模型、核心概念
+├── 00-规则体系总览.md                   # 完整1200条规则规划（总览）
 │
-├── I-general-principles.md           # 【完成】150条 - 总则与基础架构
+├── I-总则与基础架构.md                  # 【完成】150条
 │   ├── 第1章：定义与范畴 (15条)
 │   ├── 第2章：基本原则 (15条)
 │   ├── 第3章：组织架构 (20条)
@@ -101,7 +101,7 @@ embodied-governance/
 │   ├── 第9章：解释与适用 (5条)
 │   └── 第10章：附则 (5条)
 │
-├── II-productivity-governance.md     # 【完成】250条 - 生产力重构治理
+├── II-生产力重构治理.md                 # 【完成】250条
 │   ├── 第1章：劳动形态重构 (50条)
 │   ├── 第2章：生产关系调整 (50条)
 │   ├── 第3章：价值创造与分配 (50条)
@@ -110,17 +110,17 @@ embodied-governance/
 │   ├── 第6章：社会保障与福利 (10条)
 │   └── 第7章：未来劳动形态 (10条)
 │
-├── III-energy-governance.md          # 【示例】60条 / 目标250条 - 能源可持续性治理
-├── IV-ethics-governance.md           # 【示例】50条 / 目标250条 - 人类伦理代理权治理
-├── V-adaptive-mechanisms.md          # 【示例】27条 / 目标200条 - 自适应机制
-├── VI-exception-handling.md          # 【示例】22条 / 目标100条 - 异常处理
-├── VII-oversight-evaluation.md       # 【示例】20条 / 目标100条 - 监督评估
+├── III-能源可持续性治理.md              # 【示例】60条 / 目标250条
+├── IV-人类伦理代理权治理.md             # 【示例】50条 / 目标250条
+├── V-自适应机制.md                      # 【示例】27条 / 目标200条
+├── VI-异常处理.md                       # 【示例】22条 / 目标100条
+├── VII-监督评估.md                      # 【示例】20条 / 目标100条
 │
-├── IMPROVEMENT_PLAN.md               # 持续改进计划
-├── IMPROVEMENT_LOG.md                # 改进日志
+├── IMPROVEMENT_PLAN.md                  # 持续改进计划
+├── IMPROVEMENT_LOG.md                   # 改进日志
 │
-├── 附录.md                            # 术语表、案例库、技术规范
-└── index.html                         # 交互式故事网页
+├── 附录.md                              # 术语表、案例库、技术规范
+└── index.html                           # 交互式故事网页
 ```
 
 ---
