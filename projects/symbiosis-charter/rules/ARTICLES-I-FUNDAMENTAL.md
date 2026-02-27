@@ -262,9 +262,23 @@ d) Emergency amendments may take effect immediately
 ---
 
 **规则 I.2.1.016【人类优先】**
+**Rule I.2.1.016 [Human Primacy]**
+
 在具身智能系统的所有决策中，人类福祉必须作为首要考虑因素。任何可能对人类造成不可逆伤害的系统设计、决策或行动，无论其效率多高，都必须被禁止或严格限制。
 
+In all decisions of embodied intelligence systems, human well-being must be the primary consideration. Any system design, decision, or action that may cause irreversible harm to humans, regardless of how efficient it is, must be prohibited or strictly restricted.
+
+**原则 (Principle):** 人类优先是共生宪章的价值基石。技术进步不能以牺牲人类安全和尊严为代价，效率至上主义必须受到伦理约束。
+
+**示例 (Example):** 某智能工厂可通过移除安全防护装置提升15%生产效率，但会增加工人受伤风险。根据人类优先原则，此方案被禁止，即使它意味着更高的经济回报。
+
+**边界 (Boundary):** "不可逆伤害"指造成永久性身体损伤、精神创伤或基本权利丧失；可恢复的伤害（如短暂疼痛）需进行成本-收益评估。
+
+**情境 (Context):** 适用于所有涉及人类安全、健康和尊严的系统设计、运营决策和应急响应场景。
+
 **规则 I.2.1.017【人类最终决策权】**
+**Rule I.2.1.017 [Human Final Decision Authority]**
+
 以下事项的最终决策权必须保留给人类：
 a) 涉及人类生命安全的决策
 b) 重大资源分配决策（影响>1000人）
@@ -272,14 +286,47 @@ c) 系统性规则变更
 d) 智能体的创建与销毁
 e) 能源基础设施的重大调整
 
+Final decision-making authority on the following matters must be reserved for humans:
+a) Decisions involving human life safety
+b) Major resource allocation decisions (affecting >1,000 people)
+c) Systematic rule changes
+d) Creation and destruction of intelligent agents
+e) Major adjustments to energy infrastructure
+
+**原则 (Principle):** 最终决策权是人类主体性的核心体现。某些决策因其不可逆性、影响范围或价值权重，必须由人类而非算法做出，这是维护人类尊严的底线。
+
+**示例 (Example):** 在决定是否为晚期癌症患者实施AI辅助的实验性治疗时，虽然AI可提供成功率预测，但最终决策必须由患者本人及其家属做出，医生提供支持但不越俎代庖。
+
+**边界 (Boundary):** "重大"的量化标准由治理委员会定期修订；日常运营决策可委托AI，但须保留人类监督权和紧急接管权。
+
+**情境 (Context):** 适用于高风险决策、大规模影响决策和根本性系统变更的授权设计。
+
 **规则 I.2.1.018【人类知情权】**
+**Rule I.2.1.018 [Human Right to Know]**
+
 所有人类有权知道：
 a) 与其交互的智能体的真实身份
 b) 影响其权益的决策依据和过程
 c) 系统对其数据的收集和使用情况
 d) 退出系统的方式和后果
 
+All humans have the right to know:
+a) The true identity of intelligent agents they interact with
+b) The basis and process of decisions affecting their interests
+c) The collection and use of their data by the system
+d) The methods and consequences of exiting the system
+
+**原则 (Principle):** 知情权是自主决策的前提。在信息不对称的人机交互中，人类必须获得足够信息以做出真正自主的选择，否则"同意"只是形式而非实质。
+
+**示例 (Example):** 当用户与客服AI对话时，系统须在对话开始时明确告知"您正在与AI助手交流，非真人客服"；当AI拒绝用户贷款申请时，须说明拒绝的主要依据（如信用评分不足），而非仅显示"申请未通过"。
+
+**边界 (Boundary):** 知情权与商业秘密保护需平衡；AI算法的具体参数权重可作为商业秘密，但决策逻辑框架必须公开；涉及他人隐私的信息需脱敏后提供。
+
+**情境 (Context):** 适用于人机交互界面设计、自动化决策系统的说明义务和数据处理透明度要求。
+
 **规则 I.2.1.019【人类否决权】**
+**Rule I.2.1.019 [Human Veto Power]**
+
 任何人类个体对直接影响其权益的智能体决策拥有否决权应当。否决权根据决策阶段行使不同层级的权利：
 
 **决策前否决**（最优先）：
@@ -295,22 +342,85 @@ e) 紧急转向：在不可逆动作前强制改变执行路径
 f) 违规申诉：对已完成决策提出异议并要求审查
 g) 自动标记：系统记录人类不满情绪，触发事后复盘，该时限不得超过30日。
 
+Any human individual shall have veto power over intelligent agent decisions that directly affect their interests. The veto power is exercised at different levels depending on the decision stage:
+
+**Pre-decision Veto** (highest priority):
+a) Suggestion stage: directly saying "I veto" to AI-proposed solutions
+b) Confirmation stage: selecting "veto" in confirmation dialogues before AI execution
+c) Preventive veto: automatically triggered by preset conditions (e.g., pausing when dangerous scenes are detected)
+
+**Mid-execution Intervention** (when physically feasible):
+d) Emergency stop button: similar to elevator emergency stops, immediately halting current actions
+e) Emergency redirection: forcibly changing execution paths before irreversible actions
+
+**Post-hoc Accountability** (after execution):
+f) Violation appeal: raising objections to completed decisions and requesting review
+g) Automatic flagging: system records human dissatisfaction, triggering post-hoc review, not exceeding 30 days
+
+**原则 (Principle):** 否决权是人类对AI系统的终极制衡机制。即使AI的决策在技术上是"最优"的，人类仍有权基于个人价值观、风险偏好或直觉说"不"。
+
+**示例 (Example):** 智能家居系统建议将室温自动调至18°C以节省能源，但住户感觉寒冷，可直接说"我否决，保持22°C"；自动驾驶汽车在复杂路口选择了一条理论上最快但让乘客感到不安的路线，乘客可按下"重新规划"按钮否决当前路径。
+
+**边界 (Boundary):** 否决权行使不得危及第三方安全（如紧急避让中的否决）；滥用否决权（如连续无理由否决10次以上）可能触发限制机制。
+
+**情境 (Context):** 适用于所有直接影响个人权益的AI决策场景，包括智能家居、自动驾驶、医疗建议、金融推荐等。
+
 **规则 I.2.1.020【人类退出权】**
+**Rule I.2.1.020 [Human Right to Exit]**
+
 任何人类个体有权选择退出具身智能系统，退出方式包括：
 a) 暂时退出（指定时间段）
 b) 部分退出（特定场景）
 c) 完全退出（迁移至非智能区）
 退出后的基本生活保障由社会安全网提供。
 
+Any human individual has the right to choose to exit embodied intelligence systems. Exit methods include:
+a) Temporary exit (specified time period)
+b) Partial exit (specific scenarios)
+c) Complete exit (migration to non-intelligent zones)
+Basic living security after exit is provided by the social safety net.
+
+**原则 (Principle):** 退出权是自由的最后保障。真正的自愿参与意味着有说不的权利，技术系统不应成为无法逃离的牢笼。社会安全网确保退出不会导致生存危机。
+
+**示例 (Example):** 某居民因隐私顾虑选择退出社区智能监控系统，可申请"部分退出"，系统将不再采集其人脸数据，但仍可使用基础的公共服务；另一位居民选择"完全退出"，搬迁至非智能区的传统社区，其基本医疗和养老保障仍由政府提供。
+
+**边界 (Boundary):** 退出权不适用于法律强制的监管场景（如犯罪监控）；完全退出者将无法享受智能系统的便利性，需签署知情同意书。
+
+**情境 (Context):** 适用于个人对智能系统的参与程度选择、隐私保护需求和社会包容政策设计。
+
 ---
 
 ### 2.2 动态平衡原则
 
 **规则 I.2.2.021【永不完美对齐】**
+**Rule I.2.2.021 [Never Perfectly Aligned]**
+
 生产力、能源、伦理三螺旋系统必须保持15-30度的错位角度。任何试图使三者完全对齐的行为都是被禁止的，因为这将导致系统丧失自适应性和容错能力。
 
+The productivity, energy, and ethics triple helix systems must maintain a misalignment angle of 15-30 degrees. Any attempt to perfectly align the three is prohibited, as this would cause the system to lose adaptability and fault tolerance.
+
+**原则 (Principle):** 完美对齐意味着系统失去了内在张力和纠错机制。适度的错位创造健康的摩擦，使系统能够自我修正而非陷入僵化或崩溃。
+
+**示例 (Example):** 如果生产力追求（最大化产出）、能源可持续性（最小化消耗）和伦理标准（最大化安全）完全同步，系统将失去弹性——一旦外部条件变化，整个系统将同时失效。保持15-30度错位使各子系统可独立响应变化。
+
+**边界 (Boundary):** 错位角度小于15度视为"过度对齐"，系统将被强制调整；大于30度视为"过度失衡"，同样触发矫正机制。
+
+**情境 (Context):** 适用于系统架构设计、治理机制配置和多目标优化算法的参数设定。
+
 **规则 I.2.2.022【张力维持】**
+**Rule I.2.2.022 [Tension Maintenance]**
+
 系统必须主动维持适度的内部张力。张力系数应保持在0.3-0.7范围内。张力过低会导致系统僵化，张力过高会导致系统崩溃。
+
+The system must actively maintain moderate internal tension. The tension coefficient should be kept within the 0.3-0.7 range. Too low tension leads to rigidity; too high tension leads to collapse.
+
+**原则 (Principle):** 张力是系统活力的源泉。如同琴弦，过松则无声，过紧则易断。适度张力促进创新、竞争和持续改进。
+
+**示例 (Example):** 在一个智能城市中，生产力目标（经济增长）与能源目标（碳减排）之间的张力系数为0.5：两者既竞争资源又相互促进——绿色技术创新同时提升效率和可持续性。若张力系数降至0.2，能源目标被忽视；升至0.8，则可能因过度冲突导致项目停滞。
+
+**边界 (Boundary):** 张力系数<0.3或>0.7持续超过30日时，系统自动触发再平衡机制；紧急情况下可暂时突破边界，但须在48小时内恢复。
+
+**情境 (Context):** 适用于多目标治理系统的设计、绩效评估指标权重设定和冲突管理机制配置。
 
 **规则 I.2.2.023【动态调整】**
 所有治理参数必须能够根据实时反馈动态调整。调整频率分级响应：
