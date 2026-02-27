@@ -31,6 +31,7 @@ RULES_DIR = WORK_DIR / "rules"
 ANNOTATIONS_DIR = WORK_DIR / "annotations"
 LOG_FILE = WORK_DIR / ".purification.log"
 LOCK_FILE = WORK_DIR / ".purification.lock"
+ITERATION_FILE = WORK_DIR / ".iteration.counter"
 ITERATION_DELAY = 30  # 30 seconds between iterations
 
 # Legislative quality standards
@@ -279,7 +280,6 @@ class LegislativeRuleAgent:
     
     def run_cycle(self) -> Dict:
         """Run one complete cycle"""
-        self.iteration += 1
         self.log(f"\n{'='*70}")
         self.log(f"🚀 LEGISLATIVE RULE AGENT ITERATION #{self.iteration}")
         self.log(f"{'='*70}")
@@ -308,9 +308,28 @@ class AgentDaemon:
     """Daemon that runs the agent continuously"""
     
     def __init__(self):
-        self.iteration = 0
+        self.iteration = self.load_iteration()
         self.running = True
         self.agent = LegislativeRuleAgent(WORK_DIR)
+        self.agent.iteration = self.iteration
+    
+    def load_iteration(self) -> int:
+        """Load iteration counter from file"""
+        if ITERATION_FILE.exists():
+            try:
+                with open(ITERATION_FILE, "r") as f:
+                    return int(f.read().strip())
+            except:
+                return 0
+        return 0
+    
+    def save_iteration(self):
+        """Save iteration counter to file"""
+        try:
+            with open(ITERATION_FILE, "w") as f:
+                f.write(str(self.iteration))
+        except Exception as e:
+            self.log(f"  ⚠ Failed to save iteration: {e}")
     
     def log(self, message):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -384,6 +403,10 @@ class AgentDaemon:
             self.log("="*70)
             
             while self.running:
+                self.iteration += 1
+                self.agent.iteration = self.iteration
+                self.save_iteration()
+                
                 result = self.agent.run_cycle()
                 self.commit_changes(result['improved'], result['generated'])
                 
