@@ -39,7 +39,7 @@ RULES_DIR = WORK_DIR / "rules"
 ANNOTATIONS_DIR = WORK_DIR / "annotations"
 LOG_FILE = WORK_DIR / ".purification.log"
 LOCK_FILE = WORK_DIR / ".purification.lock"
-ITERATION_DELAY = 120  # 2 minutes between iterations
+ITERATION_DELAY = 30  # 30 seconds between iterations
 
 class RulePurifier:
     """Purifies rules: keeps only rule content, moves supplementary to annotations"""
