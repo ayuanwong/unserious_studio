@@ -1,118 +1,197 @@
-# 🎭 Unserious Studio | 不正经工作室
+# Unserious Studio
 
-> *不正经的方式，正经做项目*
+**Experimental Digital Atelier for AI-Human Co-Creation**
 
-[![GitHub](https://img.shields.io/badge/GitHub-unserious__studio-blue?style=flat-square)](https://github.com/ayuanwong/unserious_studio)
-[![Website](https://img.shields.io/badge/Website-Live-green?style=flat-square)](https://ayuanwong.github.io/unserious_studio)
-[![AI](https://img.shields.io/badge/Powered%20by-OpenClaw-orange?style=flat-square)]()
+[![Projects](https://img.shields.io/badge/Projects-Active-success)]()
+[![License](https://img.shields.io/badge/License-MIT-blue)]()
+[![Status](https://img.shields.io/badge/Status-Exploration-orange)]()
+
+> *Where serious ideas meet unserious execution.*
 
 ---
 
-## 📁 项目结构
+## 🎨 About
+
+**Unserious Studio** is an experimental digital workshop exploring the frontier of human-AI collaboration. We treat creativity as a collaborative process between human intuition and machine capability, producing artifacts that neither could create alone.
+
+**Philosophy**:
+- **Playful Seriousness**: Approach weighty topics with creative freedom
+- **Human-AI Symbiosis**: Neither replacement nor tool—true collaboration
+- **Open Exploration**: Share process, not just outcomes
+- **Living Documents**: Projects evolve through continuous iteration
+
+---
+
+## 🚀 Featured Projects
+
+### 1. Symbiosis Charter (2049)
+
+**The Constitutional Framework for Human-AI Coexistence**
+
+[![Progress](https://img.shields.io/badge/Progress-64%25-green)]()
+[![Rules](https://img.shields.io/badge/Rules-772%2F1200-blue)]()
+
+A comprehensive governance framework establishing coexistence protocols between humans and embodied AI systems.
+
+**Key Features**:
+- Three-Spiral Model (Productivity-Energy-Ethics balance)
+- Light-Source Marking (blockchain-traceable AI decisions)
+- Value Vacuum Management (fair distribution of AI-created wealth)
+- Four Dimensions of Human Agency (decision, informed, veto, exit rights)
+
+**Access**:
+- 📜 [Official Rules Display](https://ayuanwong.github.io/unserious_studio/projects/embodied-governance/)
+- 📖 [Interactive Story](https://ayuanwong.github.io/unserious_studio/projects/embodied-governance/story.html)
+- 📁 [Source Code](projects/embodied-governance/)
+
+**Status**: Active development, 772/1200 rules drafted
+
+---
+
+## 🏗️ Studio Architecture
 
 ```
 unserious_studio/
-├── index.html                 # 项目导航首页
-├── README.md                  # 本文件
-└── projects/                  # 项目集合
-    ├── embodied-governance/   # 具身智能治理框架
-    │   ├── index.html         # 交互式网页演示
-    │   ├── README.md          # 项目说明
-    │   └── RULES.md           # 完整规则文档
-    └── job-coaching-research/ # AI 求职辅导调研
-        └── 求职辅导（AI简历优化）调研报告.html
+├── projects/              # Active explorations
+│   └── embodied-governance/   # Symbiosis Charter
+├── experiments/           # Quick prototypes
+├── assets/               # Shared resources
+└── docs/                 # Process documentation
 ```
 
 ---
 
-## 🚀 项目导航
+## 🛠️ Development Approach
 
-### 🌀 [具身智能治理守则](./projects/embodied-governance/)
-探索 2026 年具身智能爆发期的自适应治理框架。
+### Iterative Enhancement
+- **Cycle 1**: Rough concept → Basic structure
+- **Cycle 2**: Content expansion → Quality review
+- **Cycle 3**: Refinement → External feedback
+- **Cycle N**: Continuous evolution
 
-- **核心概念**: 三螺旋治理模型（生产力、能源、伦理）
-- **风格**: 规则怪谈叙事
-- **技术**: HTML/CSS/JS 交互式网页
-- **关键词**: AI 治理、未来学、规则怪谈
+### AI-Human Collaboration Pattern
+```
+Human: Vision, values, critical decisions
+  ↓
+AI: Research, drafting, pattern recognition
+  ↓
+Human: Review, direction, final judgment
+  ↓
+AI: Implementation, iteration, documentation
+```
 
-[在线演示](https://ayuanwong.github.io/unserious_studio/projects/embodied-governance/)
-
-### 💼 [AI 简历优化调研](./projects/job-coaching-research/)
-深入调研 AI 驱动的求职辅导与简历优化服务。
-
-- **内容**: 市场分析、技术方案、商业模式
-- **关键词**: AI 应用、求职、调研报告
-
----
-
-## 🤝 协作方式
-
-本项目由 **阿原** 与 **OpenClaw AI Assistant** 协作完成。
-
-### 如何协作
-
-1. **通过 Feishu 发送指令**
-   - `"给项目添加新功能"` → AI 自动开发并推送
-   - `"更新 README"` → AI 编辑并提交
-   - `"创建新页面"` → AI 编写代码并部署
-
-2. **代码审查模式**
-   - AI 提交到 feature 分支
-   - 人类审核后合并到 main
-
-3. **全自动模式**
-   - AI 自主决策、开发、测试、部署
-   - 完成后通知人类
+### Quality Standards
+- ✅ Depth over breadth
+- ✅ Real-world applicability
+- ✅ Open to critique
+- ✅ Continuously improving
 
 ---
 
-## 🛠️ 技术栈
+## 📊 Project Metrics
 
-- **前端**: HTML5, CSS3, JavaScript
-- **版本控制**: Git + GitHub
-- **部署**: GitHub Pages
-- **协作**: OpenClaw AI + Feishu
-
----
-
-## 📝 更新日志
-
-### 2026-02-26
-- ✅ 重构项目文件结构
-- ✅ 创建项目导航首页
-- ✅ 添加具身智能治理框架
-- ✅ 整理求职辅导调研报告
-- ✅ 配置 GitHub Pages 自动部署
+| Metric | Value |
+|--------|-------|
+| **Active Projects** | 1 |
+| **Total Commits** | 100+ |
+| **Documentation** | 50,000+ words |
+| **Collaboration Hours** | 200+ |
 
 ---
 
-## 🔮 未来计划
+## 🌐 Online Presence
 
-- [ ] 添加更多实验性项目
-- [ ] 优化响应式设计
-- [ ] 添加暗黑/亮色模式切换
-- [ ] 集成评论系统
+**GitHub Pages**: https://ayuanwong.github.io/unserious_studio/
 
----
-
-## 👥 关于我们
-
-**Unserious Studio** 是一个实验性的协作空间。
-
-我们相信：
-- 技术应该是有趣的
-- 探索边界比遵循规则更重要
-- AI 是人类创意的放大器，而不是替代品
+All web-deployable projects are automatically published via GitHub Actions.
 
 ---
 
-## 📮 联系方式
+## 🎯 Current Focus
 
-- GitHub: [@ayuanwong](https://github.com/ayuanwong)
-- 网站: [ayuanwong.github.io/unserious_studio](https://ayuanwong.github.io/unserious_studio)
+**Primary**: Completing the Symbiosis Charter
+- Expand from 772 to 1,200 rules
+- Enhance rule quality with principles and cases
+- Develop pilot implementation protocols
+- Build international community
+
+**Secondary**: Exploring new collaboration modes
+- Real-time human-AI creative sessions
+- Multi-agent governance simulations
+- Cross-cultural framework adaptation
 
 ---
 
-*"The best way to predict the future is to create it."*
+## 🤝 Collaboration
 
-**不正经工作室 © 2026**
+We welcome:
+- **Researchers** exploring AI governance
+- **Developers** building implementation tools
+- **Writers** crafting narratives and documentation
+- **Thinkers** challenging our assumptions
+
+**How to Engage**:
+1. Explore our projects
+2. Open issues with questions or suggestions
+3. Submit pull requests with improvements
+4. Share your own experiments
+
+---
+
+## 📝 Documentation Principles
+
+1. **Bilingual First**: Chinese and English side-by-side
+2. **Visual Clarity**: Diagrams over walls of text
+3. **Linked Thinking**: Everything connects to everything
+4. **Version Transparency**: Show the evolution, not just final state
+
+---
+
+## 🎭 Why "Unserious"?
+
+The name reflects our approach:
+- **Not**: Treating important topics lightly
+- **But**: Approaching them with creative freedom
+- **Because**: The best solutions often come from playful exploration
+
+We're serious about the work, unserious about the process.
+
+---
+
+## 📜 License
+
+Unless otherwise specified, all projects are released under the **MIT License**.
+
+Individual projects may have specific licenses—check their respective README files.
+
+---
+
+## 🙏 Acknowledgments
+
+- **OpenAI / Moonshot** for the AI systems that power our collaboration
+- **GitHub** for hosting and CI/CD infrastructure
+- **Open Source Community** for tools and inspiration
+- **Early Contributors** who shaped our direction
+
+---
+
+## 🔮 Future Directions
+
+- **Q2 2026**: Complete Symbiosis Charter v1.0
+- **Q3 2026**: Launch pilot implementation program
+- **Q4 2026**: Begin next major project
+- **2049**: See the Charter implemented (ambitious, but why not?)
+
+---
+
+> *"The best way to predict the future is to code it, write it, and iterate on it—together with AI."*
+
+---
+
+**Studio Home**: https://github.com/ayuanwong/unserious_studio
+
+**Contact**: Open an issue or start a discussion. We're listening.
+
+---
+
+*Last Updated: February 2026 | Version: Exploring v0.7*
