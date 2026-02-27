@@ -24,6 +24,7 @@ from collections import defaultdict
 
 # Configuration
 WORK_DIR = Path("/Users/pcofmarcus/.openclaw/workspace/unserious_studio/projects/symbiosis-charter")
+RULES_DIR = WORK_DIR / "rules"
 LOG_FILE = WORK_DIR / ".improvement.log"
 LOCK_FILE = WORK_DIR / ".improvement.lock"
 ITERATION_DELAY = 60
