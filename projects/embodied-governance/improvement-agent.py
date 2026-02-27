@@ -40,6 +40,7 @@ class Rule:
     has_example: bool = False
     has_boundary: bool = False
     has_context: bool = False
+    has_english: bool = False  # 是否有英文版本
     quality_score: int = 0
     references: List[str] = None
     worldview_alignment: float = 0.0
@@ -212,6 +213,9 @@ class AdvancedRuleAnalyzer:
                 # Calculate worldview alignment
                 rule.worldview_alignment = self.worldview.check_alignment(rule)
                 
+                # Check for English version
+                rule.has_english = '[English Version]' in rule.content or '**[English Version]**' in rule.content
+                
                 # Calculate quality score
                 rule.quality_score = self._calculate_advanced_quality_score(rule)
                 
@@ -226,17 +230,19 @@ class AdvancedRuleAnalyzer:
         """Calculate advanced quality score (0-100)"""
         score = 0
         
-        # Length score (0-25) - more nuanced
-        if rule.word_count > 300:
-            score += 25
-        elif rule.word_count > 200:
+        # Length score (0-20) - more nuanced
+        if rule.word_count > 400:
             score += 20
-        elif rule.word_count > 100:
+        elif rule.word_count > 300:
+            score += 18
+        elif rule.word_count > 200:
             score += 15
-        elif rule.word_count > 50:
+        elif rule.word_count > 100:
             score += 10
-        else:
+        elif rule.word_count > 50:
             score += 5
+        else:
+            score += 3
         
         # Component scores (0-15 each)
         if rule.has_principle:
@@ -246,6 +252,10 @@ class AdvancedRuleAnalyzer:
         if rule.has_boundary:
             score += 15
         if rule.has_context:
+            score += 10
+        
+        # Bilingual support - English version (0-10)
+        if rule.has_english:
             score += 10
         
         # Worldview alignment (0-15)
