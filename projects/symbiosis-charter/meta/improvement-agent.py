@@ -23,7 +23,7 @@ from dataclasses import dataclass, asdict
 from collections import defaultdict
 
 # Configuration
-WORK_DIR = Path("/Users/pcofmarcus/.openclaw/workspace/unserious_studio/projects/embodied-governance")
+WORK_DIR = Path("/Users/pcofmarcus/.openclaw/workspace/unserious_studio/projects/symbiosis-charter")
 LOG_FILE = WORK_DIR / ".improvement.log"
 LOCK_FILE = WORK_DIR / ".improvement.lock"
 ITERATION_DELAY = 60
