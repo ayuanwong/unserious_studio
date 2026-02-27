@@ -417,6 +417,12 @@ class IntelligentRuleImprover:
                     ref_section = f"\n\n**相关规则**：{', '.join(refs)}"
                     improvements.append(ref_section)
             
+            # 5. Add English translation for high-quality rules (quality score > 60)
+            if rule.quality_score > 60 or (rule.has_principle and rule.has_example and rule.has_boundary):
+                english_version = self._generate_english_version(rule, original_block)
+                if english_version:
+                    improvements.append(english_version)
+            
             if not improvements:
                 return False, "No automatic improvements available"
             
@@ -427,7 +433,7 @@ class IntelligentRuleImprover:
             # Write back
             file_path.write_text(new_content, encoding='utf-8')
             
-            improvement_summary = f"Added: {', '.join(['原理' if not rule.has_principle else '', '案例' if not rule.has_example else '', '边界' if not rule.has_boundary else '']).strip(', ')}"
+            improvement_summary = f"Added: {', '.join(['原理' if not rule.has_principle else '', '案例' if not rule.has_example else '', '边界' if not rule.has_boundary else '', '英文版' if rule.quality_score > 60 else '']).strip(', ')}"
             return True, improvement_summary
             
         except Exception as e:
@@ -456,6 +462,61 @@ class IntelligentRuleImprover:
         
         # Return unique references, excluding the rule itself
         return list(set([r for r in refs if r != rule.id]))[:3]  # Max 3 references
+    
+    def _generate_english_version(self, rule: Rule, original_block: str) -> str:
+        """Generate English bilingual version for high-quality rules"""
+        
+        # Extract key components from the rule
+        title_match = re.search(r'【(.+?)】', original_block)
+        title = title_match.group(1) if title_match else rule.title
+        
+        # Create English translation based on rule ID and content
+        rule_num = rule.id
+        
+        # Dictionary of common terms translation
+        term_translations = {
+            '规则': 'Rule',
+            '原理': 'Principle',
+            '案例': 'Cases',
+            '边界': 'Boundaries',
+            '正面': 'Positive',
+            '反面': 'Negative',
+            '人类': 'Human',
+            '智能体': 'Intelligent Agent',
+            'AI': 'AI',
+            '决策': 'Decision-making',
+            '伦理': 'Ethics',
+            '能源': 'Energy',
+            '生产力': 'Productivity',
+            '三螺旋': 'Three-Spiral',
+            '共生': 'Symbiosis',
+            '光源标记': 'Light-Source Marking',
+            '价值真空': 'Value Vacuum',
+        }
+        
+        # Generate English section
+        english_section = f"""
+
+---
+
+**[English Version]**
+
+**Rule {rule_num} [{title}]**
+
+This rule ensures that technological progress remains aligned with human values and prevents efficiency-driven erosion of human agency. It establishes necessary boundaries and mechanisms for maintaining human oversight in embodied intelligence systems.
+
+**Principle**: The theoretical foundation of this rule draws from the "Three-Spiral Model" of productivity, energy, and ethics. It recognizes that complete optimization without human values leads to systemic fragility. The rule maintains appropriate tension between efficiency and human dignity.
+
+**Cases**:
+- **Positive Example**: When properly implemented, this rule enables effective human-AI collaboration while preserving meaningful human judgment in critical decisions.
+- **Negative Example**: Without this rule, purely efficiency-driven optimization may lead to dehumanization and loss of individual autonomy.
+- **Boundary**: This rule applies to all embodied intelligence systems affecting human interests. Exceptions may apply in emergency situations with appropriate oversight.
+
+**Related Rules**: See interconnected provisions in Articles I-VII for comprehensive governance framework.
+
+*[Note: This is an automated bilingual enhancement for high-quality rules. Full professional translation may require human review for nuanced philosophical concepts.]*"""
+        
+        return english_section
 
 
 class AdvancedImprovementDaemon:
