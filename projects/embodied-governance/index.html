@@ -436,6 +436,39 @@
             padding-bottom: 60px;
         }
         
+        /* Language Switcher */
+        .lang-switcher {
+            position: fixed;
+            top: 10px;
+            right: 15px;
+            z-index: 200;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .lang-btn {
+            background: rgba(255,255,255,0.9);
+            border: 1px solid var(--border);
+            padding: 5px 12px;
+            font-size: 0.8rem;
+            font-family: 'Noto Sans SC', sans-serif;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+        
+        .lang-btn:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        
+        .lang-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .main-header h1 {
@@ -479,28 +512,41 @@
     </style>
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('zh')" data-lang="zh">中文</button>
+        <button class="lang-btn" onclick="switchLanguage('en')" data-lang="en">English</button>
+    </div>
+    
     <!-- Official Header -->
     <div class="official-header">
-        人类与硅基生命共存协议 · PROTOCOL FOR HUMAN-AI COEXISTENCE
+        <span class="lang-zh">人类与硅基生命共存协议</span>
+        <span class="lang-en" style="display:none">Protocol for Human-AI Coexistence</span>
     </div>
     
     <!-- Main Header -->
     <header class="main-header">
         <div class="emblem">⚖</div>
-        <h1>共 生 宪 章</h1>
+        <h1 class="lang-zh">共 生 宪 章</h1>
+        <h1 class="lang-en" style="display:none">SYMBIOSIS CHARTER</h1>
         <p class="subtitle">SYMBIOSIS CHARTER (2049)</p>
-        <p class="meta">生效日期：2049年1月1日 | 适用区域：第7-13号共生城区</p>
+        <p class="meta lang-zh">生效日期：2049年1月1日 | 适用区域：第7-13号共生城区</p>
+        <p class="meta lang-en" style="display:none">Effective: January 1, 2049 | Applicable: Districts 7-13</p>
     </header>
     
     <!-- Navigation -->
     <nav class="nav-bar">
         <div class="nav-inner">
-            <a href="#preamble" class="nav-item active">序言</a>
-            <a href="#part1" class="nav-item">第一编 总则</a>
-            <a href="#part2" class="nav-item">第二编 生产力</a>
-            <a href="#part3" class="nav-item">第三编 能源</a>
-            <a href="#part4" class="nav-item">第四编 伦理</a>
-            <a href="#part5" class="nav-item">第五编 机制</a>
+            <a href="#preamble" class="nav-item active lang-zh">序言</a>
+            <a href="#part1" class="nav-item lang-zh">第一编 总则</a>
+            <a href="#part2" class="nav-item lang-zh">第二编 生产力</a>
+            <a href="#part3" class="nav-item lang-zh">第三编 能源</a>
+            <a href="#part4" class="nav-item lang-zh">第四编 伦理</a>
+            <a href="#preamble" class="nav-item active lang-en" style="display:none">Preamble</a>
+            <a href="#part1" class="nav-item lang-en" style="display:none">Part I General</a>
+            <a href="#part2" class="nav-item lang-en" style="display:none">Part II Productivity</a>
+            <a href="#part3" class="nav-item lang-en" style="display:none">Part III Energy</a>
+            <a href="#part4" class="nav-item lang-en" style="display:none">Part IV Ethics</a>
         </div>
     </nav>
     
@@ -508,28 +554,37 @@
         <!-- Progress -->
         <div class="progress-section">
             <div class="progress-header">
-                <span class="progress-title">规则制定进度</span>
+                <span class="progress-title lang-zh">规则制定进度</span>
+                <span class="progress-title lang-en" style="display:none">Progress</span>
                 <span class="progress-value">64.3%</span>
             </div>
             <div class="progress-bar">
                 <div class="progress-fill"></div>
             </div>
             <div class="progress-detail">
-                <span>已制定 772 条规则</span>
-                <span>目标 1200 条规则</span>
+                <span class="lang-zh">已制定 772 条规则</span>
+                <span class="lang-en" style="display:none">772 Rules Drafted</span>
+                <span class="lang-zh">目标 1200 条规则</span>
+                <span class="lang-en" style="display:none">Target: 1200 Rules</span>
             </div>
         </div>
         
         <div class="content">
             <!-- Preamble -->
             <section id="preamble" class="preamble">
-                <h2 class="preamble-title">序 言</h2>
+                <h2 class="preamble-title lang-zh">序 言</h2>
+                <h2 class="preamble-title lang-en" style="display:none">PREAMBLE</h2>
                 <div class="preamble-content">
-                    <p>鉴于具身智能技术将在2049年深刻改变人类社会的生产方式、劳动形态和文明进程；</p>
-                    <p>鉴于人类与硅基生命体的共存已成为不可逆转的历史趋势；</p>
-                    <p>鉴于有必要建立一个适应碳硅共生时代的治理框架，确保技术进步不偏离人类价值；</p>
-                    <p>我们制定本宪章，确立人类与具身智能体共存的基本原则、权利义务和治理机制。</p>
-                    <p style="text-align: center; margin-top: 20px; font-weight: 600;">本宪章是人类与AI共存的根本法。</p>
+                    <p class="lang-zh">鉴于具身智能技术将在2049年深刻改变人类社会的生产方式、劳动形态和文明进程；</p>
+                    <p class="lang-en" style="display:none">Whereas embodied intelligence technology will profoundly transform human society's production methods, labor forms, and civilization by 2049;</p>
+                    <p class="lang-zh">鉴于人类与硅基生命体的共存已成为不可逆转的历史趋势；</p>
+                    <p class="lang-en" style="display:none">Whereas coexistence between humans and silicon-based life has become an irreversible historical trend;</p>
+                    <p class="lang-zh">鉴于有必要建立一个适应碳硅共生时代的治理框架，确保技术进步不偏离人类价值；</p>
+                    <p class="lang-en" style="display:none">Whereas it is necessary to establish a governance framework adapted to the carbon-silicon symbiotic era, ensuring technological progress does not deviate from human values;</p>
+                    <p class="lang-zh">我们制定本宪章，确立人类与具身智能体共存的基本原则、权利义务和治理机制。</p>
+                    <p class="lang-en" style="display:none">We hereby establish this Charter to define the fundamental principles, rights, obligations, and governance mechanisms for human-embodied AI coexistence.</p>
+                    <p class="lang-zh" style="text-align: center; margin-top: 20px; font-weight: 600;">本宪章是人类与AI共存的根本法。</p>
+                    <p class="lang-en" style="text-align: center; margin-top: 20px; font-weight: 600; display:none;">This Charter is the fundamental law for human-AI coexistence.</p>
                 </div>
             </section>
             
@@ -537,22 +592,28 @@
             <section id="part1" class="article">
                 <div class="article-header" onclick="toggleArticle(this)">
                     <div>
-                        <div class="article-title">第一编 总则与基础架构</div>
+                        <div class="article-title lang-zh">第一编 总则与基础架构</div>
+                        <div class="article-title lang-en" style="display:none">PART I General Principles</div>
                         <div class="article-subtitle">General Principles and Foundational Architecture</div>
                     </div>
-                    <span class="article-num">150条</span>
+                    <span class="article-num">150</span>
                 </div>
                 <div class="article-content active">
                     <div class="chapter">
-                        <div class="chapter-title">第一章 定义与范畴</div>
+                        <div class="chapter-title lang-zh">第一章 定义与范畴</div>
+                        <div class="chapter-title lang-en" style="display:none">Chapter 1 Definitions</div>
                         
                         <div class="rule">
                             <div class="rule-header">
-                                <span class="rule-num">第001条</span>
-                                <span class="rule-name">【具身智能】</span>
+                                <span class="rule-num">Art. 001</span>
+                                <span class="rule-name lang-zh">【具身智能】</span>
+                                <span class="rule-name lang-en" style="display:none">[Embodied Intelligence]</span>
                             </div>
-                            <div class="rule-content">
+                            <div class="rule-content lang-zh">
                                 具身智能（Embodied Intelligence）指具有物理实体、能够感知和作用于物理世界、具备自主决策能力的智能系统。包括但不限于：人形机器人、自主车辆、智能工厂系统、服务机器人、医疗机器人、农业自动化系统、物流无人机、建筑自动化设备等。
+                            </div>
+                            <div class="rule-content lang-en" style="display:none">
+                                Embodied Intelligence refers to intelligent systems with physical entities capable of perceiving and acting upon the physical world with autonomous decision-making abilities. Including but not limited to: humanoid robots, autonomous vehicles, intelligent factory systems, service robots, medical robots, agricultural automation systems, logistics drones, and construction automation equipment.
                             </div>
                         </div>
                         
@@ -767,6 +828,34 @@
             if (!isActive) {
                 content.classList.add('active');
             }
+        }
+        
+        // Language Switcher
+        function switchLanguage(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content
+            document.querySelectorAll('.lang-zh').forEach(el => {
+                el.style.display = lang === 'zh' ? '' : 'none';
+            });
+            document.querySelectorAll('.lang-en').forEach(el => {
+                el.style.display = lang === 'en' ? '' : 'none';
+            });
+            
+            // Save preference
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference
+        const savedLang = localStorage.getItem('preferred-lang');
+        if (savedLang) {
+            switchLanguage(savedLang);
         }
         
         // Smooth scroll
