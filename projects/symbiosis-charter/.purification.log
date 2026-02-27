@@ -1607,3 +1607,195 @@ Summary: 176 rules purified, 2 supplementary docs created, 130 quality issues id
 [2026-02-27 00:25:02] ======================================================================
 [2026-02-27 00:25:02] ✓ Iteration #18 complete: 0 rules improved
 [2026-02-27 00:25:02] ======================================================================
+[2026-02-27 00:25:35] 
+======================================================================
+[2026-02-27 00:25:35] 🧹 PURIFICATION & IMPROVEMENT ITERATION #19
+[2026-02-27 00:25:35] ======================================================================
+[2026-02-27 00:25:35] 
+======================================================================
+[2026-02-27 00:25:35] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:25:35] ======================================================================
+[2026-02-27 00:25:35] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:25:35]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:25:35] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:25:35]   ✗ ARTICLES-II-PRODUCTIVITY.md: No rules found
+[2026-02-27 00:25:35] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:25:35]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 52 issues
+[2026-02-27 00:25:35] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:25:35]   ✗ ARTICLES-IV-ETHICAL-AGENCY.md: No rules found
+[2026-02-27 00:25:35] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:25:35]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:25:35] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:25:35]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:25:35] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:25:35]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:25:35] 
+📊 Summary: 227 rules | 0 improved | 0 docs created | 96 issues tracked
+[2026-02-27 00:25:35] ======================================================================
+[2026-02-27 00:25:35] ✓ Iteration #19 complete: 0 rules improved
+[2026-02-27 00:25:35] ======================================================================
+[2026-02-27 00:26:08] 
+======================================================================
+[2026-02-27 00:26:08] 🧹 PURIFICATION & IMPROVEMENT ITERATION #20
+[2026-02-27 00:26:08] ======================================================================
+[2026-02-27 00:26:08] 
+======================================================================
+[2026-02-27 00:26:08] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:26:08] ======================================================================
+[2026-02-27 00:26:08] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:26:08]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:26:08] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:26:08]   ✗ ARTICLES-II-PRODUCTIVITY.md: No rules found
+[2026-02-27 00:26:08] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:26:08]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 52 issues
+[2026-02-27 00:26:08] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:26:08]   ✗ ARTICLES-IV-ETHICAL-AGENCY.md: No rules found
+[2026-02-27 00:26:08] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:26:08]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:26:08] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:26:08]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:26:08] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:26:08]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:26:08] 
+📊 Summary: 227 rules | 0 improved | 0 docs created | 96 issues tracked
+[2026-02-27 00:26:08] ======================================================================
+[2026-02-27 00:26:08] ✓ Iteration #20 complete: 0 rules improved
+[2026-02-27 00:26:08] ======================================================================
+[2026-02-27 00:26:41] 
+======================================================================
+[2026-02-27 00:26:41] 🧹 PURIFICATION & IMPROVEMENT ITERATION #21
+[2026-02-27 00:26:41] ======================================================================
+[2026-02-27 00:26:41] 
+======================================================================
+[2026-02-27 00:26:41] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:26:41] ======================================================================
+[2026-02-27 00:26:41] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:26:41]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:26:41] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:26:41]   ✗ ARTICLES-II-PRODUCTIVITY.md: No rules found
+[2026-02-27 00:26:41] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:26:41]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 52 issues
+[2026-02-27 00:26:41] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:26:41]   ✗ ARTICLES-IV-ETHICAL-AGENCY.md: No rules found
+[2026-02-27 00:26:41] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:26:41]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:26:41] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:26:41]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:26:41] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:26:41]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:26:41] 
+📊 Summary: 227 rules | 0 improved | 0 docs created | 96 issues tracked
+[2026-02-27 00:26:41] ======================================================================
+[2026-02-27 00:26:41] ✓ Iteration #21 complete: 0 rules improved
+[2026-02-27 00:26:41] ======================================================================
+[2026-02-27 00:27:14] 
+======================================================================
+[2026-02-27 00:27:14] 🧹 PURIFICATION & IMPROVEMENT ITERATION #22
+[2026-02-27 00:27:14] ======================================================================
+[2026-02-27 00:27:14] 
+======================================================================
+[2026-02-27 00:27:14] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:27:14] ======================================================================
+[2026-02-27 00:27:14] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:27:14]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:27:14] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:27:14]   ✗ ARTICLES-II-PRODUCTIVITY.md: No rules found
+[2026-02-27 00:27:14] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:27:14]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 52 issues
+[2026-02-27 00:27:14] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:27:14]   ✗ ARTICLES-IV-ETHICAL-AGENCY.md: No rules found
+[2026-02-27 00:27:14] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:27:14]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:27:14] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:27:14]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:27:14] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:27:14]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:27:14] 
+📊 Summary: 227 rules | 0 improved | 0 docs created | 96 issues tracked
+[2026-02-27 00:27:14] ======================================================================
+[2026-02-27 00:27:14] ✓ Iteration #22 complete: 0 rules improved
+[2026-02-27 00:27:14] ======================================================================
+[2026-02-27 00:27:48] 
+======================================================================
+[2026-02-27 00:27:48] 🧹 PURIFICATION & IMPROVEMENT ITERATION #23
+[2026-02-27 00:27:48] ======================================================================
+[2026-02-27 00:27:48] 
+======================================================================
+[2026-02-27 00:27:48] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:27:48] ======================================================================
+[2026-02-27 00:27:48] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:27:48]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:27:48] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:27:48]   ✗ ARTICLES-II-PRODUCTIVITY.md: No rules found
+[2026-02-27 00:27:48] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:27:48]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 52 issues
+[2026-02-27 00:27:48] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:27:48]   ✗ ARTICLES-IV-ETHICAL-AGENCY.md: No rules found
+[2026-02-27 00:27:48] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:27:48]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:27:48] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:27:48]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:27:48] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:27:48]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:27:48] 
+📊 Summary: 227 rules | 0 improved | 0 docs created | 96 issues tracked
+[2026-02-27 00:27:48] ======================================================================
+[2026-02-27 00:27:48] ✓ Iteration #23 complete: 0 rules improved
+[2026-02-27 00:27:48] ======================================================================
+[2026-02-27 00:28:21] 
+======================================================================
+[2026-02-27 00:28:21] 🧹 PURIFICATION & IMPROVEMENT ITERATION #24
+[2026-02-27 00:28:21] ======================================================================
+[2026-02-27 00:28:21] 
+======================================================================
+[2026-02-27 00:28:21] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:28:21] ======================================================================
+[2026-02-27 00:28:21] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:28:21]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:28:21] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:28:21]   ✗ ARTICLES-II-PRODUCTIVITY.md: No rules found
+[2026-02-27 00:28:21] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:28:21]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 52 issues
+[2026-02-27 00:28:21] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:28:21]   ✗ ARTICLES-IV-ETHICAL-AGENCY.md: No rules found
+[2026-02-27 00:28:21] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:28:21]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:28:21] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:28:21]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:28:21] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:28:21]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:28:21] 
+📊 Summary: 227 rules | 0 improved | 0 docs created | 96 issues tracked
+[2026-02-27 00:28:21] ======================================================================
+[2026-02-27 00:28:21] ✓ Iteration #24 complete: 0 rules improved
+[2026-02-27 00:28:21] ======================================================================
+[2026-02-27 00:28:55] 
+======================================================================
+[2026-02-27 00:28:55] 🧹 PURIFICATION & IMPROVEMENT ITERATION #25
+[2026-02-27 00:28:55] ======================================================================
+[2026-02-27 00:28:55] 
+======================================================================
+[2026-02-27 00:28:55] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:28:55] ======================================================================
+[2026-02-27 00:28:55] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:28:55]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:28:55] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:28:55]   ✗ ARTICLES-II-PRODUCTIVITY.md: No rules found
+[2026-02-27 00:28:55] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:28:55]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 52 issues
+[2026-02-27 00:28:55] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:28:55]   → Improved IV.1.1.101: 75pts → better expression
+[2026-02-27 00:28:55]   → Improved IV.1.1.201: 75pts → better expression
+[2026-02-27 00:28:55]   → Improved IV.1.1.301: 75pts → better expression
+[2026-02-27 00:28:55]   → Improved IV.1.1.401: 75pts → better expression
+[2026-02-27 00:28:55]   → Improved IV.1.1.501: 75pts → better expression
+[2026-02-27 00:28:55]   ✓ ARTICLES-IV-ETHICAL-AGENCY.md: 150 rules (+5 improved), 84 issues
+[2026-02-27 00:28:55] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:28:55]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:28:55] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:28:55]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:28:55] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:28:55]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:28:55] 
+📊 Summary: 377 rules | 5 improved | 0 docs created | 180 issues tracked
+[2026-02-27 00:28:55] Committing changes...
