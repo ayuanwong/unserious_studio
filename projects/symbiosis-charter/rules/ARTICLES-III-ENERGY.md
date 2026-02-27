@@ -745,7 +745,789 @@ c) Public audit results
 d) Clear rectification requirements
 Audit costs are borne by the audited party.
 
-**原则 (Principle):** 第三方审计确保能效数据的可信度，避免自我
+**原则 (Principle):** 第三方审计确保能效数据的可信度，避免自我申报的偏差，增强公信力。
+
+**示例 (Example):** 某具身智能公司每年聘请具有国家认可资质的第三方审计机构，对其全球所有设施的能效进行审计。审计报告包括：测试方法说明、原始数据记录、能效计算过程、改进建议。报告在公司官网和监管平台同时公开。
+
+**边界 (Boundary):** 审计机构须与受审计方无利益关联；审计发现问题须在45日内整改并复审；重大虚假报告将追究审计机构连带责任。
+
+**情境 (Context):** 适用于具身智能系统的年度能效审计安排和审计结果应用。
+
+---
+
+**规则 III.2.1.030【能效技术创新】**
+**Rule III.2.1.030 [Energy Efficiency Technology Innovation]**
+
+鼓励能效技术创新：
+a) 研发投入抵扣
+b) 专利快速审批
+c) 试验场地支持
+d) 成果转化奖励
+突破性技术可获特别奖励。
+
+Energy efficiency technology innovation is encouraged:
+a) R&D investment tax credits
+b) Fast-track patent approval
+c) Test site support
+d) Technology transfer rewards
+Breakthrough technologies may receive special awards.
+
+**原则 (Principle):** 技术创新是提升能效的根本动力，制度激励加速技术突破和产业化。
+
+**示例 (Example):** 某公司研发新型AI芯片，能效提升300%。享受：研发费用200%加计扣除、专利审查绿色通道（6个月授权）、政府中试基地免费试用1年、技术转让收入所得税减免50%。
+
+**边界 (Boundary):** 创新奖励须基于第三方验证的能效提升数据；技术须具备商业化应用前景；纯实验室技术不适用成果转化奖励。
+
+**情境 (Context):** 适用于具身智能系统的能效技术研发、专利申请和成果转化。
+
+---
+
+### 2.2 能源使用监管
+
+**规则 III.3.1.031【能源分配优先级】**
+**Rule III.3.1.031 [Energy Distribution Priority]**
+
+能源分配遵循以下优先级：
+第一级：生命保障（医疗、救援）
+第二级：基础设施（交通、通信）
+第三级：民生需求（供暖、照明）
+第四级：生产运营（工业、农业）
+第五级：商业服务（商业、娱乐）
+低优先级须为高优先级让渡。
+
+Energy distribution follows this priority:
+Level 1: Life support (medical, rescue)
+Level 2: Infrastructure (transportation, communications)
+Level 3: Livelihood needs (heating, lighting)
+Level 4: Production operations (industry, agriculture)
+Level 5: Commercial services (commerce, entertainment)
+Lower priorities must yield to higher priorities.
+
+**原则 (Principle):** 能源是生命和社会的血液，分配必须体现生命优先、基本需求优先的伦理原则。
+
+**示例 (Example):** 某区域发生能源短缺，自动执行分配优先级：医院生命支持系统（第一级）优先供电；交通信号灯（第二级）其次；商业广告屏（第五级）自动断电。具身智能系统根据优先级自动调整运行模式。
+
+**边界 (Boundary):** 优先级执行由统一指挥中心调度；系统须在10秒内响应优先级调整；恶意规避优先级调整将被处罚。
+
+**情境 (Context):** 适用于能源短缺时期的分配决策和具身智能系统的应急响应。
+
+---
+
+**规则 III.3.1.032【分配算法透明化】**
+**Rule III.3.1.032 [Distribution Algorithm Transparency]**
+
+能源分配算法必须公开透明：
+a) 算法逻辑公开
+b) 参数设置公开
+c) 权重分配公开
+d) 决策过程可审计
+黑箱算法不得用于关键分配。
+
+Energy distribution algorithms must be transparent:
+a) Algorithm logic disclosed
+b) Parameter settings disclosed
+c) Weight distribution disclosed
+d) Decision process auditable
+Black-box algorithms cannot be used for critical distribution.
+
+**原则 (Principle):** 算法治理的透明度是防止算法歧视和权力滥用的基本保障，能源分配涉及基本权益，必须透明。
+
+**示例 (Example):** 某城市能源分配系统开源其算法代码，公布参数：生命保障权重100、基础设施80、民生70、生产50、商业30。任何市民可查询某时段分配决策的计算过程和依据。
+
+**边界 (Boundary):** 算法公开不包含涉及国家安全的电网调度细节；参数调整须提前30天公告并征求公众意见。
+
+**情境 (Context):** 适用于能源分配系统的设计、部署和监管审查。
+
+---
+
+**规则 III.3.1.033【分配公平性原则】**
+**Rule III.3.1.033 [Distribution Fairness Principles]**
+
+分配算法必须体现公平性：
+a) 程序公平：规则一视同仁
+b) 结果公平：差距合理可控
+c) 补偿公平：弱势群体保护
+d) 参与公平：利益相关方参与
+不公平算法须修正。
+
+Distribution algorithms must demonstrate fairness:
+a) Procedural fairness: rules apply equally
+b) Outcome fairness: gaps are reasonable and controllable
+c) Compensatory fairness: vulnerable groups protected
+d) Participatory fairness: stakeholders involved
+Unfair algorithms must be corrected.
+
+**原则 (Principle):** 算法公平不仅是技术问题，更是社会正义问题，能源分配算法须接受伦理审查。
+
+**示例 (Example):** 某算法被发现对低收入区域分配优先级偏低（结果不公平），经审查后修正：增加"欠发达地区补偿系数"1.2，确保基本能源服务均等化。
+
+**边界 (Boundary):** 公平性审查由独立算法伦理委员会执行；发现系统性偏见须在15日内修正；连续两次审查未通过须更换算法供应商。
+
+**情境 (Context):** 适用于能源分配算法的伦理审查和公平性评估。
+
+---
+
+**规则 III.3.1.034【动态分配机制】**
+**Rule III.3.1.034 [Dynamic Distribution Mechanism]**
+
+实施基于实时数据的动态分配：
+a) 需求实时感知
+b) 供给实时监测
+c) 分配实时调整
+d) 反馈实时响应
+动态调整须有平滑机制避免震荡。
+
+Implement real-time data-based dynamic distribution:
+a) Real-time demand sensing
+b) Real-time supply monitoring
+c) Real-time distribution adjustment
+d) Real-time feedback response
+Dynamic adjustments must have smoothing mechanisms to avoid oscillation.
+
+**原则 (Principle):** 能源系统实时平衡供需，动态分配提高系统效率和可靠性，但须避免频繁调整造成不稳定。
+
+**示例 (Example):** 某智能电网每5分钟根据实时供需调整分配：当太阳能发电突然下降（云层遮挡），自动增加储能放电和天然气发电，同时向可中断负荷（如具身智能工厂）发送降负荷信号，实现平滑过渡。
+
+**边界 (Boundary):** 调整频率不得超过每5分钟一次；单次调整幅度不得超过20%；具身智能系统有权拒绝超过合同约定范围的调整。
+
+**情境 (Context):** 适用于智能电网的实时调度和具身智能系统的需求响应。
+
+---
+
+**规则 III.3.1.035【分配效率优化】**
+**Rule III.3.1.035 [Distribution Efficiency Optimization]**
+
+优化分配效率减少损耗：
+a) 智能调度：AI优化路径
+b) 预测维护：减少故障损耗
+c) 负载均衡：避免局部过载
+d) 储能配合：削峰填谷
+效率目标：损耗<5%。
+
+Optimize distribution efficiency to reduce losses:
+a) Smart dispatching: AI-optimized paths
+b) Predictive maintenance: reduce failure losses
+c) Load balancing: avoid local overload
+d) Energy storage coordination: peak shaving and valley filling
+Efficiency target: losses <5%.
+
+**原则 (Principle):** 减少分配损耗等于增加可用能源，技术进步应当用于提升系统整体效率。
+
+**示例 (Example):** 某区域能源系统采用AI调度算法，实时优化电力潮流路径，结合储能系统在低谷时段充电、高峰时段放电，将整体分配损耗从8%降至4.5%。
+
+**边界 (Boundary):** 损耗计算覆盖从生产端到消费端全过程；超过5%损耗须提交改进计划；超过8%损耗将被限产。
+
+**情境 (Context):** 适用于能源系统的调度优化和损耗监测管理。
+
+---
+
+**规则 III.3.1.036【跨区域调配】**
+**Rule III.3.1.036 [Cross-Regional Dispatch]**
+
+建立跨区域能源调配机制：
+a) 调配指令：统一指挥中心
+b) 调配协议：事先签订协议
+c) 调配补偿：公平补偿机制
+d) 调配记录：全程留痕
+调配须考虑传输损耗。
+
+Establish cross-regional energy dispatch mechanisms:
+a) Dispatch orders: unified command center
+b) Dispatch agreements: pre-signed agreements
+c) Dispatch compensation: fair compensation mechanism
+d) Dispatch records: full traceability
+Dispatch must consider transmission losses.
+
+**原则 (Principle):** 区域间能源余缺调剂提高整体系统韧性，但须建立在自愿互利基础上，避免强制调配。
+
+**示例 (Example):** 某省电力富余，与邻省签订调配协议：当某省供需缺口超过10%时，富余省在24小时内启动支援，受援省按市场价格加10%传输损耗费支付，调配全程记录在区块链上。
+
+**边界 (Boundary):** 调配不得影响调出区的基本能源安全；调配优先级次于本地生命保障；调配请求须在48小时内响应。
+
+**情境 (Context):** 适用于区域间能源合作和应急互助机制。
+
+---
+
+**规则 III.3.1.037【分配争议解决】**
+**Rule III.3.1.037 [Distribution Dispute Resolution]**
+
+建立分配争议解决机制：
+a) 申诉渠道：在线申诉平台
+b) 调解程序：第三方调解
+c) 仲裁机制：专业仲裁委员会
+d) 司法救济：诉讼途径
+争议处理须限时完成。
+
+Establish distribution dispute resolution mechanisms:
+a) Appeal channels: online appeal platform
+b) Mediation procedures: third-party mediation
+c) Arbitration mechanism: professional arbitration committee
+d) Judicial remedy: litigation途径
+Dispute resolution must be completed within time limits.
+
+**原则 (Principle):** 能源分配争议影响基本权益，必须提供便捷、公正、高效的解决途径。
+
+**示例 (Example):** 某工厂认为其能源分配被不公正削减，通过在线平台提交申诉。3个工作日内收到调解邀请，10个工作日内完成第三方调解，达成补偿协议。如调解失败，可申请能源仲裁委员会仲裁或向法院起诉。
+
+**边界 (Boundary):** 调解期限为15日，仲裁期限为30日，诉讼适用普通程序；争议期间不停止分配执行（可申请临时救济）。
+
+**情境 (Context):** 适用于能源分配争议的申诉、调解、仲裁和诉讼。
+
+---
+
+**规则 III.3.1.038【分配信息披露】**
+**Rule III.3.1.038 [Distribution Information Disclosure]**
+
+分配信息必须充分披露：
+a) 分配方案公开
+b) 分配过程记录
+c) 分配结果公示
+d) 历史数据可查
+信息须真实、准确、完整。
+
+Distribution information must be fully disclosed:
+a) Distribution plans public
+b) Distribution process recorded
+c) Distribution results published
+d) Historical data accessible
+Information must be true, accurate, and complete.
+
+**原则 (Principle):** 分配信息透明是防止权力滥用和腐败的基础，也是公众监督的前提。
+
+**示例 (Example):** 某能源分配机构每月发布：下月分配方案（各区域、各优先级配额）、上月分配执行记录（实际分配与方案偏差说明）、分配结果（各用户实际获得量）、近三年历史分配数据查询接口。
+
+**边界 (Boundary):** 涉及商业机密的用户具体用量可匿名化处理；涉及国家安全的战略储备信息可豁免披露。
+
+**情境 (Context):** 适用于能源分配机构的信息公开和透明治理。
+
+---
+
+**规则 III.3.1.039【分配算法审计】**
+**Rule III.3.1.039 [Distribution Algorithm Audit]**
+
+分配算法必须接受审计：
+a) 算法备案：事前备案审查
+b) 算法测试：沙盒环境验证
+c) 算法评估：第三方评估
+d) 算法迭代：持续改进
+审计发现问题须立即整改。
+
+Distribution algorithms must be audited:
+a) Algorithm filing: pre-implementation review
+b) Algorithm testing: sandbox environment validation
+c) Algorithm assessment: third-party evaluation
+d) Algorithm iteration: continuous improvement
+Audit findings must be immediately rectified.
+
+**原则 (Principle):** 分配算法影响广泛，必须在部署前接受严格审查，在运行中接受持续监督。
+
+**示例 (Example):** 某能源公司新开发分配算法，部署前提交备案，在监管沙盒中运行3个月验证稳定性，通过第三方算法伦理评估（无歧视、透明、可解释），正式上线。上线后每年接受复审，根据反馈持续优化。
+
+**边界 (Boundary):** 算法重大变更须重新备案；评估不通过不得上线；发现严重问题须立即停用并回退。
+
+**情境 (Context):** 适用于能源分配算法的全生命周期管理和监管。
+
+---
+
+**规则 III.3.1.040【分配效果评估】**
+**Rule III.3.1.040 [Distribution Effectiveness Assessment]**
+
+定期评估分配效果：
+a) 满足率评估
+b) 公平性评估
+c) 效率性评估
+d) 满意度调查
+评估结果用于算法优化。
+
+Regularly assess distribution effectiveness:
+a) Satisfaction rate assessment
+b) Fairness assessment
+c) Efficiency assessment
+d) Satisfaction survey
+Assessment results inform algorithm optimization.
+
+**原则 (Principle):** 分配效果评估是持续改进的基础，数据驱动的优化提升分配质量。
+
+**示例 (Example):** 某能源分配系统每季度发布效果评估报告：需求满足率98.5%（目标99%）、基尼系数0.15（公平）、分配损耗4.2%（高效）、用户满意度4.2/5。针对满足率未达标问题，优化算法增加需求预测模块。
+
+**边界 (Boundary):** 满意度调查样本量不得低于用户总数的5%；评估指标须提前公开；评估结果须在20日内发布。
+
+**情境 (Context):** 适用于能源分配系统的绩效评估和持续改进。
+
+---
+
+### 2.3 能源储备与备份
+
+**规则 III.4.1.041【战略能源储备】**
+**Rule III.4.1.041 [Strategic Energy Reserves]**
+
+建立国家战略能源储备：
+a) 储备规模：满足90天净进口量
+b) 储备品种：石油、天然气、煤炭
+c) 储备布局：分散多点储存
+d) 储备轮换：定期更新保持质量
+储备动用须经最高决策机构批准。
+
+Establish national strategic energy reserves:
+a) Reserve scale: 90 days of net imports
+b) Reserve types: oil, natural gas, coal
+c) Reserve layout: dispersed multi-point storage
+d) Reserve rotation: regular updates to maintain quality
+Reserve deployment requires approval from highest decision-making body.
+
+**原则 (Principle):** 战略储备是应对能源危机的最后防线，是国家能源安全的基石。
+
+**示例 (Example):** 某国建立战略石油储备基地10个，总容量相当于100天进口量，分布在不同地理区域（分散布局），每5年轮换一次确保油品质量。动用储备须经能源安全委员会全体委员三分之二以上同意。
+
+**边界 (Boundary):** 储备规模可根据国际形势动态调整（±20%）；动用储备后须在180日内补足。
+
+**情境 (Context):** 适用于国家战略能源储备的规划、管理和动用决策。
+
+---
+
+**规则 III.4.1.042【区域能源储备】**
+**Rule III.4.1.042 [Regional Energy Reserves]**
+
+地方政府建立区域储备：
+a) 储备规模：满足7天需求量
+b) 储备品种：因地制宜
+c) 储备管理：专业化管理
+d) 动用权限：省级政府
+储备情况定期上报中央。
+
+Local governments establish regional reserves:
+a) Reserve scale: 7 days of demand
+b) Reserve types: adapted to local conditions
+c) Reserve management: professional management
+d) Deployment authority: provincial government
+Reserve status is regularly reported to central government.
+
+**原则 (Principle):** 区域储备是应对局部能源中断的第一道防线，地方政府对区域能源安全负有直接责任。
+
+**示例 (Example):** 某省建立天然气区域储备，储气量满足全省7天用量，由省级能源集团专业化运营，储备设施定期维护。当某城市因管道故障断气时，省政府批准动用区域储备，通过槽车运送保障居民用气。
+
+**边界 (Boundary):** 区域储备品种根据本地主要能源消费结构确定；动用后须在30日内补足；储备情况每月上报中央能源部门。
+
+**情境 (Context):** 适用于地方政府区域能源储备的建设和管理。
+
+---
+
+**规则 III.4.1.043【企业能源储备】**
+**Rule III.4.1.043 [Enterprise Energy Reserves]**
+
+重点企业须保持必要储备：
+a) 电力企业：燃料储备
+b) 燃气企业：气源储备
+c) 供热企业：热源储备
+d) 用能大户：应急储备
+储备标准按行业制定。
+
+Key enterprises must maintain necessary reserves:
+a) Power companies: fuel reserves
+b) Gas companies: gas source reserves
+c) Heating companies: heat source reserves
+d) Major energy users: emergency reserves
+Reserve standards are set by industry.
+
+**原则 (Principle):** 企业储备是供应链韧性的重要组成，企业对其能源供应连续性负有主体责任。
+
+**示例 (Example):** 某燃气发电企业按行业规定保持15天天然气储备，与多家供应商签订长期协议并配备LNG储罐。当主供气管线检修时，启用储备气源，保障连续供电。
+
+**边界 (Boundary):** 储备标准根据企业规模和行业重要性分级；小企业可申请豁免或用保险替代实物储备；储备质量须定期检测。
+
+**情境 (Context):** 适用于重点用能企业的能源储备义务履行和监管。
+
+---
+
+**规则 III.4.1.044【储备质量管理】**
+**Rule III.4.1.044 [Reserve Quality Management]**
+
+确保储备能源质量：
+a) 定期检测质量指标
+b) 及时轮换过期储备
+c) 维护储备设施设备
+d) 记录储备管理台账
+质量不合格不得计入储备。
+
+Ensure reserve energy quality:
+a) Regular quality indicator testing
+b) Timely rotation of expired reserves
+c) Maintain reserve facilities and equipment
+d) Record reserve management ledgers
+Substandard quality cannot be counted as reserves.
+
+**原则 (Principle):** 储备能源必须随时可用，质量管理是储备有效性的基本保障。
+
+**示例 (Example):** 某石油储备基地每季度检测储备油品的关键指标（硫含量、辛烷值、含水量），每年轮换20%储备（先进先出），每月维护储罐和输油设施，建立完整的电子台账记录每批油品的入库时间、质量数据、轮换记录。
+
+**边界 (Boundary):** 不同能源品种有不同的质量标准和检测频率；储备因质量问题无法使用须立即更换并报告。
+
+**情境 (Context):** 适用于能源储备设施的质量管理和维护。
+
+---
+
+**规则 III.4.1.045【储备动用程序】**
+**Rule III.4.1.045 [Reserve Deployment Procedures]**
+
+规范储备动用程序：
+a) 动用申请：说明理由和数量
+b) 审批权限：分级审批制度
+c) 动用记录：详细记录用途
+d) 补充计划：及时补充恢复
+未经批准不得动用储备。
+
+Standardize reserve deployment procedures:
+a) Deployment application: state reasons and quantities
+b) Approval authority: graded approval system
+c) Deployment records: detailed usage records
+d) Replenishment plan: timely restoration
+Reserves cannot be deployed without approval.
+
+**原则 (Principle):** 储备动用是严肃决策，必须程序规范、权责清晰、记录完整。
+
+**示例 (Example):** 某城市遭遇极端寒潮，天然气需求激增，燃气公司向市政府提交储备动用申请（理由：民生供暖保障，数量：500万立方米）。市政府审批同意后，启动储备动用，全程记录用途和流向，并在60日内制定补充计划恢复储备。
+
+**边界 (Boundary):** 战略储备动用须经国家能源委员会批准；区域储备动用由省级政府批准；企业储备由企业自主决定但须事后报告。
+
+**情境 (Context):** 适用于各级能源储备的动用申请、审批和执行。
+
+---
+
+**规则 III.4.1.046【储备信息公开】**
+**Rule III.4.1.046 [Reserve Information Disclosure]**
+
+适度公开储备信息：
+a) 储备总量公开
+b) 储备结构公开
+c) 动用情况公开
+d) 具体位置保密
+信息公开与保密平衡。
+
+Moderately disclose reserve information:
+a) Total reserve volume public
+b) Reserve structure public
+c) Deployment situations public
+d) Specific locations confidential
+Balance between transparency and confidentiality.
+
+**原则 (Principle):** 储备信息公开增强市场信心和公众安全感，但具体位置等信息须保密以防安全风险。
+
+**示例 (Example):** 某国能源部每月发布：战略石油储备总量（1亿桶）、储备品种构成（原油70%、成品油30%）、本月动用/补充情况。储备基地的具体位置、安保措施等信息列为机密。
+
+**边界 (Boundary):** 储备总量数据精确到10%范围即可；动用情况在动用后48小时内公开；涉密信息泄露将追究法律责任。
+
+**情境 (Context):** 适用于政府储备信息的发布和保密管理。
+
+---
+
+**规则 III.4.1.047【储备设施建设】**
+**Rule III.4.1.047 [Reserve Facility Construction]**
+
+加强储备设施建设：
+a) 地下储气库
+b) 战略石油储备基地
+c) 储煤基地
+d) 储能电站
+建设纳入国家规划。
+
+Strengthen reserve facility construction:
+a) Underground gas storage
+b) Strategic petroleum reserve bases
+c) Coal storage bases
+d) Energy storage power stations
+Construction is incorporated into national planning.
+
+**原则 (Principle):** 储备设施是战略资产，建设须国家统筹规划，确保规模适度、布局合理、技术先进。
+
+**示例 (Example):** 某国在"十四五"能源规划中布局：新建地下储气库3座（工作气量100亿立方米）、扩建石油储备基地2个（增加储备能力2000万立方米）、在新能源富集区建设大型储能电站5座（总容量10GWh）。
+
+**边界 (Boundary):** 储备设施建设须符合环保和安全标准；选址避开生态敏感区和地质灾害区；建设进度纳入政府考核。
+
+**情境 (Context):** 适用于国家能源储备基础设施的规划和建设。
+
+---
+
+**规则 III.4.1.048【储备市场化运作】**
+**Rule III.4.1.048 [Reserve Market Operations]**
+
+探索储备市场化运作：
+a) 企业代储机制
+b) 储备商业化租赁
+c) 储备期货交易
+d) 储备保险机制
+市场化提高储备效率。
+
+Explore market-based reserve operations:
+a) Enterprise storage代理 mechanism
+b) Reserve commercial leasing
+c) Reserve futures trading
+d) Reserve insurance mechanisms
+Marketization improves reserve efficiency.
+
+**原则 (Principle):** 市场化运作降低政府储备成本，利用企业专业能力提高储备管理效率。
+
+**示例 (Example):** 某国试点企业代储制度：政府拥有储备所有权，委托大型石油企业代管代储，企业收取管理费但需保证储备安全和随时可调。同时推出储备保险产品，对储备损失提供风险保障。
+
+**边界 (Boundary):** 战略储备不得完全市场化；市场化运作须确保政府随时可调用；代储企业须具备相应资质。
+
+**情境 (Context):** 适用于政府储备的市场化改革和企业参与储备管理。
+
+---
+
+**规则 III.4.1.049【储备国际合作】**
+**Rule III.4.1.049 [Reserve International Cooperation]**
+
+开展储备国际合作：
+a) 联合储备协议
+b) 储备设施共享
+c) 储备信息交流
+d) 应急互助机制
+合作增强能源安全。
+
+Conduct reserve international cooperation:
+a) Joint reserve agreements
+b) Reserve facility sharing
+c) Reserve information exchange
+d) Emergency mutual assistance mechanisms
+Cooperation enhances energy security.
+
+**原则 (Principle):** 能源安全是全球性挑战，国际合作扩大储备能力、分散风险、提高应急响应效率。
+
+**示例 (Example):** 某两国签订联合储备协议：A国拥有储备设施但缺资金，B国出资在A国建设储备库，储备所有权按出资比例共有。任一方遭遇能源危机时，可优先使用共有储备。两国定期交流储备信息，协调储备政策。
+
+**边界 (Boundary):** 储备合作不得影响本国能源安全底线；合作对象须为友好国家；合作协议须议会批准。
+
+**情境 (Context):** 适用于国家间能源储备合作和区域能源安全机制建设。
+
+---
+
+**规则 III.4.1.050【储备监督检查】**
+**Rule III.4.1.050 [Reserve Supervision and Inspection]**
+
+加强储备监督检查：
+a) 定期检查储备实物
+b) 核对储备管理台账
+c) 评估储备保障能力
+d) 整改检查发现的问题
+e) 追究违规责任
+检查须全面深入不留死角。
+
+Strengthen reserve supervision and inspection:
+a) Regular physical reserve inspections
+b) Verify reserve management ledgers
+c) Assess reserve guarantee capabilities
+d) Rectify inspection findings
+e) Pursue accountability for violations
+Inspections must be comprehensive and thorough.
+
+**原则 (Principle):** 储备是"以备不时之需"的战略资产，监督检查确保储备真实可用、管理规范。
+
+**示例 (Example):** 某监管部门每半年对储备基地进行全面检查：实地测量储罐液位核对实物、核对台账与实物是否一致、模拟紧急情况下储备调度能力、对发现的管理漏洞要求限期整改、对发现的违规行为立案调查。
+
+**边界 (Boundary):** 检查须提前通知但可进行突击抽查；被检查方须配合提供资料；检查结果向同级人大报告。
+
+**情境 (Context):** 适用于各级能源储备的监管检查和问责。
+
+---
+
+### 2.4 备份机制
+
+**规则 III.4.2.051【能源供应备份】**
+**Rule III.4.2.051 [Energy Supply Backup]**
+
+关键设施须有能源供应备份：
+a) 多源供应：至少两个独立来源
+b) 多路输送：至少两条输送路径
+c) 多类能源：至少两种能源形式
+d) 自动切换：故障时自动切换
+备份须定期测试确保可用。
+
+Critical facilities must have energy supply backup:
+a) Multi-source supply: at least two independent sources
+b) Multi-route transmission: at least two transmission paths
+c) Multi-type energy: at least two energy forms
+d) Automatic switching: automatic switchover during failure
+Backup must be regularly tested to ensure availability.
+
+**原则 (Principle):** 关键设施能源供应中断可能造成严重后果，备份是确保连续性的必要措施。
+
+**示例 (Example):** 某数据中心能源备份配置：主供电源为市电（来源A），备用电源为园区天然气发电（来源B）；输电路径有北线和南线两条；能源形式包括电力和天然气；自动切换系统在市电中断后15秒内启动备用电源。
+
+**边界 (Boundary):** 关键设施定义包括医疗、通信、金融、应急指挥等；备份容量须满足主供失效时100%负荷需求；切换测试每季度进行一次。
+
+**情境 (Context):** 适用于关键基础设施的能源备份设计和测试。
+
+---
+
+**规则 III.4.2.052【电网备用容量】**
+**Rule III.4.2.052 [Grid Reserve Capacity]**
+
+保持电网必要备用容量：
+a) 负荷备用：2%-5%最大负荷
+b) 事故备用：10%-15%最大机组容量
+c) 检修备用：8%-15%装机容量
+d) 国民经济备用：视需要安排
+备用不足须限制新增负荷。
+
+Maintain necessary grid reserve capacity:
+a) Load reserve: 2%-5% of maximum load
+b) Contingency reserve: 10%-15% of largest unit capacity
+c) Maintenance reserve: 8%-15% of installed capacity
+d) National economic reserve: arranged as needed
+Insufficient reserves require limiting new loads.
+
+**原则 (Principle):** 备用容量是电网稳定运行的安全垫，确保在负荷波动、机组故障、计划检修时仍可靠供电。
+
+**示例 (Example):** 某电网最大负荷1000万千瓦，按规定保持：负荷备用30万千瓦（3%）、事故备用100万千瓦（对应最大机组）、检修备用100万千瓦。当备用容量因机组故障降至标准以下时，启动有序用电措施限制新增负荷。
+
+**边界 (Boundary):** 备用容量须为可随时调用的旋转备用；新能源出力波动较大时须提高备用标准；备用容量纳入电网统一调度。
+
+**情境 (Context):** 适用于电网运行备用容量的规划、监测和管理。
+
+---
+
+**规则 III.4.2.053【备用机组管理】**
+**Rule III.4.2.053 [Reserve Unit Management]**
+
+规范备用机组管理：
+a) 状态监测：实时掌握机组状态
+b) 定期启动：定期启动保持状态
+c) 快速响应：接到指令快速并网
+d) 燃料保障：确保燃料充足
+备用机组须处于热备用状态。
+
+Standardize reserve unit management:
+a) Condition monitoring: real-time unit status
+b) Regular startup: periodic startup to maintain condition
+c) Fast response: quick grid connection upon command
+d) Fuel assurance: ensure adequate fuel
+Reserve units must be in hot standby condition.
+
+**原则 (Principle):** 备用机组是应急响应的关键资源，良好管理确保关键时刻"拉得出、顶得上"。
+
+**示例 (Example):** 某燃气电厂作为电网备用机组：实时监测机组健康状态，每周至少启动运行1小时保持热备用，接到调度指令后10分钟内并网发电，天然气库存保持7天以上用量。
+
+**边界 (Boundary):** 热备用指机组处于可随时启动状态；从指令到并网时间不得超过15分钟；备用机组年启动次数不少于24次。
+
+**情境 (Context):** 适用于电网备用发电机组的管理和调度。
+
+---
+
+**规则 III.4.2.054【分布式能源备份】**
+**Rule III.4.2.054 [Distributed Energy Backup]**
+
+鼓励分布式能源作为备份：
+a) 分布式光伏
+b) 分散式风电
+c) 小型水电
+d) 生物质发电
+e) 储能系统
+分布式能源优先保障本地。
+
+Encourage distributed energy as backup:
+a) Distributed photovoltaic
+b) Dispersed wind power
+c) Small hydropower
+d) Biomass generation
+e) Energy storage systems
+Distributed energy prioritizes local supply.
+
+**原则 (Principle):** 分布式能源靠近负荷、响应快速、可孤岛运行，是理想的本地备份资源。
+
+**示例 (Example):** 某工业园区建设分布式能源系统：屋顶光伏2MW、小型风机1MW、储能系统2MWh。当外网故障时，分布式系统自动切换为孤岛运行模式，优先保障园区内医院、应急中心等关键负荷。
+
+**边界 (Boundary):** 分布式能源备份容量一般限于本地负荷； surplus电力可上网但须服从调度；孤岛运行能力须每年演练验证。
+
+**情境 (Context):** 适用于分布式能源系统的规划、建设和作为备份资源的应用。
+
+---
+
+**规则 III.4.2.055【微电网备份】**
+**Rule III.4.2.055 [Microgrid Backup]**
+
+重要负荷建设微电网备份：
+a) 医院、数据中心等关键设施
+b) 独立运行能力
+c) 黑启动能力
+d) 与大电网智能互动
+微电网须定期演练孤岛运行。
+
+Build microgrid backup for critical loads:
+a) Hospitals, data centers, and other critical facilities
+b) Independent operation capability
+c) Black start capability
+d) Smart interaction with main grid
+Microgrids must regularly practice island operation.
+
+**原则 (Principle):** 微电网是"微型能源系统"，可在主网故障时独立运行，为关键设施提供最高级别备份。
+
+**示例 (Example):** 某医院建设微电网：光伏+储能+柴油发电机，具备独立运行和黑启动能力。每月进行一次孤岛运行演练：断开主网连接，微电网自动切换至独立模式，确保手术室、ICU等关键负荷不间断供电。
+
+**边界 (Boundary):** 微电网备份须覆盖100%关键负荷；独立运行时间不少于72小时；与主网切换时间不超过20毫秒。
+
+**情境 (Context):** 适用于关键设施的微电网设计和运行管理。
+
+---
+
+**规则 III.4.2.056【储能系统备份】**
+**Rule III.4.2.056 [Energy Storage Backup]**
+
+储能系统作为重要备份：
+a) 电源侧储能：平滑出力
+b) 电网侧储能：调峰调频
+c) 用户侧储能：应急备用
+d) 独立储能：共享服务
+储能容量须满足设计需求。
+
+Energy storage systems serve as important backup:
+a) Generation-side storage: smooth output
+b) Grid-side storage: peak shaving and frequency regulation
+c) User-side storage: emergency backup
+d) Independent storage: shared services
+Storage capacity must meet design requirements.
+
+**原则 (Principle):** 储能系统响应速度快、调节灵活，是新一代电力系统不可或缺的备份和调节资源。
+
+**示例 (Example):** 某用户侧储能系统配置：锂电池储能500kWh，作为工厂应急备用。正常时参与需求响应获取收益，电网故障时自动切换为孤岛模式，保障生产线安全停机、照明和通信系统运行。
+
+**边界 (Boundary):** 储能系统须配备电池管理系统（BMS）确保安全；储能容量衰减至设计值80%以下须更换；储能系统须具备并/离网切换能力。
+
+**情境 (Context):** 适用于储能系统的规划、建设和作为备份资源的应用。
+
+---
+
+**规则 III.4.2.057【备用燃料储备】**
+**Rule III.4.2.057 [Backup Fuel Reserves]**
+
+发电企业储备备用燃料：
+a) 燃煤电厂：15-20天用量
+b) 燃气电厂：3-5天用量
+c) 燃油电厂：7-10天用量
+d) 核电厂：18-24个月换料
+燃料不足须预警并补充。
+
+Power generation companies maintain backup fuel reserves:
+a) Coal plants: 15-20 days of consumption
+b) Gas plants: 3-5 days of consumption
+c) Oil plants: 7-10 days of consumption
+d) Nuclear plants: 18-24 months of fuel
+Fuel shortages must trigger warnings and replenishment.
+
+**原则 (Principle):** 燃料储备是发电连续性的物质基础，充足储备应对供应链中断风险。
+
+**示例 (Example):** 某燃煤电厂保持20天燃煤储备（约10万吨），每日监测库存，当库存降至12天用量时发出黄色预警，降至10天用量时启动紧急采购，确保储备不低于15天安全线。
+
+**边界 (Boundary):** 储备燃料质量须符合锅炉设计要求；长期储存须定期翻烧防止自燃；进口燃料须考虑运输周期增加储备。
+
+**情境 (Context):** 适用于发电企业的燃料储备管理和预警。
+
+---
+
+**规则 III.4.2.058【备用能力测试】**
+**Rule III.4.2.058 [Backup Capability Testing]**
+
+定期测试备用能力：
+a) 备用
 
 **规则 III.2.1.030【时限要求】**
 申请应当在收到通知之日起15日内提出，特殊情况经批准可以延长至30日，逾期未提出的视为放弃权利。
@@ -784,5 +1566,24 @@ d) 特别严重：解除职务，依法追究法律责任
 
 **规则 III.2.2.035【时限要求】**
 申请应当在收到通知之日起15日内提出，特殊情况经批准可以延长至30日，逾期未提出的视为放弃权利。
+
+**规则 III.2.2.059【责任追究】**
+违反本规定的，应当承担下列责任：
+a) 轻微违规：警告，限期5日内改正
+b) 一般违规：通报批评，扣减绩效10-30分
+c) 严重违规：暂停权限1-3个月
+d) 特别严重：解除职务，依法追究法律责任
+
+
+**规则 III.2.2.060【时限要求】**
+申请应当在收到通知之日起15日内提出，特殊情况经批准可以延长至30日，逾期未提出的视为放弃权利。
+
+
+**规则 III.2.3.061【比例限制】**
+相关比例应当控制在合理范围内：
+a) 上限：不得超过80%
+b) 下限：不得低于20%
+c) 理想区间：50%-70%
+d) 超标处理：超出范围须提交专项报告
 
 
