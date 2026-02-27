@@ -8,6 +8,53 @@
 
 Renewable energy refers to energy forms that are naturally replenished, including but not limited to solar, wind, hydro, geothermal, and biomass energy. Embodied intelligence systems must prioritize the use of renewable energy, with renewable energy accounting for no less than 60% of annual energy consumption.
 
+**【原理】**
+可再生能源优先原则基于"代际正义"和"生态可持续性"理论。化石能源是不可再生的存量资源，其开采和使用不仅造成环境污染，更剥夺了未来世代的发展机会。具身智能作为高能耗系统，若依赖化石能源，将放大这种代际不公平。60%的阈值设定参考了IPCC气候目标和当前技术可行性之间的平衡点。
+
+**Principle**: The renewable energy priority principle is based on theories of "intergenerational justice" and "ecological sustainability." Fossil fuels are non-renewable stock resources; their extraction and use not only cause environmental pollution but also deprive future generations of development opportunities. As high energy consumption systems, embodied intelligence would amplify this intergenerational inequity if dependent on fossil fuels. The 60% threshold represents a balance between IPCC climate targets and current technical feasibility.
+
+**【案例】**
+**正面案例**：第10共生城区的具身智能集群通过屋顶光伏、风力发电和储能系统组合，实现了85%的可再生能源自给率，不仅满足本地需求，还向电网输出清洁能源，成为区域能源转型的标杆。
+
+**反面案例**：某数据中心为降低成本，使用煤电为主供电，仅名义上购买绿证满足合规要求，实际碳排放居高不下，被环保组织揭露后遭遇消费者抵制和监管处罚。
+
+**Positive Case**: The embodied intelligent cluster in Symbiotic Urban District 10 achieved 85% renewable energy self-sufficiency through rooftop photovoltaics, wind power, and energy storage systems, not only meeting local needs but also exporting clean energy to the grid, becoming a benchmark for regional energy transition.
+
+**Negative Case**: A data center primarily used coal-fired power to reduce costs, nominally purchasing green certificates to meet compliance requirements while actual carbon emissions remained high. After being exposed by environmental organizations, it faced consumer boycotts and regulatory penalties.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的能源采购和使用。
+
+**可再生能源定义**：
+- 一级可再生：太阳能、风能、水能（优先使用）
+- 二级可再生：地热能、生物质能（鼓励使用）
+- 非可再生：化石燃料、核裂变（限制使用，适用特别许可）
+
+**渐进达标时间表**：
+- 2026-2030年：≥40%
+- 2030-2040年：≥60%
+- 2040-2050年：≥80%
+
+**例外情形**：
+- 紧急救援场景（生命安全优先）
+- 经批准的科研实验（需伦理审查）
+
+**Applicable Boundaries**: This rule applies to all energy procurement and use by embodied intelligence systems.
+
+**Renewable Energy Classification**:
+- Tier 1 renewable: solar, wind, hydro (priority use)
+- Tier 2 renewable: geothermal, biomass (encouraged use)
+- Non-renewable: fossil fuels, nuclear fission (restricted use, subject to special permits)
+
+**Progressive Compliance Timeline**:
+- 2026-2030: ≥40%
+- 2030-2040: ≥60%
+- 2040-2050: ≥80%
+
+**Exceptions**:
+- Emergency rescue scenarios (life safety priority)
+- Approved scientific research experiments (require ethics review)
+
 **规则 III.1.1.002【不可再生能源】**
 **Rule III.1.1.002 [Non-Renewable Energy]**
 
@@ -36,6 +83,51 @@ a) Sharing energy: open-source, shared, universally accessible energy forms
 b) Possessive energy: privatized, competitively acquired energy forms
 c) Indifferent energy: energy use without ethical consideration or distinction
 Embodied intelligence systems must avoid indifferent energy use patterns.
+
+**【原理】**
+能源伦理三分法源于政治经济学中的"公地悲剧"理论和伦理学中的"关怀伦理"。冷漠型能源使用将能源视为纯粹的商品，忽视了能源获取过程中的环境成本、社会成本和未来成本。分享型能源体现了"能源民主"理念，占有型能源在市场机制下有其合理性，但两者都需要伦理审视。具身智能作为高能耗主体，必须主动承担能源伦理责任。
+
+**Principle**: The Energy Ethics Trichotomy originates from the "tragedy of the commons" theory in political economics and "ethics of care" in moral philosophy. Indifferent energy use treats energy as a pure commodity, ignoring environmental costs, social costs, and future costs in energy acquisition. Sharing energy embodies the concept of "energy democracy," while possessive energy has its rationality under market mechanisms, but both require ethical scrutiny. As high energy consumption entities, embodied intelligence must proactively assume energy ethics responsibility.
+
+**【案例】**
+**正面案例**：某社区微电网采用"分享型能源"模式，居民通过太阳能板发电并共享储能设施，AI系统公平调度能源分配，实现社区能源自给自足，碳足迹降低70%。
+
+**反面案例**：某AI挖矿企业使用煤电进行加密货币挖矿，对能源来源的环境影响完全漠视，仅关注算力成本和收益，属于典型的"冷漠型能源"使用，最终被政府叫停并处以高额罚款。
+
+**Positive Case**: A community microgrid adopted a "sharing energy" model where residents generate electricity through solar panels and share storage facilities, with AI systems fairly scheduling energy distribution, achieving community energy self-sufficiency and reducing carbon footprint by 70%.
+
+**Negative Case**: An AI mining company used coal-fired electricity for cryptocurrency mining, completely indifferent to the environmental impact of energy sources, focusing only on computing costs and profits—a typical example of "indifferent energy" use. The operation was eventually shut down by the government and fined heavily.
+
+**【边界】**
+**分类标准**：
+- 分享型能源特征：分布式、开源协议、社区治理、普惠定价
+- 占有型能源特征：私有化产权、市场交易、竞争性获取
+- 冷漠型能源特征：单一成本导向、外部性忽视、伦理盲区
+
+**使用建议**：
+- 公共服务场景：优先分享型能源
+- 商业运营场景：可使用占有型能源，但须披露能源伦理标签
+- 禁止场景：任何情况下不得使用冷漠型能源模式
+
+**监测指标**：
+- 能源来源披露完整度≥95%
+- 能源外部性内部化率≥60%
+- 能源伦理审计频率：年度
+
+**Classification Standards**:
+- Sharing energy characteristics: distributed, open-source protocols, community governance, inclusive pricing
+- Possessive energy characteristics: private property rights, market trading, competitive acquisition
+- Indifferent energy characteristics: single cost orientation, externality neglect, ethical blind spots
+
+**Usage Recommendations**:
+- Public service scenarios: prioritize sharing energy
+- Commercial operation scenarios: may use possessive energy but must disclose energy ethics labels
+- Prohibited scenarios: indifferent energy patterns prohibited under any circumstances
+
+**Monitoring Indicators**:
+- Energy source disclosure completeness ≥95%
+- Energy externality internalization rate ≥60%
+- Energy ethics audit frequency: annual
 
 **规则 III.1.1.005【能源密度分级】**
 **Rule III.1.1.005 [Energy Density Classification]**

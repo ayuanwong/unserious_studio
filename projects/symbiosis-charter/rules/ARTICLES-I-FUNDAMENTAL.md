@@ -8,6 +8,29 @@
 
 Embodied Intelligence refers to intelligent systems embedded in physical entities capable of sensing the physical environment, interacting with the physical world, and executing physical actions. Embodied intelligence in this framework includes but is not limited to: humanoid robots, autonomous vehicles, industrial robots, drones, smart exoskeletons, automated logistics systems, and any AI systems with physical form and environmental interaction capabilities. The key distinction of embodied intelligence from pure software AI lies in its physical presence—it can produce actual impacts in the atomic world.
 
+**【原理】**
+具身智能概念源于认知科学中的"具身认知"理论——智能并非仅存在于抽象计算中，而是与物理身体的感知运动能力紧密耦合。这一定义确立了本框架的规制边界：凡能在物理世界产生实际影响的智能系统，无论其智能水平高低，均需纳入治理体系。
+
+**Principle**: The concept of embodied intelligence stems from "embodied cognition" theory in cognitive science—intelligence does not exist solely in abstract computation but is tightly coupled with the sensory-motor capabilities of a physical body. This definition establishes the regulatory boundaries of this framework: any intelligent system capable of producing actual impacts in the physical world, regardless of its level of intelligence, must be included in the governance system.
+
+**【案例】**
+**正面案例**：第7共生城区的物流配送机器人具备完整的具身智能特征——它们感知街道环境、避开行人、搬运货物，所有行为均在物理世界中产生实际影响，因此完全纳入本框架规制。
+
+**反面案例**：某纯软件推荐算法虽能影响用户点击行为，但因不具备物理实体、不能在原子世界产生直接作用，故不属于本框架定义的具身智能，而适用虚拟空间治理规则。
+
+**Positive Case**: Logistics robots in Symbiotic Urban District 7 exhibit complete embodied intelligence characteristics—they perceive street environments, avoid pedestrians, and transport goods, all producing actual impacts in the physical world, thus fully falling under this framework's governance.
+
+**Negative Case**: A pure software recommendation algorithm may influence user clicking behavior, but because it lacks physical embodiment and cannot produce direct effects in the atomic world, it does not qualify as embodied intelligence under this framework and falls under virtual space governance rules instead.
+
+**【边界】**
+**适用边界**：本规则适用于所有具备物理形态和环境交互能力的AI系统，无论其部署在地面、空中、水下或太空环境。
+
+**例外情形**：虚拟现实中的化身（Avatar）、纯软件AI、以及人类完全外骨骼控制下的机械装置（无自主决策）不适用本规则。
+
+**Applicable Boundaries**: This rule applies to all AI systems with physical form and environmental interaction capabilities, regardless of deployment in ground, aerial, underwater, or space environments.
+
+**Exceptions**: Avatars in virtual reality, pure software AI, and mechanical devices under complete human exoskeleton control (without autonomous decision-making) are not subject to this rule.
+
 **规则 I.1.1.002【智能体】**
 **Rule I.1.1.002 [Agent]**
 
@@ -23,12 +46,62 @@ An Agent refers to any entity capable of perceiving its environment, processing 
 - Hybrid agents (human-machine fusion systems): Enhanced intelligent agents with deep integration of human cognition and AI capabilities
 - Collective agents (distributed intelligent networks): Multi-agent systems that exhibit collective intelligence through collaboration
 
+**【原理】**
+智能体分类体现了共生宪章的多元智能观——智能不限于人类，也不限于硅基AI，而是存在于多种形态中。这种分类方法打破了人类中心主义和机器中心主义的双向偏见，为跨物种协作奠定概念基础。
+
+**Principle**: The agent classification reflects the Symbiosis Charter's pluralistic view of intelligence—intelligence is not limited to humans nor to silicon-based AI, but exists in multiple forms. This classification breaks through both anthropocentric and machine-centric biases, laying a conceptual foundation for cross-species collaboration.
+
+**【案例】**
+**正面案例**：某工厂中，人类工程师（碳基）、协作机器人（硅基）、外骨骼增强工人（混合）、以及智能调度系统（群体）共同构成多智能体生产网络，各类型智能体按本框架规则协同工作。
+
+**反面案例**：某企业仅将AI系统视为"工具"而非智能体，拒绝赋予其任何决策权限，导致人机协作效率低下，且未能建立相应的伦理监督机制。
+
+**Positive Case**: In a factory, human engineers (carbon-based), collaborative robots (silicon-based), exoskeleton-enhanced workers (hybrid), and intelligent scheduling systems (collective) form a multi-agent production network, with each type of agent working collaboratively according to this framework's rules.
+
+**Negative Case**: A corporation treats AI systems merely as "tools" rather than agents, refusing to grant them any decision-making authority, resulting in inefficient human-machine collaboration and failure to establish corresponding ethical oversight mechanisms.
+
+**【边界】**
+**适用边界**：本规则适用于所有具备感知-决策-执行能力的实体，无论其智能来源是生物演化、人工设计还是混合增强。
+
+**例外情形**：简单的传感器-执行器回路（如自动门）、完全预设程序运行的机械装置（无环境适应性）不属于本规则定义的智能体。
+
+**Applicable Boundaries**: This rule applies to all entities with perception-decision-execution capabilities, regardless of whether their intelligence originates from biological evolution, artificial design, or hybrid enhancement.
+
+**Exceptions**: Simple sensor-actuator loops (such as automatic doors) and mechanical devices operating on completely preset programs (without environmental adaptability) do not qualify as agents under this rule.
+
 **规则 I.1.1.003【生产力重构】**
 **Rule I.1.1.003 [Productivity Reconstruction]**
 
 生产力重构指具身智能技术引发的物理世界生产方式、劳动形态、价值创造模式的系统性变革。包括：劳动替代（具身智能执行传统人类劳动）、劳动增强（人机协作提升生产效率）、新劳动形态创造（AI训练师、机器人伦理审计员等新兴职业）、生产关系调整（所有权与使用权分离）以及价值分配机制变革（人机协同创造价值的新分配模式）等具体类别。
 
 Productivity Reconstruction refers to the systematic transformation of production methods, labor forms, and value creation models in the physical world triggered by embodied intelligence technology. This includes: labor substitution (embodied intelligence performing traditional human labor), labor augmentation (human-machine collaboration enhancing productivity), creation of new labor forms (emerging professions such as AI trainers and robot ethics auditors), adjustment of production relations (separation of ownership and usage rights), and transformation of value distribution mechanisms (new distribution models for value co-created by humans and machines).
+
+**【原理】**
+生产力重构不是简单的"机器换人"，而是生产范式的根本转变。马克思主义政治经济学认为生产力决定生产关系，而具身智能正是21世纪生产力的革命性跃迁。本规则承认这一变革的必然性，同时强调必须通过制度设计确保变革成果惠及全体而非加剧不平等。
+
+**Principle**: Productivity reconstruction is not simply "machines replacing humans," but a fundamental transformation of production paradigms. Marxist political economics holds that productive forces determine production relations, and embodied intelligence represents a revolutionary leap in 21st-century productive forces. This rule acknowledges the inevitability of this transformation while emphasizing that institutional design must ensure the benefits are shared by all rather than exacerbating inequality.
+
+**【案例】**
+**正面案例**：某制造企业引入具身智能后，原流水线工人转型为机器人协作工程师和AI训练师，企业通过"人机协同价值共享基金"将效率提升收益的40%分配给原工人，实现了生产力跃升与劳动者福祉的双重增进。
+
+**反面案例**：某物流企业大规模部署无人配送车，但未建立相应的人员转岗机制和价值分享机制，导致大规模失业和社会矛盾，最终因公众抵制而被迫缩减部署规模。
+
+**Positive Case**: After introducing embodied intelligence, a manufacturing company retrained former assembly line workers as robot collaboration engineers and AI trainers. Through a "human-machine collaborative value-sharing fund," the company distributed 40% of efficiency gains to original workers, achieving both productivity leaps and enhanced worker welfare.
+
+**Negative Case**: A logistics company massively deployed autonomous delivery vehicles without establishing corresponding employee transition mechanisms or value-sharing mechanisms, leading to large-scale unemployment and social conflicts, ultimately being forced to reduce deployment due to public resistance.
+
+**【边界】**
+**适用边界**：本规则适用于所有因具身智能技术应用而引发的生产方式变革场景。
+
+**例外情形**：纯软件自动化（如RPA流程自动化）、传统机械化（无智能决策能力）不属于本规则定义的生产力重构。
+
+**量化指标**：当某行业具身智能渗透率超过15%时，触发本规则要求的全套适应性措施。
+
+**Applicable Boundaries**: This rule applies to all scenarios where production methods transform due to embodied intelligence technology application.
+
+**Exceptions**: Pure software automation (such as RPA process automation) and traditional mechanization (without intelligent decision-making capabilities) do not qualify as productivity reconstruction under this rule.
+
+**Quantitative Indicators**: When embodied intelligence penetration exceeds 15% in an industry, full adaptation measures required by this rule are triggered.
 
 **规则 I.1.1.004【能源可持续性】**
 **Rule I.1.1.004 [Energy Sustainability]**
@@ -42,6 +115,39 @@ Energy Sustainability refers to meeting the energy needs of current embodied int
 - Sustainability of energy sources (renewability): prioritizing renewable energy such as solar and wind power
 - Ethical appropriateness of energy use (source-use matching): high ethical requirement scenarios (education, healthcare) must use clean energy
 - Resilience of energy systems (shock resistance): redundant designs capable of responding to supply disruptions, price volatility, and technical failures
+
+**【原理】**
+能源可持续性植根于"代际正义"理论——当代人无权透支未来世代的资源禀赋。同时，"来源-用途匹配"原则体现了亚里士多德的目的论伦理：高尚目的应当匹配清洁手段。具身智能的能耗需求呈指数增长，若无伦理约束，可能导致能源殖民和环境灾难。
+
+**Principle**: Energy sustainability is rooted in "intergenerational justice" theory—current generations have no right to deplete the resource endowments of future generations. Meanwhile, the "source-use matching" principle reflects Aristotelian teleological ethics: noble ends should be matched with clean means. The energy consumption demands of embodied intelligence grow exponentially; without ethical constraints, this could lead to energy colonialism and environmental disasters.
+
+**【案例】**
+**正面案例**：第12共生城区的"教育云"数据中心100%使用可再生能源供电，并与当地农业温室形成废热循环利用，年碳足迹为负值，成为"来源-用途匹配"的典范。
+
+**反面案例**：某AI训练公司使用燃煤电力训练大模型，单次训练产生相当于500辆汽车年排放的二氧化碳，且模型用于娱乐推荐系统，引发"高碳娱乐"的伦理争议。
+
+**Positive Case**: The "Education Cloud" data center in Symbiotic Urban District 12 is powered 100% by renewable energy and forms a waste heat recycling loop with local agricultural greenhouses, achieving negative annual carbon footprint—becoming a model of "source-use matching."
+
+**Negative Case**: An AI training company used coal-fired electricity to train large models, with a single training run producing CO2 equivalent to the annual emissions of 500 cars. The model was used for entertainment recommendation systems, sparking ethical controversy over "high-carbon entertainment."
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的能源获取、使用和分配活动。
+
+**例外情形**：紧急救援场景（生命威胁）、国家安全需要的军事应用可在短期内豁免可再生能源比例要求，但须在事后30日内提交能源伦理审查报告。
+
+**量化阈值**：
+- 可再生能源占比≥60%（基础要求）
+- 高伦理场景（教育、医疗、司法）清洁能源占比≥95%
+- 系统韧性冗余度≥20%
+
+**Applicable Boundaries**: This rule applies to all energy acquisition, use, and distribution activities of embodied intelligence systems.
+
+**Exceptions**: Emergency rescue scenarios (life-threatening situations) and military applications for national security may be temporarily exempted from renewable energy ratio requirements, but an energy ethics review report must be submitted within 30 days.
+
+**Quantitative Thresholds**:
+- Renewable energy proportion ≥60% (basic requirement)
+- High-ethics scenarios (education, healthcare, judiciary) clean energy proportion ≥95%
+- System resilience redundancy ≥20%
 
 **规则 I.1.1.005【人类伦理代理权】**
 **Rule I.1.1.005 [Human Ethical Agency]**
@@ -58,6 +164,45 @@ Human Ethical Agency refers to the sum of humans' capacity for autonomous decisi
 - Veto agency: right to veto specific decisions, even if technically "optimal"
 - Exit agency: right to opt out of the system without undue penalties
 
+**【原理】**
+人类伦理代理权根植于康德的"人是目的"命题——人类拥有不可让渡的尊严和自主性，技术系统只能作为手段而非目的本身。这一权利体系构成了人机关系中的"道德红线"：无论AI多么高效、精准，涉及人类根本利益的决策必须保留人类的主体地位。
+
+**Principle**: Human ethical agency is rooted in Kant's proposition that "humanity is an end"—humans possess inalienable dignity and autonomy, and technological systems can only serve as means rather than ends in themselves. This rights system constitutes the "moral red line" in human-machine relations: regardless of how efficient or precise AI becomes, decisions involving human fundamental interests must preserve human subjectivity.
+
+**【案例】**
+**正面案例**：某智慧医疗系统的AI诊断建议准确率达97%，但系统设计上要求医生必须复核并签字确认，且患者有权拒绝AI建议并寻求第二意见，充分保障了人类伦理代理权。
+
+**反面案例**：某自动驾驶系统在紧急情况下为"最小化总伤亡"而自主选择撞击某辆车内乘客，剥夺了该乘客对自己生命安全的决策代理权，引发重大伦理争议和法律诉讼。
+
+**Positive Case**: A smart healthcare system's AI diagnostic recommendations achieve 97% accuracy, but the system design requires doctors to review and sign off, and patients have the right to reject AI recommendations and seek second opinions, fully protecting human ethical agency.
+
+**Negative Case**: An autonomous driving system autonomously chose to impact passengers in one vehicle to "minimize total casualties" in an emergency, depriving those passengers of decision-making agency over their own life safety, sparking major ethical controversy and legal action.
+
+**【边界】**
+**适用边界**：本规则适用于所有涉及人类利益、权利或安全的具身智能决策场景。
+
+**例外情形**：
+- 完全自愿的娱乐场景（如AI游戏对手）
+- 人类明确授权且可撤销的代理决策
+- 紧急避险中的瞬间反应（事后须接受伦理审查）
+
+**量化标准**：
+- 影响>1000人的决策：必须人类最终批准
+- 生命安全相关决策：必须保留人类否决权
+- 退出请求响应时间：≤24小时
+
+**Applicable Boundaries**: This rule applies to all embodied intelligent decision-making scenarios involving human interests, rights, or safety.
+
+**Exceptions**:
+- Fully voluntary entertainment scenarios (such as AI game opponents)
+- Agency decisions with explicit human authorization that can be revoked
+- Instant reactions in emergency避险 (subject to post-hoc ethical review)
+
+**Quantitative Standards**:
+- Decisions affecting >1,000 people: must have final human approval
+- Life safety-related decisions: must preserve human veto power
+- Exit request response time: ≤24 hours
+
 **规则 I.1.1.006【自适应治理】**
 **Rule I.1.1.006 [Adaptive Governance]**
 
@@ -73,6 +218,45 @@ Adaptive Governance refers to the capacity of governance frameworks to automatic
 - Multi-objective balance optimization: seeking Pareto improvements among efficiency, equity, safety, innovation, and other goals
 - Preventive intervention: identifying potential risk signals and taking preventive measures before crises emerge
 
+**【原理】**
+自适应治理源于复杂系统理论中的"韧性"概念——僵化系统在环境变化中容易崩溃，而能够学习和进化的系统更具生存力。传统"命令-控制"式治理难以应对具身智能的快速迭代，自适应治理通过分布式感知、智能反馈和动态调整，实现治理框架与技术发展的"协同演化"。
+
+**Principle**: Adaptive governance stems from the concept of "resilience" in complex systems theory—rigid systems tend to collapse when environments change, while systems capable of learning and evolving have greater viability. Traditional "command-and-control" governance struggles to cope with the rapid iteration of embodied intelligence; adaptive governance achieves "co-evolution" of governance frameworks with technological development through distributed sensing, intelligent feedback, and dynamic adjustment.
+
+**【案例】**
+**正面案例**：第9共生城区的交通治理系统通过实时监测拥堵数据、事故率和市民反馈，每周自动微调信号灯配时和车道分配策略，使平均通勤时间三年内下降28%，且无需大规模基础设施改造。
+
+**反面案例**：某城市采用静态的智能交通法规，五年未更新，导致法规严重滞后于技术发展，出现"合法但不合理"的执法困境（如AI配送车在安全情况下被旧法规禁止）。
+
+**Positive Case**: The traffic governance system in Symbiotic Urban District 9 automatically fine-tunes signal timing and lane allocation strategies weekly through real-time monitoring of congestion data, accident rates, and citizen feedback, reducing average commute times by 28% over three years without requiring large-scale infrastructure changes.
+
+**Negative Case**: A city adopted static intelligent traffic regulations that were not updated for five years, causing regulations to seriously lag behind technological development and creating enforcement dilemmas where situations were "legal but unreasonable" (such as AI delivery vehicles being banned by old regulations in safe situations).
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能治理框架的设计、运行和优化。
+
+**刚性底线**：以下领域不得自适应调整，必须保持恒定：
+- 人类伦理代理权（不可让渡）
+- 生命安全优先原则（不可妥协）
+- 价值真空分配比例（40%-30%-20%-10%结构固定）
+
+**调整阈值**：
+- L1参数（如配时、额度）：可每日自动调整
+- L2规则（如准入标准）：需季度人工审核后调整
+- L3原则（如核心价值）：需年度全民公投方可调整
+
+**Applicable Boundaries**: This rule applies to the design, operation, and optimization of all embodied intelligence governance frameworks.
+
+**Rigid Bottom Lines**: The following areas cannot be adaptively adjusted and must remain constant:
+- Human ethical agency (non-alienable)
+- Life safety priority principle (non-negotiable)
+- Value vacuum distribution ratios (40%-30%-20%-10% structure fixed)
+
+**Adjustment Thresholds**:
+- L1 parameters (such as timing, quotas): can be automatically adjusted daily
+- L2 rules (such as admission standards): require quarterly manual review before adjustment
+- L3 principles (such as core values): require annual referendum for adjustment
+
 **规则 I.1.1.007【三螺旋模型】**
 **Rule I.1.1.007 [Triple Helix Model]**
 
@@ -85,6 +269,49 @@ The Triple Helix Model is the core architecture of this framework, referring to 
 - Misalignment angle: 15-30 degrees—subsystems maintain moderate tension rather than complete synchronization
 - Tension coefficient: 0.3-0.7—dynamic balance of both competition and cooperation between systems
 - Synchronization frequency: multi-level coordination mechanisms at daily, weekly, monthly, and yearly scales
+
+**【原理】**
+三螺旋模型借鉴了DNA双螺旋结构的生物学隐喻，并扩展为三重缠绕。其哲学基础在于：单一目标优化必然导致系统脆弱（如唯生产力论导致环境灾难），而完全对齐的三个系统则失去创新和纠错能力（如计划经济的问题）。适度错位创造"创造性张力"，使系统在动态平衡中持续进化。
+
+**Principle**: The Triple Helix Model draws on the biological metaphor of DNA's double helix structure, expanding it to a triple intertwining. Its philosophical foundation lies in the understanding that single-objective optimization inevitably leads to system fragility (such as productivity-only approaches causing environmental disasters), while completely aligned systems lose innovation and error-correction capabilities (as seen in planned economies). Moderate misalignment creates "creative tension," enabling systems to continuously evolve through dynamic equilibrium.
+
+**【案例】**
+**正面案例**：某共生城区在引入具身智能生产线（生产力）时，同时要求使用可再生能源（能源约束）并建立工人转岗培训体系（伦理保障）。三者的适度张力促使企业开发出更节能的机器人技术和更人性化的协作界面，实现了三重优化。
+
+**反面案例**：某地区片面追求具身智能产业GDP（生产力单一目标），忽视能源消耗（能源崩溃）和就业冲击（伦理失序），最终导致电网瘫痪和社会动荡，产业被迫大规模收缩。
+
+**Positive Case**: When a symbiotic urban district introduced embodied intelligent production lines (productivity), it simultaneously required renewable energy use (energy constraint) and established worker transition training systems (ethical safeguard). The moderate tension among the three prompted companies to develop more energy-efficient robotic technology and more human-friendly collaboration interfaces, achieving triple optimization.
+
+**Negative Case**: A region pursued embodied intelligence industry GDP single-mindedly (productivity-only objective), neglecting energy consumption (energy collapse) and employment shocks (ethical disorder), ultimately leading to grid paralysis and social unrest, forcing large-scale industry contraction.
+
+**【边界】**
+**适用边界**：本规则适用于所有涉及生产力、能源、伦理三重目标的治理决策。
+
+**危险区域**：
+- 错位角度<15度：系统趋于僵化，创新停滞
+- 错位角度>30度：系统张力过大，协调失灵
+- 张力系数<0.3：子系统间缺乏有效互动
+- 张力系数>0.7：冲突成本超过协同收益
+
+**监测指标**：
+- 每日监测：系统负载率、冲突事件数
+- 每周评估：跨系统协调成本
+- 每月审查：帕累托改进空间
+- 每年校准：错位角度和张力系数基准值
+
+**Applicable Boundaries**: This rule applies to all governance decisions involving the triple objectives of productivity, energy, and ethics.
+
+**Danger Zones**:
+- Misalignment angle <15 degrees: system tends toward rigidity, innovation stagnates
+- Misalignment angle >30 degrees: excessive tension, coordination failure
+- Tension coefficient <0.3: subsystems lack effective interaction
+- Tension coefficient >0.7: conflict costs exceed synergy benefits
+
+**Monitoring Indicators**:
+- Daily monitoring: system load rate, conflict incidents
+- Weekly assessment: cross-system coordination costs
+- Monthly review: Pareto improvement space
+- Annual calibration: misalignment angle and tension coefficient baseline values
 
 **规则 I.1.1.008【治理边界】**
 **Rule I.1.1.008 [Governance Boundaries]**
@@ -101,12 +328,98 @@ Governance Boundaries refer to the scope and limitations of this framework's app
 - Subject boundaries: all embodied intelligent agents and the humans who interact with them, including designers, manufacturers, operators, and users
 - Matter boundaries: decisions and actions involving physical world productivity, energy, and ethics, as well as related virtual space governance
 
+**【原理】**
+治理边界的设定基于"有限理性"和"权责对等"原则。任何治理框架都不可能无限扩展，明确边界有助于：①集中资源于核心领域；②避免过度干预创新；③为跨境协作保留接口空间；④确保规则的可执行性。时间边界的设定则为技术迭代预留了制度更新窗口。
+
+**Principle**: Governance boundaries are based on principles of "bounded rationality" and "matching authority with responsibility." No governance framework can expand infinitely; clear boundaries help: ① concentrate resources on core areas; ② avoid over-intervention in innovation; ③ preserve interface space for cross-border collaboration; ④ ensure rule enforceability. Temporal boundaries provide windows for institutional updates to accommodate technological iteration.
+
+**【案例】**
+**正面案例**：某共生城区明确规定本框架仅规制具身智能，纯软件AI适用《虚拟空间治理法》。这种清晰的边界划分使两类系统都能在明确的法律环境下发展，避免了管辖权争议。
+
+**反面案例**：某地区试图将具身智能治理框架扩展到所有AI系统（包括纯软件），导致规制范围过大、执法资源分散，且与上位法产生冲突，最终框架因缺乏可操作性而被废止。
+
+**Positive Case**: A symbiotic urban district clearly stipulated that this framework only governs embodied intelligence, while pure software AI falls under the "Virtual Space Governance Act." This clear boundary delineation allows both types of systems to develop within clear legal environments, avoiding jurisdictional disputes.
+
+**Negative Case**: A region attempted to extend the embodied intelligence governance framework to all AI systems (including pure software), resulting in overly broad regulatory scope, dispersed enforcement resources, and conflicts with superior laws. The framework was ultimately abolished due to lack of operability.
+
+**【边界】**
+**地理边界详述**：
+- 核心区域：第7-13号共生城区（主权管辖）
+- 扩展区域：经批准的新建共生城区
+- 跨境协作区：与友好城市签署互惠协议的特别区域
+
+**时间边界详述**：
+- 生效期：2026-2030年（逐步适用）
+- 成熟期：2030-2060年（全面实施）
+- 过渡期：2060-2075年（向后继框架过渡）
+
+**豁免情形**：
+- 纯粹虚拟空间的AI（无物理影响）
+- 军事应用（适用特别授权程序）
+- 封闭实验室（需伦理委员会预先批准）
+
+**Geographic Boundaries Detailed**:
+- Core areas: Symbiotic Urban Districts 7-13 (sovereign jurisdiction)
+- Expansion areas: newly approved symbiotic urban districts
+- Cross-border collaboration zones: special areas with reciprocity agreements with partner cities
+
+**Temporal Boundaries Detailed**:
+- Activation period: 2026-2030 (gradual application)
+- Maturity period: 2030-2060 (full implementation)
+- Transition period: 2060-2075 (transition to successor framework)
+
+**Exemptions**:
+- Pure virtual space AI (no physical impact)
+- Military applications (subject to special authorization procedures)
+- Closed laboratories (require advance approval from ethics committees)
+
 **规则 I.1.1.009【光源标记】**
 **Rule I.1.1.009 [Light-Source Marking]**
 
 光源标记指任何智能体决策链中必须保留的可追溯至人类授权的关键节点。这是区分"影子"与"实体"的根本标志。技术实现包括：区块链锚定（将关键决策哈希值写入不可篡改的分布式账本）、多方签名（要求多个授权主体共同确认）、时间戳验证（证明决策发生的时间序列）以及血缘追溯（记录数据与决策的完整谱系）。
 
 Light-Source Marking refers to the critical nodes in any agent's decision chain that must be preserved and traceable to human authorization. This is the fundamental distinction between "shadow" and "substance". Technical implementations include: blockchain anchoring (writing critical decision hashes to immutable distributed ledgers), multi-party signatures (requiring confirmation from multiple authorized entities), timestamp verification (proving the temporal sequence of decisions), and lineage tracing (recording complete pedigrees of data and decisions).
+
+**【原理】**
+光源标记源于法学中的"可追溯性"原则和哲学上的"责任归属"需求。当AI系统自主决策时，必须保留与人类意志的连接点，否则将出现"责任真空"——既无法向AI追责（其无主体资格），也无法向人类追责（决策非其所做）。光源标记确保每一个影响人类利益的决策都有明确的人类责任主体。
+
+**Principle**: Light-Source Marking originates from the legal principle of "traceability" and the philosophical need for "accountability attribution." When AI systems make autonomous decisions, connections to human will must be preserved; otherwise, a "responsibility vacuum" emerges—where neither the AI can be held accountable (lacking subject status) nor humans (since they didn't make the decision). Light-Source Marking ensures that every decision affecting human interests has a clearly identified human responsible party.
+
+**【案例】**
+**正面案例**：某自动驾驶车辆在紧急情况下自主决策转向避让，但其决策链完整记录了：①风险感知数据→②算法评估过程→③人类工程师预设的伦理权重→④最终决策输出。事故调查时可清晰追溯至人类设定的伦理参数，责任归属明确。
+
+**反面案例**：某AI交易系统进行高频投资决策，但因缺乏光源标记，当投资失败导致巨额损失时，无法确定是算法缺陷、数据错误还是人类参数设置不当，开发方、运营方、数据提供方互相推诿，受害者无法追责。
+
+**Positive Case**: When an autonomous vehicle made an emergency evasive maneuver, its decision chain completely recorded: ① risk perception data → ② algorithmic evaluation process → ③ ethical weights preset by human engineers → ④ final decision output. Accident investigations could clearly trace back to human-set ethical parameters, with clear accountability.
+
+**Negative Case**: An AI trading system made high-frequency investment decisions without Light-Source Marking. When investment failures caused massive losses, it was impossible to determine whether the cause was algorithmic defects, data errors, or improper human parameter settings. Developers, operators, and data providers shifted blame among themselves, leaving victims without recourse.
+
+**【边界】**
+**适用边界**：本规则适用于所有可能影响人类权益的具身智能决策。
+
+**标记深度要求**：
+- 关键决策（涉及生命安全、重大财产）：全链条标记
+- 常规决策（日常运营）：关键节点标记
+- 微决策（毫秒级反应）：事后可审计的日志标记
+
+**例外情形**：
+- 纯物理反射动作（如机器人碰到障碍物自动回缩）
+- 经人类明确授权的自主决策区间（但授权本身需标记）
+
+**技术失效处理**：当光源标记技术失效时，系统必须自动降级运行或暂停，直至标记功能恢复。
+
+**Applicable Boundaries**: This rule applies to all embodied intelligent decisions that may affect human interests.
+
+**Marking Depth Requirements**:
+- Critical decisions (involving life safety, major property): full-chain marking
+- Routine decisions (daily operations): critical node marking
+- Micro-decisions (millisecond-level reactions): post-hoc auditable log marking
+
+**Exceptions**:
+- Pure physical reflex actions (such as robots automatically retracting when touching obstacles)
+- Autonomous decision intervals with explicit human authorization (but the authorization itself must be marked)
+
+**Technical Failure Handling**: When Light-Source Marking technology fails, the system must automatically downgrade operation or suspend until marking functionality is restored.
 
 **规则 I.1.1.010【价值真空】**
 **Rule I.1.1.010 [Value Vacuum]**
@@ -122,6 +435,49 @@ Value Vacuum refers to the unassigned state formed when value created by intelli
 - Threshold-triggered release: distribution procedures trigger when accumulated value reaches preset thresholds or specific conditions
 - Multi-party distribution protocol: value is distributed among multiple stakeholders according to predetermined ratios (such as 40% Human Pool, 30% Environmental Fund, 20% Iteration Fund)
 - 10% unknown reserve mandatory isolation: 10% of value is reserved as a buffer against unknown risks
+
+**【原理】**
+价值真空概念源于热力学中的"熵"和经济学中的"资本积累"理论。智能系统创造的价值若立即分配，会过早固化利益格局，抑制系统的持续进化。价值真空提供了"缓冲地带"，使分配可以在更充分的信息和更成熟的共识基础上进行。40%-30%-20%-10%的比例结构体现了对人类劳动者（40%）、环境外部性（30%）、技术迭代（20%）和未知风险（10%）的综合考量。
+
+**Principle**: The Value Vacuum concept stems from "entropy" in thermodynamics and "capital accumulation" theory in economics. If value created by intelligent systems is immediately distributed, it would prematurely solidify interest patterns, inhibiting continuous system evolution. The Value Vacuum provides a "buffer zone," enabling distribution to occur on the basis of more complete information and more mature consensus. The 40%-30%-20%-10% ratio structure reflects comprehensive consideration for human workers (40%), environmental externalities (30%), technological iteration (20%), and unknown risks (10%).
+
+**【案例】**
+**正面案例**：某具身智能物流系统的价值真空累积半年后触发分配，40%分配给被替代的原快递员（转岗补偿），30%投入城市绿化基金，20%用于系统升级研发，10%作为应急储备。分配方案经利益相关方协商确定，各方满意。
+
+**反面案例**：某AI创作平台将AI生成内容收益100%归平台所有，未建立价值真空机制，导致原创作者群体强烈反对，引发版权诉讼和公众抵制，平台最终被迫关闭。
+
+**Positive Case**: A value vacuum accumulated over six months in an embodied intelligent logistics system triggered distribution: 40% to displaced former delivery workers (transition compensation), 30% to urban greening funds, 20% to system upgrade R&D, and 10% as emergency reserves. The distribution plan was determined through stakeholder negotiation, with all parties satisfied.
+
+**Negative Case**: An AI content generation platform attributed 100% of AI-generated content revenue to the platform without establishing a value vacuum mechanism, leading to strong opposition from original creator communities, copyright litigation, and public boycotts, ultimately forcing the platform to close.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统创造的经济价值。
+
+**累积阈值设定**：
+- 大型企业（年营收>1亿）：月累积，按月分配
+- 中型企业（年营收1000万-1亿）：季度累积，按季分配
+- 小型企业（年营收<1000万）：年度累积，按年分配
+
+**比例调整机制**：
+40%-30%-20%-10%为基准比例，可根据行业特性经治理委员会批准调整±5%，但人类池比例不得低于35%。
+
+**例外情形**：
+- 非营利性公共服务的价值真空可优先投入环境基金和迭代基金
+- 紧急情况下可提前释放价值真空储备
+
+**Applicable Boundaries**: This rule applies to all economic value created by embodied intelligent systems.
+
+**Accumulation Threshold Settings**:
+- Large enterprises (annual revenue >100 million): monthly accumulation, monthly distribution
+- Medium enterprises (annual revenue 10-100 million): quarterly accumulation, quarterly distribution
+- Small enterprises (annual revenue <10 million): annual accumulation, annual distribution
+
+**Ratio Adjustment Mechanism**:
+The 40%-30%-20%-10% baseline ratio can be adjusted by ±5% based on industry characteristics with Governance Council approval, but the Human Pool ratio must not fall below 35%.
+
+**Exceptions**:
+- Value vacuum from non-profit public services can be prioritized for Environmental Fund and Iteration Fund
+- Emergency situations may trigger early release of value vacuum reserves
 
 **规则 I.1.2.011【适用主体】**
 **Rule I.1.2.011 [Applicable Subjects]**
