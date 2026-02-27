@@ -1,6 +1,68 @@
 # 第一编：总则与基础架构
 **规则 I.1.1.001【具身智能】**
-具身智能（Embodied Intelligence）指具有物理实体、能够感知和作用于物理世界、具备自主决策能力的智能系统。包括但不限于：人形机器人、自主车辆、智能工厂系统、服务机器人、医疗机器人、农业自动化系统、物流无人机、建筑自动化设备等。
+**Rule I.1.1.001 [Embodied Intelligence]**
+
+具身智能（Embodied Intelligence）指具有物理实体、能够感知和作用于物理世界、具备自主决策能力的智能系统。其核心特征包括：
+- 物理具身性（拥有可操作的实体形态）
+- 环境感知性（通过传感器获取物理世界信息）
+- 自主行动性（基于感知做出决策并执行物理动作）
+- 以及适应性（能够根据环境反馈调整行为）。具体形态包括但不限于：人形机器人（如双足行走的服务机器人）
+- 自主车辆（L4/L5级自动驾驶汽车
+- 无人配送车）
+- 智能工厂系统（柔性制造单元
+- 协作机械臂）
+- 服务机器人（清洁机器人
+- 安防机器人）
+- 医疗机器人（手术机器人
+- 康复机器人）
+- 农业自动化系统（采摘机器人
+- 无人农机）
+- 物流无人机（配送无人机
+- 仓储AGV）
+- 建筑自动化设备（3D打印建筑机器人
+- 自动砌墙机）等具体类别。具身智能区别于纯软件AI的关键在于其决策会直接影响物理世界，因此需要特殊的治理框架。Embodied Intelligence refers to intelligent systems possessing physical entities capable of perceiving and acting upon the physical world with autonomous decision-making capabilities. Its core characteristics include: physical embodiment (possessing operable physical forms), environmental perception (acquiring physical world information through sensors), autonomous action (making decisions based on perception and executing physical actions), and adaptability (adjusting behavior based on environmental feedback). Specific forms include but are not limited to: humanoid robots (such as bipedal service robots), autonomous vehicles (L4/L5 autonomous cars, unmanned delivery vehicles), smart factory systems (flexible manufacturing units, collaborative robotic arms), service robots (cleaning robots, security robots), medical robots (surgical robots, rehabilitation robots), agricultural automation systems (harvesting robots, unmanned farm machinery), logistics drones (delivery drones, warehouse AGVs), and construction automation equipment (3D printing construction robots, automatic wall-building machines). The key distinction between embodied intelligence and pure software AI lies in its direct impact on the physical world, necessitating special governance frameworks.
+
+---
+
+**【原理 | Principle】**
+
+具身智能概念源于认知科学的"具身认知"（Embodied Cognition）理论，该理论认为智能并非仅存在于大脑或算法中，而是身体
+- 环境
+- 感知-行动循环的产物。梅洛-庞蒂的知觉现象学强调身体是我们认识世界的媒介。在AI领域，具身智能代表了从"离身智能"（如大语言模型）向"具身智能"的范式转移，后者强调：1) 感知-行动闭环（Perception-Action Loop）；2) 物理世界约束下的真实智能；3) 社会嵌入性（与社会系统的交互）。这一范式的转变意味着AI治理必须从虚拟空间延伸到物理空间，从数据隐私延伸到物理安全。The concept of embodied intelligence originates from the "Embodied Cognition" theory in cognitive science, which posits that intelligence exists not only in brains or algorithms but emerges from the interaction of body, environment, and perception-action cycles. Merleau-Ponty's phenomenology of perception emphasizes the body as our medium for knowing the world. In AI, embodied intelligence represents a paradigm shift from "disembodied intelligence" (like LLMs) to "embodied intelligence," emphasizing: 1) perception-action loops; 2) real intelligence constrained by physical world limitations; 3) social embeddedness (interaction with social systems). This paradigm shift means AI governance must extend from cyberspace to physical space, from data privacy to physical safety.
+
+**【案例 | Examples】**
+
+✓ **正面案例**：波士顿动力的Atlas机器人能够在复杂地形中行走
+- 跳跃
+- 搬运物体，展现了具身智能在物理世界中的适应能力。其每一次动作都基于对环境的实时感知和物理模型的计算，体现了具身智能的本质特征。✓ **Positive Example**: Boston Dynamics' Atlas robot can walk, jump, and manipulate objects in complex terrain, demonstrating embodied intelligence's adaptability in the physical world. Each action is based on real-time environmental perception and physical model calculations, embodying the essential characteristics of embodied intelligence.
+
+✓ **应用场景**：在智能工厂中，协作机器人（Cobot）与人类工人共同工作，通过力传感器感知人类存在并自动减速，实现安全的物理协作。这种具身智能系统不仅执行预设程序，还能根据环境变化（如工件位置偏移）自主调整动作。✓ **Application Scenario**: In smart factories, collaborative robots (Cobots) work alongside human workers, sensing human presence through force sensors and automatically slowing down to enable safe physical collaboration. Such embodied intelligence systems execute not only pre-programmed instructions but also autonomously adjust actions based on environmental changes (such as workpiece position shifts).
+
+✗ **反面案例**：某工厂未对具身智能系统进行充分风险评估，一台工业机械臂在维护期间未完全断电，因传感器故障未能检测到进入工作区域的维修人员，导致严重工伤事故。此案例凸显了具身智能物理风险的严重性。✗ **Negative Example**: A factory failed to conduct adequate risk assessment for an embodied intelligence system. An industrial robotic arm was not fully powered down during maintenance, and due to sensor failure, failed to detect a maintenance worker entering the work area, resulting in severe industrial injury. This case highlights the seriousness of physical risks posed by embodied intelligence.
+
+**【边界 | Boundaries】**
+
+本规则对"具身智能"的定义边界包括：
+a) 形态边界：必须具有可操作的物理实体，纯软件系统（如聊天机器人
+- 推荐算法）不在此列
+b) 能力边界：必须具备感知-决策-行动的闭环能力，单纯的远程遥控设备（如传统工业机械臂）不完全符合
+c) 智能边界：必须具备一定程度的自主性（非完全预设程序），能够根据环境反馈调整行为
+d) 应用边界：不包括仅用于虚拟/数字空间的智能体（如游戏NPC
+- 虚拟助手），除非其控制物理设备
+e) 尺度边界：从微观（纳米机器人）到宏观（巨型建筑机器人）均适用，但治理强度随尺度调整
+
+The definitional boundaries of "embodied intelligence" in this rule include:
+a) Morphological boundaries: must possess operable physical entities; pure software systems (such as chatbots, recommendation algorithms) are excluded
+b) Capability boundaries: must possess closed-loop perception-decision-action capabilities; simple remote-controlled devices (such as traditional industrial robotic arms) do not fully qualify
+c) Intelligence boundaries: must possess some degree of autonomy (not fully pre-programmed), capable of adjusting behavior based on environmental feedback
+d) Application boundaries: excludes agents operating only in virtual/digital spaces (such as game NPCs, virtual assistants), unless they control physical devices
+e) Scale boundaries: applies from micro-scale (nanorobots) to macro-scale (giant construction robots), with governance intensity adjusted by scale
+
+**【背景 | Context】**
+
+"具身智能"作为独立概念进入政策话语体系始于2040年代初期，当时人形机器人和自动驾驶技术的快速发展使得传统AI治理框架无法应对物理世界的风险。2045年的"机械臂伤人事件"和2046年的"自动驾驶伦理困境"推动了对具身智能专门治理的需求。本框架首次在2049年版本中将"具身智能"明确定义为核心治理对象，区分于纯软件AI。这一定义融合了认知科学
+- 机器人学
+- 伦理学和法律的多学科视角，成为全球首个专门针对具身智能的系统性治理框架的基础概念。The term "embodied intelligence" entered policy discourse as a distinct concept in the early 2040s, when rapid development of humanoid robots and autonomous driving technologies rendered traditional AI governance frameworks insufficient for addressing physical world risks. The 2045 "robotic arm injury incident" and 2046 "autonomous driving ethical dilemma" drove demand for specialized governance of embodied intelligence. This framework first explicitly defined "embodied intelligence" as a core governance object in its 2049 version, distinguishing it from pure software AI. This definition integrates multidisciplinary perspectives from cognitive science, robotics, ethics, and law, forming the foundational concept for the world's first systematic governance framework specifically targeting embodied intelligence.。
 
 **规则 I.1.1.002【智能体】**
 智能体（Agent）指任何能够感知环境、处理信息、做出决策并执行行动的实体。在本框架中，智能体分为：
