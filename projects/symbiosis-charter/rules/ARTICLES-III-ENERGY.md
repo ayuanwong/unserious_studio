@@ -598,12 +598,46 @@ d) 第三方验证接口
 工具须经过校准验证。
 
 **规则 III.5.1.075【碳足迹边界设定】**
-明确碳足迹核算边界：
-a) 组织边界：运营控制权
-b) 运营边界：直接和间接排放
-c) 价值链边界：上下游排放
-d) 时间边界：核算周期
-边界设定须一致可比。
+**Rule III.5.1.075 [Carbon Footprint Boundary Setting]**
+
+明确碳足迹核算的系统边界是确保碳排放数据准确性、可比性和可审计性的基础。本规则要求所有具身智能系统建立完整的碳足迹核算边界体系，涵盖组织边界、运营边界、价值链边界和时间边界四个维度。组织边界基于运营控制权确定，包括所有拥有或控制的设施；运营边界覆盖直接排放（范围1）、能源间接排放（范围2）和其他间接排放（范围3）；价值链边界延伸至上游供应链和下游产品使用阶段；时间边界统一按自然年度核算，确保数据纵向可比。所有边界设定必须文档化、标准化，并接受第三方核验。Clear definition of carbon footprint accounting boundaries is fundamental to ensuring accuracy, comparability, and auditability of carbon emissions data. This rule requires all embodied intelligence systems to establish a comprehensive carbon footprint accounting boundary system covering four dimensions:
+-  organizational boundaries, operational boundaries, value chain boundaries, and temporal boundaries. Organizational boundaries are determined based on operational control, including all owned or controlled facilities; operational boundaries cover direct emissions (Scope 1), energy indirect emissions (Scope 2), and other indirect emissions (Scope 3); value chain boundaries extend upstream to supply chains and downstream to product use phases; temporal boundaries uniformly follow the calendar year to ensure longitudinal data comparability. All boundary settings must be documented, standardized, and subject to third-party verification.
+
+---
+
+**【原理 | Principle】**
+
+碳足迹边界设定的理论基础源于生命周期评价（LCA）方法和温室气体核算体系（GHG Protocol）。边界设定解决了"核算什么"和"核算到哪里"的根本问题。组织边界的确立基于控制概念，确保排放源与责任主体对应；运营边界的三范围分类（Scope 1/2/3）形成了完整的排放分类体系；价值链边界的延伸体现了"污染者付费"和"全生命周期责任"原则；时间边界的统一则保障了数据的可比性和趋势分析的有效性。The theoretical foundation of carbon footprint boundary setting derives from Life Cycle Assessment (LCA) methodologies and the GHG Protocol. Boundary setting addresses the fundamental questions of "what to account for" and "where to stop accounting." Organizational boundaries are established based on control concepts, ensuring emission sources correspond to responsible entities; the three-scope classification of operational boundaries (Scope 1/2/3) forms a comprehensive emission categorization system; the extension of value chain boundaries embodies the "polluter pays" and "full lifecycle responsibility" principles; unified temporal boundaries ensure data comparability and effective trend analysis.
+
+**【案例 | Examples】**
+
+✓ **正面案例**：某智能制造企业明确界定其碳足迹边界：组织边界涵盖全球15个生产基地；运营边界包括范围1（工厂直接燃烧）
+- 范围2（外购电力）和范围3（员工通勤
+- 商务旅行）；价值链边界追踪前5大供应商的排放数据；时间边界按财年核算。该企业的碳排放数据获得国际第三方认证，成为行业标杆。✓ **Positive Example**: A smart manufacturing enterprise clearly defined its carbon footprint boundaries: organizational boundaries covering 15 global production bases; operational boundaries including Scope 1 (direct combustion), Scope 2 (purchased electricity), and Scope 3 (employee commuting, business travel); value chain boundaries tracking emissions data from top 5 suppliers; temporal boundaries aligned with fiscal year. The company's carbon emissions data received international third-party certification, becoming an industry benchmark.
+
+✗ **反面案例**：某物流企业仅核算总部办公室的电力消耗，忽略数千台配送车辆的燃油排放（范围1）和外包运输服务的排放（范围3），导致碳足迹数据严重低估，被监管机构认定为"漂绿"行为并处罚。✗ **Negative Example**: A logistics company only accounted for electricity consumption at headquarters offices, ignoring fuel emissions from thousands of delivery vehicles (Scope 1) and outsourced transportation services (Scope 3), resulting in severely underestimated carbon footprint data. The company was identified as engaging in "greenwashing" by regulators and penalized.
+
+**【边界 | Boundaries】**
+
+本规则的适用边界包括：
+a) 地理边界：适用于在共生城区内运营的所有具身智能系统，跨境运营系统需核算其区域内排放
+b) 规模边界：年能耗超过100MWh的系统必须建立完整边界体系；小型系统（<100MWh）可采用简化边界
+c) 时间边界：正式运营满12个月的系统必须提交首份年度碳足迹报告
+d) 豁免边界：紧急救援
+- 军事应用等特殊场景可暂时豁免，但须在事后30日内补充核算
+
+The applicable boundaries of this rule include:
+a) Geographic boundaries: applies to all embodied intelligence systems operating within Symbiosis Districts; cross-border operating systems must account for emissions within their operational regions
+b) Scale boundaries: systems with annual energy consumption exceeding 100MWh must establish complete boundary systems; small systems (<100MWh) may use simplified boundaries
+c) Temporal boundaries: systems in formal operation for 12 months must submit their first annual carbon footprint report
+d) Exemption boundaries: special scenarios such as emergency rescue and military applications may be temporarily exempted, but must be supplemented within 30 days post-event
+
+**【背景 | Context】**
+
+碳足迹边界设定规则制定于2028年，回应了早期碳核算实践中的混乱状况。在规则出台前，不同企业采用各异的核算方法，有的仅核算直接排放，有的将范围3排放选择性纳入，导致数据不可比
+- 不可信。国际气候变化协议的收紧和国内碳市场的建立，要求建立统一的边界标准。该规则参考了GHG Protocol
+- ISO 14064等国际标准，同时结合具身智能系统的特殊性（如AI算力中心的能源消耗
+- 机器人的分布式运营）进行了本土化调整。The Carbon Footprint Boundary Setting rule was established in 2028, responding to chaotic practices in early carbon accounting. Before the rule's introduction, different enterprises adopted various accounting methods—some only accounting for direct emissions, others selectively including Scope 3 emissions—resulting in incomparable and unreliable data. The tightening of international climate change agreements and the establishment of domestic carbon markets necessitated unified boundary standards. This rule references international standards such as GHG Protocol and ISO 14064, while incorporating localized adjustments for the special characteristics of embodied intelligence systems (such as AI data center energy consumption and distributed robot operations).。
 
 **规则 III.5.1.076【碳足迹分配方法】**
 多产品系统碳足迹分配：
