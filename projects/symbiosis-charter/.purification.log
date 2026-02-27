@@ -1928,3 +1928,92 @@ Summary: 176 rules purified, 2 supplementary docs created, 130 quality issues id
 [2026-02-27 00:31:19] ======================================================================
 [2026-02-27 00:31:19] ✓ Iteration #29 complete: 9 rules improved
 [2026-02-27 00:31:19] ======================================================================
+[2026-02-27 00:31:33] Received signal 15, stopping...
+[2026-02-27 00:31:34] ✓ Daemon stopped
+[2026-02-27 00:31:36] ======================================================================
+[2026-02-27 00:31:36] 🧹 RULE PURIFICATION DAEMON STARTED
+[2026-02-27 00:31:36] ======================================================================
+[2026-02-27 00:31:36] Mission: Keep rules/ clean, move supplementary to annotations/
+[2026-02-27 00:31:36] Focus: Rule expression quality, clarity, precision
+[2026-02-27 00:31:36] PID: 54588
+[2026-02-27 00:31:36] ======================================================================
+[2026-02-27 00:31:36] 
+======================================================================
+[2026-02-27 00:31:36] 🧹 PURIFICATION & IMPROVEMENT ITERATION #1
+[2026-02-27 00:31:36] ======================================================================
+[2026-02-27 00:31:36] 
+======================================================================
+[2026-02-27 00:31:36] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:31:36] ======================================================================
+[2026-02-27 00:31:36] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:31:36]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:31:36] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:31:36]   ✓ ARTICLES-II-PRODUCTIVITY.md: 183 rules, 128 issues
+[2026-02-27 00:31:36] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:31:36]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 53 issues
+[2026-02-27 00:31:36] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:31:36]   ✓ ARTICLES-IV-ETHICAL-AGENCY.md: 150 rules, 84 issues
+[2026-02-27 00:31:36] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:31:36]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:31:36] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:31:36]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:31:36] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:31:36]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:31:36] 
+📊 Summary: 560 rules | 0 improved | 0 docs created | 309 issues tracked
+[2026-02-27 00:31:36] ======================================================================
+[2026-02-27 00:31:36] ✓ Iteration #1 complete: 0 rules improved
+[2026-02-27 00:31:36] ======================================================================
+[2026-02-27 00:32:09] 
+======================================================================
+[2026-02-27 00:32:09] 🧹 PURIFICATION & IMPROVEMENT ITERATION #2
+[2026-02-27 00:32:09] ======================================================================
+[2026-02-27 00:32:09] 
+======================================================================
+[2026-02-27 00:32:09] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:32:09] ======================================================================
+[2026-02-27 00:32:09] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:32:09]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules, 44 issues
+[2026-02-27 00:32:09] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:32:09]   ✓ ARTICLES-II-PRODUCTIVITY.md: 183 rules, 128 issues
+[2026-02-27 00:32:09] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:32:09]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 53 issues
+[2026-02-27 00:32:09] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:32:09]   ✓ ARTICLES-IV-ETHICAL-AGENCY.md: 150 rules, 84 issues
+[2026-02-27 00:32:09] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:32:09]   ✗ ARTICLES-V-ADAPTIVE.md: No rules found
+[2026-02-27 00:32:09] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:32:09]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:32:09] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:32:09]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:32:09] 
+📊 Summary: 560 rules | 0 improved | 0 docs created | 309 issues tracked
+[2026-02-27 00:32:09] ======================================================================
+[2026-02-27 00:32:09] ✓ Iteration #2 complete: 0 rules improved
+[2026-02-27 00:32:09] ======================================================================
+[2026-02-27 00:32:43] 
+======================================================================
+[2026-02-27 00:32:43] 🧹 PURIFICATION & IMPROVEMENT ITERATION #3
+[2026-02-27 00:32:43] ======================================================================
+[2026-02-27 00:32:43] 
+======================================================================
+[2026-02-27 00:32:43] 🧹 RULE PURIFICATION & IMPROVEMENT CYCLE
+[2026-02-27 00:32:43] ======================================================================
+[2026-02-27 00:32:43] Purifying ARTICLES-I-FUNDAMENTAL.md...
+[2026-02-27 00:32:43]   → Improved I.3.1.031: 60pts → better expression
+[2026-02-27 00:32:43]   ✓ ARTICLES-I-FUNDAMENTAL.md: 77 rules (+1 improved), 44 issues
+[2026-02-27 00:32:43] Purifying ARTICLES-II-PRODUCTIVITY.md...
+[2026-02-27 00:32:43]   ✓ ARTICLES-II-PRODUCTIVITY.md: 183 rules, 128 issues
+[2026-02-27 00:32:43] Purifying ARTICLES-III-ENERGY.md...
+[2026-02-27 00:32:43]   ✓ ARTICLES-III-ENERGY.md: 150 rules, 53 issues
+[2026-02-27 00:32:43] Purifying ARTICLES-IV-ETHICAL-AGENCY.md...
+[2026-02-27 00:32:43]   ✓ ARTICLES-IV-ETHICAL-AGENCY.md: 150 rules, 84 issues
+[2026-02-27 00:32:43] Purifying ARTICLES-V-ADAPTIVE.md...
+[2026-02-27 00:32:43]   ✓ ARTICLES-V-ADAPTIVE.md: 10 rules, 5 issues
+[2026-02-27 00:32:43] Purifying ARTICLES-VI-EXCEPTIONS.md...
+[2026-02-27 00:32:43]   ✗ ARTICLES-VI-EXCEPTIONS.md: No rules found
+[2026-02-27 00:32:43] Purifying ARTICLES-VII-OVERSIGHT.md...
+[2026-02-27 00:32:43]   ✗ ARTICLES-VII-OVERSIGHT.md: No rules found
+[2026-02-27 00:32:43] 
+📊 Summary: 570 rules | 1 improved | 0 docs created | 314 issues tracked
+[2026-02-27 00:32:43] Committing changes...
