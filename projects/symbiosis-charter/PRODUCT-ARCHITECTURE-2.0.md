@@ -234,7 +234,7 @@ Thresholds:
 ### 文件架构预留 (File Architecture)
 
 ```
-embodied-governance/
+symbiosis-charter/
 ├── README.md                           # 项目介绍
 │
 ├── CHARTER/                            # 📜 宪章正文 (核心)

@@ -40,9 +40,9 @@ A comprehensive governance framework establishing coexistence protocols between 
 - Four Dimensions of Human Agency (decision, informed, veto, exit rights)
 
 **Access**:
-- 📜 [Official Rules Display](https://ayuanwong.github.io/unserious_studio/projects/embodied-governance/)
-- 📖 [Interactive Story](https://ayuanwong.github.io/unserious_studio/projects/embodied-governance/story.html)
-- 📁 [Source Code](projects/embodied-governance/)
+- 📜 [Official Rules Display](https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/)
+- 📖 [Interactive Story](https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/story.html)
+- 📁 [Source Code](projects/symbiosis-charter/)
 
 **Status**: Active development, 772/1200 rules drafted
 
@@ -53,7 +53,7 @@ A comprehensive governance framework establishing coexistence protocols between 
 ```
 unserious_studio/
 ├── projects/              # Active explorations
-│   └── embodied-governance/   # Symbiosis Charter
+│   └── symbiosis-charter/   # Symbiosis Charter
 ├── experiments/           # Quick prototypes
 ├── assets/               # Shared resources
 └── docs/                 # Process documentation

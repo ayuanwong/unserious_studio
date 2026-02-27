@@ -3,7 +3,7 @@
 ## 目录结构
 
 ```
-embodied-governance/
+symbiosis-charter/
 ├── README.md                 # 项目介绍（对外展示）
 ├── index.html               # 交互式网页
 │

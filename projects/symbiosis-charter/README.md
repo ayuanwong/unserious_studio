@@ -79,7 +79,7 @@ Value created by intelligence accumulates before distribution:
 ## 📚 Document Structure
 
 ```
-embodied-governance/
+symbiosis-charter/
 ├── README.md                           # This file
 ├── index.html                          # Official rules display (main entry)
 ├── story.html                          # Interactive narrative experience
@@ -110,7 +110,7 @@ embodied-governance/
 ## 🌐 Access Points
 
 ### Web Interface
-🔗 **Official Rules Display**: https://ayuanwong.github.io/unserious_studio/projects/embodied-governance/
+🔗 **Official Rules Display**: https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/
 
 Features:
 - Professional constitutional styling
@@ -119,7 +119,7 @@ Features:
 - Progress tracking (64.3% complete)
 - Mobile-responsive design
 
-🔗 **Interactive Story**: https://ayuanwong.github.io/unserious_studio/projects/embodied-governance/story.html
+🔗 **Interactive Story**: https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/story.html
 
 Experience life in the 7th Symbiosis District as citizen Lin Xia:
 - Learn about rights through daily scenarios
@@ -232,6 +232,6 @@ The Symbiosis Charter draws wisdom from:
 
 ---
 
-**Project Home**: https://github.com/ayuanwong/unserious_studio/tree/main/projects/embodied-governance
+**Project Home**: https://github.com/ayuanwong/unserious_studio/tree/main/projects/symbiosis-charter
 
 **Contact**: For inquiries about pilot implementations or academic collaborations.
