@@ -1,7 +1,19 @@
 # 第一编：总则与基础架构
 
 **规则 I.1.1.001【具身智能】**
-**Rule I.1.1.001 [.
+**Rule I.1.1.001 [Embodied Intelligence]**
+
+具身智能（Embodied Intelligence）指嵌入物理实体中的智能系统，能够感知物理环境、与物理世界交互并执行物理行动。本框架所指的具身智能包括但不限于：人形机器人、自动驾驶车辆、工业机器人、无人机、智能外骨骼、自动化物流系统、以及任何具备物理形态和环境交互能力的AI系统。具身智能区别于纯软件AI的关键在于其物理存在性——它能够在原子世界中产生实际影响。
+
+Embodied Intelligence refers to intelligent systems embedded in physical entities capable of sensing the physical environment, interacting with the physical world, and executing physical actions. Embodied intelligence in this framework includes but is not limited to: humanoid robots, autonomous vehicles, industrial robots, drones, smart exoskeletons, automated logistics systems, and any AI systems with physical form and environmental interaction capabilities. The key distinction of embodied intelligence from pure software AI lies in its physical presence—it can produce actual impacts in the atomic world.
+
+**原则 (Principle):** 具身智能的物理存在性赋予其更强的影响力，也带来更大的责任。承认其独特性是制定有效治理框架的前提。
+
+**示例 (Example):** 某工厂部署的焊接机器人能够自主识别工件位置、调整焊接参数并完成精密焊接，这是典型的具身智能应用。与之对比，仅提供焊接参数建议的纯软件系统不属于具身智能。
+
+**边界 (Boundary):** 本规则适用于具有物理执行能力的智能系统；纯软件AI（如聊天机器人、推荐算法）不适用物理安全规范，但仍受伦理约束。
+
+**情境 (Context):** 适用于具身智能体的定义、分类和适用范围的确定。
 
 ---
 
@@ -20,6 +32,14 @@ An Agent refers to any entity capable of perceiving its environment, processing 
 - Hybrid agents (human-machine fusion systems): Enhanced intelligent agents with deep integration of human cognition and AI capabilities
 - Collective agents (distributed intelligent networks): Multi-agent systems that exhibit collective intelligence through collaboration
 
+**原则 (Principle):** 智能体的分类反映了智能的多元形态，治理需针对不同类型智能体的特点制定差异化规则，而非一刀切。
+
+**示例 (Example):** 一个由人类操作员、AI助手和自动化机械臂组成的混合智能系统执行精密手术：人类做出关键决策（碳基）、AI分析影像并提供建议（硅基）、机械臂执行精细操作（具身），三者协同完成复杂任务。
+
+**边界 (Boundary):** 本规则适用于具有自主决策能力的智能体；纯被动执行器（如简单传感器）不适用。
+
+**情境 (Context):** 适用于智能体身份认定、责任归属和治理措施选择。
+
 ---
 
 **规则 I.1.1.003【生产力重构】**
@@ -28,6 +48,14 @@ An Agent refers to any entity capable of perceiving its environment, processing 
 生产力重构指具身智能技术引发的物理世界生产方式、劳动形态、价值创造模式的系统性变革。包括：劳动替代（具身智能执行传统人类劳动）、劳动增强（人机协作提升生产效率）、新劳动形态创造（AI训练师、机器人伦理审计员等新兴职业）、生产关系调整（所有权与使用权分离）以及价值分配机制变革（人机协同创造价值的新分配模式）等具体类别。
 
 Productivity Reconstruction refers to the systematic transformation of production methods, labor forms, and value creation models in the physical world triggered by embodied intelligence technology. This includes: labor substitution (embodied intelligence performing traditional human labor), labor augmentation (human-machine collaboration enhancing productivity), creation of new labor forms (emerging professions such as AI trainers and robot ethics auditors), adjustment of production relations (separation of ownership and usage rights), and transformation of value distribution mechanisms (new distribution models for value co-created by humans and machines).
+
+**原则 (Principle):** 生产力重构不是简单的技术替代，而是生产关系的系统性变革。治理的重点在于确保技术进步服务于人类福祉，而非加剧不平等。
+
+**示例 (Example):** 某汽车工厂引入具身智能系统后，传统焊接岗位减少60%，但同时新增了机器人维护工程师、人机协作培训师、AI伦理审计员等岗位，整体就业结构发生转型而非单纯萎缩。
+
+**边界 (Boundary):** 本规则适用于具身智能技术引发的物理生产变革；纯虚拟经济领域（如数字内容创作）的变化参照其他规则。
+
+**情境 (Context):** 适用于劳动市场分析、产业政策制定和社会保障体系设计。
 
 ---
 
@@ -43,6 +71,14 @@ Energy Sustainability refers to meeting the energy needs of current embodied int
 - Sustainability of energy sources (renewability): prioritizing renewable energy such as solar and wind power
 - Ethical appropriateness of energy use (source-use matching): high ethical requirement scenarios (education, healthcare) must use clean energy
 - Resilience of energy systems (shock resistance): redundant designs capable of responding to supply disruptions, price volatility, and technical failures
+
+**原则 (Principle):** 能源可持续性体现代际正义原则——当前发展不应以牺牲后代利益为代价。具身智能系统作为高能耗实体，必须承担更高的环境责任。
+
+**示例 (Example):** 某具身智能数据中心采用100%可再生能源供电，配备储能系统应对间歇性，并建立能源效率监测平台持续优化PUE指标，符合能源可持续性的全部三个维度。
+
+**边界 (Boundary):** 本规则适用于年度能耗超过100MWh的具身智能系统；小型设备（如家用服务机器人）适用简化标准。
+
+**情境 (Context):** 适用于能源规划审批、环境影响评估和可持续发展报告编制。
 
 ---
 
@@ -61,6 +97,14 @@ Human Ethical Agency refers to the sum of humans' capacity for autonomous decisi
 - Veto agency: right to veto specific decisions, even if technically "optimal"
 - Exit agency: right to opt out of the system without undue penalties
 
+**原则 (Principle):** 人类伦理代理权是防范技术异化的核心机制。无论AI系统多么先进，涉及人类根本利益的决策最终必须回归人类判断。
+
+**示例 (Example):** 某医院使用AI诊断系统辅助癌症筛查。尽管AI建议"立即手术"的成功率高达95%，但患者基于个人价值观和生活质量考量，选择保守治疗。患者的否决权（Veto Agency）在此得到充分尊重。
+
+**边界 (Boundary):** 四项代理权适用于所有涉及人类生命、自由和尊严的场景；纯技术优化决策（如路线规划）可由AI自主完成。
+
+**情境 (Context):** 适用于人机协作决策、知情同意程序和用户权利保障体系设计。
+
 ---
 
 **规则 I.1.1.006【自适应治理】**
@@ -78,6 +122,14 @@ Adaptive Governance refers to the capacity of governance frameworks to automatic
 - Multi-objective balance optimization: seeking Pareto improvements among efficiency, equity, safety, innovation, and other goals
 - Preventive intervention: identifying potential risk signals and taking preventive measures before crises emerge
 
+**原则 (Principle):** 自适应治理承认技术和社会环境的快速变化，拒绝僵化规则，通过动态调整保持治理的有效性和正当性。
+
+**示例 (Example):** 当某类具身智能系统的事故率连续3个月超过阈值时，自适应治理系统自动触发规则修订程序：暂停新部署、强制安全升级、重新评估认证标准，无需等待年度审查。
+
+**边界 (Boundary):** 自适应调整仅限于操作层面的规则参数；涉及核心价值的根本性变更仍需人工审议。
+
+**情境 (Context):** 适用于规则执行、监管响应和治理体系持续优化。
+
 ---
 
 **规则 I.1.1.007【三螺旋模型】**
@@ -92,6 +144,14 @@ The Triple Helix Model is the core architecture of this framework, referring to 
 - Misalignment angle: 15-30 degrees—subsystems maintain moderate tension rather than complete synchronization
 - Tension coefficient: 0.3-0.7—dynamic balance of both competition and cooperation between systems
 - Synchronization frequency: multi-level coordination mechanisms at daily, weekly, monthly, and yearly scales
+
+**原则 (Principle):** 完全对齐的系统往往陷入局部最优，适度张力激发创新。三螺旋模型允许生产力、能源、伦理三者相互制衡，避免单一逻辑主导。
+
+**示例 (Example):** 某工厂追求生产效率最大化（生产力），但受到能源可持续性约束（能源）和人类劳动尊严保护（伦理）的限制。三者的适度张力促使工厂开发更节能、更人机协作友好的生产流程，而非单纯自动化。
+
+**边界 (Boundary):** 错位角度超过45度表示系统失衡，需启动校正程序。
+
+**情境 (Context):** 适用于系统架构设计、目标冲突平衡和治理优先级确定。
 
 ---
 
@@ -110,6 +170,14 @@ Governance Boundaries refer to the scope and limitations of this framework's app
 - Subject boundaries: all embodied intelligent agents and the humans who interact with them, including designers, manufacturers, operators, and users
 - Matter boundaries: decisions and actions involving physical world productivity, energy, and ethics, as well as related virtual space governance
 
+**原则 (Principle):** 清晰的治理边界是法律确定性的基础。明确的边界既保护受规制者免受任意干预，也确保治理资源集中于关键领域。
+
+**示例 (Example):** 一家注册在共生城区7号的具身智能企业完全受本框架约束；而位于相邻普通城区、仅偶尔进入共生城区的送货机器人，则仅需遵守跨境协作条款。
+
+**边界 (Boundary):** 虚拟空间活动仅在直接影响物理世界时受约束；纯线上交互适用其他法规。
+
+**情境 (Context):** 适用于管辖权确定、合规义务评估和法律适用争议解决。
+
 ---
 
 **规则 I.1.1.009【光源标记】**
@@ -118,6 +186,14 @@ Governance Boundaries refer to the scope and limitations of this framework's app
 光源标记指任何智能体决策链中必须保留的可追溯至人类授权的关键节点。这是区分"影子"与"实体"的根本标志。技术实现包括：区块链锚定（将关键决策哈希值写入不可篡改的分布式账本）、多方签名（要求多个授权主体共同确认）、时间戳验证（证明决策发生的时间序列）以及血缘追溯（记录数据与决策的完整谱系）。
 
 Light-Source Marking refers to the critical nodes in any agent's decision chain that must be preserved and traceable to human authorization. This is the fundamental distinction between "shadow" and "substance". Technical implementations include: blockchain anchoring (writing critical decision hashes to immutable distributed ledgers), multi-party signatures (requiring confirmation from multiple authorized entities), timestamp verification (proving the temporal sequence of decisions), and lineage tracing (recording complete pedigrees of data and decisions).
+
+**原则 (Principle):** 光源标记是问责制的技术基石。没有人类授权标记的AI决策如同没有签名的合同——形式上存在，法律上无效。
+
+**示例 (Example):** 某自动驾驶车辆在紧急情况下选择撞向护栏而非行人。事后调查显示，该决策链中缺少人类伦理审查的标记节点，无法证明决策符合预设的伦理规范，因此被认定为违规。
+
+**边界 (Boundary):** 所有涉及生命安全、财产重大损失的决策必须标记；微秒级实时反应（如紧急制动）可在事后追溯标记。
+
+**情境 (Context):** 适用于AI决策审计、事故责任认定和合规检查。
 
 ---
 
@@ -135,6 +211,14 @@ Value Vacuum refers to the unassigned state formed when value created by intelli
 - Threshold-triggered release: distribution procedures trigger when accumulated value reaches preset thresholds or specific conditions
 - Multi-party distribution protocol: value is distributed among multiple stakeholders according to predetermined ratios (such as 40% Human Pool, 30% Environmental Fund, 20% Iteration Fund)
 - 10% unknown reserve mandatory isolation: 10% of value is reserved as a buffer against unknown risks
+
+**原则 (Principle):** 价值真空机制防止AI创造的价值被过早瓜分，确保分配决策经过审慎考量，并为不可预见的风险预留缓冲。
+
+**示例 (Example):** 某AI交易系统在价值真空账户中累积了1000万元收益。触发分配阈值后，按协议分配：400万进入人类贡献者奖励池，300万投入碳中和基金，200万用于系统迭代研发，100万作为未知风险储备。
+
+**边界 (Boundary):** 价值在真空状态的最长滞留期为12个月；超过期限自动触发强制分配。
+
+**情境 (Context):** 适用于AI参与的价值创造活动、收益分配机制设计和风险管理。
 
 ---
 

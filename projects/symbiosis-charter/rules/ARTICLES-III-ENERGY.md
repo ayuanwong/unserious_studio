@@ -7,13 +7,15 @@
 
 Renewable energy refers to energy forms that are naturally replenished, including but not limited to solar, wind, hydro, geothermal, and biomass energy. Embodied intelligence systems must prioritize the use of renewable energy, with renewable energy accounting for no less than 60% of annual energy consumption.
 
-**原则 (Principle):** 能源可持续性要求优先使用可再生资源，减少对不可再生资源的依赖，确保代际公平和环境可持续性。
+**原则 (Principle):** 优先使用可再生能源是应对气候危机和技术伦理的共同要求。具身智能作为高能耗技术，必须走在能源转型的前列，而非重复化石能源时代的错误。
 
 **示例 (Example):** 某具身智能工厂安装屋顶太阳能光伏系统和风力发电设备，使其年度能源消耗的65%来自可再生能源，符合本规则要求。
 
 **边界 (Boundary):** 本规则适用于年度能源消耗超过100MWh的具身智能系统；在极端气候条件下或紧急情况下，可暂时降低比例要求。
 
 **情境 (Context):** 适用于所有在治理区域内运行的具身智能系统的能源规划、采购和使用决策。
+
+---
 
 ---
 
@@ -34,6 +36,8 @@ Non-renewable energy refers to energy forms with finite reserves that cannot be 
 
 ---
 
+---
+
 **规则 III.1.1.003【混合能源】**
 **Rule III.1.1.003 [Hybrid Energy]**
 
@@ -48,6 +52,8 @@ Hybrid energy refers to energy supply models that combine multiple energy forms.
 **边界 (Boundary):** 储能系统不计入能源类型构成；备用电源在正常运行期间不纳入计算。
 
 **情境 (Context):** 适用于采用多种能源供应模式的具身智能设施和园区。
+
+---
 
 ---
 
