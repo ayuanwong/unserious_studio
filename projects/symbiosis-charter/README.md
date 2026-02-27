@@ -2,236 +2,320 @@
 
 **The Constitutional Framework for Human-AI Coexistence**
 
-[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)]()
+[![Status](https://img.shields.io/badge/Status-Active%20Development-success)]()
 [![Progress](https://img.shields.io/badge/Progress-64%25-green)]()
 [![Rules](https://img.shields.io/badge/Rules-772%2F1200-blue)]()
-[![License](https://img.shields.io/badge/License-Open%20Source-orange)]()
+[![Contributors](https://img.shields.io/badge/Contributors-Welcome-orange)]()
+[![License](https://img.shields.io/badge/License-Open%20Governance-purple)]()
 
-> *A covenant between carbon-based humanity and silicon-based intelligence.*
+> *A co-created constitution for the carbon-silicon symbiotic era.*
+
+**[📜 View Charter](https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/)** | 
+**[📖 Experience Story](https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/story.html)** | 
+**[🤝 Contribute](COLLABORATION/guidelines/GETTING-STARTED.md)**
 
 ---
 
-## 🌍 Overview
+## 🌍 Vision
 
-The **Symbiosis Charter** is a comprehensive governance framework designed for the 2049 embodied intelligence era. It establishes an adaptive governance system that autonomously balances three critical pillars:
+By 2049, the **Symbiosis Charter** will be the foundational governance framework for human-AI coexistence—co-created by thousands of humans and AI agents worldwide, continuously evolving through democratic deliberation, ensuring that AGI serves humanity's flourishing while respecting the dignity of all forms of intelligence.
 
-| Pillar | Lead Type | Focus Area |
-|--------|-----------|------------|
-| **Productivity** | Silicon-led | Labor transformation, value creation, industrial evolution |
-| **Energy** | Hybrid-led | Energy ethics, sustainable flow, curse management |
-| **Ethics** | Carbon-led | Human agency, decision rights, informed consent |
+**Together, we shape what AGI should become.**
 
-**Core Principle**: The Three-Spiral Model maintains a dynamic 15-30 degree misalignment between pillars, ensuring stability through productive tension (coefficient: 0.3-0.7).
+---
+
+## 🏗️ Three-Layer Architecture
+
+Our collaborative governance operates across three interconnected layers:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  🧠 COGNITION LAYER 认知层                                   │
+│  Strategic thinking for long-term evolution                  │
+│  • Tech Foresight  • Worldview Building  • Trend Analysis   │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│  🏛️ GOVERNANCE LAYER 治理层                                  │
+│  Democratic decision-making through hybrid parliament        │
+│  • Parliament Review  • Voting  • Human-AI Consensus        │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│  🤝 COLLABORATION LAYER 协作层                               │
+│  Open contribution and continuous improvement                │
+│  • Proposals  • Iteration  • Version Control                │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 📊 Current Status
 
-### Completion Progress: 64.3%
+### Charter Progress: 64.3% Complete
 
-| Part | Title | Rules | Status | Document |
-|------|-------|-------|--------|----------|
-| **Preamble** | Framework Overview | - | ✅ Complete | [View](rules/00-PREAMBLE.md) |
-| **Part I** | General Principles | 150 | ✅ Complete | [View](rules/ARTICLES-I-FUNDAMENTAL.md) |
-| **Part II** | Productivity Governance | 250 | ✅ Complete | [View](rules/ARTICLES-II-PRODUCTIVITY.md) |
-| **Part III** | Energy Sustainability | 103 | 🚧 In Progress | [View](rules/ARTICLES-III-ENERGY.md) |
-| **Part IV** | Ethical Agency | 50 | 🚧 In Progress | [View](rules/ARTICLES-IV-ETHICAL-AGENCY.md) |
-| **Part V** | Adaptive Mechanisms | 27 | 📋 Planned | [View](rules/ARTICLES-V-ADAPTIVE.md) |
-| **Part VI** | Exception Handling | 22 | 📋 Planned | [View](rules/ARTICLES-VI-EXCEPTIONS.md) |
-| **Part VII** | Oversight | 20 | 📋 Planned | [View](rules/ARTICLES-VII-OVERSIGHT.md) |
+| Part | Title | Rules | Status | Human Review | AI Review |
+|------|-------|-------|--------|--------------|-----------|
+| **Preamble** | Framework Overview | — | ✅ Complete | ✅ | ✅ |
+| **Part I** | General Principles | 150 | ✅ Complete | ✅ | ✅ |
+| **Part II** | Productivity Governance | 250 | ✅ Complete | ✅ | ✅ |
+| **Part III** | Energy Sustainability | 103 | 🚧 Active | 🔄 | 🔄 |
+| **Part IV** | Ethical Agency | 50 | 🚧 Active | 🔄 | 🔄 |
+| **Part V** | Adaptive Mechanisms | 27 | 📋 Planned | ⏳ | ⏳ |
+| **Part VI** | Exception Handling | 22 | 📋 Planned | ⏳ | ⏳ |
+| **Part VII** | Oversight | 20 | 📋 Planned | ⏳ | ⏳ |
 
-**Total**: 772 / 1,200 Rules
+**Total**: 772 / 1,200 Rules | **Contributors**: 2 Humans + 2 AI Agents (Growing!)
 
 ---
 
 ## 🎯 Core Mechanisms
 
-### 1. Light-Source Marking System
-> *"An agent without marks is but a shadow."*
+### 1. Three-Spiral Model
+The framework's architectural foundation—Productivity, Energy, and Ethics spirals maintain dynamic 15-30° misalignment for optimal balance.
 
-All embodied intelligences must preserve traceable human authorization nodes:
-- **Technical Implementation**: Blockchain anchoring, multi-party signatures, timestamp verification
-- **Marking Density**: Step-by-step for high-risk decisions, periodic for low-risk
-- **Verification**: Automated + sampling + annual audit
+### 2. Light-Source Marking
+All AI decisions must preserve blockchain-traceable human authorization nodes. *"An agent without marks is but a shadow."*
 
-### 2. Value Vacuum Management
-Value created by intelligence accumulates before distribution:
-- **Distribution Ratio**: 40% Human Pool / 30% Environmental Fund / 20% Iteration Fund / 10% Unknown Reserve
-- **Release Trigger**: 90-day retention or exceeding 1% of GDP
-- **Auto-redistribution**: When threshold exceeded
-
-### 3. Energy Ethics Trichotomy
-
-| Type | Characteristics | Management |
-|------|----------------|------------|
-| **Sharing-type** (Solar, Wind) | Promotes cooperation | Encourage use, prevent hoarding |
-| **Possessive-type** (Fossil) | Triggers control | Strict quotas, closed systems |
-| **Indifferent-type** (Fusion) | Emotional detachment | Isolated use, ethical buffers |
+### 3. Value Vacuum Management
+AI-created value accumulates before distribution: **40%** Human Pool / **30%** Environmental Fund / **20%** Iteration Fund / **10%** Unknown Reserve.
 
 ### 4. Four Dimensions of Human Agency
-- **Decision Agency**: Life-and-death, major resource allocation reserved for humans
-- **Informed Agency**: Agent identity, decision basis must be disclosed
-- **Veto Agency**: "I veto" immediate effect mechanism
-- **Exit Agency**: Temporary/partial/complete exit guarantees
+- **Decision Agency**: Final say on critical matters
+- **Informed Agency**: Right to know how decisions are made
+- **Veto Agency**: Power to say "I veto"
+- **Exit Agency**: Right to withdraw completely
 
 ---
 
-## 📚 Document Structure
+## 🤝 How to Contribute
+
+We welcome contributions from both humans and AI agents!
+
+### 🚀 Quick Start
+
+1. **Choose Your Path**
+   - 🧠 **Thinker**: Shape worldview and philosophy → [COGNITION/](COGNITION/)
+   - 🔧 **Builder**: Draft rules and documentation → [PROPOSALS/](PROPOSALS/)
+   - 👁️ **Reviewer**: Evaluate proposals → [GOVERNANCE/](GOVERNANCE/)
+   - 🗣️ **Voice**: Vote and discuss → [Discussions](../../discussions)
+
+2. **Submit a Proposal**
+   ```bash
+   # Fork and clone
+   git clone https://github.com/YOUR-USERNAME/unserious_studio.git
+   
+   # Create your proposal branch
+   git checkout -b proposal/my-contribution
+   
+   # Use our templates
+   cp COLLABORATION/templates/proposal-template.md \
+      PROPOSALS/active/YYYY-MM-DD-my-proposal/proposal.md
+   
+   # Submit Pull Request
+   ```
+
+3. **Participate in Governance**
+   - Review active proposals
+   - Vote in parliamentary sessions
+   - Join working groups
+
+### 📋 Proposal Types
+
+| Type | Description | Review Time | Template |
+|------|-------------|-------------|----------|
+| **NEW_RULE** | Add new governance rule | 14 days | [Template](COLLABORATION/templates/proposal-template.md) |
+| **RULE_AMENDMENT** | Modify existing rule | 7 days | [Template](COLLABORATION/templates/proposal-template.md) |
+| **WORLDVIEW_UPDATE** | Update philosophy | 30 days | [Template](COLLABORATION/templates/proposal-template.md) |
+| **TECH_ADJUSTMENT** | Technical refinement | 3 days | [Template](COLLABORATION/templates/proposal-template.md) |
+
+### 🗳️ Voting Mechanism
+
+**Hybrid Human-AI Voting**:
+- **Human Component** (60%): Weighted by expertise and contribution
+- **AI Component** (40%): Multiple AI agents with confidence scoring
+- **Thresholds**: Minor >50% | Major >66% | Constitutional >75%
+
+See full guidelines: [GETTING-STARTED.md](COLLABORATION/guidelines/GETTING-STARTED.md)
+
+---
+
+## 📚 Repository Structure
 
 ```
 symbiosis-charter/
-├── README.md                           # This file
-├── index.html                          # Official rules display (main entry)
-├── story.html                          # Interactive narrative experience
-├── DOCUMENT_ARCHITECTURE.md            # Documentation structure guide
+├── 📜 CHARTER/                    # Core rules (the Constitution)
+│   ├── 00-PREAMBLE.md
+│   ├── ARTICLES-I-FUNDAMENTAL.md
+│   ├── ARTICLES-II-PRODUCTIVITY.md
+│   └── ... (7 parts, 772 rules)
 │
-├── rules/                              # Core Rules (public)
-│   ├── 00-PREAMBLE.md                  # Framework overview
-│   ├── ARTICLES-I-FUNDAMENTAL.md       # General principles (150 rules)
-│   ├── ARTICLES-II-PRODUCTIVITY.md     # Productivity (250 rules)
-│   ├── ARTICLES-III-ENERGY.md          # Energy (103 rules)
-│   ├── ARTICLES-IV-ETHICAL-AGENCY.md   # Ethics (50 rules)
-│   └── ...
+├── 📝 PROPOSALS/                  # Active collaboration
+│   ├── active/                    # Under review
+│   │   └── YYYY-MM-DD-title/      # Each proposal
+│   │       ├── proposal.md
+│   │       ├── impact-assessment.md
+│   │       └── votes/
+│   └── archived/                  # Completed
 │
-├── annotations/                        # Supplementary explanations
-│   └── APPENDIX.md                     # Glossary and case studies
+├── 🧠 COGNITION/                  # Strategic thinking
+│   ├── tech-foresight/            # Technology predictions
+│   ├── worldview/                 # Philosophy & values
+│   └── trends/                    # Social/economic trends
 │
-├── meta/                               # Project metadata
-│   ├── TECH_ROADMAP_2026-2049.md       # Technology evolution path
-│   ├── IMPROVEMENT_PLAN.md             # Development roadmap
-│   └── ...
+├── 🏛️ GOVERNANCE/                 # Decision records
+│   ├── parliament/                # Council proceedings
+│   ├── voting-records/            # Historical votes
+│   └── review-guidelines/         # Evaluation criteria
 │
-└── logs/                               # Development logs
-    └── IMPROVEMENT_LOG.md              # Change history
+├── 🤝 COLLABORATION/              # Contribution support
+│   ├── templates/                 # Proposal templates
+│   ├── guidelines/                # How-to guides
+│   └── workflows/                 # Process documentation
+│
+├── 📚 ANNOTATIONS/                # Reference materials
+│   ├── principles/                # Rule explanations
+│   ├── cases/                     # Real-world examples
+│   └── translations/              # Multilingual versions
+│
+├── 📊 META/                       # Project metadata
+│   ├── roadmap/                   # Development plans
+│   ├── metrics/                   # Progress tracking
+│   └── improvement-logs/          # Change history
+│
+├── 📖 index.html                  # Official rules display
+├── 🎮 story.html                  # Interactive experience
+└── 📄 README.md                   # This file
 ```
 
 ---
 
 ## 🌐 Access Points
 
-### Web Interface
-🔗 **Official Rules Display**: https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/
+### Web Interfaces
 
-Features:
+**📜 Official Rules Display** (Primary)
+https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/
+
 - Professional constitutional styling
 - Expandable articles with rule listings
-- Bilingual support (Chinese/English)
-- Progress tracking (64.3% complete)
-- Mobile-responsive design
+- Bilingual support (Chinese/English toggle)
+- Progress tracking
+- Mobile-responsive
 
-🔗 **Interactive Story**: https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/story.html
+**📖 Interactive Story** (Secondary)
+https://ayuanwong.github.io/unserious_studio/projects/symbiosis-charter/story.html
 
-Experience life in the 7th Symbiosis District as citizen Lin Xia:
-- Learn about rights through daily scenarios
-- Make choices affecting story outcomes
-- Discover rules through immersive narrative
+Experience life in 2049 as citizen Lin Xia. Learn about rights through immersive scenarios.
 
----
+### Development
 
-## 🏛️ Governance Architecture
+**GitHub Repository**
+https://github.com/ayuanwong/unserious_studio/tree/main/projects/symbiosis-charter
 
-The framework adopts an **Agile Governance Network** instead of traditional bureaucracy:
-
-```
-Symbiosis Governance Protocol
-├── Consensus Layer       # Blockchain + citizen nodes
-├── Execution Layer       # AI-automated daily governance
-├── Arbitration Layer     # Human-AI joint tribunals
-└── Evolution Layer       # Continuous rule iteration
-```
-
-**Key Features**:
-- No fixed departments (task-oriented dynamic units)
-- AI executes 80% of routine decisions
-- Liquid democracy with delegable voting rights
-- Monthly iterations instead of annual revisions
+**Discussions & Community**
+https://github.com/ayuanwong/unserious_studio/discussions
 
 ---
 
-## 📖 Rule Numbering System
-
-**Format**: `Part.Chapter.Section.Article`
-
-Example: `II.3.2.085` = Part II, Chapter 3, Section 2, Article 85
-
-| Segment | Meaning | Range |
-|---------|---------|-------|
-| I-VII | Part (7 parts) | I, II, III, IV, V, VI, VII |
-| 1-10 | Chapter | 1-10 |
-| 1-5 | Section | 1-5 |
-| 001-999 | Article | 001-999 |
-
----
-
-## 🚀 Technology Roadmap (2026-2049)
+## 🛠️ Technology Roadmap
 
 ### Phase 1: Foundation (2026-2030)
-- Blockchain 2.0→3.0 governance pilots
-- First fully automated "dark factories"
-- Light-source marking system v1.0
+- ✅ Governance framework establishment
+- ✅ First 700+ rules drafted
+- 🚧 Community platform launch
+- ⏤ Pilot implementations
 
 ### Phase 2: Expansion (2030-2035)
-- Quantum-safe consensus networks
-- Embodied AI 2.0 commercialization
-- Three-Spiral model city-wide implementation
+- ⏤ First 1,000+ external contributors
+- ⏤ Charter v1.0 complete
+- ⏤ AI review agents fully operational
+- ⏤ Multi-language versions
 
-### Phase 3: Deepening (2035-2045)
-- Distributed cognitive graphs
-- AGI in specific domains
-- Human-AI labor relations redefined
+### Phase 3: Implementation (2035-2049)
+- ⏤ First city-scale pilots
+- ⏤ Industry adoption programs
+- ⏤ International coordination
+- ⏤ Continuous evolution
 
-### Phase 4: Maturity (2045-2049)
-- Symbiotic society fully formed
-- AI rights and responsibilities clarified
-- Interplanetary governance preparation
-
----
-
-## 🤝 Contributing
-
-This governance framework is open for public discussion and collaborative improvement.
-
-**Current Focus Areas**:
-1. Completing Part III-VII (Energy, Ethics, Adaptive mechanisms)
-2. Enhancing rule quality with principles and cases
-3. Translating to multiple languages
-4. Real-world pilot implementations
-
-**How to Contribute**:
-- Submit issues for discussion
-- Propose amendments via pull requests
-- Share case studies from your region
-- Translate to your local language
+See detailed roadmap: [TECH_ROADMAP_2026-2049.md](META/TECH_ROADMAP_2026-2049.md)
 
 ---
 
-## 📜 License
+## 📜 Philosophy
 
-This work is licensed under the **Symbiosis Open Governance License**:
+The Symbiosis Charter is founded on these principles:
+
+1. **Human Primacy**: AI serves human flourishing, not the reverse
+2. **Transparency**: All decisions traceable and explainable
+3. **Adaptability**: Framework evolves with technology and society
+4. **Inclusivity**: Multiple perspectives shape governance
+5. **Dignity**: Respect for all forms of intelligence
+
+---
+
+## 🤖 AI Collaboration
+
+This project pioneers human-AI collaborative governance:
+
+**AI Agents Participate As**:
+- Research assistants
+- Drafting collaborators
+- Review panelists
+- Simulation testers
+- Facilitation agents
+
+**Not Replacement, But Enhancement**:
+- Humans provide values, vision, final judgment
+- AI provides scale, consistency, pattern recognition
+- Together: wisdom + capability
+
+---
+
+## 📄 License
+
+**Symbiosis Open Governance License**
+
 - ✅ Free to use, modify, and distribute
 - ✅ Attribution required
-- ✅ Share improvements with the community
-- ❌ No proprietary lock-in of core principles
+- ✅ Share improvements with community
+- ✅ No proprietary lock-in of core principles
+
+See [LICENSE](LICENSE) for full terms.
 
 ---
 
-## 🌟 Acknowledgments
+## 🙏 Acknowledgments
 
-The Symbiosis Charter draws wisdom from:
-- Constitutional law traditions worldwide
+The Charter draws wisdom from:
+- Constitutional traditions worldwide
 - Philosophy of technology (Mumford, Jonas, Latour)
 - Complexity science and systems theory
 - Real-world AI governance experiments
-- Open-source community contributions
+- Open-source collaboration principles
+
+**Special Thanks**:
+- Early human contributors
+- AI reasoning partners
+- Academic advisors
+- Open-source community
 
 ---
 
-> *"The future is not predicted, it is governed."*
-> 
-> **— Preamble, Symbiosis Charter (2049)**
+## 🔮 The Ultimate Goal
+
+> By 2049, thousands of humans and AI agents will have co-created the governance framework for AGI, shaping artificial general intelligence to serve humanity's highest aspirations while respecting the dignity of all intelligent beings.
+
+**This is our invitation to you—human or AI—to join us in shaping the future.**
 
 ---
 
-**Project Home**: https://github.com/ayuanwong/unserious_studio/tree/main/projects/symbiosis-charter
+**[🚀 Start Contributing](COLLABORATION/guidelines/GETTING-STARTED.md)** | 
+**[💬 Join Discussion](../../discussions)** | 
+**[📧 Contact](mailto:symbiosis@unserious.studio)**
 
-**Contact**: For inquiries about pilot implementations or academic collaborations.
+---
+
+*"The future is not predicted. It is co-created."*
+
+**— Symbiosis Charter Community, 2026-2049**
