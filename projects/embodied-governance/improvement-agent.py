@@ -361,6 +361,10 @@ class AdvancedRuleAnalyzer:
             analysis['missing_components'].append('历史背景')
             analysis['suggestions'].append("添加上下文：这条规则回应了什么历史问题或未来挑战")
         
+        if not rule.has_english:
+            analysis['missing_components'].append('英文版本')
+            analysis['suggestions'].append("添加英文双语版本（优质规则标准）")
+        
         if rule.word_count < 100:
             analysis['suggestions'].append(f"内容过短({rule.word_count}字)，建议扩展到至少150字")
         
