@@ -334,12 +334,13 @@ class RulePurifier:
         }
     
     def run_purification_cycle(self):
-        """Run one purification cycle"""
+        """Run one purification and improvement cycle"""
         self.log("\n" + "="*70)
-        self.log("🧹 RULE PURIFICATION CYCLE")
+        self.log("🧹 RULE PURIFICATION & IMPROVEMENT CYCLE")
         self.log("="*70)
         
         total_rules = 0
+        total_improved = 0
         total_supp = 0
         total_issues = 0
         
@@ -348,20 +349,23 @@ class RulePurifier:
             
             if result['status'] == 'success':
                 total_rules += result['rules_preserved']
+                total_improved += result.get('rules_improved', 0)
                 if result['supplementary_moved']:
                     total_supp += 1
                 total_issues += result['quality_issues']
                 
-                self.log(f"  ✓ {article}: {result['rules_preserved']} rules, " +
-                        f"{result['quality_issues']} quality issues")
+                improvement_info = f" (+{result.get('rules_improved', 0)} improved)" if result.get('rules_improved', 0) > 0 else ""
+                self.log(f"  ✓ {article}: {result['rules_preserved']} rules{improvement_info}, " +
+                        f"{result['quality_issues']} issues")
             else:
                 self.log(f"  ✗ {article}: {result['message']}")
         
-        self.log(f"\nSummary: {total_rules} rules purified, " +
-                f"{total_supp} supplementary docs created, " +
-                f"{total_issues} quality issues identified")
+        self.log(f"\n📊 Summary: {total_rules} rules | " +
+                f"{total_improved} improved | " +
+                f"{total_supp} docs created | " +
+                f"{total_issues} issues tracked")
         
-        return total_rules, total_issues
+        return total_rules, total_improved, total_issues
 
 class PurificationDaemon:
     """Daemon that continuously purifies and optimizes rules"""
