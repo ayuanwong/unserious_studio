@@ -1,0 +1,11 @@
+{
+  "total_rules": 161,
+  "processed_rules": 0,
+  "high_quality_rules": 5,
+  "current_bilingual_coverage": 3.1,
+  "target_bilingual_coverage": 80,
+  "improvement_cycles": 0,
+  "last_updated": "2026-02-27T02:28:00PST",
+  "files_processed": [],
+  "quality_scores": {}
+}
