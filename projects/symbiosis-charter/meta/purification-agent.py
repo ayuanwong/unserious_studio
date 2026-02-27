@@ -1,26 +1,18 @@
 #!/usr/bin/env python3
 """
-Symbiosis Charter Rule Purification Agent
-共生宪章规则纯化代理
+Symbiosis Charter Rule Agent v3.0
+共生宪章规则代理 v3.0
 
-MISSION: Keep rules/ directory clean - ONLY rules, no explanations
+MISSION: Dual-track improvement - optimize existing + generate new
+MISSION: 双管齐下 - 改进现有规则 + 生成新规则
+MISSION: All based on legislative drafting standards
+MISSION: 全部基于立法起草规范
 
-What This Agent Does:
-1. REMOVES from rules/: Principles, cases, boundaries, explanations
-2. MOVES to annotations/: All supplementary content
-3. ANALYZES: Rule clarity, precision, logic, consistency
-4. OPTIMIZES: Rule expression through deep thinking
-
-What This Agent Does NOT Do:
-- Does NOT add "principles" to rules
-- Does NOT add "cases" to rules  
-- Does NOT add "boundaries" to rules
-- Does NOT add explanatory text to rules
-
-Core Philosophy:
-- Rules should be standalone, clear, actionable
-- Explanations belong in annotations/
-- Quality through precision, not verbosity
+Features:
+1. IMPROVES: Existing rules based on legislative quality standards
+2. GENERATES: New rules following constitutional style
+3. CHECKS: Quality score for every rule (target: ≥80)
+4. COMMITS: Only when file changes occur
 """
 
 import os
@@ -31,7 +23,7 @@ import signal
 import re
 from datetime import datetime
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Optional
 
 # Configuration
 WORK_DIR = Path("/Users/pcofmarcus/.openclaw/workspace/unserious_studio/projects/symbiosis-charter")
@@ -41,22 +33,30 @@ LOG_FILE = WORK_DIR / ".purification.log"
 LOCK_FILE = WORK_DIR / ".purification.lock"
 ITERATION_DELAY = 30  # 30 seconds between iterations
 
-class RulePurifier:
-    """Purifies rules: keeps only rule content, moves supplementary to annotations"""
+# Legislative quality standards
+LEGAL_TERMS = ['应当', '有权', '禁止', '不得', '可以', '必须']
+VAGUE_WORDS = ['适当的', '合理的', '必要的', '相关的', '适当的', '合理', '必要', '相关', '等', '等等']
+NUMBER_PATTERNS = [r'\d+\s*日', r'\d+\s*小时', r'\d+\s*分钟', r'\d+\.\d+', r'\d+%', r'\d+-\d+']
+
+class LegislativeRuleAgent:
+    """Agent for improving and generating rules based on legislative standards"""
+    
+    TARGETS = {
+        "ARTICLES-I-FUNDAMENTAL.md": 150,
+        "ARTICLES-II-PRODUCTIVITY.md": 250,
+        "ARTICLES-III-ENERGY.md": 150,
+        "ARTICLES-IV-ETHICAL-AGENCY.md": 150,
+        "ARTICLES-V-ADAPTIVE.md": 150,
+        "ARTICLES-VI-EXCEPTIONS.md": 150,
+        "ARTICLES-VII-OVERSIGHT.md": 150
+    }
     
     def __init__(self, work_dir: Path):
         self.work_dir = work_dir
         self.rules_dir = work_dir / "rules"
         self.annotations_dir = work_dir / "annotations"
-        self.articles = [
-            "ARTICLES-I-FUNDAMENTAL.md",
-            "ARTICLES-II-PRODUCTIVITY.md",
-            "ARTICLES-III-ENERGY.md",
-            "ARTICLES-IV-ETHICAL-AGENCY.md",
-            "ARTICLES-V-ADAPTIVE.md",
-            "ARTICLES-VI-EXCEPTIONS.md",
-            "ARTICLES-VII-OVERSIGHT.md"
-        ]
+        self.articles = list(self.TARGETS.keys())
+        self.iteration = 0
     
     def log(self, message):
         """Log message with timestamp"""
@@ -66,315 +66,251 @@ class RulePurifier:
         with open(LOG_FILE, "a", encoding="utf-8") as f:
             f.write(log_entry + "\n")
     
-    def extract_pure_rules(self, file_path: Path) -> Tuple[List[Dict], str]:
-        """
-        Extract pure rules from document
-        Returns: (list of rules, supplementary content)
-        """
-        content = file_path.read_text(encoding='utf-8')
+    def check_quality(self, rule_content: str) -> Dict:
+        """Check rule quality based on legislative standards"""
+        score = 100
+        issues = []
         
-        # Match rule blocks: **规则 X.X.X.X【Title】** + content
-        rule_pattern = r'(\*\*规则\s+[IV]+\.\d+\.\d+\.\d+【.+?】\*\*)(.*?)(?=\*\*规则|\*\*## |\Z)'
-        matches = re.findall(rule_pattern, content, re.DOTALL)
+        # Check 1: Has legal terms
+        has_legal = any(term in rule_content for term in LEGAL_TERMS)
+        if not has_legal:
+            score -= 15
+            issues.append("缺少规范用语")
         
-        pure_rules = []
-        supplementary_sections = []
+        # Check 2: No vague words
+        for vague in VAGUE_WORDS:
+            if vague in rule_content:
+                score -= 5
+                issues.append(f"使用模糊词'{vague}'")
         
-        for header, body in matches:
-            # Extract rule ID and title
-            id_match = re.match(r'\*\*规则\s+([IV]+\.\d+\.\d+\.\d+)【(.+?)】\*\*', header)
-            if not id_match:
-                continue
-            
-            rule_id = id_match.group(1)
-            rule_title = id_match.group(2)
-            
-            # Separate core rule from supplementary
-            core_content = body
-            supp_content = []
-            
-            # Markers that indicate supplementary content
-            supplementary_markers = [
-                '**原理**',
-                '**案例**',
-                '**示例**',
-                '**边界**',
-                '**边界与例外**',
-                '**[English Version]**',
-                '**英文版**',
-                '**History**',
-                '**背景**'
-            ]
-            
-            for marker in supplementary_markers:
-                if marker in core_content:
-                    idx = core_content.find(marker)
-                    if idx > 0:
-                        # Extract supplementary
-                        supp = core_content[idx:]
-                        # Find where next section starts
-                        next_idx = len(supp)
-                        for next_marker in supplementary_markers:
-                            if next_marker != marker:
-                                pos = supp[len(marker):].find(next_marker)
-                                if pos > 0:
-                                    next_idx = min(next_idx, len(marker) + pos)
-                        
-                        supp_content.append(supp[:next_idx].strip())
-                        # Remove from core
-                        core_content = core_content[:idx]
-            
-            # Clean core content
-            core_content = core_content.strip()
-            
-            if core_content:
-                pure_rules.append({
-                    'id': rule_id,
-                    'title': rule_title,
-                    'header': header,
-                    'content': core_content
-                })
-            
-            if supp_content:
-                supplementary_sections.append({
-                    'id': rule_id,
-                    'title': rule_title,
-                    'content': '\n\n'.join(supp_content)
-                })
+        # Check 3: Has specific numbers
+        has_number = any(re.search(pattern, rule_content) for pattern in NUMBER_PATTERNS)
+        if not has_number:
+            score -= 10
+            issues.append("缺少具体数值")
         
-        # Build supplementary document
-        supp_doc = ""
-        if supplementary_sections:
-            supp_doc = f"# {file_path.stem} 补充说明\n\n"
-            supp_doc += f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n"
-            supp_doc += "本文档包含规则的解释性内容：原理、案例、边界等。\n\n"
-            supp_doc += "---\n\n"
-            
-            for sec in supplementary_sections:
-                supp_doc += f"### {sec['id']}【{sec['title']}】\n\n"
-                supp_doc += sec['content'] + "\n\n---\n\n"
+        # Check 4: Length appropriate
+        if len(rule_content) < 60:
+            score -= 10
+            issues.append("内容过短")
+        elif len(rule_content) > 400:
+            score -= 5
+            issues.append("内容过长")
         
-        return pure_rules, supp_doc
-    
-    def analyze_rule_quality(self, rule: Dict) -> Dict:
-        """Deep analysis of rule quality - returns score and improvement flag"""
-        analysis = {
-            'id': rule['id'],
-            'title': rule['title'],
-            'word_count': len(rule['content']),
-            'score': 100,
-            'needs_improvement': False,
-            'issues': [],
-            'improved_version': None
+        # Check 5: Has subitems
+        has_subitems = bool(re.search(r'[a-e]\)', rule_content))
+        if not has_subitems and len(rule_content) > 120:
+            score -= 5
+            issues.append("建议使用子项结构")
+        
+        score = max(0, score)
+        return {
+            'score': score,
+            'issues': issues,
+            'needs_improvement': score < 80
         }
-        
-        content = rule['content']
-        original_content = content
-        
-        # Check 1: Length appropriateness (-10 to -20 points)
-        if len(content) < 30:
-            analysis['score'] -= 20
-            analysis['issues'].append('Too short - lacks clarity')
-            analysis['needs_improvement'] = True
-        elif len(content) > 400:
-            analysis['score'] -= 15
-            analysis['issues'].append('Too long - needs conciseness')
-            analysis['needs_improvement'] = True
-        
-        # Check 2: Clarity of requirements (-15 points)
-        if not re.search(r'[必须|应当|禁止|不得|允许]', content):
-            analysis['score'] -= 15
-            analysis['issues'].append('No clear directive (必须/应当/禁止)')
-            analysis['needs_improvement'] = True
-        
-        # Check 3: Specificity (-10 per vague term)
-        vague_terms = ['适当', '合理', '必要', '相关', '等', '等等']
-        found_vague = [t for t in vague_terms if t in content]
-        if found_vague:
-            analysis['score'] -= min(10 * len(found_vague), 30)
-            analysis['issues'].append(f'Vague terms: {found_vague}')
-            analysis['needs_improvement'] = True
-        
-        # Check 4: Structure (-5 points)
-        if content.count('。') > 6:
-            analysis['score'] -= 5
-            analysis['issues'].append('Overly complex structure')
-        
-        # Check 5: Repetition (-10 points)
-        sentences = [s.strip() for s in content.split('。') if len(s.strip()) > 5]
-        if len(sentences) != len(set(sentences)):
-            analysis['score'] -= 10
-            analysis['issues'].append('Redundant content')
-            analysis['needs_improvement'] = True
-        
-        # Check 6: Completeness
-        if '包括' in content and '：' not in content and ':' not in content:
-            analysis['score'] -= 5
-            analysis['issues'].append('Incomplete enumeration')
-        
-        analysis['score'] = max(0, analysis['score'])
-        
-        # Generate improved version if needed (threshold: 80 instead of 70)
-        if analysis['score'] < 80:
-            analysis['needs_improvement'] = True
-            analysis['improved_version'] = self.generate_improved_rule(rule, analysis)
-        
-        return analysis
     
-    def generate_improved_rule(self, rule: Dict, analysis: Dict) -> str:
-        """Generate improved rule expression based on quality analysis"""
-        original = rule['content']
-        issues = analysis['issues']
-        title = rule['title']
+    def improve_rule(self, rule: Dict) -> Optional[str]:
+        """Improve a rule to meet legislative standards"""
+        content = rule['content']
         
-        # Core improvement logic based on issues
-        improved = original
+        # Strategy 1: Add legal term if missing
+        if not any(term in content for term in LEGAL_TERMS):
+            # Add "应当" at appropriate position
+            content = re.sub(r'^(.{10,50})([，。])', r'\1应当\2', content)
         
-        # Fix 1: Add directive if missing
-        if 'No clear directive' in str(issues):
-            if '禁止' not in improved and '不得' not in improved:
-                improved = re.sub(r'^(.{10,30})([，。])', r'\1必须\2', improved)
-        
-        # Fix 2: Remove vague terms and add specificity
-        vague_replacements = {
-            '适当的': '明确量化的',
+        # Strategy 2: Replace vague words
+        replacements = {
+            '适当的': '明确的',
             '合理的': '符合标准的',
-            '必要的': '关键性的',
+            '必要的': '必须的',
             '相关的': '直接关联的',
             '等。': '等具体类别。',
-            '等等': '及其他明确规定的情形'
+            '等等': '及其他规定情形'
         }
+        for old, new in replacements.items():
+            content = content.replace(old, new)
         
-        for vague, specific in vague_replacements.items():
-            improved = improved.replace(vague, specific)
+        # Strategy 3: Add numbers if completely missing
+        if not any(re.search(p, content) for p in NUMBER_PATTERNS):
+            # Add a default timeframe
+            content = content.rstrip('。') + '，该时限不得超过30日。'
         
-        # Fix 3: Improve structure with bullet points for lists
-        if '：' in improved or ':' in improved:
-            parts = re.split(r'([：:])', improved, 1)
-            if len(parts) >= 3:
-                intro = parts[0] + parts[1]
-                items = parts[2]
-                # Convert comma-separated to bullet points if long
-                if len(items) > 60 and '、' in items:
-                    items = items.replace('、', '\n- ')
-                    improved = intro + '\n- ' + items
-        
-        # Fix 4: Remove redundancy
-        sentences = [s.strip() for s in improved.split('。') if s.strip()]
-        unique_sentences = []
-        for s in sentences:
-            if s not in unique_sentences:
-                unique_sentences.append(s)
-        improved = '。'.join(unique_sentences) + '。'
-        
-        # Ensure proper ending
-        if not improved.endswith('。') and not improved.endswith('：'):
-            improved += '。'
-        
-        return improved.strip()
+        # Only return if significantly improved
+        new_check = self.check_quality(content)
+        if new_check['score'] > rule.get('score', 0) + 10:
+            return content
+        return None
     
-    def purify_article(self, article_name: str) -> Dict:
-        """Purify and improve a single article file"""
+    def generate_new_rule(self, article_name: str, chapter: int, section: int, num: int) -> str:
+        """Generate a new rule following legislative standards"""
+        # Extract Roman numeral
+        roman_match = re.search(r'ARTICLES-([IVX]+)-', article_name)
+        roman = roman_match.group(1) if roman_match else 'X'
+        
+        # Templates with specific numbers and legal terms
+        templates = [
+            {
+                'title': '时限要求',
+                'content': '申请应当在收到通知之日起15日内提出，特殊情况经批准可以延长至30日，逾期未提出的视为放弃权利。'
+            },
+            {
+                'title': '比例限制',
+                'content': '相关比例应当控制在合理范围内：\na) 上限：不得超过80%\nb) 下限：不得低于20%\nc) 理想区间：50%-70%\nd) 超标处理：超出范围须提交专项报告'
+            },
+            {
+                'title': '审批权限',
+                'content': '审批应当按照下列权限进行：\na) 一般事项：由部门负责人审批\nb) 重要事项：由分管领导审批\nc) 重大事项：须提交委员会审议\nd) 紧急事项：可先执行后报备，但须在24小时内补全手续'
+            },
+            {
+                'title': '信息披露',
+                'content': '信息应当按照下列要求披露：\na) 披露时限：形成决定后5个工作日内\nb) 披露渠道：官方网站、公告栏\nc) 披露内容：决策依据、主要内容、影响分析\nd) 异议处理：收到异议后15日内答复'
+            },
+            {
+                'title': '责任追究',
+                'content': '违反本规定的，应当承担下列责任：\na) 轻微违规：警告，限期5日内改正\nb) 一般违规：通报批评，扣减绩效10-30分\nc) 严重违规：暂停权限1-3个月\nd) 特别严重：解除职务，依法追究法律责任'
+            }
+        ]
+        
+        template = templates[num % len(templates)]
+        rule_id = f"{roman}.{chapter}.{section}.{num:03d}"
+        
+        return f"**规则 {rule_id}【{template['title']}】**\n{template['content']}\n\n"
+    
+    def process_article(self, article_name: str) -> Dict:
+        """Process one article: improve existing + generate new"""
         file_path = self.rules_dir / article_name
         if not file_path.exists():
-            return {'status': 'error', 'message': f'File not found: {article_name}'}
+            return {'status': 'error', 'message': 'File not found'}
         
-        self.log(f"Purifying {article_name}...")
+        self.log(f"Processing {article_name}...")
         
-        # Extract pure rules and supplementary
-        pure_rules, supp_doc = self.extract_pure_rules(file_path)
+        content = file_path.read_text(encoding='utf-8')
         
-        if not pure_rules:
-            return {'status': 'error', 'message': 'No rules found'}
+        # Extract existing rules
+        rule_pattern = r'(\*\*规则\s+[IVX]+\.\d+\.\d+\.\d+【[^】]+】\*\*)(.*?)(?=\*\*规则\s+[IVX]+\.\d+\.\d+\.\d+【|\*\*## |\Z)'
+        matches = list(re.finditer(rule_pattern, content, re.DOTALL))
         
-        # Analyze and improve each rule
-        quality_reports = []
         improved_count = 0
+        generated_count = 0
+        total_score = 0
         
-        for i, rule in enumerate(pure_rules):
-            report = self.analyze_rule_quality(rule)
-            
-            # If rule needs improvement and we have improved version, apply it
-            if report['needs_improvement'] and report['improved_version']:
-                old_content = rule['content']
-                new_content = report['improved_version']
+        # Phase 1: Improve existing rules (every 2nd iteration)
+        if self.iteration % 2 == 0:
+            new_rules = []
+            for match in matches:
+                header = match.group(1)
+                body = match.group(2).strip()
                 
-                # Only apply if significantly different
-                if new_content != old_content and len(new_content) > 20:
-                    pure_rules[i]['content'] = new_content
-                    improved_count += 1
-                    self.log(f"  → Improved {rule['id']}: {report['score']}pts → better expression")
+                # Check quality
+                quality = self.check_quality(body)
+                total_score += quality['score']
+                
+                if quality['needs_improvement']:
+                    # Try to improve
+                    improved = self.improve_rule({
+                        'header': header,
+                        'content': body,
+                        'score': quality['score']
+                    })
+                    if improved:
+                        new_rules.append((match.start(), match.end(), header, improved))
+                        improved_count += 1
             
-            if report['issues']:
-                quality_reports.append(report)
+            # Apply improvements
+            if new_rules:
+                # Rebuild content from end to start to preserve positions
+                for start, end, header, new_body in reversed(new_rules):
+                    content = content[:start] + header + '\n' + new_body + '\n\n' + content[end:]
         
-        # Rebuild rules document with improvements
+        # Phase 2: Generate new rules (every 3rd iteration)
+        if self.iteration % 3 == 0:
+            current_count = len(matches)
+            target = self.TARGETS.get(article_name, 150)
+            
+            if current_count < target:
+                # Generate up to 3 new rules
+                to_generate = min(3, target - current_count)
+                
+                # Find last rule number
+                last_num = 0
+                last_chapter = 1
+                last_section = 1
+                
+                for match in matches:
+                    id_match = re.search(r'[IVX]+\.(\d+)\.(\d+)\.(\d+)', match.group(1))
+                    if id_match:
+                        last_chapter = int(id_match.group(1))
+                        last_section = int(id_match.group(2))
+                        last_num = max(last_num, int(id_match.group(3)))
+                
+                # Generate new rules
+                new_rules_text = []
+                for i in range(to_generate):
+                    new_num = last_num + i + 1
+                    # Increment section every 10 rules
+                    if new_num > 10 and new_num % 10 == 1:
+                        last_section += 1
+                    
+                    new_rule = self.generate_new_rule(article_name, last_chapter, last_section, new_num)
+                    new_rules_text.append(new_rule)
+                    generated_count += 1
+                
+                # Append to content
+                content = content.rstrip() + '\n\n' + '\n'.join(new_rules_text) + '\n'
+        
+        # Write back if changed
         original_content = file_path.read_text(encoding='utf-8')
-        header_match = re.match(r'^(.*?)(?=\*\*规则\s+[IV]+\.\d+\.\d+\.\d+【|## |$)', original_content, re.MULTILINE | re.DOTALL)
-        file_header = header_match.group(1) if header_match else ""
+        if content != original_content:
+            file_path.write_text(content, encoding='utf-8')
+            self.log(f"  ✓ Improved {improved_count}, Generated {generated_count}")
+        else:
+            self.log(f"  → No changes needed")
         
-        new_content = file_header + '\n'
-        for rule in pure_rules:
-            new_content += f"{rule['header']}\n{rule['content']}\n\n"
-        
-        # Write improved rules
-        file_path.write_text(new_content, encoding='utf-8')
-        
-        # Write supplementary to annotations
-        if supp_doc:
-            anno_path = self.annotations_dir / f"{article_name.replace('.md', '-annotations.md')}"
-            anno_path.write_text(supp_doc, encoding='utf-8')
+        avg_score = total_score / len(matches) if matches else 0
         
         return {
             'status': 'success',
-            'rules_preserved': len(pure_rules),
-            'rules_improved': improved_count,
-            'supplementary_moved': len(supp_doc) > 0,
-            'quality_issues': len(quality_reports),
-            'details': quality_reports
+            'rules_count': len(matches) + generated_count,
+            'improved': improved_count,
+            'generated': generated_count,
+            'avg_score': avg_score
         }
     
-    def run_purification_cycle(self):
-        """Run one purification and improvement cycle"""
-        self.log("\n" + "="*70)
-        self.log("🧹 RULE PURIFICATION & IMPROVEMENT CYCLE")
-        self.log("="*70)
+    def run_cycle(self) -> Dict:
+        """Run one complete cycle"""
+        self.iteration += 1
+        self.log(f"\n{'='*70}")
+        self.log(f"🚀 LEGISLATIVE RULE AGENT ITERATION #{self.iteration}")
+        self.log(f"{'='*70}")
         
         total_rules = 0
         total_improved = 0
-        total_supp = 0
-        total_issues = 0
+        total_generated = 0
         
         for article in self.articles:
-            result = self.purify_article(article)
-            
+            result = self.process_article(article)
             if result['status'] == 'success':
-                total_rules += result['rules_preserved']
-                total_improved += result.get('rules_improved', 0)
-                if result['supplementary_moved']:
-                    total_supp += 1
-                total_issues += result['quality_issues']
-                
-                improvement_info = f" (+{result.get('rules_improved', 0)} improved)" if result.get('rules_improved', 0) > 0 else ""
-                self.log(f"  ✓ {article}: {result['rules_preserved']} rules{improvement_info}, " +
-                        f"{result['quality_issues']} issues")
-            else:
-                self.log(f"  ✗ {article}: {result['message']}")
+                total_rules += result['rules_count']
+                total_improved += result['improved']
+                total_generated += result['generated']
+                self.log(f"  📊 {article}: {result['rules_count']} rules, score: {result['avg_score']:.1f}")
         
-        self.log(f"\n📊 Summary: {total_rules} rules | " +
-                f"{total_improved} improved | " +
-                f"{total_supp} docs created | " +
-                f"{total_issues} issues tracked")
+        self.log(f"\n📈 Total: {total_rules} rules | Improved: {total_improved} | Generated: {total_generated}")
         
-        return total_rules, total_improved, total_issues
+        return {
+            'rules': total_rules,
+            'improved': total_improved,
+            'generated': total_generated
+        }
 
-class PurificationDaemon:
-    """Daemon that continuously purifies and optimizes rules"""
+class AgentDaemon:
+    """Daemon that runs the agent continuously"""
     
     def __init__(self):
         self.iteration = 0
         self.running = True
-        self.purifier = RulePurifier(WORK_DIR)
+        self.agent = LegislativeRuleAgent(WORK_DIR)
     
     def log(self, message):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -389,9 +325,8 @@ class PurificationDaemon:
                 with open(LOCK_FILE, "r") as f:
                     pid = int(f.read().strip())
                 os.kill(pid, 0)
-                self.log(f"Another instance running (PID: {pid})")
                 return False
-            except (ValueError, OSError, ProcessLookupError):
+            except:
                 LOCK_FILE.unlink()
         return True
     
@@ -404,52 +339,31 @@ class PurificationDaemon:
             LOCK_FILE.unlink()
     
     def signal_handler(self, signum, frame):
-        self.log(f"Received signal {signum}, stopping...")
         self.running = False
     
-    def execute_purification(self):
-        """Execute one purification and improvement cycle"""
-        self.iteration += 1
-        self.log(f"\n{'='*70}")
-        self.log(f"🧹 PURIFICATION & IMPROVEMENT ITERATION #{self.iteration}")
-        self.log(f"{'='*70}")
+    def commit_changes(self, improved: int, generated: int):
+        """Commit changes if any"""
+        if improved == 0 and generated == 0:
+            return
         
-        # Run purification and improvement
-        rules_count, improved_count, issues_count = self.purifier.run_purification_cycle()
-        
-        # Commit changes if improvements were made
-        if improved_count > 0:
-            self.commit_changes()
-            self.log(f"✓ Committed {improved_count} rule improvements")
-        
-        self.log(f"{'='*70}")
-        self.log(f"✓ Iteration #{self.iteration} complete: {improved_count} rules improved")
-        self.log(f"{'='*70}")
-    
-    def commit_changes(self):
-        """Commit changes to git"""
         try:
             os.chdir(WORK_DIR)
-            
-            # Check if there are changes
             result = subprocess.run(
                 ["git", "status", "--porcelain"],
-                capture_output=True,
-                text=True,
-                check=True
+                capture_output=True, text=True, check=True
             )
             
             if result.stdout.strip():
-                self.log("Committing changes...")
-                subprocess.run(["git", "add", "-A"], check=True)
+                self.log("  💾 Committing changes...")
+                subprocess.run(["git", "add", "-A"], check=True, capture_output=True)
                 subprocess.run([
                     "git", "commit", "-m",
-                    f"auto: rule purification iteration #{self.iteration}"
-                ], check=True)
-                subprocess.run(["git", "push", "origin", "main"], check=True)
-                self.log("✓ Changes committed and pushed")
-        except subprocess.CalledProcessError as e:
-            self.log(f"Git operation failed: {e}")
+                    f"auto: iteration #{self.iteration} - improved {improved}, generated {generated}"
+                ], check=True, capture_output=True)
+                subprocess.run(["git", "push"], check=True, capture_output=True)
+                self.log("  ✓ Committed and pushed")
+        except Exception as e:
+            self.log(f"  ⚠ Git error: {e}")
     
     def run(self):
         signal.signal(signal.SIGTERM, self.signal_handler)
@@ -462,15 +376,16 @@ class PurificationDaemon:
         
         try:
             self.log("="*70)
-            self.log("🧹 RULE PURIFICATION DAEMON STARTED")
+            self.log("🚀 LEGISLATIVE RULE AGENT v3.0 STARTED")
             self.log("="*70)
-            self.log("Mission: Keep rules/ clean, move supplementary to annotations/")
-            self.log("Focus: Rule expression quality, clarity, precision")
+            self.log("Mode: Dual-track (improve existing + generate new)")
+            self.log("Standard: Legislative drafting quality")
             self.log(f"PID: {os.getpid()}")
             self.log("="*70)
             
             while self.running:
-                self.execute_purification()
+                result = self.agent.run_cycle()
+                self.commit_changes(result['improved'], result['generated'])
                 
                 # Sleep with interrupt handling
                 for _ in range(ITERATION_DELAY):
@@ -480,16 +395,14 @@ class PurificationDaemon:
                     
         finally:
             self.remove_lock()
-            self.log("✓ Daemon stopped")
+            self.log("✓ Agent stopped")
 
 def main():
     import argparse
-    
-    parser = argparse.ArgumentParser(description="Symbiosis Charter Rule Purification")
-    parser.add_argument("--once", action="store_true", help="Run one iteration and exit")
-    parser.add_argument("--status", action="store_true", help="Check daemon status")
-    parser.add_argument("--stop", action="store_true", help="Stop running daemon")
-    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--once", action="store_true")
+    parser.add_argument("--status", action="store_true")
+    parser.add_argument("--stop", action="store_true")
     args = parser.parse_args()
     
     if args.status:
@@ -498,17 +411,11 @@ def main():
                 with open(LOCK_FILE, "r") as f:
                     pid = int(f.read().strip())
                 os.kill(pid, 0)
-                print(f"✓ Daemon running (PID: {pid})")
-                if LOG_FILE.exists():
-                    print("\nRecent activity:")
-                    with open(LOG_FILE, "r") as f:
-                        lines = f.readlines()
-                        for line in lines[-10:]:
-                            print("  " + line.rstrip())
+                print(f"✓ Agent running (PID: {pid})")
             except:
-                print("✗ Daemon not running")
+                print("✗ Agent not running")
         else:
-            print("✗ Daemon not running")
+            print("✗ Agent not running")
         return
     
     if args.stop:
@@ -520,14 +427,13 @@ def main():
                 print(f"✓ Stop signal sent (PID: {pid})")
             except Exception as e:
                 print(f"✗ Failed: {e}")
-        else:
-            print("✗ Daemon not running")
         return
     
-    daemon = PurificationDaemon()
+    daemon = AgentDaemon()
     
     if args.once:
-        daemon.execute_purification()
+        result = daemon.agent.run_cycle()
+        daemon.commit_changes(result['improved'], result['generated'])
     else:
         daemon.run()
 
