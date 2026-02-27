@@ -138,80 +138,384 @@ d) Adjusting plans based on feedback
 e) Obtaining written consent from representatives of affected personnel
 
 **规则 II.1.1.009【替代监督委员会】**
-每个涉及100人以上替代的设立监督委员会：
-a) 成员包括：管理者代表、员工代表、技术专家、伦理顾问
-)b) 职责：监督替代过程、处理投诉、调解争议
-c) 权力：要求暂停替代、要求提供信息、提出建议，该时限不得超过30日。
+**Rule II.1.1.009 [Substitution Oversight Committee]**
+
+每个涉及100人以上劳动替代的项目必须设立独立监督委员会：
+a) 成员组成：管理者代表（1名）、员工代表（不少于2名）、技术专家（1名）、伦理顾问（1名）
+b) 核心职责：全程监督替代过程合规性、受理并处理被替代者投诉、调解替代相关争议
+c) 法定权力：有权要求暂停替代程序（最长30日）、要求企业提供相关信息、向决策层提出整改建议
+
+A substitution oversight committee must be established for any labor substitution project affecting 100+ workers:
+a) Composition: management representative (1), employee representatives (minimum 2), technical expert (1), ethics advisor (1)
+b) Core responsibilities: supervise compliance throughout substitution process, handle complaints from displaced workers, mediate substitution-related disputes
+c) Authority: power to suspend substitution procedures (up to 30 days), require enterprises to provide relevant information, submit rectification recommendations to decision-makers
+
+**【原理】**
+劳动替代涉及多方利益冲突，需要独立第三方监督机制来平衡效率追求与社会公正。该机制源于工业民主理念，确保被替代者在重大变革中拥有话语权。
+
+**Principle**: Labor substitution involves multiple conflicting interests, requiring independent third-party oversight to balance efficiency pursuits with social justice. This mechanism stems from industrial democracy principles, ensuring displaced workers have a voice in major transformations.
+
+**【案例】**
+**正面案例**：某汽车厂替代500名装配工人时成立监督委员会，员工代表发现替代计划未充分考虑技能转换期，委员会要求暂停并完善方案，最终替代过程零投诉。
+
+**反面案例**：某物流公司替代300名分拣员但未设监督委员会，替代后出现大量补偿纠纷，被迫暂停运营并支付高额和解金。
+
+**Positive Case**: When an automaker substituted 500 assembly workers, the oversight committee discovered the plan inadequately considered skill transition periods. The committee mandated suspension and plan improvements, resulting in a substitution process with zero complaints.
+
+**Negative Case**: A logistics company substituted 300 sorters without establishing an oversight committee, leading to numerous compensation disputes, operational suspension, and substantial settlement payments.
+
+**【边界】**
+**适用边界**：适用于一次性替代100人以上的项目，或同一企业12个月内累计替代200人以上的情形。
+
+**例外情形**：企业破产清算、不可抗力导致的紧急替代可豁免，但需在30日内补设临时监督机制。
+
+**Applicable Boundaries**: Applies to projects substituting 100+ workers at once, or enterprises substituting 200+ workers cumulatively within 12 months.
+
+**Exceptions**: Exemptions apply for bankruptcy liquidation and emergency substitutions due to force majeure, but temporary oversight mechanisms must be established within 30 days.
 
 **规则 II.1.1.010【替代影响评估】**
-实施替代前必须完成影响评估：
-a) 经济影响：就业、收入、消费
-)b) 社会影响：社区稳定性、家庭结构、心理健康
-c) 技术影响：系统可靠性、安全性、可维护性
-d) 伦理影响：公平性、尊严、自主权
+**Rule II.1.1.010 [Substitution Impact Assessment]**
+
+实施劳动替代前必须完成全面影响评估，评估报告需经伦理院审批：
+a) 经济影响评估：直接就业岗位变化、被替代者收入损失测算、区域消费力变化预测
+b) 社会影响评估：社区结构稳定性分析、家庭关系影响、被替代者心理健康风险
+c) 技术影响评估：替代系统可靠性验证、安全性测试、长期可维护性分析
+d) 伦理影响评估：替代公平性（是否针对特定群体）、人类尊严维护、被替代者自主权保障
+
+Comprehensive impact assessments must be completed before labor substitution, with assessment reports subject to Ethics Council approval:
+a) Economic impact: direct employment changes, income loss calculations for displaced workers, regional consumption impact forecasts
+b) Social impact: community structural stability analysis, family relationship impacts, mental health risks for displaced workers
+c) Technical impact: substitution system reliability verification, safety testing, long-term maintainability analysis
+d) Ethical impact: substitution fairness (whether targeting specific groups), human dignity preservation, displaced worker autonomy protection
+
+**【原理】**
+基于预防原则（Precautionary Principle），技术变革的社会成本应在决策前充分评估。这符合"先评估、后行动"的治理理性，避免因盲目推进技术替代而引发不可逆的社会伤害。
+
+**Principle**: Based on the Precautionary Principle, the social costs of technological transformation should be fully assessed before decision-making. This aligns with the governance rationale of "assess first, act second," preventing irreversible social harm from blindly pursuing technological substitution.
+
+**【案例】**
+**正面案例**：某港口在引入自动化系统前完成详细影响评估，发现将直接影响800个家庭，于是提前启动社区支持计划和儿童教育基金，替代获得社区理解和支持。
+
+**反面案例**：某零售企业未做充分评估即大规模替代收银员，导致商圈消费萎缩、周边学校生源减少，引发连锁负面效应。
+
+**Positive Case**: A port conducted detailed impact assessments before introducing automation, discovering 800 families would be directly affected. They launched community support programs and children's education funds in advance, gaining community understanding and support for the substitution.
+
+**Negative Case**: A retail company massively substituted cashiers without adequate assessment, leading to商圈消费萎缩 (commercial district consumption decline), reduced school enrollment, and cascading negative effects.
+
+**【边界】**
+**适用边界**：适用于替代50人以上或占企业总人数10%以上的替代项目。
+
+**量化指标**：经济影响评估必须量化计算未来3年的就业乘数效应；社会影响评估需覆盖至少80%的被替代者家庭。
+
+**Applicable Boundaries**: Applies to substitution projects affecting 50+ workers or 10%+ of total enterprise workforce.
+
+**Quantitative Indicators**: Economic assessments must calculate employment multiplier effects over 3 years; social assessments must cover at least 80% of displaced workers' families.
 
 **规则 II.1.1.011【替代后监测】**
-替代完成后持续监测：
-a) 运营效率指标
-)b) 安全事件统计
-c) 被替代者生活状况跟踪
-d) 社会影响评估
-监测期不少于2年。
+**Rule II.1.1.011 [Post-Substitution Monitoring]**
 
-**，该时限不得超过30日。
+劳动替代完成后必须建立持续监测机制，监测期不少于2年：
+a) 运营效率指标：替代系统的实际产出效率、故障率、维护成本
+b) 安全事件统计：工伤事故、系统故障、应急响应情况
+c) 被替代者跟踪：再就业率、收入水平变化、心理健康状况、社会保障依赖度
+d) 年度影响评估：对原工作社区的经济和社会影响持续追踪
+
+Continuous monitoring must be established after labor substitution completion, with monitoring period no less than 2 years:
+a) Operational efficiency: actual output efficiency of substitution systems, failure rates, maintenance costs
+b) Safety incident statistics: work injuries, system failures, emergency response situations
+c) Displaced worker tracking: reemployment rates, income level changes, mental health status, social security dependency
+d) Annual impact assessment: ongoing tracking of economic and social impacts on original work communities
+
+**【原理】**
+技术系统的实际效果往往与预期存在偏差，替代后的监测是负责任创新的必要环节。这不仅验证替代决策的正确性，也为后续替代项目提供经验数据，体现学习型治理的理念。
+
+**Principle**: Actual effects of technological systems often deviate from expectations; post-substitution monitoring is essential for responsible innovation. This validates substitution decisions and provides empirical data for future projects, embodying learning-based governance.
+
+**【案例】**
+**正面案例**：某工厂替代后建立2年监测期，发现被替代工人中有15%出现抑郁症状，随即启动心理干预项目，并将该经验纳入后续替代的标配程序。
+
+**反面案例**：某企业替代后未做监测，3年后发现替代系统维护成本远超预期，且原技术工人队伍流失导致无人工可召回，陷入困境。
+
+**Positive Case**: A factory established 2-year monitoring after substitution, discovering 15% of displaced workers showed depression symptoms. They immediately launched psychological intervention programs and incorporated this experience as standard procedure for subsequent substitutions.
+
+**Negative Case**: A company failed to monitor after substitution, discovering 3 years later that maintenance costs far exceeded expectations and the original skilled worker pool had dispersed, leaving no human workers to recall.
+
+**【边界】**
+**适用边界**：所有涉及20人以上的劳动替代项目。
+
+**终止条件**：监测期内如发生重大安全事故或被替代者集体申诉，监测期延长至问题解决后1年。
+
+**Applicable Boundaries**: All labor substitution projects involving 20+ workers.
+
+**Termination Conditions**: If major safety incidents or collective complaints from displaced workers occur during monitoring, the period extends to 1 year after problem resolution.
 
 **规则 II.1.1.013【替代弹性条款】**
-保留人工替代方案的弹性条款：
-a) 紧急情况下人工接管机制
-)b) 系统故障时人工备份
-c) 定期人工参与维持技能
-d) 人工与智能体的灵活调配
+**Rule II.1.1.013 [Substitution Flexibility Clause]**
 
-**，该时限不得超过30日。
+所有劳动替代方案必须保留人工弹性条款，确保系统韧性：
+a) 紧急接管机制：突发情况或系统异常时，人工可在30秒内接管关键操作
+b) 故障备份体系：智能系统故障时，人工备份可在1小时内恢复基本运营
+c) 技能维持机制：关键岗位至少每季度安排人工实操，防止技能断层
+d) 灵活调配权：保留根据实际需求在人工与智能体之间动态调配的权力
+
+All labor substitution plans must retain human flexibility clauses to ensure system resilience:
+a) Emergency takeover mechanism: humans can assume critical operations within 30 seconds during emergencies or system anomalies
+b) Failure backup system: human backup can restore basic operations within 1 hour when intelligent systems fail
+c) Skill maintenance mechanism: key positions require manual practice at least quarterly to prevent skill discontinuity
+d) Flexible allocation authority: preserve dynamic allocation power between human and intelligent agents based on actual needs
+
+**【原理】**
+技术系统存在脆弱性，过度依赖单一技术路径可能带来系统性风险。保持人工弹性是对技术决定论的矫正，体现"技术服务于人而非人依附于技术"的治理哲学。
+
+**Principle**: Technical systems have vulnerabilities; over-reliance on single technical paths may bring systemic risks. Maintaining human flexibility corrects technological determinism, embodying the governance philosophy that "technology serves humans, not humans depending on technology."
+
+**【案例】**
+**正面案例**：某航空公司在地勤系统全面智能化的同时保留人工备份，当网络攻击导致系统瘫痪时，人工团队在2小时内恢复50%的航班运营。
+
+**反面案例**：某港口完全依赖自动化系统，未保留足够人工操作能力，当控制系统遭勒索软件攻击时被迫关闭7天，造成巨额损失。
+
+**Positive Case**: While fully automating ground handling systems, an airline retained human backup. When a cyberattack paralyzed the system, human teams restored 50% of flight operations within 2 hours.
+
+**Negative Case**: A port completely relied on automated systems without sufficient human operational capacity. When control systems were hit by ransomware, operations were forced to shut down for 7 days, causing massive losses.
+
+**【边界】**
+**适用边界**：所有涉及关键基础设施、公共安全、经济命脉的劳动替代项目。
+
+**豁免情形**：纯辅助性、非关键业务可适度放宽弹性要求，但需经风险评估确认。
+
+**Applicable Boundaries**: All labor substitution projects involving critical infrastructure, public safety, or economic lifelines.
+
+**Exemptions**: Purely supportive, non-critical businesses may have relaxed flexibility requirements subject to risk assessment confirmation.
 
 **规则 II.1.2.016【增强优先原则】**
-在可能的情况下，优先采用劳动增强而非劳动替代：
-a) 人工智能作为人类的工具和助手
-)b) 提升人类的能力和效率
-c) 扩展人类的工作范围
-d) 改善人类的工作体验，该时限不得超过30日。
+**Rule II.1.2.016 [Augmentation First Principle]**
+
+在技术应用决策中，当劳动增强与劳动替代均可达成目标时，优先选择增强路径：
+a) 定位原则：人工智能应作为人类的工具和助手，而非取代者
+b) 能力提升：技术应用应提升人类的能力和效率，而非贬低人类价值
+c) 范围扩展：技术帮助人类扩展工作范围，进入新领域，而非收缩
+)d) 体验改善：技术改善人类的工作体验，减少枯燥和危险，增加创造性
+
+When both labor augmentation and substitution can achieve goals, prioritize augmentation:
+a) Positioning principle: AI should serve as human tools and assistants, not replacers
+b) Capability enhancement: technology should enhance human capabilities and efficiency, not devalue humans
+c) Scope expansion: technology helps humans expand work scope into new areas, not contract
+)d) Experience improvement: technology improves work experience, reducing drudgery and danger while increasing creativity
+
+**【原理】**
+源自"以人为本的技术观"——技术的终极价值在于增强人类能动性（human agency），而非消解之。这种路径尊重人类的主体地位，避免"技术异化"，实现人机协同进化。
+
+**Principle**: Stemming from "human-centered technology view"—technology's ultimate value lies in enhancing human agency, not dissolving it. This path respects human subject status, avoids "technological alienation," and achieves human-machine co-evolution.
+
+**【案例】**
+**正面案例**：某建筑设计公司采用AI辅助设计工具，建筑师工作效率提升40%，同时设计质量和创新性显著提高，建筑师职业满意度上升。
+
+**反面案例**：某客服中心直接采用替代型AI，虽降低成本但客户满意度下降，后改为增强型AI辅助人工客服，满意度恢复并超出原有水平。
+
+**Positive Case**: An architectural design firm adopted AI-assisted design tools, improving architects' efficiency by 40% while significantly enhancing design quality and innovation, increasing job satisfaction.
+
+**Negative Case**: A customer service center directly adopted replacement AI. Though costs decreased, customer satisfaction dropped. Switching to augmentation AI assisting human agents restored and exceeded original satisfaction levels.
+
+**【边界】**
+**适用边界**：适用于所有技术应用场景的初始评估阶段，作为路径选择的默认原则。
+
+**例外情形**：对于明确有害人类健康的工作（如高危环境），可直接采用替代路径，不受此原则限制。
+
+**Applicable Boundaries**: Applies to initial assessment phases of all technology application scenarios as the default principle for path selection.
+
+**Exceptions**: For work clearly harmful to human health (e.g., hazardous environments), direct substitution paths may be adopted without this principle's restriction.
 
 **规则 II.1.2.017【增强型智能体设计】**
-劳动增强型智能体的设计原则：
-a) 以人类为中心，服务于人类目标
-)b) 增强人类能力而非取代人类判断
-c) 提供信息支持而非替代决策
-d) 保留人类的最终控制权，该时限不得超过30日。
+**Rule II.1.2.017 [Augmentation Agent Design]**
+
+劳动增强型智能体的设计必须遵循以下核心原则：
+a) 人本导向：以人类为中心，所有设计决策服务于人类目标而非系统效率最大化
+b) 判断保留：增强人类能力的同时保留人类判断权，关键决策必须由人类做出
+c) 信息支持：提供信息、分析和建议支持，而非直接替代人类决策过程
+d) 最终控制：保留人类的最终控制权和否决权，确保人类始终处于主导地位
+
+Labor augmentation agent design must follow these core principles:
+a) Human-centric orientation: center on humans, with all design decisions serving human goals rather than system efficiency maximization
+)b) Judgment preservation: enhance human capabilities while preserving human judgment rights; critical decisions must be made by humans
+c) Information support: provide information, analysis, and recommendations rather than directly replacing human decision processes
+d) Ultimate control: preserve human ultimate control and veto power, ensuring humans always remain in dominant positions
+
+**【原理】**
+基于人机协作（Human-Computer Collaboration）理论，最有效的系统不是完全自主的AI，而是能够放大人类能力的"认知义肢"。这要求智能体设计遵循"可解释、可干预、可撤销"的三可原则。
+
+**Principle**: Based on Human-Computer Collaboration theory, the most effective systems are not fully autonomous AI but "cognitive prosthetics" that amplify human capabilities. This requires agent design to follow the "Three Accessible Principles": explainable, intervenable, and reversible.
+
+**【案例】**
+**正面案例**：某医疗AI设计为辅助诊断系统，提供病情分析和建议但由医生做最终诊断决策，既提升诊断准确率又保留医生专业责任。
+
+**反面案例**：某投资建议AI因设计为自动执行模式，在一次市场异常中未经人类确认即做出大额交易，造成巨额损失。
+
+**Positive Case**: A medical AI designed as an assisted diagnosis system provides condition analysis and recommendations but leaves final diagnostic decisions to doctors, improving accuracy while preserving professional accountability.
+
+**Negative Case**: An investment recommendation AI designed for automatic execution made large trades without human confirmation during a market anomaly, causing massive losses.
+
+**【边界】**
+**适用边界**：所有定位为"增强型"的智能体系统设计。
+
+**禁止情形**：不得设计在未经人类明确授权的情况下可自主做出不可逆决策的"增强型"系统。
+
+**Applicable Boundaries**: All "augmentation-type" intelligent agent system designs.
+
+**Prohibitions**: "Augmentation-type" systems must not be designed to autonomously make irreversible decisions without explicit human authorization.
 
 **规则 II.1.2.018【增强透明度】**
-增强系统必须向用户透明展示：
-a) 系统提供的信息来源
-)b) 建议的依据和置信度
-c) 系统的局限性和不确定性
-d) 人类需要做出的最终判断
+**Rule II.1.2.018 [Augmentation Transparency]**
+
+劳动增强系统必须向用户透明展示以下关键信息：
+a) 信息来源：系统提供信息的原始出处、数据采集时间、更新频率
+b) 建议依据：系统建议所基于的逻辑推理过程、关键假设、模型依据
+c) 置信度标识：明确标注建议的可信度等级（如高/中/低）及不确定性范围
+d) 决策提示：清晰提示人类需要做出的最终判断及可能的决策后果
+
+Labor augmentation systems must transparently display to users:
+a) Information sources: original provenance of provided information, data collection time, update frequency
+b) Recommendation basis: logical reasoning process underlying system recommendations, key assumptions, model foundations
+c) Confidence indicators: clearly label recommendation confidence levels (e.g., high/medium/low) and uncertainty ranges
+d) Decision prompts: clearly indicate final judgments humans must make and potential decision consequences
+
+**【原理】**
+透明度是建立人机信任的基础。基于解释性AI（Explainable AI, XAI）理念，用户有权了解系统如何得出结论，这是做出明智决策的前提，也是人类保持认知主权的必要条件。
+
+**Principle**: Transparency is the foundation of human-machine trust. Based on Explainable AI (XAI) principles, users have the right to understand how systems reach conclusions—this is the prerequisite for informed decision-making and necessary for maintaining human cognitive sovereignty.
+
+**【案例】**
+**正面案例**：某法律AI在提供判例建议时，明确标注每个判例的相关性评分、适用边界和潜在冲突，帮助律师做出更全面的判断。
+
+**反面案例**：某招聘筛选AI未透露筛选标准，导致被筛选掉的候选人无法理解原因，引发歧视性质疑和诉讼。
+
+**Positive Case**: A legal AI clearly labels relevance scores, applicable boundaries, and potential conflicts for each case recommendation, helping lawyers make more comprehensive judgments.
+
+**Negative Case**: A recruitment screening AI didn't disclose screening criteria, causing rejected candidates to not understand reasons, triggering discrimination allegations and lawsuits.
+
+**【边界】**
+**适用边界**：所有向人类提供决策支持的增强系统。
+
+**豁免限制**：涉及国家安全的系统可申请部分透明度豁免，但需经伦理院个案审批。
+
+**Applicable Boundaries**: All augmentation systems providing decision support to humans.
+
+**Exemption Limits**: Systems involving national security may apply for partial transparency exemptions subject to Ethics Council case-by-case approval.
 
 **规则 II.1.2.019【增强反馈循环】**
-建立人机反馈循环：
-a) 人类对系统建议的反馈
-)b) 系统根据反馈的调整
-c) 持续学习和改进
-d) 保持人类的主动权，该时限不得超过30日。
+**Rule II.1.2.019 [Augmentation Feedback Loop]**
+
+劳动增强系统必须建立双向人机反馈机制：
+a) 人类反馈：用户可对系统建议进行评价（有用/无用）、提供修正意见、标记错误
+b) 系统调整：系统根据人类反馈持续优化算法，反馈权重随用户专业度动态调整
+c) 学习进化：建立持续学习机制，定期整合反馈数据改进系统性能
+d) 主动保留：人类始终保留接受或拒绝系统建议的最终主动权，系统不得强制
+
+Labor augmentation systems must establish bidirectional human-machine feedback mechanisms:
+a) Human feedback: users can evaluate system recommendations (useful/not useful), provide corrections, flag errors
+b) System adjustment: systems continuously optimize algorithms based on human feedback, with feedback weights dynamically adjusted by user expertise
+c) Learning evolution: establish continuous learning mechanisms, regularly integrating feedback data to improve system performance
+d) Initiative preservation: humans always retain ultimate initiative to accept or reject system recommendations; systems must not enforce
+
+**【原理】**
+基于人机协同进化理论，最有效的系统是通过持续互动不断适应人类需求的系统。反馈循环使AI从"工具"进化为"伙伴"，同时确保人类始终处于主导位置。
+
+**Principle**: Based on human-machine co-evolution theory, the most effective systems are those that continuously adapt to human needs through ongoing interaction. Feedback loops evolve AI from "tools" to "partners" while ensuring humans remain in dominant positions.
+
+**【案例】**
+**正面案例**：某写作助手AI通过收集用户编辑反馈，3个月内将建议采纳率从45%提升至78%，同时保持用户创作主导权。
+
+**反面案例**：某推荐系统忽视用户"不感兴趣"反馈，持续推送同类内容，导致用户关闭推荐功能，系统失去优化机会。
+
+**Positive Case**: A writing assistant AI improved recommendation adoption rates from 45% to 78% within 3 months through collecting user editing feedback, while preserving user creative dominance.
+
+**Negative Case**: A recommendation system ignored user "not interested" feedback, continuously pushing similar content, causing users to disable recommendations and the system to lose optimization opportunities.
+
+**【边界】**
+**适用边界**：所有具备学习能力的增强系统。
+
+**隐私保护**：反馈数据收集需获得用户明确同意，且不得用于系统功能以外的目的。
+
+**Applicable Boundaries**: All augmentation systems with learning capabilities.
+
+**Privacy Protection**: Feedback data collection requires explicit user consent and must not be used for purposes beyond system functionality.
 
 **规则 II.1.2.020【增强能力边界】**
-明确增强系统的能力边界：
-a) 不夸大系统能力
-)b) 明确告知用户什么情况下不应依赖系统
-c) 提供人工介入的明确信号
-d) 防止过度依赖和技能退化，该时限不得超过30日。
+**Rule II.1.2.020 [Augmentation Capability Boundaries]**
+
+增强系统必须明确界定并告知用户能力边界：
+a) 诚实宣传：系统宣传不得夸大能力，必须基于实际测试数据说明适用场景
+b) 依赖警示：明确告知用户在何种情况下不应依赖系统（如边界条件、异常输入）
+c) 介入信号：当系统置信度低于阈值或检测到异常时，主动提示人工介入
+d) 防退化设计：通过定期人类主导操作、技能测试等机制防止人类技能退化
+
+Augmentation systems must clearly define and inform users of capability boundaries:
+a) Honest representation: system promotion must not exaggerate capabilities; applicable scenarios must be explained based on actual test data
+b) Dependency warnings: clearly inform users when systems should not be relied upon (e.g., boundary conditions, abnormal inputs)
+c) Intervention signals: actively prompt human intervention when system confidence falls below thresholds or anomalies are detected
+d) Anti-degeneration design: prevent human skill degradation through periodic human-led operations, skill testing, and other mechanisms
+
+**【原理】**
+基于能力边界理论（Competence Boundary Theory），任何系统都有适用边界，隐瞒边界会导致信任滥用和灾难性失败。明确边界既保护用户，也保护系统声誉，是负责任创新的核心要求。
+
+**Principle**: Based on Competence Boundary Theory, all systems have applicable boundaries; concealing boundaries leads to trust abuse and catastrophic failures. Clear boundaries protect both users and system reputation, representing a core requirement of responsible innovation.
+
+**【案例】**
+**正面案例**：某导航AI明确提示"恶劣天气下请结合实际路况判断"，在一次暴雨导致地图数据滞后时，用户因该提示而避免事故。
+
+**反面案例**：某自动驾驶系统未充分告知用户其无法识别静止消防车，导致多起追尾事故。
+
+**Positive Case**: A navigation AI clearly prompted "please combine with actual road conditions during severe weather." When heavy rain caused map data lag, users avoided accidents due to this warning.
+
+**Negative Case**: An autonomous driving system inadequately informed users of its inability to recognize stationary fire trucks, causing multiple rear-end collisions.
+
+**【边界】**
+**适用边界**：所有商用增强系统的能力声明和用户协议。
+
+**法律责任**：因未明确能力边界导致的事故，系统提供方承担主要责任。
+
+**Applicable Boundaries**: All commercial augmentation system capability claims and user agreements.
+
+**Legal Liability**: System providers bear primary responsibility for incidents caused by failure to clearly define capability boundaries.
 
 **规则 II.1.2.021【增强培训要求】**
-使用增强系统前必须完成培训：
-a) 系统功能和局限
-)b) 正确的使用方法
-c) 异常情况处理
-d) 人工接管程序
+**Rule II.1.2.021 [Augmentation Training Requirements]**
 
-**
+使用劳动增强系统前，用户必须完成强制性培训并通过考核：
+a) 功能边界：系统的核心功能、适用场景、明确的能力局限和失效模式
+b) 正确用法：标准操作流程、最佳实践、常见错误及避免方法
+c) 异常处理：识别系统异常信号、应急响应程序、何时应停止使用
+d) 接管程序：人工接管的条件、接管操作步骤、接管后的工作流程
+
+Before using labor augmentation systems, users must complete mandatory training and pass assessment:
+a) Functional boundaries: core system functions, applicable scenarios, clear capability limitations and failure modes
+b) Proper usage: standard operating procedures, best practices, common errors and avoidance methodsc) Exception handling: identifying system anomaly signals, emergency response procedures, when to discontinue use
+d) Takeover procedures: conditions for human takeover, takeover operation steps, post-takeover workflows
+
+**【原理】**
+技术能力的发挥依赖于使用者的能力。培训的强制性源于"工具-使用者"系统理论——未经培训的使用者不仅无法发挥系统价值，还可能因误用而造成损害。这是技术治理中的人因工程要求。
+
+**Principle**: Technical capability realization depends on user capability. Training mandates stem from "tool-user" systems theory—untrained users not only fail to realize system value but may cause damage through misuse. This represents human factors engineering requirements in technology governance.
+
+**【案例】**
+**正面案例**：某医院要求医生完成40小时AI辅助诊断培训后方可使用系统，培训后的误诊率比未培训组低35%。
+
+**反面案例**：某企业未培训即让工人使用增强外骨骼，因操作不当导致工人腰部受伤，引发诉讼和赔偿。
+
+**Positive Case**: A hospital required doctors to complete 40 hours of AI-assisted diagnosis training before system use; post-training misdiagnosis rates were 35% lower than untrained groups.
+
+**Negative Case**: A company allowed workers to use augmentation exoskeletons without training; improper operation caused back injuries, leading to lawsuits and compensation.
+
+**【边界】**
+**适用边界**：所有面向人类操作者的增强系统。
+
+**豁免条件**：仅用于娱乐或非专业场景的消费级系统可豁免正式培训，但需提供充分的使用指南。
+
+**Applicable Boundaries**: All augmentation systems targeting human operators.
+
+**Exemption Conditions**: Consumer-grade systems for entertainment or non-professional scenarios may be exempt from formal training but must provide adequate user guides.
+
+**【量化指标】**
+培训考核通过率不得低于90%；培训后首月内人为操作失误率不得超过5%。
 
 **规则 II.1.2.023【增强系统审计】**
 定期审计增强系统：
