@@ -1,4 +1,5 @@
 # 第三编：能源可持续性治理
+
 **规则 III.1.1.001【可再生能源】**
 可再生能源指自然界可持续补充的能源形式，包括但不限于太阳能、风能、水能、地热能、生物质能。具身智能系统必须优先使用可再生能源，可再生能源使用比例不得低于年度能源消耗的60%。
 
@@ -590,100 +591,14 @@ e) 数据质量评级
 数据须可追溯可验证。
 
 **规则 III.5.1.074【碳足迹计算工具】**
-**Rule III.5.1.074 [Carbon Footprint Calculation Tools]**
-
-碳足迹核算必须使用经过标准化认证的专业计算工具，这是确保核算结果科学性、可比性和公信力的技术基础。本规则要求所有具身智能系统采用四类标准化工具：
-- 国家认证计算软件（通过生态环境部或相关主管部门认证的碳核算软件，符合国内法规和标准）
-- 国际通用计算平台（如GHG Protocol计算工具
-- ISO 14064配套软件，支持国际互认）
-- 区块链存证系统（确保碳排放数据不可篡改
-- 全程可追溯，防止数据造假）
-- 以及第三方验证接口（便于独立核查机构接入审计）。所有工具必须经过定期校准验证，包括与权威数据库的比对测试
-- 与手工计算的结果交叉验证
-- 以及版本更新后的功能测试。禁止使用未经认证的自制工具或已过期的软件版本进行正式核算。Carbon footprint accounting must utilize standardized and certified professional calculation tools—this is the technical foundation ensuring scientific rigor, comparability, and credibility of accounting results. This rule requires all embodied intelligence systems to employ four categories of standardized tools: nationally certified calculation software (carbon accounting software certified by the Ministry of Ecology and Environment or relevant authorities, compliant with domestic regulations and standards); internationally recognized calculation platforms (such as GHG Protocol tools, ISO 14064 software, supporting international mutual recognition); blockchain attestation systems (ensuring carbon emissions data is tamper-proof and fully traceable, preventing data fraud); and third-party verification interfaces (facilitating access for independent audit institutions). All tools must undergo regular calibration and validation, including benchmarking against authoritative databases, cross-validation with manual calculations, and functional testing after version updates. The use of uncertified homemade tools or expired software versions for formal accounting is prohibited.
+**Rule III.5.1.074 [.
 
 ---
-
-**【原理 | Principle】**
-
-碳足迹计算工具标准化的必要性源于"测量即管理"（You can't manage what you don't measure）的管理学原理和计量学的可溯源性原则。碳核算涉及复杂的排放因子选择
-- 活动数据归集
-- 计算模型应用，不同工具可能产生显著差异的结果。标准化工具确保：计算方法的一致性（同样输入产生同样输出）
-- 排放因子的权威性（使用经审核的国家或国际因子）
-- 计算过程的可审计性（每一步都有记录）
-- 以及结果的可比性（跨企业
-- 跨时期比较有效）。区块链技术引入解决了碳数据信任问题——传统的中心化数据存储存在篡改风险，而区块链的分布式账本和加密特性确保"数据一经记录，不可抵赖"。The necessity of standardizing carbon footprint calculation tools stems from the management principle "You can't manage what you don't measure" and metrological traceability principles. Carbon accounting involves complex emission factor selection, activity data collection, and calculation model application—different tools may produce significantly different results. Standardized tools ensure: consistency in calculation methods (same inputs produce same outputs); authority of emission factors (using audited national or international factors); auditability of calculation processes (every step is recorded); and comparability of results (cross-enterprise and cross-period comparisons are valid). Blockchain technology addresses carbon data trust issues—traditional centralized data storage carries tampering risks, while blockchain's distributed ledger and cryptographic features ensure that "once data is recorded, it cannot be repudiated."
-
-**【案例 | Examples】**
-
-✓ **正面案例**：某跨国制造企业统一采用GHG Protocol的SCOPE计算平台，并结合国内生态环境部推荐的排放因子库，实现了全球30个工厂碳足迹数据的标准化核算。第三方审计时，通过区块链存证系统可追溯到每笔数据的原始凭证，审计效率提升70%，且获得国际碳披露项目（CDP）的最高评级。✓ **Positive Example**: A multinational manufacturing enterprise uniformly adopted the GHG Protocol's SCOPE calculation platform, combined with emission factor databases recommended by the Ministry of Ecology and Environment, achieving standardized carbon footprint accounting across 30 global factories. During third-party audits, the blockchain attestation system enabled tracing of each data point to original vouchers, improving audit efficiency by 70% and earning the highest rating from the Carbon Disclosure Project (CDP).
-
-✗ **反面案例**：某小型物流企业为节省成本，使用自行开发的Excel表格进行碳核算，其中排放因子来源于网络搜索的未经核实数据，计算公式存在错误。在监管抽查中被发现其报告的碳排放量比实际值低估60%，被认定为虚假报告，面临高额罚款并列入失信名单。✗ **Negative Example**: A small logistics company, seeking cost savings, used a self-developed Excel spreadsheet for carbon accounting, with emission factors sourced from unverified online searches and calculation formulas containing errors. During regulatory spot checks, its reported carbon emissions were found to be 60% underestimated compared to actual values. The company was identified as making false reports, facing substantial fines and placement on a dishonesty list.
-
-**【边界 | Boundaries】**
-
-本规则对计算工具的规范边界包括：
-a) 适用范围：年碳排放量超过1000吨二氧化碳当量的具身智能系统必须使用认证工具；小型系统（<1000吨）可使用简化工具但须说明方法
-b) 认证层级：国家级认证适用于国内报告；国际项目（如CDP披露
-- 碳边境税申报）须使用国际通用平台
-c) 过渡期：新发布的软件版本给予3个月过渡期，之后旧版本不再适用于正式核算
-d) 豁免情形：纯研发性质的碳核算实验可使用非认证工具，但结果不得用于对外报告或合规申报
-e) 数据主权：使用国际平台时，须确保原始数据存储在境内服务器或获得数据出境安全评估
-
-The regulatory boundaries for calculation tools in this rule include:
-a) Applicability: embodied intelligence systems with annual carbon emissions exceeding 1,000 tons CO2e must use certified tools; small systems (<1,000 tons) may use simplified tools but must disclose methodologies
-b) Certification tiers: national certification suitable for domestic reporting; international projects (such as CDP disclosure, carbon border tax filings) require internationally recognized platforms
-c) Transition periods: new software versions receive 3-month transition periods, after which old versions are no longer suitable for formal accounting
-d) Exemptions: experimental carbon accounting for pure R&D may use non-certified tools, but results cannot be used for external reporting or compliance declarations
-e) Data sovereignty: when using international platforms, raw data must be stored on domestic servers or have passed data cross-border security assessments
-
-**【背景 | Context】**
-
-碳足迹计算工具的标准化进程始于2010年代的自愿碳市场混乱期。当时各企业使用各异的计算方法，同一企业用不同工具计算结果差异可达50%以上，严重削弱碳数据的公信力。2016年，ISO 14064标准发布，首次系统规范了碳核算方法学。2021年，中国发布《企业温室气体排放核算方法与报告指南》，建立了国家级的排放因子库和核算规范。2030年代，随着碳关税（CBAM）等机制的实施，对碳数据质量的要求进一步提高。区块链技术的引入始于2025年，旨在解决碳数据造假问题。本规则在2049年版本中整合了这些发展成果，形成了覆盖工具选择
-- 使用
-- 验证的完整体系，成为全球具身智能碳治理的技术基础设施。
 
 **规则 III.5.1.075【碳足迹边界设定】**
-**Rule III.5.1.075 [Carbon Footprint Boundary Setting]**
-
-明确碳足迹核算的系统边界是确保碳排放数据准确性、可比性和可审计性的基础。本规则要求所有具身智能系统建立完整的碳足迹核算边界体系，涵盖组织边界、运营边界、价值链边界和时间边界四个维度。组织边界基于运营控制权确定，包括所有拥有或控制的设施；运营边界覆盖直接排放（范围1）、能源间接排放（范围2）和其他间接排放（范围3）；价值链边界延伸至上游供应链和下游产品使用阶段；时间边界统一按自然年度核算，确保数据纵向可比。所有边界设定必须文档化、标准化，并接受第三方核验。Clear definition of carbon footprint accounting boundaries is fundamental to ensuring accuracy, comparability, and auditability of carbon emissions data. This rule requires all embodied intelligence systems to establish a comprehensive carbon footprint accounting boundary system covering four dimensions:
--  organizational boundaries, operational boundaries, value chain boundaries, and temporal boundaries. Organizational boundaries are determined based on operational control, including all owned or controlled facilities; operational boundaries cover direct emissions (Scope 1), energy indirect emissions (Scope 2), and other indirect emissions (Scope 3); value chain boundaries extend upstream to supply chains and downstream to product use phases; temporal boundaries uniformly follow the calendar year to ensure longitudinal data comparability. All boundary settings must be documented, standardized, and subject to third-party verification.
+**Rule III.5.1.075 [.
 
 ---
-
-**【原理 | Principle】**
-
-碳足迹边界设定的理论基础源于生命周期评价（LCA）方法和温室气体核算体系（GHG Protocol）。边界设定解决了"核算什么"和"核算到哪里"的根本问题。组织边界的确立基于控制概念，确保排放源与责任主体对应；运营边界的三范围分类（Scope 1/2/3）形成了完整的排放分类体系；价值链边界的延伸体现了"污染者付费"和"全生命周期责任"原则；时间边界的统一则保障了数据的可比性和趋势分析的有效性。The theoretical foundation of carbon footprint boundary setting derives from Life Cycle Assessment (LCA) methodologies and the GHG Protocol. Boundary setting addresses the fundamental questions of "what to account for" and "where to stop accounting." Organizational boundaries are established based on control concepts, ensuring emission sources correspond to responsible entities; the three-scope classification of operational boundaries (Scope 1/2/3) forms a comprehensive emission categorization system; the extension of value chain boundaries embodies the "polluter pays" and "full lifecycle responsibility" principles; unified temporal boundaries ensure data comparability and effective trend analysis.
-
-**【案例 | Examples】**
-
-✓ **正面案例**：某智能制造企业明确界定其碳足迹边界：组织边界涵盖全球15个生产基地；运营边界包括范围1（工厂直接燃烧）
-- 范围2（外购电力）和范围3（员工通勤
-- 商务旅行）；价值链边界追踪前5大供应商的排放数据；时间边界按财年核算。该企业的碳排放数据获得国际第三方认证，成为行业标杆。✓ **Positive Example**: A smart manufacturing enterprise clearly defined its carbon footprint boundaries: organizational boundaries covering 15 global production bases; operational boundaries including Scope 1 (direct combustion), Scope 2 (purchased electricity), and Scope 3 (employee commuting, business travel); value chain boundaries tracking emissions data from top 5 suppliers; temporal boundaries aligned with fiscal year. The company's carbon emissions data received international third-party certification, becoming an industry benchmark.
-
-✗ **反面案例**：某物流企业仅核算总部办公室的电力消耗，忽略数千台配送车辆的燃油排放（范围1）和外包运输服务的排放（范围3），导致碳足迹数据严重低估，被监管机构认定为"漂绿"行为并处罚。✗ **Negative Example**: A logistics company only accounted for electricity consumption at headquarters offices, ignoring fuel emissions from thousands of delivery vehicles (Scope 1) and outsourced transportation services (Scope 3), resulting in severely underestimated carbon footprint data. The company was identified as engaging in "greenwashing" by regulators and penalized.
-
-**【边界 | Boundaries】**
-
-本规则的适用边界包括：
-a) 地理边界：适用于在共生城区内运营的所有具身智能系统，跨境运营系统需核算其区域内排放
-b) 规模边界：年能耗超过100MWh的系统必须建立完整边界体系；小型系统（<100MWh）可采用简化边界
-c) 时间边界：正式运营满12个月的系统必须提交首份年度碳足迹报告
-d) 豁免边界：紧急救援
-- 军事应用等特殊场景可暂时豁免，但须在事后30日内补充核算
-
-The applicable boundaries of this rule include:
-a) Geographic boundaries: applies to all embodied intelligence systems operating within Symbiosis Districts; cross-border operating systems must account for emissions within their operational regions
-b) Scale boundaries: systems with annual energy consumption exceeding 100MWh must establish complete boundary systems; small systems (<100MWh) may use simplified boundaries
-c) Temporal boundaries: systems in formal operation for 12 months must submit their first annual carbon footprint report
-d) Exemption boundaries: special scenarios such as emergency rescue and military applications may be temporarily exempted, but must be supplemented within 30 days post-event
-
-**【背景 | Context】**
-
-碳足迹边界设定规则制定于2028年，回应了早期碳核算实践中的混乱状况。在规则出台前，不同企业采用各异的核算方法，有的仅核算直接排放，有的将范围3排放选择性纳入，导致数据不可比
-- 不可信。国际气候变化协议的收紧和国内碳市场的建立，要求建立统一的边界标准。该规则参考了GHG Protocol
-- ISO 14064等国际标准，同时结合具身智能系统的特殊性（如AI算力中心的能源消耗
-- 机器人的分布式运营）进行了本土化调整。The Carbon Footprint Boundary Setting rule was established in 2028, responding to chaotic practices in early carbon accounting. Before the rule's introduction, different enterprises adopted various accounting methods—some only accounting for direct emissions, others selectively including Scope 3 emissions—resulting in incomparable and unreliable data. The tightening of international climate change agreements and the establishment of domestic carbon markets necessitated unified boundary standards. This rule references international standards such as GHG Protocol and ISO 14064, while incorporating localized adjustments for the special characteristics of embodied intelligence systems (such as AI data center energy consumption and distributed robot operations).。
 
 **规则 III.5.1.076【碳足迹分配方法】**
 多产品系统碳足迹分配：

@@ -1,4 +1,5 @@
 # 第二编：生产力重构治理
+
 **规则 II.1.1.001【替代边界原则】**
 **Rule II.1.1.001 [Substitution Boundary Principle]**
 
@@ -24,99 +25,132 @@
 
 ---
 
-**【原理 | Principle】**
-
-替代边界原则的理论根基源于马克思的劳动异化理论
-- 功利主义伦理学和人类中心主义技术观。劳动异化理论指出，当劳动沦为维持生存的手段而非自我实现的途径时，人就与其本质力量分离。因此，将人类从异化劳动中解放出来是技术进步的正道。功利主义伦理学要求最大化整体幸福——替代有害劳动减少痛苦，保留有意义劳动增加幸福，符合效用最大化原则。人类中心主义技术观强调技术应作为人类能力的增强器而非替代者。该原则还体现了"分配正义"思想：技术红利应首先惠及最弱势群体（从事有害工作者），而非精英阶层。从经济学角度，该原则优化劳动力配置——将人类从低效率的体力劳动转向高效率的脑力劳动，提升整体生产力。The theoretical foundation of the substitution boundary principle derives from Marx's theory of labor alienation, utilitarian ethics, and anthropocentric technology perspectives. Labor alienation theory states that when work becomes merely a means of survival rather than self-realization, humans become separated from their essential powers. Thus, liberating humans from alienated labor is the proper path of technological progress. Utilitarian ethics requires maximizing overall happiness—substituting harmful labor reduces suffering, preserving meaningful labor increases happiness, aligning with utility maximization. Anthropocentric technology views emphasize that technology should enhance human capabilities rather than replace them. This principle also embodies "distributive justice": technological dividends should first benefit the most vulnerable (those in hazardous work), not elites. Economically, this principle optimizes labor allocation—shifting humans from low-efficiency physical labor to high-efficiency mental labor, enhancing overall productivity.
-
-**【案例 | Examples】**
-
-✓ **正面案例**：某大型港口实施"有害替代优先"原则，首先用自动化系统替代了危险的高空集装箱绑扎作业（每年减少工伤事故30起），然后替代了重体力装卸工作，但保留了调度协调
-- 客户服务
-- 设备维护等需要人类判断的岗位。转型五年后，员工满意度提升45%，生产力提升120%，无一人因自动化失业（均转至更高价值岗位）。✓ **Positive Example**: A major port implemented the "Hazardous Substitution First" principle, first using automated systems to substitute dangerous high-altitude container lashing work (reducing 30 annual industrial accidents), then substituting heavy physical loading/unloading, while retaining scheduling coordination, customer service, equipment maintenance, and other positions requiring human judgment. Five years post-transition, employee satisfaction increased 45%, productivity increased 120%, with zero job losses due to automation (all transferred to higher-value positions).
-
-✓ **应用场景**：在医疗领域，手术机器人优先替代医生长时间站立进行的精细手术（减少医生职业损伤），AI诊断系统辅助医生筛查影像（替代重复性阅片），但医生保留与患者沟通
-- 制定治疗方案
-- 做出伦理抉择等核心职责。这种人机协作模式既保护了医护人员的健康，又保留了医疗的人文关怀本质。✓ **Application Scenario**: In healthcare, surgical robots prioritize substituting lengthy standing procedures for doctors (reducing occupational injuries), AI diagnostic systems assist doctors in screening images (substituting repetitive film reading), while doctors retain core responsibilities of patient communication, treatment planning, and ethical decision-making. This human-AI collaboration model protects medical workers' health while preserving the humanistic essence of healthcare.
-
-✗ **反面案例**：某电商平台为追求效率最大化，使用AI替代了全部客服人员，包括处理复杂投诉和安抚情绪失控客户的工作。结果导致客户满意度暴跌，一起因沟通不当引发的公关危机使公司市值蒸发20%。事后公司被迫重新招聘人工客服处理复杂案例，印证了"情感性工作不可完全替代"的边界。✗ **Negative Example**: An e-commerce platform, pursuing maximum efficiency, used AI to substitute all customer service personnel, including handling complex complaints and calming emotionally distressed customers. Customer satisfaction plummeted, and a PR crisis triggered by inappropriate communication caused a 20% market cap loss. The company was forced to rehire human agents for complex cases, confirming the boundary that "emotional work cannot be fully substituted."
-
-**【边界 | Boundaries】**
-
-替代边界原则的适用边界和例外情形包括：
-a) 紧急情形：在自然灾害
-- 公共卫生危机等紧急状态下，可临时放宽替代限制以最大化救援效率，但须在危机结束后60日内恢复常规安排
-b) 个人选择：若个体自愿从事某类劳动（如极限运动教练
-- 高危探险向导），即使该劳动客观上具有危险性，也应尊重其自主选择权
-c) 文化遗产：涉及非物质文化遗产传承的劳动（如传统手工艺），即使效率较低，也应限制替代以保护文化多样性
-d) 过渡保护：在替代实施过程中，须为被替代者提供至少6个月的过渡期，期间原岗位保留
-- 工资照发，并提供再培训机会
-e) 比例限制：单一企业/部门的总替代率不得超过70%，确保人类员工始终保有足够影响力和话语权
-
-The applicable boundaries and exceptions of the substitution boundary principle include:
-a) Emergency situations: during natural disasters, public health crises, and other emergencies, substitution limits may be temporarily relaxed to maximize rescue efficiency, but normal arrangements must be restored within 60 days post-crisis
-b) Personal choice: if individuals voluntarily engage in certain labor (such as extreme sports instructors, high-risk expedition guides), even if objectively hazardous, their autonomous choice should be respected
-c) Cultural heritage: labor involving intangible cultural heritage transmission (such as traditional handicrafts), even if less efficient, should limit substitution to protect cultural diversity
-d) Transition protection: during substitution implementation, at least 6 months transition period must be provided, with original positions retained, wages paid, and retraining opportunities offered
-e) Proportion limits: total substitution rate for any single enterprise/department must not exceed 70%, ensuring human employees always maintain sufficient influence and voice
-
-**【背景 | Context】**
-
-替代边界原则的制定经历了激烈的公共辩论。2030年代，第一波自动化浪潮导致大规模失业，社会出现"卢德主义"回潮和反技术情绪。2040年的"底特律事件"（某汽车厂未经充分协商一次性替代80%工人，引发大规模抗议）成为转折点。公众开始反思：技术进步的目的是什么？是为了利润最大化，还是为了人类解放？2043年，欧盟率先通过《人工智能劳动伦理法案》，确立"有害优先替代"原则。本框架在2049年版本中吸收并扩展了这一原则，增加了尊严
-- 意愿和独特能力等维度，形成更完整的替代边界体系。这一原则现已成为全球具身智能治理的共识性基础，被写入多个国际条约。
-
 **规则 II.1.1.002【替代率上限】**
+**Rule II.1.1.002 [Substitution Rate Ceiling]**
+
 单一行业/区域的劳动替代率不得超过以下阈值：
-a) 制造业：70%
-b) 服务业：50%
-c) 农业：80%
-d) 创意产业：30%
-e) 教育和医疗：40%
-超过阈值需提交特别申请，经伦理院审批。
+a) 制造业：70% — 保留关键质量控制、工艺创新和设备维护等需要人类判断的岗位
+b) 服务业：50% — 确保人际互动、情感支持和复杂问题解决仍由人类主导
+c) 农业：80% — 允许高度自动化，但保留农业知识传承和生态系统管理的人类参与
+d) 创意产业：30% — 保护人类创造力的核心地位，AI仅作为辅助工具
+e) 教育和医疗：40% — 维护师生关系、医患关系的人文本质
+超过阈值需提交特别申请，经伦理院审批，证明替代不会造成社会危害且存在充分补偿机制。
+
+Labor substitution rates for any single industry/region must not exceed the following thresholds:
+a) Manufacturing: 70% — retaining positions requiring human judgment such as critical quality control, process innovation, and equipment maintenance
+b) Services: 50% — ensuring interpersonal interaction, emotional support, and complex problem-solving remain human-led
+c) Agriculture: 80% — permitting high automation while preserving human involvement in agricultural knowledge transmission and ecosystem management
+d) Creative industries: 30% — protecting the core position of human creativity, with AI serving only as an auxiliary tool
+e) Education and healthcare: 40% — maintaining the humanistic essence of teacher-student and doctor-patient relationships
+Exceeding thresholds requires special application and approval by the Ethics Council, demonstrating that substitution will not cause social harm and that adequate compensation mechanisms exist.
+
+---
 
 **规则 II.1.1.003【替代补偿机制】**
+**Rule II.1.1.003 [Substitution Compensation Mechanism]**
+
 因劳动替代而失业的人类享有以下补偿：
-a) 基本生活保障金：原工资的60%，最长24个月
-)b) 再培训津贴：全额资助新技能培训
-c) 心理支持服务：免费提供职业转型咨询
-d) 创业支持：低息贷款和创业指导
+a) 基本生活保障金：原工资的60%，最长24个月，确保过渡期基本生活质量
+b) 再培训津贴：全额资助新技能培训，包括学费、教材费和培训期间的生活补贴
+c) 心理支持服务：免费提供职业转型咨询、心理健康辅导和同伴支持小组
+d) 创业支持：低息贷款（利率低于市场50%）、创业指导和首年税收优惠
+
+Humans displaced by labor substitution are entitled to the following compensation:
+a) Basic living security allowance: 60% of original wages for up to 24 months, ensuring basic quality of life during the transition
+b) Retraining allowance: full funding for new skill training, including tuition, materials, and living subsidies during training
+c) Psychological support services: free vocational transition counseling, mental health coaching, and peer support groups
+d) Entrepreneurship support: low-interest loans (rates 50% below market), business guidance, and first-year tax incentives
+
+---
 
 **规则 II.1.1.004【过渡期保护】**
+**Rule II.1.1.004 [Transition Period Protection]**
+
 劳动替代实施必须设置过渡期：
-a) 提前通知期：不少于6个月
-)b) 并行工作期：人机协作不少于3个月
-c) 逐步替代期：每月替代率不超过10%
-d) 完全交接期：确保工作连续性
+a) 提前通知期：不少于6个月，让劳动者有充分时间规划未来
+b) 并行工作期：人机协作不少于3个月，实现技能传承和系统磨合
+c) 逐步替代期：每月替代率不超过10%，避免冲击性失业
+d) 完全交接期：确保工作连续性，建立人机协同的可持续运营模式
+
+Labor substitution implementation must include a transition period:
+a) Advance notice period: no less than 6 months, allowing workers adequate time to plan their future
+b) Parallel work period: human-machine collaboration for no less than 3 months, achieving skill transfer and system磨合
+c) Gradual substitution period: monthly substitution rate not exceeding 10%, avoiding shock unemployment
+d) Full handover period: ensuring work continuity and establishing sustainable human-machine collaboration operational models
+
+---
 
 **规则 II.1.1.005【被替代者知情权】**
+**Rule II.1.1.005 [Right to Information for Displaced Workers]**
+
 可能被替代的人类享有以下知情权：
-a) 替代计划的时间表
-)b) 替代的技术依据
-c) 自身的替代风险评估
-d) 可选择的替代方案
-e) 补偿和再就业支持详情
+a) 替代计划的时间表：包括通知期、过渡期、完成期的具体时间节点
+b) 替代的技术依据：AI系统的技术规格、效率对比分析、成本效益评估
+c) 自身的替代风险评估：个人岗位被替代的概率、预计时间、影响程度
+d) 可选择的替代方案：转岗机会、培训项目、提前退休选项等
+e) 补偿和再就业支持详情：补偿金额计算方式、申请流程、支持服务清单
+
+Humans facing potential displacement have the following rights to information:
+a) Substitution plan timeline: specific time points for notification period, transition period, and completion date
+b) Technical basis for substitution: AI system specifications, efficiency comparative analysis, cost-benefit assessment
+c) Personal substitution risk assessment: probability of position substitution, estimated timing, and impact severity
+d) Available alternative options: transfer opportunities, training programs, early retirement options, etc.
+e) Compensation and reemployment support details: compensation calculation methods, application procedures, and support service catalogs
+
+---
 
 **规则 II.1.1.006【替代回溯机制】**
+**Rule II.1.1.006 [Substitution Rollback Mechanism]**
+
 当替代后出现以下情况，应启动回溯程序：
 a) 替代质量显著低于人类水平
-)b) 替代导致系统性安全风险
+b) 替代导致系统性安全风险
 c) 替代引发严重社会问题
 d) 被替代者证明替代决定存在程序瑕疵
 
+The following situations shall trigger a rollback procedure after substitution:
+a) Substitution quality is significantly lower than human-level performance
+b) Substitution leads to systemic safety risks
+c) Substitution causes serious social problems
+d) Displaced workers demonstrate that the substitution decision contained procedural flaws
+
+---
+
 **规则 II.1.1.007【人类效率锚点】**
+**Rule II.1.1.007 [Human Efficiency Anchor]**
+
 每个工作场所必须保留至少15%的"低效但人类化"工作流程：
 a) 不由效率最高的人工智能执行
 b) 保留人类的直觉判断和创造性发挥空间
 c) 允许适度的"不完美"和"非标准化"
 d) 作为人类经验的传承载体
 
+Every workplace must retain at least 15% of "inefficient but humanized" workflow:
+a) Not executed by the most efficient artificial intelligence
+b) Preserve space for human intuitive judgment and creative expression
+c) Allow moderate "imperfection" and "non-standardization"
+d) Serve as a carrier for the transmission of human experience
+
+---
+
 **规则 II.1.1.008【替代协商程序】**
+**Rule II.1.1.008 [Substitution Consultation Procedure]**
+
 重大劳动替代项目必须经历协商程序：
 a) 提前公示替代方案（不少于30天）
 b) 召开受影响人员听证会
 c) 收集并回应书面意见
 d) 根据反馈调整方案
 e) 获得受影响人员代表的书面同意
+
+Major labor substitution projects must undergo consultation procedures:
+a) Advance publication of substitution plans (no less than 30 days)
+b) Holding hearings for affected personnel
+c) Collecting and responding to written opinions
+d) Adjusting plans based on feedback
+e) Obtaining written consent from representatives of affected personnel
+
+---
 
 **规则 II.1.1.009【替代监督委员会】**
 每个涉及100人以上替代的设立监督委员会：
