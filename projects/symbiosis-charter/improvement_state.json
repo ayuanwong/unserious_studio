@@ -1,8 +1,8 @@
 {
   "total_rules": 161,
-  "high_quality_count": 27,
-  "needs_improvement_count": 134,
-  "current_bilingual_pct": 16.8,
+  "high_quality_count": 36,
+  "needs_improvement_count": 125,
+  "current_bilingual_pct": 22.4,
   "target_bilingual_pct": 80.0,
   "score_distribution": {
     "90-100": 0,

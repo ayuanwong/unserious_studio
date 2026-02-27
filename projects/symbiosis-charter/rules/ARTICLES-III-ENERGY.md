@@ -62,12 +62,96 @@ Renewable energy refers to energy forms that are naturally replenished, includin
 
 Non-renewable energy refers to energy forms with finite reserves that cannot be replenished, including fossil fuels (coal, oil, natural gas) and nuclear fission fuels. Embodied intelligence systems must obtain special permits to use non-renewable energy and must pay into the energy compensation fund.
 
+**【原理】**
+不可再生能源限制基于"资源代际公平"与"环境外部性内部化"理论。化石能源是地球数百万年积累的碳汇，其快速释放导致气候变化。核裂变能源虽低碳但存在核废料长期处置问题。要求特别许可和补偿基金，体现"污染者付费"原则，确保当前使用者承担环境成本，而非转嫁给未来世代。
+
+**Principle**: Non-renewable energy restrictions are based on theories of "intergenerational resource equity" and "environmental externality internalization." Fossil fuels represent carbon sinks accumulated by Earth over millions of years; their rapid release causes climate change. Nuclear fission energy, while low-carbon, presents long-term nuclear waste disposal challenges. Requiring special permits and compensation funds embodies the "polluter pays" principle, ensuring current users bear environmental costs rather than transferring them to future generations.
+
+**【案例】**
+**正面案例**：某具身智能制造企业在无法获得充足可再生能源的地区设厂，申请A级不可再生能源许可，缴纳了相当于能源成本30%的补偿基金用于当地植树造林项目，五年内实现碳中和，成为行业最佳实践。
+
+**反面案例**：某AI训练公司为降低运营成本，私自使用未经认证的煤电，未缴纳补偿基金，被审计发现后不仅面临高额罚款，更被纳入行业黑名单，融资和合作机会大幅受限。
+
+**Positive Case**: An embodied intelligence manufacturing company established operations in a region with insufficient renewable energy, applied for a Class A non-renewable energy permit, and paid a compensation fund equivalent to 30% of energy costs for local reforestation projects, achieving carbon neutrality within five years and becoming industry best practice.
+
+**Negative Case**: An AI training company privately used uncertified coal-fired electricity to reduce operational costs without paying compensation funds. After being discovered through audits, it faced not only heavy fines but was also placed on an industry blacklist, severely limiting financing and partnership opportunities.
+
+**【边界】**
+**适用边界**：本规则适用于所有使用化石燃料或核裂变能源的具身智能系统，无论直接采购还是通过电网间接使用。
+
+**例外情形**：
+- 偏远地区且无可再生能源替代方案（须提交替代不可行性报告）
+- 国家安全需要的特殊设施（须国防部长级批准）
+- 经认证的碳捕获与封存(CCS)项目配套使用
+
+**补偿基金标准**：
+- 煤炭：能源成本的40%
+- 石油/天然气：能源成本的25%
+- 核能：能源成本的15%（用于核废料处理）
+
+**Applicable Boundaries**: This rule applies to all embodied intelligence systems using fossil fuels or nuclear fission energy, whether through direct procurement or indirect use through the power grid.
+
+**Exceptions**:
+- Remote areas without renewable energy alternatives (requires submission of alternative infeasibility report)
+- Special facilities required for national security (requires Minister of Defense-level approval)
+- Certified carbon capture and storage (CCS) project supporting use
+
+**Compensation Fund Standards**:
+- Coal: 40% of energy costs
+- Oil/Natural gas: 25% of energy costs
+- Nuclear: 15% of energy costs (for nuclear waste disposal)
+
 **规则 III.1.1.003【混合能源】**
 **Rule III.1.1.003 [Hybrid Energy]**
 
 混合能源指由多种能源形式组合而成的能源供应模式。混合能源系统必须明确各能源类型的比例构成，并实时披露碳排放数据。
 
 Hybrid energy refers to energy supply models that combine multiple energy forms. Hybrid energy systems must clearly specify the proportional composition of each energy type and disclose carbon emission data in real-time.
+
+**【原理】**
+混合能源模式体现了"能源组合优化"与"渐进转型"理念。完全依赖单一能源形式既不现实也不稳健——可再生能源存在间歇性，不可再生能源面临枯竭和环保压力。通过科学的能源组合，可以在可靠性、经济性、环保性之间取得动态平衡，同时为完全可再生能源转型提供过渡路径。
+
+**Principle**: Hybrid energy models embody concepts of "energy portfolio optimization" and "gradual transition." Complete reliance on a single energy form is neither realistic nor robust—renewable energy has intermittency issues, while non-renewable energy faces depletion and environmental pressures. Through scientific energy portfolio composition, dynamic balance can be achieved among reliability, economy, and environmental protection, while providing a transition pathway toward fully renewable energy.
+
+**【案例】**
+**正面案例**：第15共生城区的"智能微电网"采用50%太阳能+30%风能+15%储能+5%天然气备用的混合模式，通过AI实时优化调度，实现99.9%供电可靠性，同时碳排放比传统电网降低75%，成为混合能源典范。
+
+**反面案例**：某数据中心声称使用"混合能源"，但实际比例不透明，经调查发现其"混合"实为90%煤电+10%绿证抵扣，碳排放数据造假，被监管机构处以停业整顿处罚。
+
+**Positive Case**: The "Smart Microgrid" in Symbiotic Urban District 15 employs a hybrid model of 50% solar + 30% wind + 15% storage + 5% natural gas backup, with AI real-time optimization dispatching, achieving 99.9% power supply reliability while reducing carbon emissions by 75% compared to traditional grids, becoming a hybrid energy model.
+
+**Negative Case**: A data center claimed to use "hybrid energy," but the actual proportions were opaque. Investigation revealed its "hybrid" was actually 90% coal power + 10% green certificate offsets, with falsified carbon emission data, resulting in regulatory-ordered business suspension.
+
+**【边界】**
+**适用边界**：本规则适用于使用两种及以上能源形式的具身智能系统能源供应配置。
+
+**披露要求**：
+- 实时公示各能源类型占比（更新频率≥每小时）
+- 月度碳排放报告（经第三方审计）
+- 年度能源结构优化计划
+
+**混合比例限制**：
+- 不可再生能源占比上限：40%（2030年前）→ 20%（2040年前）→ 5%（2050年前）
+- 单一能源类型占比上限：80%（避免过度依赖）
+
+**例外情形**：
+- 过渡期新设系统（首年可放宽至60%不可再生能源，逐年递减）
+- 经认证的实验性混合技术项目
+
+**Applicable Boundaries**: This rule applies to energy supply configurations of embodied intelligence systems using two or more energy forms.
+
+**Disclosure Requirements**:
+- Real-time display of proportion of each energy type (update frequency ≥ hourly)
+- Monthly carbon emission reports (third-party audited)
+- Annual energy structure optimization plans
+
+**Hybrid Proportion Limits**:
+- Non-renewable energy proportion cap: 40% (before 2030) → 20% (before 2040) → 5% (before 2050)
+- Single energy type proportion cap: 80% (avoiding over-dependence)
+
+**Exceptions**:
+- Transitional period new systems (first year may relax to 60% non-renewable energy, decreasing annually)
+- Certified experimental hybrid technology projects
 
 **规则 III.1.1.004【能源伦理三分法】**
 **Rule III.1.1.004 [Energy Ethics Trichotomy]**
@@ -148,6 +232,45 @@ d) Low density: solar, wind
 e) Ultra-low density: ambient thermal energy
 High-density energy use must comply with additional safety standards.
 
+**【原理】**
+能源密度分级基于"能量集中度风险管理"理论。高能量密度意味着单位体积或质量内储存巨大能量，一旦发生失控释放，后果严重。核能的放射性风险、氢能的爆炸风险、化石燃料的火灾风险，都要求更严格的安全标准。分级管理体现了"风险比例原则"——风险越高，监管越严。
+
+**Principle**: Energy density classification is based on "energy concentration risk management" theory. High energy density means enormous energy stored per unit volume or mass; once uncontrolled release occurs, consequences are severe. Nuclear energy's radioactive risks, hydrogen's explosion risks, and fossil fuels' fire risks all require stricter safety standards. Graded management embodies the "risk proportionality principle"—higher risks warrant stricter regulation.
+
+**【案例】**
+**正面案例**：某港口采用氢燃料电池驱动的具身智能装卸设备，运营方严格按照极高密度能源标准建设防爆设施、泄漏检测系统和应急响应机制，运营五年零事故，成为氢能安全应用标杆。
+
+**反面案例**：某化工厂使用高密度化石燃料储能罐，为节省成本未安装足够泄压装置，发生蒸气云爆炸，造成重大人员伤亡和环境污染，事后调查发现其安全投入仅为标准要求的40%。
+
+**Positive Case**: A port uses hydrogen fuel cell-powered embodied intelligent loading/unloading equipment. The operator strictly followed ultra-high density energy standards to construct explosion-proof facilities, leak detection systems, and emergency response mechanisms, achieving zero accidents in five years of operation, becoming a benchmark for safe hydrogen energy application.
+
+**Negative Case**: A chemical plant used high-density fossil fuel storage tanks; to save costs, insufficient pressure relief devices were installed, resulting in a vapor cloud explosion causing significant casualties and environmental pollution. Post-incident investigation revealed safety investment was only 40% of standard requirements.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的能源储存、运输和使用环节。
+
+**安全标准分级**：
+- 极高密度：须通过核安全或氢能安全专项认证，建立半径≥500米安全隔离区
+- 高密度：须符合消防安全一级标准，安装自动灭火和泄压系统
+- 中密度：须符合工业安全标准，定期安全评估
+- 低密度/极低密度：通用安全规范
+
+**禁止情形**：
+- 人口密集区（>1000人/平方公里）禁止储存极高密度能源
+- 学校、医院周边1公里内禁止高密度能源储存设施
+
+**Applicable Boundaries**: This rule applies to all energy storage, transportation, and use aspects of embodied intelligence systems.
+
+**Safety Standard Grading**:
+- Ultra-high density: must pass nuclear safety or hydrogen safety special certification, establish safety isolation zone with radius ≥500 meters
+- High density: must comply with fire safety Class 1 standards, install automatic fire suppression and pressure relief systems
+- Medium density: must comply with industrial safety standards, regular safety assessments
+- Low density/ultra-low density: general safety regulations
+
+**Prohibited Scenarios**:
+- High population density areas (>1,000 people/square kilometer) prohibit ultra-high density energy storage
+- Within 1 kilometer of schools and hospitals prohibit high-density energy storage facilities
+
 **规则 III.1.1.006【碳排放等级】**
 **Rule III.1.1.006 [Carbon Emission Grading]**
 
@@ -165,6 +288,55 @@ c) High emission: fossil fuel combustion
 d) Ultra-high emission: direct coal combustion
 High emission and above energy use requires purchasing carbon quotas.
 
+**【原理】**
+碳排放分级基于"气候正义"与"碳预算管理"理论。大气温室气体容量是有限的公共资源，高碳排放占用更多"碳预算"，挤占了其他主体和后代的发展空间。碳配额制度通过市场机制将外部性内部化，让高排放者承担成本，同时为低碳转型提供经济激励。这是实现《巴黎协定》温控目标的关键政策工具。
+
+**Principle**: Carbon emission grading is based on theories of "climate justice" and "carbon budget management." Atmospheric greenhouse gas capacity is a limited common resource; high carbon emissions occupy more "carbon budget," crowding out development space for other entities and future generations. The carbon quota system internalizes externalities through market mechanisms, making high emitters bear costs while providing economic incentives for low-carbon transition. This is a key policy tool for achieving Paris Agreement temperature control targets.
+
+**【案例】**
+**正面案例**：某具身智能物流公司将全部车队替换为电动车辆，使用100%可再生能源充电，实现运营环节零排放，不仅免除了碳配额支出，还获得政府低碳补贴，五年内运营成本降低22%。
+
+**反面案例**：某钢铁企业坚持使用煤炭直接燃烧为具身智能生产线供能，年碳排放超配额300%，被迫购买巨额碳配额，导致生产成本上升35%，最终在竞争中落败被迫转型。
+
+**Positive Case**: An embodied intelligent logistics company replaced its entire fleet with electric vehicles, charging with 100% renewable energy, achieving zero emissions in operations. Not only were carbon quota expenditures eliminated, but the company also received government low-carbon subsidies, reducing operating costs by 22% within five years.
+
+**Negative Case**: A steel enterprise insisted on using direct coal combustion to power embodied intelligent production lines, exceeding carbon quota by 300% annually, forced to purchase massive carbon quotas, resulting in 35% production cost increases, ultimately losing in competition and forced to transition.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的能源消耗产生的直接和间接碳排放。
+
+**碳配额定价机制**：
+- 基准价格：每吨CO₂当量 50-100美元（浮动）
+- 年度递增：+5%/年（激励加速转型）
+- 阶梯惩罚：超配额10%以内按基准价，10-50%按1.5倍，50%以上按2倍
+
+**豁免情形**：
+- 已获得碳捕集与封存(CCS)认证的排放（抵消80%配额）
+- 通过国际碳交易市场购买的合规抵消额度（上限30%）
+- 最不发达国家转移技术项目（过渡期5年）
+
+**监测要求**：
+- 连续排放监测系统(CEMS)实时监测
+- 第三方核查机构年度验证
+- 区块链存证确保数据不可篡改
+
+**Applicable Boundaries**: This rule applies to all direct and indirect carbon emissions from energy consumption of embodied intelligence systems.
+
+**Carbon Quota Pricing Mechanism**:
+- Base price: $50-100 per ton CO₂ equivalent (floating)
+- Annual increase: +5%/year (incentivizing accelerated transition)
+- Tiered penalties: within 10% over quota at base price, 10-50% at 1.5x, above 50% at 2x
+
+**Exemptions**:
+- Emissions certified for carbon capture and storage (CCS) (offsets 80% of quota)
+- Compliant offset credits purchased through international carbon trading markets (cap 30%)
+- Technology transfer projects in least developed countries (5-year transition period)
+
+**Monitoring Requirements**:
+- Continuous Emission Monitoring System (CEMS) real-time monitoring
+- Third-party verification agency annual validation
+- Blockchain record-keeping ensuring data immutability
+
 **规则 III.1.1.007【能源地理属性】**
 **Rule III.1.1.007 [Energy Geographic Attributes]**
 
@@ -180,6 +352,55 @@ b) Regional energy: from adjacent regions
 c) Remote energy: from distant regions
 Remote energy use must bear transmission loss costs.
 
+**【原理】**
+能源地理属性标注基于"能源主权"与"空间正义"理念。本地能源消费减少传输损耗、增强能源安全、促进地方经济；远程能源虽可能成本更低，但传输过程造成线损（通常5-15%）、占用输电走廊、加剧区域间能源不平等。要求标注地理属性并承担远程传输成本，体现"谁消费谁承担全部成本"的公平原则，激励本地化能源解决方案。
+
+**Principle**: Energy geographic attribute labeling is based on concepts of "energy sovereignty" and "spatial justice." Local energy consumption reduces transmission losses, enhances energy security, and promotes local economies; while remote energy may have lower costs, transmission creates line losses (typically 5-15%), occupies transmission corridors, and exacerbates inter-regional energy inequality. Requiring geographic labeling and remote transmission cost bearing embodies the fairness principle of "those who consume bear all costs," incentivizing localized energy solutions.
+
+**【案例】**
+**正面案例**：某共生城区建立"能源本地化联盟"，要求所有具身智能系统优先使用50公里内生产的能源，远程能源需支付15%传输附加费用于本地电网升级。三年后，本地可再生能源装机增长300%，能源自给率达85%，线损从12%降至4%。
+
+**反面案例**：某沿海地区为追求"廉价能源"，从2000公里外煤炭基地大量购电，虽名义电价低20%，但加上传输费用和线损后实际成本高出本地可再生能源15%，且导致输电走廊生态破坏和中间区域空气污染。
+
+**Positive Case**: A symbiotic urban district established a "Local Energy Alliance," requiring all embodied intelligence systems to prioritize energy produced within 50 kilometers, with remote energy subject to a 15% transmission surcharge for local grid upgrades. Within three years, local renewable energy installations grew 300%, energy self-sufficiency reached 85%, and line losses dropped from 12% to 4%.
+
+**Negative Case**: A coastal region pursuing "cheap energy" purchased large amounts of electricity from coal bases 2,000 kilometers away. Although nominal electricity prices were 20% lower, actual costs after transmission fees and line losses exceeded local renewable energy by 15%, while causing ecological damage to transmission corridors and air pollution in intermediate regions.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的电力采购和能源消费。
+
+**地理范围定义**：
+- 本地能源：生产地与消费地距离≤100公里
+- 区域能源：距离100-500公里
+- 远程能源：距离>500公里
+
+**传输成本计算**：
+- 线损成本：按实际传输距离和电网平均损耗率计算
+- 基础设施占用费：远程能源每公里0.001元/千瓦时
+- 区域调节基金：远程能源的5%用于受电地区能源转型
+
+**例外情形**：
+- 本地可再生能源无法满足基本需求（须提交资源评估报告）
+- 经认证的区域能源合作项目（享受成本减免）
+- 紧急情况下保障能源安全
+
+**Applicable Boundaries**: This rule applies to all electricity procurement and energy consumption of embodied intelligence systems.
+
+**Geographic Range Definitions**:
+- Local energy: distance between production and consumption ≤100 kilometers
+- Regional energy: distance 100-500 kilometers
+- Remote energy: distance >500 kilometers
+
+**Transmission Cost Calculation**:
+- Line loss costs: calculated based on actual transmission distance and average grid loss rates
+- Infrastructure occupancy fee: 0.001 yuan/kWh per kilometer for remote energy
+- Regional adjustment fund: 5% of remote energy costs for energy transition in receiving regions
+
+**Exceptions**:
+- Local renewable energy cannot meet basic needs (requires submission of resource assessment report)
+- Certified regional energy cooperation projects (enjoy cost reductions)
+- Emergency situations ensuring energy security
+
 **规则 III.1.1.008【能源时间属性】**
 **Rule III.1.1.008 [Energy Temporal Attributes]**
 
@@ -194,6 +415,55 @@ a) Real-time energy: produced and consumed instantly
 b) Stored energy: consumed after storage
 c) Predicted energy: dispatched based on forecasts
 Stored energy must indicate storage duration and loss rate.
+
+**【原理】**
+能源时间属性标注基于"时间价值"与"系统效率"理论。能源不像一般商品可以长期储存而不贬值——电能储存通常伴随15-30%的能量损失，且储能设备本身有成本。实时能源利用效率最高但受制于供给侧波动；储能能源提供灵活性但有效率损失；预测能源依赖算法准确性。透明标注时间属性，使能源消费者了解真实成本结构，促进精细化能源管理。
+
+**Principle**: Energy temporal attribute labeling is based on theories of "time value" and "system efficiency." Unlike ordinary commodities that can be stored long-term without depreciation, electricity storage typically involves 15-30% energy losses, and storage equipment itself has costs. Real-time energy offers highest utilization efficiency but is constrained by supply-side fluctuations; stored energy provides flexibility but with efficiency losses; predicted energy depends on algorithm accuracy. Transparent temporal attribute labeling enables energy consumers to understand true cost structures, promoting refined energy management.
+
+**【案例】**
+**正面案例**：某具身智能园区建立"时间敏感能源调度系统"，实时能源优先用于高价值计算任务，储能能源用于低优先级维护作业，预测能源用于可调度生产。通过精细化时间管理，整体能源成本降低18%，系统可靠性提升至99.95%。
+
+**反面案例**：某数据中心未区分能源时间属性，在可再生能源高峰时段（低成本）使用储能电池供电（白白损失20%效率），而在可再生能源低谷时段（高成本）却从电网购电，造成双重损失，年能源支出增加25%。
+
+**Positive Case**: An embodied intelligent park established a "time-sensitive energy dispatch system," prioritizing real-time energy for high-value computing tasks, stored energy for low-priority maintenance operations, and predicted energy for schedulable production. Through refined temporal management, overall energy costs were reduced by 18%, system reliability improved to 99.95%.
+
+**Negative Case**: A data center failed to distinguish energy temporal attributes, using stored battery power during renewable energy peak hours (low cost)—wasting 20% efficiency—while purchasing grid power during renewable energy valley hours (high cost), causing double losses and increasing annual energy expenditure by 25%.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的能源消费和储能行为。
+
+**时间属性标注要求**：
+- 实时能源：标注生产时间戳（精度至分钟）
+- 储能能源：标注储能起始时间、预计释放时间、储能技术类型、往返效率
+- 预测能源：标注预测置信度、预测时间窗口、调度优先级
+
+**储能效率标准**：
+- 锂电池储能：往返效率≥85%
+- 液流电池储能：往返效率≥75%
+- 氢储能：往返效率≥40%
+- 低于标准效率须说明原因并提交改进计划
+
+**例外情形**：
+- 应急备用电源（不纳入常规能效评估）
+- 实验性储能技术（享受5年过渡期）
+
+**Applicable Boundaries**: This rule applies to all energy consumption and storage behaviors of embodied intelligence systems.
+
+**Temporal Attribute Labeling Requirements**:
+- Real-time energy: label production timestamp (precision to minute)
+- Stored energy: label storage start time, estimated release time, storage technology type, round-trip efficiency
+- Predicted energy: label prediction confidence, prediction time window, dispatch priority
+
+**Storage Efficiency Standards**:
+- Lithium battery storage: round-trip efficiency ≥85%
+- Flow battery storage: round-trip efficiency ≥75%
+- Hydrogen storage: round-trip efficiency ≥40%
+- Below-standard efficiency requires explanation and submission of improvement plan
+
+**Exceptions**:
+- Emergency backup power (not included in routine energy efficiency assessment)
+- Experimental storage technologies (enjoy 5-year transition period)
 
 **规则 III.1.1.009【能源伦理标签】**
 **Rule III.1.1.009 [Energy Ethics Labeling]**
@@ -214,6 +484,59 @@ d) Red label: primarily fossil fuel energy
 e) Black label: high-pollution energy
 Embodied intelligence systems must publicly display their energy ethics labels.
 
+**【原理】**
+能源伦理标签制度基于"知情权"与"市场信号"理论。消费者有权了解所购能源的环境和伦理属性；透明标签通过市场机制激励清洁能源生产——绿色标签产品可获得溢价，黑色标签产品面临消费者抵制。这是将环境外部性内部化的有效手段，让能源选择成为"用钱包投票"的公民行为，推动系统性能源转型。
+
+**Principle**: The energy ethics labeling system is based on theories of "right to know" and "market signaling." Consumers have the right to understand the environmental and ethical attributes of purchased energy; transparent labeling incentivizes clean energy production through market mechanisms—green label products command premiums, while black label products face consumer boycotts. This is an effective means of internalizing environmental externalities, making energy choices a civic act of "voting with wallets," driving systemic energy transition.
+
+**【案例】**
+**正面案例**：某具身智能服务公司将"100%绿色能源"作为核心品牌标识，在产品上醒目标注绿色标签，虽服务价格比竞品高10%，但因契合消费者环保价值观，市场份额从5%增长至22%，并吸引多家跨国企业签订长期合作协议。
+
+**反面案例**：某AI计算平台为掩盖其80%能源来自煤电的事实，使用模糊的"清洁混合能源"标签，被环保组织检测揭露后遭遇舆论风暴，用户流失40%，股价单月下跌35%，被迫投入巨资进行能源结构转型。
+
+**Positive Case**: An embodied intelligent services company made "100% green energy" its core brand identity, prominently displaying green labels on products. Although service prices were 10% higher than competitors, alignment with consumer environmental values grew market share from 5% to 22%, attracting long-term cooperation agreements with several multinational corporations.
+
+**Negative Case**: An AI computing platform used vague "clean mixed energy" labels to conceal that 80% of its energy came from coal power. After being exposed by environmental organization testing, it faced a media storm, lost 40% of users, stock price dropped 35% in one month, and was forced to invest heavily in energy structure transformation.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的能源消费披露和面向消费者的产品服务。
+
+**标签认证标准**：
+- 绿色标签：可再生能源≥95%，经第三方认证
+- 蓝色标签：可再生能源≥60%，化石能源完全经碳补偿
+- 黄色标签：可再生能源≥30%
+- 红色标签：可再生能源<30%
+- 黑色标签：高污染能源（煤炭直接燃烧）占比≥50%
+
+**披露要求**：
+- 产品包装/服务界面显著位置标注
+- 官网可查询能源来源详细信息
+- 年度报告披露年度平均标签等级
+- 虚假标签将面临销售额5-10%的罚款
+
+**例外情形**：
+- 仅供内部使用的非对外服务（仍需内部记录）
+- 经认证的最不发达国家技术援助项目（过渡期3年）
+
+**Applicable Boundaries**: This rule applies to all energy consumption disclosure and consumer-facing products/services of embodied intelligence systems.
+
+**Label Certification Standards**:
+- Green label: renewable energy ≥95%, third-party certified
+- Blue label: renewable energy ≥60%, fossil energy fully carbon offset
+- Yellow label: renewable energy ≥30%
+- Red label: renewable energy <30%
+- Black label: high-pollution energy (direct coal combustion) proportion ≥50%
+
+**Disclosure Requirements**:
+- Label prominently on product packaging/service interface
+- Detailed energy source information available on official website
+- Annual report disclosing annual average label grade
+- False labeling subject to fines of 5-10% of sales revenue
+
+**Exceptions**:
+- Internal-use only non-external services (internal records still required)
+- Certified least developed country technology assistance projects (3-year transition period)
+
 **规则 III.1.1.010【能源区块链溯源】**
 **Rule III.1.1.010 [Energy Blockchain Traceability]**
 
@@ -230,6 +553,59 @@ b) Production method and technology
 c) Transmission path and losses
 d) Final use and efficiency
 Energy without traceability cannot be used for critical systems.
+
+**【原理】**
+能源区块链溯源基于"信息透明"与"可信验证"理念。传统能源市场存在严重的信息不对称——消费者无法验证所购能源的真实来源和环境属性。区块链的不可篡改性和分布式记账特性，为能源全生命周期建立可信数字档案，杜绝"漂绿"和欺诈行为，为碳核算、环境审计、伦理消费提供可靠数据基础。
+
+**Principle**: Energy blockchain traceability is based on concepts of "information transparency" and "trustworthy verification." Traditional energy markets suffer from severe information asymmetry—consumers cannot verify the true sources and environmental attributes of purchased energy. Blockchain's immutability and distributed ledger characteristics establish trustworthy digital archives for the full energy lifecycle, eliminating "greenwashing" and fraud, providing reliable data foundations for carbon accounting, environmental auditing, and ethical consumption.
+
+**【案例】**
+**正面案例**：第8共生城区建立"能源链"平台，所有能源从生产到消费的全流程数据上链存证，居民可通过APP扫码查看家中电力的"前世今生"——来自哪座光伏电站、经过哪些变电站、碳足迹多少。系统运行两年，能源纠纷减少90%，绿色能源消费增长65%。
+
+**反面案例**：某企业声称使用"100%水电"，但经区块链溯源调查发现，其电力实际来自多个来源混合，且包含相当比例的煤电，企业通过购买"绿证"掩盖真实来源，构成严重欺诈，被吊销运营许可并追究刑事责任。
+
+**Positive Case**: Symbiotic Urban District 8 established an "Energy Chain" platform, recording full lifecycle data of all energy from production to consumption on blockchain. Residents can scan codes via an app to view the "past lives" of their home electricity—which photovoltaic plant it came from, which substations it passed through, its carbon footprint. After two years of operation, energy disputes decreased by 90%, green energy consumption grew by 65%.
+
+**Negative Case**: A company claimed to use "100% hydroelectric power," but blockchain traceability investigation revealed its electricity actually came from multiple mixed sources, including considerable coal power. The company used "green certificates" to conceal true sources, constituting serious fraud, resulting in license revocation and criminal prosecution.
+
+**【边界】**
+**适用边界**：本规则适用于所有具身智能系统的能源采购，特别是关键基础设施和高伦理要求场景。
+
+**关键系统定义**：
+- 医疗急救系统
+- 公共安全设施
+- 金融核心系统
+- 交通控制系统
+- 能源调度中心
+
+**区块链存证要求**：
+- 数据上链时间：能源交易发生后24小时内
+- 存储期限：至少10年
+- 可验证性：任何利益相关方可独立验证
+- 隐私保护：敏感商业信息可加密，但能源属性必须公开
+
+**例外情形**：
+- 微型离网系统（<10kW）可简化记录
+- 紧急情况下的临时能源供应（须在7日内补录）
+
+**Applicable Boundaries**: This rule applies to all energy procurement of embodied intelligence systems, especially critical infrastructure and high ethical requirement scenarios.
+
+**Critical Systems Definition**:
+- Medical emergency systems
+- Public safety facilities
+- Financial core systems
+- Traffic control systems
+- Energy dispatch centers
+
+**Blockchain Record-Keeping Requirements**:
+- Data upload time: within 24 hours of energy transaction
+- Storage period: at least 10 years
+- Verifiability: any stakeholder can independently verify
+- Privacy protection: sensitive commercial information may be encrypted, but energy attributes must be public
+
+**Exceptions**:
+- Micro off-grid systems (<10kW) may use simplified records
+- Temporary energy supply in emergency situations (must be recorded within 7 days)
 
 **规则 III.1.2.011【能源获取优先序】**
 **Rule III.1.2.011 [Energy Acquisition Priority]**
