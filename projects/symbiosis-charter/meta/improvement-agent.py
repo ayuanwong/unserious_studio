@@ -310,7 +310,7 @@ class AdvancedRuleAnalyzer:
         if self.all_rules_cache is None:
             all_rules = []
             for article in self.articles:
-                file_path = self.work_dir / article
+                file_path = RULES_DIR / article
                 if file_path.exists():
                     rules = self.extract_rules(file_path)
                     all_rules.extend(rules)
@@ -392,7 +392,7 @@ class IntelligentRuleImprover:
     def improve_rule(self, rule: Rule) -> Tuple[bool, str]:
         """Intelligently improve a rule and return success status and message"""
         try:
-            file_path = self.analyzer.work_dir / rule.file
+            file_path = RULES_DIR / rule.file
             content = file_path.read_text(encoding='utf-8')
             
             # Find the rule block
