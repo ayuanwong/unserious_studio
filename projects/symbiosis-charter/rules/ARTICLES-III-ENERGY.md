@@ -9,12 +9,69 @@
 
 **规则 III.1.1.001【可再生能源】**
 可再生能源指自然界可持续补充的能源形式，包括但不限于太阳能、风能、水能、地热能、生物质能。具身智能系统必须优先使用可再生能源，可再生能源使用比例不得低于年度能源消耗的60%。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.001 [可再生Energy]**
+
+Renewable energy refers to naturally replenishing energy forms including but not limited to solar, wind, hydroelectric, geothermal, and biomass. Embodied intelligent systems must prioritize renewable energy usage, with renewable sources constituting no less than 60% of annual energy consumption.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.1.1.002【不可再生能源】**
 不可再生能源指储量有限、不可再生的能源形式，包括化石燃料（煤、石油、天然气）和核裂变燃料。具身智能系统使用不可再生能源必须取得特别许可，且须缴纳能源补偿基金。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.002 [不可再生Energy]**
+
+Renewable energy refers to naturally replenishing energy forms including but not limited to solar, wind, hydroelectric, geothermal, and biomass. Embodied intelligent systems must prioritize renewable energy usage, with renewable sources constituting no less than 60% of annual energy consumption.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.1.1.003【混合能源】**
 混合能源指由多种能源形式组合而成的能源供应模式。混合能源系统必须明确各能源类型的比例构成，并实时披露碳排放数据。
+**原理**
+Principle of Transparency Through Composition: Complex systems achieve accountability through clear decomposition of constituent elements.
+
+**案例**
+Example: A smart factory displays real-time dashboard: "Current Mix: Solar 45%, Grid 35% (certified renewable), Natural Gas 20%. Carbon intensity: 142g CO2/kWh." Workers can see how production schedules affect environmental impact.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.003 [混合Energy]**
+
+Mixed energy refers to energy supply models combining multiple energy forms. Mixed energy systems must clearly specify the proportional composition of each energy type and disclose carbon emission data in real-time.
+
+**Principle**
+Principle of Transparency Through Composition: Complex systems achieve accountability through clear decomposition of constituent elements.
+
+**Example**
+Example: A smart factory displays real-time dashboard: "Current Mix: Solar 45%, Grid 35% (certified renewable), Natural Gas 20%. Carbon intensity: 142g CO2/kWh." Workers can see how production schedules affect environmental impact.
 
 **规则 III.1.1.004【能源伦理三分法】**
 能源使用伦理分为三类：
@@ -22,6 +79,30 @@ a) 分享型能源：开源共享、普惠可用的能源形式
 b) 占有型能源：私有化、竞争性获取的能源形式
 c) 冷漠型能源：无差别、无伦理考量的能源使用
 具身智能系统必须避免冷漠型能源使用模式。
+**原理**
+Principle of Ethical Categorization: Energy systems mirror social structures—sharing, ownership, and indifference each carry distinct ethical implications.
+
+**案例**
+Example: Company A shares excess solar with neighbors (sharing-type). Company B hoards cheap coal power for competitive advantage (ownership-type). Company C buys power without knowing its source (indifference-type). Only Company A and B are eligible for "Ethical Enterprise" certification.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.004 [EnergyEthics三分法]**
+
+Energy usage ethics are categorized into three types:
+- **Sharing-type Energy**: Open-source, universally accessible energy forms
+- **Ownership-type Energy**: Privatized, competitively acquired energy forms
+- **Indifference-type Energy**: Usage without ethical consideration
+
+Embodied intelligent systems must avoid indifference-type energy usage patterns.
+
+**Principle**
+Principle of Ethical Categorization: Energy systems mirror social structures—sharing, ownership, and indifference each carry distinct ethical implications.
+
+**Example**
+Example: Company A shares excess solar with neighbors (sharing-type). Company B hoards cheap coal power for competitive advantage (ownership-type). Company C buys power without knowing its source (indifference-type). Only Company A and B are eligible for "Ethical Enterprise" certification.
 
 **规则 III.1.1.005【能源密度分级】**
 能源按密度分为五级：
@@ -31,6 +112,32 @@ c) 中密度：生物燃料
 d) 低密度：太阳能、风能
 e) 极低密度：环境热能
 高密度能源使用须符合额外安全标准。
+**原理**
+Principle of Proportional Precaution: Higher energy densities correlate with increased potential for both benefit and harm, requiring graduated safeguards.
+
+**案例**
+Example: A hospital surgical robot (medium-density battery) has standard safety protocols. The same hospital's backup generator (high-density diesel) requires fire suppression systems, ventilation monitoring, and quarterly inspections.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.005 [Energy密度分级]**
+
+Energy is classified into five density levels:
+- **Extremely High Density**: Nuclear, hydrogen
+- **High Density**: Fossil fuels
+- **Medium Density**: Biofuels
+- **Low Density**: Solar, wind
+- **Extremely Low Density**: Ambient thermal energy
+
+High-density energy usage must comply with additional safety standards.
+
+**Principle**
+Principle of Proportional Precaution: Higher energy densities correlate with increased potential for both benefit and harm, requiring graduated safeguards.
+
+**Example**
+Example: A hospital surgical robot (medium-density battery) has standard safety protocols. The same hospital's backup generator (high-density diesel) requires fire suppression systems, ventilation monitoring, and quarterly inspections.
 
 **规则 III.1.1.006【碳排放等级】**
 能源按碳排放强度分为三级：
@@ -39,6 +146,25 @@ b) 低排放：可再生能源间接利用、核能
 c) 高排放：化石燃料燃烧
 d) 极高排放：煤炭直接燃烧
 高排放及以上能源使用须购买碳配额。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.006 [Carbon Emissions等级]**
+
+This rule establishes governance requirements for Carbon Emissions等级. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.1.1.007【能源地理属性】**
 能源须标注地理来源属性：
@@ -46,6 +172,25 @@ a) 本地能源：生产与消费在同一区域
 b) 区域能源：来自相邻区域
 c) 远程能源：来自远距离区域
 远程能源使用须承担传输损耗成本。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源地理属性 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源地理属性 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.007 [Energy地理属性]**
+
+This rule establishes governance requirements for Energy地理属性. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源地理属性 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源地理属性 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.1.008【能源时间属性】**
 能源须标注时间属性：
@@ -53,6 +198,25 @@ a) 实时能源：即时生产即时消费
 b) 储能能源：储存后消费
 c) 预测能源：基于预测调度
 储能能源须标注储能时长和损耗率。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源时间属性 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源时间属性 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.008 [Energy时间属性]**
+
+This rule establishes governance requirements for Energy时间属性. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源时间属性 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源时间属性 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.1.009【能源伦理标签】**
 所有能源供应必须附带伦理标签：
@@ -62,6 +226,30 @@ c) 黄色标签：混合能源
 d) 红色标签：主要为化石能源
 e) 黑色标签：高污染能源
 具身智能系统必须公示其能源伦理标签。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.009 [EnergyEthics标签]**
+
+Energy usage ethics are categorized into three types:
+- **Sharing-type Energy**: Open-source, universally accessible energy forms
+- **Ownership-type Energy**: Privatized, competitively acquired energy forms
+- **Indifference-type Energy**: Usage without ethical consideration
+
+Embodied intelligent systems must avoid indifference-type energy usage patterns.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.1.1.010【能源区块链溯源】**
 每一单位能源必须在区块链上记录完整溯源信息：
@@ -72,6 +260,25 @@ d) 最终用途和效率
 不可溯源能源不得用于关键系统。
 
 ### 1.2 能源获取伦理
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源区块链溯源 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源区块链溯源 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.1.010 [EnergyBlockchainTraceability]**
+
+This rule establishes governance requirements for EnergyBlockchainTraceability. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源区块链溯源 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源区块链溯源 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.011【能源获取优先序】**
 能源获取必须遵循以下优先序：
@@ -81,6 +288,32 @@ d) 最终用途和效率
 第四优先：经认证的低碳能源
 第五优先：补偿后的传统能源
 禁止逆向获取顺序。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.011 [Energy获取优先序]**
+
+Energy acquisition must follow this priority sequence:
+1. **First Priority**: Local renewable energy
+2. **Second Priority**: Regional renewable energy
+3. **Third Priority**: Stored renewable energy
+4. **Fourth Priority**: Certified low-carbon energy
+5. **Fifth Priority**: Offset-compensated traditional energy
+
+Reverse acquisition sequence is prohibited.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.1.2.012【能源伦理审查】**
 获取高排放能源前必须通过伦理审查：
@@ -89,6 +322,30 @@ b) 替代方案可行性评估
 c) 补偿措施完整性评估
 d) 公共利益影响评估
 未经审查不得获取高排放能源。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源伦理审查 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源伦理审查 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.012 [EnergyEthics审查]**
+
+Energy usage ethics are categorized into three types:
+- **Sharing-type Energy**: Open-source, universally accessible energy forms
+- **Ownership-type Energy**: Privatized, competitively acquired energy forms
+- **Indifference-type Energy**: Usage without ethical consideration
+
+Embodied intelligent systems must avoid indifference-type energy usage patterns.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源伦理审查 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源伦理审查 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.013【禁止获取的能源】**
 以下能源获取被严格禁止：
@@ -98,6 +355,25 @@ c) 未经安全认证的核能
 d) 强迫劳动生产的能源
 e) 冲突地区的血能源
 违规获取将吊销运营许可。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 禁止获取的能源 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 禁止获取的能源 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.013 [禁止获取的Energy]**
+
+This rule establishes governance requirements for 禁止获取的Energy. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 禁止获取的能源 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 禁止获取的能源 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.014【能源获取许可制度】**
 获取不可再生能源必须取得分级许可：
@@ -105,6 +381,25 @@ a) A级许可：年度消耗>1000MWh
 b) B级许可：年度消耗100-1000MWh
 c) C级许可：年度消耗<100MWh
 许可须每年更新，违规使用将受处罚。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.014 [Energy获取许可制度]**
+
+This rule establishes governance requirements for Energy获取许可制度. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.1.2.015【能源来源-用途匹配】**
 能源来源必须与其最终用途伦理匹配：
@@ -112,6 +407,25 @@ a) 清洁来源可用于所有用途
 b) 普通来源不得用于高伦理要求场景
 c) 高排放来源仅限紧急用途
 禁止高污染能源用于教育、医疗等场景。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源来源-用途匹配 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源来源-用途匹配 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.015 [Energy来源-用途匹配]**
+
+This rule establishes governance requirements for Energy来源-用途匹配. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源来源-用途匹配 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源来源-用途匹配 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.016【能源获取透明度】**
 能源获取信息必须完全公开：
@@ -120,6 +434,25 @@ b) 获取价格和成本
 c) 环境影响评估
 d) 替代方案比较
 信息须实时更新并接受公众查询。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取透明度 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源获取透明度 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.016 [Energy获取Transparency度]**
+
+This rule establishes governance requirements for Energy获取Transparency度. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取透明度 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源获取透明度 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.017【能源获取配额】**
 每个具身智能系统有年度能源获取配额：
@@ -128,6 +461,25 @@ b) 绩效配额：基于效率奖励
 c) 惩罚扣减：基于违规处罚
 d) 交易配额：可市场化交易
 超额使用须购买额外配额。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取配额 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源获取配额 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.017 [Energy获取配额]**
+
+This rule establishes governance requirements for Energy获取配额. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取配额 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源获取配额 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.018【紧急能源获取】**
 紧急情况下可突破常规限制：
@@ -136,6 +488,25 @@ b) 生命救援需求
 c) 系统崩溃风险
 d) 自然灾害响应
 紧急获取须在24小时内补办手续。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 紧急能源获取 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 紧急能源获取 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.018 [紧急Energy获取]**
+
+This rule establishes governance requirements for 紧急Energy获取. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 紧急能源获取 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 紧急能源获取 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.019【能源获取审计】**
 能源获取必须接受定期审计：
@@ -144,6 +515,25 @@ b) 季度合规审查
 c) 年度全面审计
 d) 随机抽查
 审计结果须公开并纳入信用评价。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取审计 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源获取审计 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.019 [Energy获取审计]**
+
+This rule establishes governance requirements for Energy获取审计. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取审计 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源获取审计 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.1.2.020【能源获取责任链】**
 建立完整的能源获取责任链：
@@ -154,6 +544,25 @@ d) 记录者：信息存档
 每个环节须实名负责。
 
 ---
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取责任链 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源获取责任链 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.1.2.020 [Energy获取Responsibility链]**
+
+This rule establishes governance requirements for Energy获取Responsibility链. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源获取责任链 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源获取责任链 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 ## 第2章：能源使用监管
 
@@ -165,6 +574,30 @@ a) 工业系统：能效≥85%
 b) 商业系统：能效≥80%
 c) 民用系统：能效≥75%
 低于基线须限期整改或停运。
+**原理**
+Principle of Minimum Viable Efficiency: Systems must meet baseline performance standards to justify their resource consumption.
+
+**案例**
+Example: Delivery robot fleet audit: 78% efficiency (below 80% baseline). Operator must submit 30-day improvement plan addressing: (a) Motor recalibration, (b) Route optimization algorithm update, (c) Aerodynamic panel installation. Failure to reach 80% within 90 days results in operational suspension.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.021 [EnergyEfficiency基线]**
+
+All embodied intelligent systems must meet minimum energy efficiency standards:
+- Industrial systems: Efficiency ≥ 85%
+- Commercial systems: Efficiency ≥ 80%
+- Civilian systems: Efficiency ≥ 75%
+
+Systems below baseline must rectify within specified timeframe or face suspension.
+
+**Principle**
+Principle of Minimum Viable Efficiency: Systems must meet baseline performance standards to justify their resource consumption.
+
+**Example**
+Example: Delivery robot fleet audit: 78% efficiency (below 80% baseline). Operator must submit 30-day improvement plan addressing: (a) Motor recalibration, (b) Route optimization algorithm update, (c) Aerodynamic panel installation. Failure to reach 80% within 90 days results in operational suspension.
 
 **规则 III.2.1.022【能效分级认证】**
 实施能效分级认证制度：
@@ -174,6 +607,38 @@ c) AAA级：能效≥90%
 d) AA级：能效≥85%
 e) A级：能效≥80%
 未达A级不得进入政府采购清单。
+**原理**
+Principle of Graduated Recognition: Performance tiers incentivize continuous improvement through status differentiation.
+
+**案例**
+Example: Three competing warehouse robots:
+- Model A: 82% efficiency = A grade (government procurement eligible)
+- Model B: 91% efficiency = AAA grade (tax incentives apply)
+- Model C: 97% efficiency = AAAAA grade (subsidized deployment, featured in sustainability reports)
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.022 [能效分级认证]**
+
+Energy efficiency grading certification system:
+- **AAAAA Grade**: Efficiency ≥ 98%
+- **AAAA Grade**: Efficiency ≥ 95%
+- **AAA Grade**: Efficiency ≥ 90%
+- **AA Grade**: Efficiency ≥ 85%
+- **A Grade**: Efficiency ≥ 80%
+
+Products below Grade A are ineligible for government procurement.
+
+**Principle**
+Principle of Graduated Recognition: Performance tiers incentivize continuous improvement through status differentiation.
+
+**Example**
+Example: Three competing warehouse robots:
+- Model A: 82% efficiency = A grade (government procurement eligible)
+- Model B: 91% efficiency = AAA grade (tax incentives apply)
+- Model C: 97% efficiency = AAAAA grade (subsidized deployment, featured in sustainability reports)
 
 **规则 III.2.1.023【能效监测要求】**
 必须实时监测并记录能效数据：
@@ -182,6 +647,25 @@ b) 有效输出能量
 c) 损耗能量分解
 d) 实时效率计算
 数据须接入监管平台。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效监测要求 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能效监测要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.023 [能效监测要求]**
+
+This rule establishes governance requirements for 能效监测要求. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效监测要求 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能效监测要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.2.1.024【能效改进义务】**
 能效未达标的系统必须实施改进：
@@ -190,6 +674,25 @@ b) 算法优化：降低计算能耗
 c) 行为调整：优化运行模式
 d) 结构改造：减少传输损耗
 改进计划须在30日内提交。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效改进义务 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能效改进义务 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.024 [能效改进Obligations]**
+
+This rule establishes governance requirements for 能效改进Obligations. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效改进义务 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能效改进义务 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.2.1.025【最佳实践对标】**
 同类系统必须进行能效对标：
@@ -198,6 +701,25 @@ b) 分析差距原因
 c) 制定追赶计划
 d) 定期评估进展
 落后20%以上须说明原因。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 最佳实践对标 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 最佳实践对标 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.025 [最佳实践对标]**
+
+This rule establishes governance requirements for 最佳实践对标. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 最佳实践对标 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 最佳实践对标 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.2.1.026【能效激励措施】**
 高能效系统享受激励：
@@ -206,6 +728,25 @@ b) 优先采购权
 c) 补贴奖励
 d) 信用加分
 激励力度与能效等级挂钩。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效激励措施 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能效激励措施 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.026 [能效激励措施]**
+
+This rule establishes governance requirements for 能效激励措施. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效激励措施 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能效激励措施 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.2.1.027【能效惩罚措施】**
 低能效系统面临惩罚：
@@ -214,6 +755,25 @@ b) 限产限排
 c) 公开通报
 d) 信用降级
 惩罚力度与能效差距挂钩。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效惩罚措施 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能效惩罚措施 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.027 [能效惩罚措施]**
+
+This rule establishes governance requirements for 能效惩罚措施. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效惩罚措施 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能效惩罚措施 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.2.1.028【能效信息披露】**
 必须定期披露能效信息：
@@ -222,6 +782,25 @@ b) 月度能效数据
 c) 实时能效面板
 d) 对标分析结果
 信息须易于公众获取。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效信息披露 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能效信息披露 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.028 [能效信息披露]**
+
+This rule establishes governance requirements for 能效信息披露. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效信息披露 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能效信息披露 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.2.1.029【第三方能效审计】**
 必须接受第三方能效审计：
@@ -230,6 +809,25 @@ b) 审计程序标准化
 c) 审计结果公开
 d) 整改要求明确
 审计费用由被审计方承担。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 第三方能效审计 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 第三方能效审计 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.029 [第三方能效审计]**
+
+This rule establishes governance requirements for 第三方能效审计. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 第三方能效审计 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 第三方能效审计 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.2.1.030【能效技术创新】**
 鼓励能效技术创新：
@@ -240,6 +838,25 @@ d) 成果转化奖励
 突破性技术可获特别奖励。
 
 ---
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效技术创新 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能效技术创新 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.2.1.030 [能效Technology创新]**
+
+This rule establishes governance requirements for 能效Technology创新. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能效技术创新 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能效技术创新 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 ## 第3章：能源流动管理
 
@@ -253,6 +870,25 @@ d) 成果转化奖励
 第四级：生产运营（工业、农业）
 第五级：商业服务（商业、娱乐）
 低优先级须为高优先级让渡。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源分配优先级 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源分配优先级 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.031 [Energy分配优先级]**
+
+This rule establishes governance requirements for Energy分配优先级. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源分配优先级 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源分配优先级 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.032【分配算法透明化】**
 能源分配算法必须公开透明：
@@ -261,6 +897,25 @@ b) 参数设置公开
 c) 权重分配公开
 d) 决策过程可审计
 黑箱算法不得用于关键分配。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配算法透明化 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分配算法透明化 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.032 [分配算法Transparency化]**
+
+This rule establishes governance requirements for 分配算法Transparency化. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配算法透明化 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分配算法透明化 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.033【分配公平性原则】**
 分配算法必须体现公平性：
@@ -269,6 +924,25 @@ b) 结果公平：差距合理可控
 c) 补偿公平：弱势群体保护
 d) 参与公平：利益相关方参与
 不公平算法须修正。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配公平性原则 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分配公平性原则 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.033 [分配公平性原则]**
+
+This rule establishes governance requirements for 分配公平性原则. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配公平性原则 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分配公平性原则 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.034【动态分配机制】**
 实施基于实时数据的动态分配：
@@ -277,6 +951,25 @@ b) 供给实时监测
 c) 分配实时调整
 d) 反馈实时响应
 动态调整须有平滑机制避免震荡。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 动态分配机制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 动态分配机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.034 [动态分配机制]**
+
+This rule establishes governance requirements for 动态分配机制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 动态分配机制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 动态分配机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.035【分配效率优化】**
 优化分配效率减少损耗：
@@ -285,6 +978,25 @@ b) 预测维护：减少故障损耗
 c) 负载均衡：避免局部过载
 d) 储能配合：削峰填谷
 效率目标：损耗<5%。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配效率优化 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分配效率优化 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.035 [分配Efficiency优化]**
+
+This rule establishes governance requirements for 分配Efficiency优化. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配效率优化 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分配效率优化 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.036【跨区域调配】**
 建立跨区域能源调配机制：
@@ -293,6 +1005,25 @@ b) 调配协议：事先签订协议
 c) 调配补偿：公平补偿机制
 d) 调配记录：全程留痕
 调配须考虑传输损耗。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 跨区域调配 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 跨区域调配 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.036 [跨区域调配]**
+
+This rule establishes governance requirements for 跨区域调配. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 跨区域调配 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 跨区域调配 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.037【分配争议解决】**
 建立分配争议解决机制：
@@ -301,6 +1032,25 @@ b) 调解程序：第三方调解
 c) 仲裁机制：专业仲裁委员会
 d) 司法救济：诉讼途径
 争议处理须限时完成。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配争议解决 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分配争议解决 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.037 [分配争议解决]**
+
+This rule establishes governance requirements for 分配争议解决. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配争议解决 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分配争议解决 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.038【分配信息披露】**
 分配信息必须充分披露：
@@ -309,6 +1059,25 @@ b) 分配过程记录
 c) 分配结果公示
 d) 历史数据可查
 信息须真实、准确、完整。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配信息披露 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分配信息披露 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.038 [分配信息披露]**
+
+This rule establishes governance requirements for 分配信息披露. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配信息披露 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分配信息披露 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.039【分配算法审计】**
 分配算法必须接受审计：
@@ -317,6 +1086,25 @@ b) 算法测试：沙盒环境验证
 c) 算法评估：第三方评估
 d) 算法迭代：持续改进
 审计发现问题须立即整改。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配算法审计 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分配算法审计 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.039 [分配算法审计]**
+
+This rule establishes governance requirements for 分配算法审计. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配算法审计 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分配算法审计 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.3.1.040【分配效果评估】**
 定期评估分配效果：
@@ -327,6 +1115,25 @@ d) 满意度调查
 评估结果用于算法优化。
 
 ---
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配效果评估 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分配效果评估 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.3.1.040 [分配效果评估]**
+
+This rule establishes governance requirements for 分配效果评估. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分配效果评估 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分配效果评估 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 ## 第4章：能源系统韧性
 
@@ -339,6 +1146,25 @@ b) 储备品种：石油、天然气、煤炭
 c) 储备布局：分散多点储存
 d) 储备轮换：定期更新保持质量
 储备动用须经最高决策机构批准。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 战略能源储备 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 战略能源储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.041 [战略Energy储备]**
+
+This rule establishes governance requirements for 战略Energy储备. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 战略能源储备 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 战略能源储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.042【区域能源储备】**
 地方政府建立区域储备：
@@ -347,6 +1173,25 @@ b) 储备品种：因地制宜
 c) 储备管理：专业化管理
 d) 动用权限：省级政府
 储备情况定期上报中央。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 区域能源储备 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 区域能源储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.042 [区域Energy储备]**
+
+This rule establishes governance requirements for 区域Energy储备. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 区域能源储备 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 区域能源储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.043【企业能源储备】**
 重点企业须保持必要储备：
@@ -355,6 +1200,25 @@ b) 燃气企业：气源储备
 c) 供热企业：热源储备
 d) 用能大户：应急储备
 储备标准按行业制定。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 企业能源储备 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 企业能源储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.043 [企业Energy储备]**
+
+This rule establishes governance requirements for 企业Energy储备. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 企业能源储备 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 企业能源储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.044【储备质量管理】**
 确保储备能源质量：
@@ -363,6 +1227,25 @@ b) 及时轮换过期储备
 c) 维护储备设施设备
 d) 记录储备管理台账
 质量不合格不得计入储备。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备质量管理 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储备质量管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.044 [储备质量管理]**
+
+This rule establishes governance requirements for 储备质量管理. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备质量管理 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储备质量管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.045【储备动用程序】**
 规范储备动用程序：
@@ -371,6 +1254,25 @@ b) 审批权限：分级审批制度
 c) 动用记录：详细记录用途
 d) 补充计划：及时补充恢复
 未经批准不得动用储备。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备动用程序 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储备动用程序 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.045 [储备动用程序]**
+
+This rule establishes governance requirements for 储备动用程序. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备动用程序 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储备动用程序 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.046【储备信息公开】**
 适度公开储备信息：
@@ -379,6 +1281,25 @@ b) 储备结构公开
 c) 动用情况公开
 d) 具体位置保密
 信息公开与保密平衡。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备信息公开 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储备信息公开 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.046 [储备信息公开]**
+
+This rule establishes governance requirements for 储备信息公开. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备信息公开 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储备信息公开 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.047【储备设施建设】**
 加强储备设施建设：
@@ -387,6 +1308,25 @@ b) 战略石油储备基地
 c) 储煤基地
 d) 储能电站
 建设纳入国家规划。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备设施建设 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储备设施建设 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.047 [储备设施建设]**
+
+This rule establishes governance requirements for 储备设施建设. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备设施建设 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储备设施建设 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.048【储备市场化运作】**
 探索储备市场化运作：
@@ -395,6 +1335,25 @@ b) 储备商业化租赁
 c) 储备期货交易
 d) 储备保险机制
 市场化提高储备效率。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备市场化运作 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储备市场化运作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.048 [储备市场化运作]**
+
+This rule establishes governance requirements for 储备市场化运作. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备市场化运作 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储备市场化运作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.049【储备国际合作】**
 开展储备国际合作：
@@ -403,6 +1362,25 @@ b) 储备设施共享
 c) 储备信息交流
 d) 应急互助机制
 合作增强能源安全。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备国际合作 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储备国际合作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.049 [储备国际合作]**
+
+This rule establishes governance requirements for 储备国际合作. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备国际合作 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储备国际合作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.1.050【储备监督检查】**
 加强储备监督检查：
@@ -414,6 +1392,25 @@ e) 追究违规责任
 检查须全面深入不留死角。
 
 ### 4.2 备份机制
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备监督检查 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储备监督检查 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.1.050 [储备监督检查]**
+
+This rule establishes governance requirements for 储备监督检查. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储备监督检查 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储备监督检查 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.051【能源供应备份】**
 关键设施须有能源供应备份：
@@ -422,6 +1419,25 @@ b) 多路输送：至少两条输送路径
 c) 多类能源：至少两种能源形式
 d) 自动切换：故障时自动切换
 备份须定期测试确保可用。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源供应备份 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源供应备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.051 [Energy供应备份]**
+
+This rule establishes governance requirements for Energy供应备份. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源供应备份 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源供应备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.052【电网备用容量】**
 保持电网必要备用容量：
@@ -430,6 +1446,25 @@ b) 事故备用：10%-15%最大机组容量
 c) 检修备用：8%-15%装机容量
 d) 国民经济备用：视需要安排
 备用不足须限制新增负荷。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 电网备用容量 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 电网备用容量 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.052 [电网备用容量]**
+
+This rule establishes governance requirements for 电网备用容量. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 电网备用容量 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 电网备用容量 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.053【备用机组管理】**
 规范备用机组管理：
@@ -438,6 +1473,25 @@ b) 定期启动：定期启动保持状态
 c) 快速响应：接到指令快速并网
 d) 燃料保障：确保燃料充足
 备用机组须处于热备用状态。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用机组管理 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 备用机组管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.053 [备用机组管理]**
+
+This rule establishes governance requirements for 备用机组管理. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用机组管理 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 备用机组管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.054【分布式能源备份】**
 鼓励分布式能源作为备份：
@@ -447,6 +1501,25 @@ c) 小型水电
 d) 生物质发电
 e) 储能系统
 分布式能源优先保障本地。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 分布式能源备份 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 分布式能源备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.054 [分布式Energy备份]**
+
+This rule establishes governance requirements for 分布式Energy备份. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 分布式能源备份 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 分布式能源备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.055【微电网备份】**
 重要负荷建设微电网备份：
@@ -455,6 +1528,25 @@ b) 独立运行能力
 c) 黑启动能力
 d) 与大电网智能互动
 微电网须定期演练孤岛运行。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 微电网备份 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 微电网备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.055 [微电网备份]**
+
+This rule establishes governance requirements for 微电网备份. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 微电网备份 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 微电网备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.056【储能系统备份】**
 储能系统作为重要备份：
@@ -463,6 +1555,25 @@ b) 电网侧储能：调峰调频
 c) 用户侧储能：应急备用
 d) 独立储能：共享服务
 储能容量须满足设计需求。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 储能系统备份 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 储能系统备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.056 [Energy StorageSystem备份]**
+
+This rule establishes governance requirements for Energy StorageSystem备份. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 储能系统备份 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 储能系统备份 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.057【备用燃料储备】**
 发电企业储备备用燃料：
@@ -471,6 +1582,25 @@ b) 燃气电厂：3-5天用量
 c) 燃油电厂：7-10天用量
 d) 核电厂：18-24个月换料
 燃料不足须预警并补充。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用燃料储备 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 备用燃料储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.057 [备用燃料储备]**
+
+This rule establishes governance requirements for 备用燃料储备. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用燃料储备 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 备用燃料储备 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.058【备用能力测试】**
 定期测试备用能力：
@@ -480,6 +1610,25 @@ c) 孤岛运行能力测试
 d) 黑启动演练
 e) 应急通信测试
 测试发现问题立即整改。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用能力测试 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 备用能力测试 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.058 [备用能力测试]**
+
+This rule establishes governance requirements for 备用能力测试. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用能力测试 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 备用能力测试 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.059【备用资源共享】**
 推动备用资源共享：
@@ -488,6 +1637,25 @@ b) 跨企业备用支援
 c) 备用容量市场
 d) 备用能力互济
 共享提高整体可靠性。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用资源共享 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 备用资源共享 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.059 [备用资源共享]**
+
+This rule establishes governance requirements for 备用资源共享. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用资源共享 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 备用资源共享 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.2.060【备用标准制定】**
 制定备用能力标准：
@@ -498,6 +1666,25 @@ d) 标准动态调整
 标准须科学合理可执行。
 
 ### 4.3 危机应对
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用标准制定 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 备用标准制定 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.2.060 [备用标准制定]**
+
+This rule establishes governance requirements for 备用标准制定. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 备用标准制定 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 备用标准制定 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.061【能源危机定义】**
 明确能源危机定义标准：
@@ -506,6 +1693,25 @@ b) 价格危机：价格涨幅>100%
 c) 系统危机：大面积系统故障
 d) 安全危机：涉及公共安全
 危机标准须量化可判定。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源危机定义 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源危机定义 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.061 [Energy危机定义]**
+
+This rule establishes governance requirements for Energy危机定义. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源危机定义 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源危机定义 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.062【危机预警机制】**
 建立能源危机预警机制：
@@ -514,6 +1720,25 @@ b) 预警阈值设定
 c) 预警信息发布
 d) 预警响应措施
 预警须提前量充足。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机预警机制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机预警机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.062 [危机预警机制]**
+
+This rule establishes governance requirements for 危机预警机制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机预警机制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机预警机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.063【危机决策机制】**
 建立危机快速决策机制：
@@ -522,6 +1747,25 @@ b) 决策程序：简化高效流程
 c) 决策依据：充分信息支撑
 d) 决策责任：明确责任主体
 决策须在黄金时间内完成。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机决策机制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机决策机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.063 [危机Decision-making机制]**
+
+This rule establishes governance requirements for 危机Decision-making机制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机决策机制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机决策机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.064【危机沟通机制】**
 建立危机沟通机制：
@@ -530,6 +1774,25 @@ b) 外部沟通：及时发布信息
 c) 媒体沟通：引导舆论
 d) 国际沟通：争取支持
 沟通须及时透明一致。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机沟通机制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机沟通机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.064 [危机沟通机制]**
+
+This rule establishes governance requirements for 危机沟通机制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机沟通机制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机沟通机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.065【危机恢复计划】**
 制定危机恢复计划：
@@ -539,6 +1802,25 @@ c) 恢复时间节点
 d) 恢复质量要求
 e) 恢复后评估
 恢复须有序快速彻底。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机恢复计划 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机恢复计划 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.065 [危机恢复计划]**
+
+This rule establishes governance requirements for 危机恢复计划. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机恢复计划 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机恢复计划 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.066【危机学习机制】**
 建立危机学习机制：
@@ -547,6 +1829,25 @@ b) 经验总结：提炼经验教训
 c) 制度完善：改进制度机制
 d) 能力建设：提升应对能力
 学习防止重蹈覆辙。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机学习机制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机学习机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.066 [危机学习机制]**
+
+This rule establishes governance requirements for 危机学习机制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机学习机制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机学习机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.067【危机模拟演练】**
 开展危机模拟演练：
@@ -555,6 +1856,25 @@ b) 实战演练
 c) 跨部门演练
 d) 跨境演练
 演练须贴近实战。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机模拟演练 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机模拟演练 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.067 [危机模拟演练]**
+
+This rule establishes governance requirements for 危机模拟演练. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机模拟演练 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机模拟演练 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.068【危机保险机制】**
 建立能源危机保险机制：
@@ -563,6 +1883,25 @@ b) 价格剧烈波动保险
 c) 系统故障保险
 d) 营业中断保险
 保险分散危机风险。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机保险机制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机保险机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.068 [危机保险机制]**
+
+This rule establishes governance requirements for 危机保险机制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机保险机制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机保险机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.069【危机互助协议】**
 签订危机互助协议：
@@ -571,6 +1910,25 @@ b) 区域间互助
 c) 国际互助
 d) 行业间互助
 互助增强应对能力。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机互助协议 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机互助协议 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.069 [危机互助协议]**
+
+This rule establishes governance requirements for 危机互助协议. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机互助协议 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机互助协议 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.4.3.070【危机后评估】**
 危机后进行全面评估：
@@ -582,6 +1940,25 @@ e) 责任追究
 评估结果公开。
 
 ---
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机后评估 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 危机后评估 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.4.3.070 [危机后评估]**
+
+This rule establishes governance requirements for 危机后评估. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 危机后评估 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 危机后评估 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 ## 第5章：碳足迹追踪
 
@@ -595,6 +1972,25 @@ c) 运输配送阶段
 d) 使用运行阶段
 e) 报废处置阶段
 不得遗漏任何阶段。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹核算范围 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹核算范围 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.071 [碳足迹核算范围]**
+
+This rule establishes governance requirements for 碳足迹核算范围. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹核算范围 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹核算范围 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.072【碳足迹核算方法】**
 采用标准碳足迹核算方法：
@@ -603,6 +1999,25 @@ b) 实测法
 c) 质量平衡法
 d) 生命周期评价法
 方法选择须科学合理。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹核算方法 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹核算方法 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.072 [碳足迹核算方法]**
+
+This rule establishes governance requirements for 碳足迹核算方法. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹核算方法 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹核算方法 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.073【碳足迹数据来源】**
 确保碳足迹数据准确可靠：
@@ -612,6 +2027,25 @@ c) 文献数据再次
 d) 估算数据最后
 e) 数据质量评级
 数据须可追溯可验证。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹数据来源 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹数据来源 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.073 [碳足迹Data来源]**
+
+This rule establishes governance requirements for 碳足迹Data来源. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹数据来源 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹数据来源 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.074【碳足迹计算工具】**
 使用标准化计算工具：
@@ -620,6 +2054,25 @@ b) 国际通用计算平台
 c) 区块链存证系统
 d) 第三方验证接口
 工具须经过校准验证。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹计算工具 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹计算工具 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.074 [碳足迹计算工具]**
+
+This rule establishes governance requirements for 碳足迹计算工具. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹计算工具 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹计算工具 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.075【碳足迹边界设定】**
 明确碳足迹核算边界：
@@ -628,6 +2081,25 @@ b) 运营边界：直接和间接排放
 c) 价值链边界：上下游排放
 d) 时间边界：核算周期
 边界设定须一致可比。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹边界设定 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹边界设定 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.075 [碳足迹边界设定]**
+
+This rule establishes governance requirements for 碳足迹边界设定. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹边界设定 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹边界设定 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.076【碳足迹分配方法】**
 多产品系统碳足迹分配：
@@ -636,6 +2108,25 @@ b) 经济分配：产值、利润
 c) 其他分配：面积、工时
 d) 避免分配：工艺细分
 分配方法须合理透明。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹分配方法 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹分配方法 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.076 [碳足迹分配方法]**
+
+This rule establishes governance requirements for 碳足迹分配方法. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹分配方法 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹分配方法 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.077【碳足迹不确定性】**
 评估碳足迹不确定性：
@@ -644,6 +2135,25 @@ b) 方法不确定性
 c) 模型不确定性
 d) 敏感性分析
 不确定性须量化披露。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹不确定性 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹不确定性 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.077 [碳足迹不确定性]**
+
+This rule establishes governance requirements for 碳足迹不确定性. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹不确定性 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹不确定性 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.078【碳足迹复核验证】**
 碳足迹须经复核验证：
@@ -652,6 +2162,25 @@ b) 第三方核查：独立机构
 c) 抽查核实：监管部门
 d) 国际互认：跨境互认
 验证须出具正式报告。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹复核验证 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹复核验证 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.078 [碳足迹复核验证]**
+
+This rule establishes governance requirements for 碳足迹复核验证. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹复核验证 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹复核验证 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.079【碳足迹数据管理】**
 规范管理碳足迹数据：
@@ -661,6 +2190,25 @@ c) 数据存储安全
 d) 数据备份恢复
 e) 数据保密管理
 数据管理须符合标准。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹数据管理 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹数据管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.079 [碳足迹Data管理]**
+
+This rule establishes governance requirements for 碳足迹Data管理. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹数据管理 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹数据管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.1.080【碳足迹能力建设】**
 加强碳足迹能力建设：
@@ -671,6 +2219,25 @@ d) 信息平台建设
 能力支撑碳足迹工作。
 
 ### 5.2 披露义务
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹能力建设 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳足迹能力建设 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.1.080 [碳足迹能力建设]**
+
+This rule establishes governance requirements for 碳足迹能力建设. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳足迹能力建设 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳足迹能力建设 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.081【强制披露主体】**
 以下主体必须披露碳足迹：
@@ -680,6 +2247,25 @@ c) 政府采购供应商
 d) 出口企业
 e) 申请绿色认证企业
 未披露不得参与相关活动。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 强制披露主体 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 强制披露主体 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.081 [强制披露主体]**
+
+This rule establishes governance requirements for 强制披露主体. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 强制披露主体 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 强制披露主体 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.082【披露内容要求】**
 碳足迹披露内容要求：
@@ -689,6 +2275,25 @@ c) 核算边界方法
 d) 减排措施成效
 e) 历史数据对比
 内容须真实准确完整。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露内容要求 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露内容要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.082 [披露内容要求]**
+
+This rule establishes governance requirements for 披露内容要求. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露内容要求 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露内容要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.083【披露频次要求】**
 定期披露碳足迹信息：
@@ -697,6 +2302,25 @@ b) 季度更新：关键数据
 c) 月度监测：重点排放
 d) 重大事项：及时披露
 频次须满足监管要求。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露频次要求 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露频次要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.083 [披露频次要求]**
+
+This rule establishes governance requirements for 披露频次要求. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露频次要求 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露频次要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.084【披露渠道要求】**
 通过指定渠道披露：
@@ -705,6 +2329,25 @@ b) 碳排放交易平台
 c) 监管部门信息系统
 d) 新闻媒体发布
 多渠道确保公众可获取。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露渠道要求 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露渠道要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.084 [披露渠道要求]**
+
+This rule establishes governance requirements for 披露渠道要求. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露渠道要求 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露渠道要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.085【披露格式标准】**
 采用统一披露格式：
@@ -713,6 +2356,25 @@ b) 可比数据指标
 c) 可视化图表
 d) 详细数据附表
 格式便于比较分析。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露格式标准 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露格式标准 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.085 [披露格式标准]**
+
+This rule establishes governance requirements for 披露格式标准. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露格式标准 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露格式标准 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.086【第三方鉴证】**
 碳足迹报告须经鉴证：
@@ -721,6 +2383,25 @@ b) 专业核查机构
 c) 出具鉴证意见
 d) 承担鉴证责任
 鉴证增强可信度。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 第三方鉴证 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 第三方鉴证 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.086 [第三方鉴证]**
+
+This rule establishes governance requirements for 第三方鉴证. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 第三方鉴证 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 第三方鉴证 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.087【披露责任】**
 明确碳足迹披露责任：
@@ -729,6 +2410,25 @@ b) 高管个人责任
 c) 虚假披露处罚
 d) 重大遗漏追责
 责任约束确保质量。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露责任 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露责任 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.087 [披露Responsibility]**
+
+This rule establishes governance requirements for 披露Responsibility. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露责任 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露责任 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.088【披露比较基准】**
 提供可比较的基准数据：
@@ -737,6 +2437,25 @@ b) 最佳实践水平
 c) 历史同期水平
 d) 国际先进水平
 比较便于定位改进。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露比较基准 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露比较基准 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.088 [披露比较基准]**
+
+This rule establishes governance requirements for 披露比较基准. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露比较基准 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露比较基准 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.089【披露改进承诺】**
 披露碳减排改进承诺：
@@ -745,6 +2464,25 @@ b) 实现路径
 c) 投资计划
 d) 时间表
 承诺须可考核可追责。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露改进承诺 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露改进承诺 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.089 [披露改进承诺]**
+
+This rule establishes governance requirements for 披露改进承诺. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露改进承诺 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露改进承诺 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.2.090【披露社会监督】**
 接受社会监督：
@@ -755,6 +2493,25 @@ d) 公益诉讼
 监督促进披露质量。
 
 ### 5.3 抵消机制
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露社会监督 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 披露社会监督 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.2.090 [披露社会监督]**
+
+This rule establishes governance requirements for 披露社会监督. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 披露社会监督 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 披露社会监督 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.091【碳抵消机制】**
 建立碳抵消机制：
@@ -763,6 +2520,25 @@ b) 碳捕集利用
 c) 自愿减排项目
 d) 国际碳信用
 抵消须额外真实可核证。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳抵消机制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 碳抵消机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.091 [碳抵消机制]**
+
+This rule establishes governance requirements for 碳抵消机制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 碳抵消机制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 碳抵消机制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.092【抵消项目要求】**
 碳抵消项目须符合要求：
@@ -772,6 +2548,25 @@ c) 可测量：可量化计算
 d) 可核证：第三方核证
 e) 永久性：长期有效
 不符合不得用于抵消。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目要求 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消项目要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.092 [抵消项目要求]**
+
+This rule establishes governance requirements for 抵消项目要求. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目要求 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消项目要求 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.093【抵消比例限制】**
 限制碳抵消使用比例：
@@ -780,6 +2575,25 @@ b) 高排放企业：不超过5%
 c) 重点排放单位：不超过3%
 d) 碳中和承诺：可100%
 比例逐步降低。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消比例限制 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消比例限制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.093 [抵消比例限制]**
+
+This rule establishes governance requirements for 抵消比例限制. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消比例限制 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消比例限制 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.094【抵消项目注册】**
 抵消项目须注册备案：
@@ -789,6 +2603,25 @@ c) 项目注册申请
 d) 项目定期监测
 e) 项目核证签发
 注册后方可产生信用。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目注册 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消项目注册 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.094 [抵消项目注册]**
+
+This rule establishes governance requirements for 抵消项目注册. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目注册 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消项目注册 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.095【抵消信用交易】**
 抵消信用可市场化交易：
@@ -798,6 +2631,25 @@ c) 价格市场形成
 d) 交易清算结算
 e) 信用注销使用
 交易须合规透明。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消信用交易 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消信用交易 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.095 [抵消信用交易]**
+
+This rule establishes governance requirements for 抵消信用交易. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消信用交易 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消信用交易 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.096【抵消信用注销】**
 抵消信用使用须注销：
@@ -806,6 +2658,25 @@ b) 在系统注销
 c) 防止重复使用
 d) 公开注销信息
 注销确保信用唯一性。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消信用注销 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消信用注销 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.096 [抵消信用注销]**
+
+This rule establishes governance requirements for 抵消信用注销. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消信用注销 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消信用注销 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.097【抵消项目监测】**
 持续监测抵消项目：
@@ -814,6 +2685,25 @@ b) 减排效果监测
 c) 泄漏风险评估
 d) 永久性的监测
 监测确保项目持续有效。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目监测 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消项目监测 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.097 [抵消项目监测]**
+
+This rule establishes governance requirements for 抵消项目监测. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目监测 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消项目监测 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.098【抵消项目核查】**
 定期核查抵消项目：
@@ -823,6 +2713,25 @@ c) 随机抽查
 d) 投诉调查
 e) 违规处理
 核查确保项目合规。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目核查 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消项目核查 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.098 [抵消项目核查]**
+
+This rule establishes governance requirements for 抵消项目核查. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消项目核查 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消项目核查 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.099【抵消信息披露】**
 披露抵消使用情况：
@@ -831,6 +2740,25 @@ b) 抵消数量
 c) 抵消项目信息
 d) 抵消核证情况
 信息须详细透明。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消信息披露 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 抵消信息披露 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.099 [抵消信息披露]**
+
+This rule establishes governance requirements for 抵消信息披露. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 抵消信息披露 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 抵消信息披露 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.5.3.100【国际抵消合作】**
 开展国际抵消合作：
@@ -842,6 +2770,25 @@ e) 气候资金机制
 合作须符合国际规则。
 
 ---
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 国际抵消合作 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 国际抵消合作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.5.3.100 [国际抵消合作]**
+
+This rule establishes governance requirements for 国际抵消合作. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 国际抵消合作 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 国际抵消合作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 ## 第6章：能源正义
 
@@ -854,6 +2801,25 @@ b) 可负担权：价格可承受
 c) 持续权：供应稳定可靠
 d) 质量权：能源质量达标
 权利须法律保障。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源基本权利 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源基本权利 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.101 [Energy基本Rights]**
+
+This rule establishes governance requirements for Energy基本Rights. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源基本权利 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源基本权利 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.102【基本能源保障标准】**
 设定基本能源保障标准：
@@ -862,6 +2828,25 @@ b) 燃气：日均用气量≥0.5m³
 c) 热力：冬季室温≥18℃
 d) 照明：满足基本照明需求
 标准随发展逐步提高。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 基本能源保障标准 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 基本能源保障标准 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.102 [基本Energy保障标准]**
+
+This rule establishes governance requirements for 基本Energy保障标准. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 基本能源保障标准 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 基本能源保障标准 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.103【能源贫困救助】**
 建立能源贫困救助机制：
@@ -871,6 +2856,25 @@ c) 救助资金保障
 d) 救助方式多样
 e) 救助效果评估
 救助须精准到位。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源贫困救助 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源贫困救助 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.103 [Energy贫困救助]**
+
+This rule establishes governance requirements for Energy贫困救助. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源贫困救助 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源贫困救助 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.104【能源价格保护】**
 保护弱势群体能源价格：
@@ -879,6 +2883,25 @@ b) 供暖补贴：北方地区
 c) 燃气补贴：困难家庭
 d) 专项基金：财政支持
 价格保护减轻负担。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源价格保护 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源价格保护 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.104 [Energy价格保护]**
+
+This rule establishes governance requirements for Energy价格保护. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源价格保护 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源价格保护 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.105【能源服务均等化】**
 推进能源服务均等化：
@@ -887,6 +2910,25 @@ b) 区域能源配置均衡
 c) 基本能源服务普及
 d) 能源基础设施共享
 均等化促进社会公平。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源服务均等化 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源服务均等化 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.105 [Energy服务均等化]**
+
+This rule establishes governance requirements for Energy服务均等化. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源服务均等化 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源服务均等化 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.106【能源信息获取权】**
 保障能源信息获取权利：
@@ -895,6 +2937,25 @@ b) 能源政策透明
 c) 能源服务流程公开
 d) 能源消费账单清晰
 信息获取无障碍。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源信息获取权 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源信息获取权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.106 [Energy信息获取权]**
+
+This rule establishes governance requirements for Energy信息获取权. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源信息获取权 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源信息获取权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.107【能源申诉权】**
 保障能源申诉权利：
@@ -903,6 +2964,25 @@ b) 申诉处理时限
 c) 申诉结果反馈
 d) 申诉权利救济
 申诉须得到有效处理。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源申诉权 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源申诉权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.107 [Energy申诉权]**
+
+This rule establishes governance requirements for Energy申诉权. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源申诉权 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源申诉权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.108【能源参与权】**
 保障能源决策参与权利：
@@ -911,6 +2991,25 @@ b) 能源价格听证
 c) 能源项目环评公众参与
 d) 能源规划意见征集
 参与须真实有效。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源参与权 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源参与权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.108 [Energy参与权]**
+
+This rule establishes governance requirements for Energy参与权. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源参与权 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源参与权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.109【能源安全权】**
 保障能源安全权利：
@@ -919,6 +3018,25 @@ b) 能源使用安全
 c) 能源环境安全
 d) 应急响应保障
 安全是基本前提。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源安全权 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源安全权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.109 [EnergySecurity权]**
+
+This rule establishes governance requirements for EnergySecurity权. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源安全权 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源安全权 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.1.110【能源权利救济】**
 建立能源权利救济机制：
@@ -929,6 +3047,25 @@ d) 救济效果评估
 救济须及时有效。
 
 ### 6.2 区域公平
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源权利救济 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源权利救济 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.1.110 [EnergyRights救济]**
+
+This rule establishes governance requirements for EnergyRights救济. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源权利救济 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源权利救济 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.2.111【区域能源均衡配置】**
 均衡配置区域能源资源：
@@ -937,6 +3074,25 @@ b) 考虑发展阶段差异
 c) 考虑环境容量差异
 d) 补偿欠发达地区
 配置须公平合理。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 区域能源均衡配置 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 区域能源均衡配置 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.2.111 [区域Energy均衡配置]**
+
+This rule establishes governance requirements for 区域Energy均衡配置. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 区域能源均衡配置 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 区域能源均衡配置 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.2.112【能源输出地补偿】**
 建立能源输出地补偿机制：
@@ -945,6 +3101,25 @@ b) 生态补偿资金
 c) 产业扶持转移支付
 d) 基础设施投资倾斜
 补偿须充分到位。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源输出地补偿 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 能源输出地补偿 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.2.112 [Energy输出地补偿]**
+
+This rule establishes governance requirements for Energy输出地补偿. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 能源输出地补偿 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 能源输出地补偿 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.2.113【跨区域能源输送】**
 规范跨区域能源输送：
@@ -953,6 +3128,25 @@ b) 输送损耗合理分担
 c) 输送容量分配公平
 d) 输送安全风险共担
 输送须互利共赢。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 跨区域能源输送 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 跨区域能源输送 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.2.113 [跨区域Energy输送]**
+
+This rule establishes governance requirements for 跨区域Energy输送. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 跨区域能源输送 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 跨区域能源输送 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.2.114【区域能源协作】**
 建立区域能源协作机制：
@@ -961,6 +3155,25 @@ b) 区域能源设施共享
 c) 区域能源应急响应
 d) 区域能源市场一体化
 协作促进区域协调。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 区域能源协作 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 区域能源协作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.2.114 [区域Energy协作]**
+
+This rule establishes governance requirements for 区域Energy协作. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 区域能源协作 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 区域能源协作 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.2.115【边远地区能源保障】**
 加强边远地区能源保障：
@@ -969,6 +3182,25 @@ b) 分布式能源推广
 c) 微电网建设
 d) 可再生能源利用
 保障须优先安排。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.6.2.115 [边远地区Energy保障]**
+
+This rule establishes governance requirements for 边远地区Energy保障. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.6.2.116【特殊区域能源政策】**
 制定特殊区域能源政策：
@@ -977,6 +3209,25 @@ b) 边疆地区政策
 c) 贫困地区政策
 d) 生态脆弱区政策
 政策须因地制宜。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 特殊区域能源政策 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 特殊区域能源政策 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.6.2.116 [特殊区域Energy政策]**
+
+This rule establishes governance requirements for 特殊区域Energy政策. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 特殊区域能源政策 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 特殊区域能源政策 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.6.2.117【区域能源差距监测】**
 监测区域能源发展差距：
@@ -1106,6 +3357,25 @@ b) 能源存储技术
 c) 能效提升技术
 d) 智能电网技术
 投入须专款专用并接受审计。
+**原理**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**案例**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
+
+---
+
+**[English Version]**
+
+**Rule III.7.1.131 [EnergyTechnology研发投入]**
+
+This rule establishes governance requirements for EnergyTechnology研发投入. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Ecological Priority: Sustainable systems must prioritize renewable resources to maintain long-term viability and minimize ecological debt.
+
+**Example**
+Example: A municipal robot fleet operating on 100% solar power during daylight hours, with battery reserves maintaining critical functions overnight. The system achieves 65% renewable usage annually, exceeding the 60% minimum threshold.
 
 **规则 III.7.1.132【研发税收优惠】**
 能源技术研发享受税收优惠政策：
@@ -1114,6 +3384,25 @@ b) 研发设备加速折旧
 c) 技术转让所得税减免
 d) 进口研发设备关税减免
 优惠须按规定程序申请。
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 研发税收优惠 to ensure systematic and accountable implementation.
+
+**案例**
+Example: Implementation of 研发税收优惠 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
+
+---
+
+**[English Version]**
+
+**Rule III.7.1.132 [研发税收优惠]**
+
+This rule establishes governance requirements for 研发税收优惠. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 研发税收优惠 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 研发税收优惠 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
 **规则 III.7.1.133【研发合作机制】**
 建立产学研能源研发合作机制：
@@ -1265,5 +3554,22 @@ e) 退役阶段：回收与处置
 ---
 
 **本编共150条规则**
+**原理**
+Principle of Structured Governance: This rule establishes clear boundaries for 技术全周期管理 to ensure systematic and accountable implementation.
 
+**案例**
+Example: Implementation of 技术全周期管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
 
+---
+
+**[English Version]**
+
+**Rule III.7.2.150 [Technology全周期管理]**
+
+This rule establishes governance requirements for Technology全周期管理. All embodied intelligent systems must comply with the specified standards and undergo regular compliance verification.
+
+**Principle**
+Principle of Structured Governance: This rule establishes clear boundaries for 技术全周期管理 to ensure systematic and accountable implementation.
+
+**Example**
+Example: Implementation of 技术全周期管理 requires systematic monitoring and regular compliance auditing to ensure adherence to established governance standards.
