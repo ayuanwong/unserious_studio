@@ -4,8 +4,8 @@
 > *A Covenant for Human-AI Coexistence*
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)]()
-[![Progress](https://img.shields.io/badge/Progress-60%25-green)]()
-[![Rules](https://img.shields.io/badge/Rules-729%2F1200-blue)]()
+[![Progress](https://img.shields.io/badge/Progress-64%25-green)]()
+[![Rules](https://img.shields.io/badge/Rules-772%2F1200-blue)]()
 [![Version](https://img.shields.io/badge/Version-2049.1--draft-orange)]()
 
 ---
@@ -33,13 +33,13 @@ This framework is designed for the **2026-2075 Embodied Intelligence Era**, esta
 | **Preamble** | Framework Overview | - | ✅ Complete | [00-PREAMBLE.md](00-PREAMBLE.md) |
 | **Articles I** | Fundamental Principles | 150 | ✅ Complete | [ARTICLES-I-FUNDAMENTAL.md](ARTICLES-I-FUNDAMENTAL.md) |
 | **Articles II** | Productivity Reconstruction | 250 | ✅ Complete | [ARTICLES-II-PRODUCTIVITY.md](ARTICLES-II-PRODUCTIVITY.md) |
-| **Articles III** | Energy Sustainability | 60 | ⚠️ Sample | [ARTICLES-III-ENERGY.md](ARTICLES-III-ENERGY.md) |
+| **Articles III** | Energy Sustainability | 103 | 🔄 Expanding | [ARTICLES-III-ENERGY.md](ARTICLES-III-ENERGY.md) |
 | **Articles IV** | Ethical Agency | 50 | ⚠️ Sample | [ARTICLES-IV-ETHICAL-AGENCY.md](ARTICLES-IV-ETHICAL-AGENCY.md) |
 | **Articles V** | Adaptive Mechanisms | 27 | ⚠️ Sample | [ARTICLES-V-ADAPTIVE.md](ARTICLES-V-ADAPTIVE.md) |
 | **Articles VI** | Exception Handling | 22 | ⚠️ Sample | [ARTICLES-VI-EXCEPTIONS.md](ARTICLES-VI-EXCEPTIONS.md) |
 | **Articles VII** | Oversight & Evaluation | 20 | ⚠️ Sample | [ARTICLES-VII-OVERSIGHT.md](ARTICLES-VII-OVERSIGHT.md) |
 
-**Current Total: 729 / Target 1200 (60.7%)**
+**Current Total: 772 / Target 1200 (64.3%)**
 
 ---
 
