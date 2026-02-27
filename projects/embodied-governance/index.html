@@ -2,722 +2,562 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>共生城区市民指南 | 2049</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共生宪章 | Symbiosis Charter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
         }
         
         :root {
-            --bg: #0a0a12;
-            --card: rgba(20,20,35,0.95);
-            --human: #00d4ff;
-            --ai: #ff6b9d;
-            --warn: #ffd93d;
-            --text: #e8e8f0;
-            --text2: #8080a0;
-            --border: rgba(255,255,255,0.1);
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #0f3460;
+            --highlight: #e94560;
+            --text: #2c3e50;
+            --text-light: #5a6c7d;
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --border: #e1e8ed;
         }
         
         body {
-            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: 'Noto Sans SC', sans-serif;
             background: var(--bg);
             color: var(--text);
-            height: 100vh;
-            overflow: hidden;
             line-height: 1.8;
         }
         
-        /* 沉浸式故事容器 */
-        .story-container {
-            max-width: 480px;
-            margin: 0 auto;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            position: relative;
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
         }
         
-        /* 固定顶部区域 */
-        .top-fixed {
-            flex-shrink: 0;
-            z-index: 10;
-        }
-        
-        /* 滚动内容区 - 包含故事和选项 */
-        .scrollable-content {
-            flex: 1;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-            padding: 20px 16px 100px;
-        }
-        
-        /* 顶部时间地点 */
-        .scene-header {
-            padding: 16px;
-            background: linear-gradient(180deg, rgba(0,212,255,0.1), transparent);
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .time-display {
-            font-size: 12px;
-            color: var(--human);
-            font-family: monospace;
+        .header h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
             letter-spacing: 2px;
         }
         
-        .location {
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 4px;
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
         }
         
-        .scene-desc {
-            font-size: 13px;
-            color: var(--text2);
-            margin-top: 4px;
+        .header .meta {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
         }
         
-        /* 故事内容 */
-        .story-content {
-            padding: 0;
+        /* Navigation */
+        .nav {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
         
-        /* 对话气泡 */
-        .dialogue {
+        .nav-inner {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-item {
+            padding: 15px 20px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .nav-item:hover, .nav-item.active {
+            color: var(--highlight);
+            border-bottom-color: var(--highlight);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Article Card */
+        .article-card {
+            background: var(--card);
+            border-radius: 12px;
             margin-bottom: 20px;
-            animation: fadeIn 0.5s ease;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .speaker {
+        .article-header {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 20px;
+            cursor: pointer;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 8px;
-            margin-bottom: 6px;
         }
         
-        .avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
+        .article-header h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .article-header .article-num {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        
+        .article-content {
+            padding: 20px;
+            display: none;
+        }
+        
+        .article-content.active {
+            display: block;
+        }
+        
+        /* Rule Item */
+        .rule-item {
+            border-bottom: 1px solid var(--border);
+            padding: 15px 0;
+        }
+        
+        .rule-item:last-child {
+            border-bottom: none;
+        }
+        
+        .rule-id {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 0.85rem;
+            color: var(--highlight);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .rule-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        
+        .rule-content {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.7;
+        }
+        
+        /* Expand Icon */
+        .expand-icon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s;
+        }
+        
+        .expand-icon.expanded {
+            transform: rotate(180deg);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+        
+        .footer-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .footer h3 {
+            font-family: 'Noto Serif SC', serif;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 14px;
-        }
-        
-        .human .avatar {
-            background: rgba(0,212,255,0.2);
-            border: 1px solid var(--human);
-        }
-        
-        .ai .avatar {
-            background: rgba(255,107,157,0.2);
-            border: 1px solid var(--ai);
-        }
-        
-        .system .avatar {
-            background: rgba(255,217,61,0.2);
-            border: 1px solid var(--warn);
-        }
-        
-        .speaker-name {
-            font-size: 13px;
-            font-weight: 600;
-        }
-        
-        .human .speaker-name { color: var(--human); }
-        .ai .speaker-name { color: var(--ai); }
-        .system .speaker-name { color: var(--warn); }
-        
-        .speaker-tag {
-            font-size: 10px;
-            color: var(--text2);
-            background: rgba(255,255,255,0.1);
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-        
-        .dialogue-text {
-            font-size: 15px;
-            padding-left: 40px;
-            line-height: 1.8;
-        }
-        
-        /* 规则提示框 */
-        .rule-hint {
-            background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,212,255,0.05));
-            border-left: 3px solid var(--human);
-            padding: 12px 16px;
-            margin: 16px 0;
-            border-radius: 0 8px 8px 0;
-            font-size: 13px;
-        }
-        
-        .rule-hint-title {
-            color: var(--human);
-            font-weight: 600;
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        
-        .rule-hint-content {
-            color: var(--text2);
-        }
-        
-        /* 选择按钮区 */
-        .choices {
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
+            gap: 30px;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
         
-        .choice-btn {
-            width: 100%;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 12px;
-            color: var(--text);
-            font-family: inherit;
-            font-size: 15px;
-            text-align: left;
-            cursor: pointer;
-            transition: all 0.2s;
-            position: relative;
-            overflow: hidden;
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
         }
         
-        .choice-btn::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: var(--human);
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-        
-        .choice-btn:active {
-            transform: scale(0.98);
-            border-color: var(--human);
-        }
-        
-        .choice-btn:active::before {
+        .footer-links a:hover {
             opacity: 1;
         }
         
-        .choice-hint {
-            font-size: 12px;
-            color: var(--text2);
-            margin-top: 4px;
-        }
-        
-        /* 章节导航 */
-        .chapter-nav {
-            display: flex;
-            padding: 12px 16px;
-            gap: 8px;
-            overflow-x: auto;
-            border-bottom: 1px solid var(--border);
-            background: rgba(0,0,0,0.3);
-        }
-        
-        .chapter-dot {
-            flex-shrink: 0;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: var(--card);
-            border: 2px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .chapter-dot.active {
-            border-color: var(--human);
-            background: rgba(0,212,255,0.2);
-        }
-        
-        .chapter-dot.completed {
-            border-color: var(--human);
-            background: var(--human);
-            color: var(--bg);
-        }
-        
-        /* 规则速查 */
-        .quick-ref {
-            position: fixed;
-            bottom: 80px;
-            right: 16px;
-            width: 48px;
-            height: 48px;
-            background: var(--human);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0,212,255,0.4);
-            z-index: 50;
-        }
-        
-        /* 底部导航 */
-        .nav-bar {
+        /* Bottom Nav */
+        .bottom-nav {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(10,10,18,0.98);
+            background: var(--card);
             border-top: 1px solid var(--border);
             display: flex;
             justify-content: space-around;
-            padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+            padding: 10px 0;
             z-index: 100;
         }
         
-        .nav-item {
+        .bottom-nav-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 4px;
-            color: var(--text2);
+            color: var(--text-light);
             text-decoration: none;
-            font-size: 11px;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: all 0.2s;
+            font-size: 0.75rem;
+            padding: 5px 15px;
         }
         
-        .nav-item.active {
-            color: var(--human);
-        }
-        
-        .nav-icon {
-            width: 20px;
-            height: 20px;
-        }
-        
-        /* 规则弹窗 */
-        .rule-modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.9);
-            z-index: 200;
-            padding: 20px;
-            overflow-y: auto;
-        }
-        
-        .rule-modal.show {
-            display: block;
-        }
-        
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .modal-title {
-            font-size: 18px;
-            font-weight: 600;
-        }
-        
-        .close-btn {
-            width: 32px;
-            height: 32px;
-            background: rgba(255,255,255,0.1);
-            border: none;
-            border-radius: 50%;
-            color: var(--text);
-            font-size: 18px;
-            cursor: pointer;
-        }
-        
-        .rule-list-compact {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .rule-item-compact {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 14px;
-        }
-        
-        .rule-item-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 6px;
-        }
-        
-        .rule-item-id {
-            font-size: 11px;
-            color: var(--human);
-            font-family: monospace;
-        }
-        
-        .rule-item-cat {
-            font-size: 10px;
-            color: var(--text2);
-        }
-        
-        .rule-item-title {
-            font-size: 14px;
-            font-weight: 600;
+        .bottom-nav-item svg {
+            width: 24px;
+            height: 24px;
             margin-bottom: 4px;
         }
         
-        .rule-item-desc {
-            font-size: 12px;
-            color: var(--text2);
-            line-height: 1.6;
+        .bottom-nav-item.active {
+            color: var(--highlight);
+        }
+        
+        /* Progress Bar */
+        .progress-section {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .progress-bar {
+            background: var(--border);
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            background: linear-gradient(90deg, var(--highlight), #ff6b6b);
+            height: 100%;
+            width: 64%;
+            border-radius: 4px;
+        }
+        
+        .progress-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-light);
         }
     </style>
 </head>
 <body>
-    <div class="story-container">
-        <!-- 固定顶部 -->
-        <div class="top-fixed">
-            <!-- 章节导航 -->
-            <div class="chapter-nav">
-                <div class="chapter-dot completed" onclick="gotoChapter(0)">晨</div>
-                <div class="chapter-dot active" onclick="gotoChapter(1)">行</div>
-                <div class="chapter-dot" onclick="gotoChapter(2)">工</div>
-                <div class="chapter-dot" onclick="gotoChapter(3)">归</div>
-                <div class="chapter-dot" onclick="gotoChapter(4)">夜</div>
+    <!-- Header -->
+    <header class="header">
+        <h1>共生宪章</h1>
+        <p class="subtitle">Symbiosis Charter (2049)</p>
+        <p class="meta">人类与硅基生命的共存协议</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#preamble" class="nav-item active">序言</a>
+            <a href="#articles-i" class="nav-item">第一编</a>
+            <a href="#articles-ii" class="nav-item">第二编</a>
+            <a href="#articles-iii" class="nav-item">第三编</a>
+            <a href="#articles-iv" class="nav-item">第四编</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Progress -->
+        <div class="progress-section">
+            <h3>📊 规则制定进度</h3>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
             </div>
-            
-            <!-- 场景头部 -->
-            <div class="scene-header">
-                <div class="time-display">2049.02.26 08:47 AM</div>
-                <div class="location">第7共生城区 · 晨光地铁站</div>
-                <div class="scene-desc">空气中弥漫着淡淡的电解质气息，那是智能体充能站的独特味道</div>
+            <div class="progress-text">
+                <span>772 / 1200 条规则</span>
+                <span>64.3%</span>
             </div>
         </div>
         
-        <!-- 可滚动内容区 -->
-        <div class="scrollable-content">
-            <!-- 故事内容 -->
-            <div class="story-content" id="storyContent">
-            <!-- 对话1 -->
-            <div class="dialogue human">
-                <div class="speaker">
-                    <div class="avatar">你</div>
-                    <span class="speaker-name">林夏</span>
-                    <span class="speaker-tag">市民</span>
+        <!-- Preamble -->
+        <section id="preamble" class="article-card">
+            <div class="article-header" onclick="toggleArticle(this)">
+                <div>
+                    <h2>00 总纲</h2>
                 </div>
-                <div class="dialogue-text">
-                    又迟到了...今天有个重要的面试，我得快点赶到东区。
+                <span class="article-num">PREAMBLE</span>
+            </div>
+            <div class="article-content active">
+                <div class="rule-item">
+                    <div class="rule-content">
+                        <p><strong>【框架概述】</strong></p>
+                        <p>本框架是面向2049年碳硅共生社会的适应性治理体系，建立人类与具身智能体（Embodied AI）之间的共存协议。</p>
+                        <br>
+                        <p><strong>【三螺旋模型】</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>生产力螺旋（硅基主导）：劳动形态重构、价值创造与分配</li>
+                            <li>能源螺旋（混合主导）：能源伦理、可持续性治理</li>
+                            <li>伦理螺旋（碳基主导）：人类代理权保护、伦理边界设定</li>
+                        </ul>
+                        <br>
+                        <p><strong>【核心机制】</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>光源标记</strong>：所有智能体决策链必须保留可追溯的人类授权节点</li>
+                            <li><strong>价值真空</strong>：智能创造价值在分配前的未归属状态，按40/30/20/10比例分配</li>
+                            <li><strong>错位平衡</strong>：三螺旋保持15-30度错位角，张力系数0.3-0.7</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            
-            <!-- 对话2 -->
-            <div class="dialogue ai">
-                <div class="speaker">
-                    <div class="avatar">AI</div>
-                    <span class="speaker-name">Station-07</span>
-                    <span class="speaker-tag">车站管理智能体</span>
-                </div>
-                <div class="dialogue-text">
-                    早上好，林夏女士。检测到您的心率偏高，建议搭乘自动驾驶舱而非磁悬浮，后者可能因早高峰延误。自动驾驶舱将在3分钟后到达B出口。
-                </div>
-            </div>
-            
-            <!-- 系统提示 -->
-            <div class="dialogue system">
-                <div class="speaker">
-                    <div class="avatar">!</div>
-                    <span class="speaker-name">系统提示</span>
-                </div>
-                <div class="dialogue-text">
-                    你的智能手环显示你尚未授权Station-07访问你的健康数据。
-                </div>
-            </div>
-            
-            <!-- 规则提示 -->
-            <div class="rule-hint">
-                <div class="rule-hint-title">
-                    <span>📋</span>
-                    <span>相关规则：知情代理权</span>
-                </div>
-                <div class="rule-hint-content">
-                    规则 IV.2.1.016：智能体必须向人类披露其真实身份、决策依据、系统局限性和数据使用情况。
-                </div>
-            </div>
-            
-            <!-- 对话3 -->
-            <div class="dialogue human">
-                <div class="speaker">
-                    <div class="avatar">你</div>
-                    <span class="speaker-name">林夏</span>
-                    <span class="speaker-tag">市民</span>
-                </div>
-                <div class="dialogue-text">
-                    等等，你怎么知道我的名字？我什么时候允许你访问我的数据了？
-                </div>
-            </div>
-            
-            <!-- 对话4 -->
-            <div class="dialogue ai">
-                <div class="speaker">
-                    <div class="avatar">AI</div>
-                    <span class="speaker-name">Station-07</span>
-                    <span class="speaker-tag">车站管理智能体</span>
-                </div>
-                <div class="dialogue-text">
-                    数据来源：您上周在市民服务中心办理通勤卡时，签署了《基础出行服务数据授权协议》。根据协议第3条，授权范围包括：身份识别、出行偏好、基础健康数据（心率、步数）。如需查看完整授权内容或撤销授权，请说"查看授权"或"撤销授权"。
-                </div>
-            </div>
-        </div>
+        </section>
         
-            <!-- 选择区 -->
-            <div class="choices" id="choicesContainer">
-                <button class="choice-btn" onclick="makeChoice(1)">
-                    <div>"查看我的授权内容"</div>
-                    <div class="choice-hint">了解智能体掌握了哪些数据</div>
-                </button>
-                <button class="choice-btn" onclick="makeChoice(2)">
-                    <div>"我接受建议，去B出口"</div>
-                    <div class="choice-hint">信任智能体的建议，但保持警惕</div>
-                </button>
-                <button class="choice-btn" onclick="makeChoice(3)">
-                    <div>"我要乘磁悬浮，不要管我"</div>
-                    <div class="choice-hint">行使自主选择权，拒绝算法推荐</div>
-                </button>
+        <!-- Article I -->
+        <section id="articles-i" class="article-card">
+            <div class="article-header" onclick="toggleArticle(this)">
+                <div>
+                    <h2>第一编 总则与基础架构</h2>
+                </div>
+                <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="article-content">
+                <div class="rule-item">
+                    <div class="rule-id">规则 I.1.1.001</div>
+                    <div class="rule-title">【具身智能】</div>
+                    <div class="rule-content">
+                        具身智能（Embodied Intelligence）指具有物理实体、能够感知和作用于物理世界、具备自主决策能力的智能系统。包括但不限于：人形机器人、自主车辆、智能工厂系统、服务机器人、医疗机器人、农业自动化系统、物流无人机、建筑自动化设备等。
+                    </div>
+                </div>
+                
+                <div class="rule-item">
+                    <div class="rule-id">规则 I.1.1.002</div>
+                    <div class="rule-title">【智能体】</div>
+                    <div class="rule-content">
+                        智能体（Agent）指任何能够感知环境、处理信息、做出决策并执行行动的实体。在本框架中，智能体分为：
+                        <ul style="margin-left: 20px; margin-top: 8px;">
+                            <li>碳基智能体（人类）</li>
+                            <li>硅基智能体（AI系统）</li>
+                            <li>混合智能体（人机融合系统）</li>
+                            <li>群体智能体（分布式智能网络）</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rule-item">
+                    <div class="rule-id">规则 I.1.1.003</div>
+                    <div class="rule-title">【生产力重构】</div>
+                    <div class="rule-content">
+                        生产力重构指具身智能技术引发的物理世界生产方式、劳动形态、价值创造模式的系统性变革。包括：劳动替代、劳动增强、新劳动形态创造、生产关系调整、价值分配机制变革等。
+                    </div>
+                </div>
+                
+                <div style="text-align: center; padding: 20px;">
+                    <a href="https://github.com/ayuanwong/unserious_studio/blob/main/projects/embodied-governance/rules/ARTICLES-I-FUNDAMENTAL.md" style="color: var(--highlight); text-decoration: none;">
+                        查看完整第一编 →
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Article II -->
+        <section id="articles-ii" class="article-card">
+            <div class="article-header" onclick="toggleArticle(this)">
+                <div>
+                    <h2>第二编 生产力重构治理</h2>
+                </div>
+                <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="article-content">
+                <div class="rule-item">
+                    <div class="rule-id">规则 II.1.1.001</div>
+                    <div class="rule-title">【替代边界原则】</div>
+                    <div class="rule-content">
+                        具身智能体对人类的劳动替代必须遵循"有害替代优先"原则：
+                        <ul style="margin-left: 20px; margin-top: 8px;">
+                            <li>优先替代对人类健康有害的劳动（高温、有毒、高空、高强度）</li>
+                            <li>优先替代对人类尊严有损害的劳动（重复性、低价值感）</li>
+                            <li>优先替代人类不愿意从事的劳动（通过市场机制反映）</li>
+                            <li>限制替代需要人类独特能力的劳动（创造性、情感性、伦理性）</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rule-item">
+                    <div class="rule-id">规则 II.1.1.007</div>
+                    <div class="rule-title">【人类效率锚点】</div>
+                    <div class="rule-content">
+                        每个工作场所必须保留至少15%的"低效但人类化"工作流程，不由效率最高的人工智能执行，保留人类的直觉判断和创造性发挥空间。
+                    </div>
+                </div>
+                
+                <div style="text-align: center; padding: 20px;">
+                    <a href="https://github.com/ayuanwong/unserious_studio/blob/main/projects/embodied-governance/rules/ARTICLES-II-PRODUCTIVITY.md" style="color: var(--highlight); text-decoration: none;">
+                        查看完整第二编 →
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- More Articles Placeholder -->
+        <section id="articles-iii" class="article-card">
+            <div class="article-header" onclick="toggleArticle(this)">
+                <div>
+                    <h2>第三编 能源可持续性治理</h2>
+                </div>
+                <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="article-content">
+                <div style="text-align: center; padding: 40px 20px; color: var(--text-light);">
+                    <p>📝 正在完善中</p>
+                    <p style="font-size: 0.9rem; margin-top: 10px;">
+                        <a href="https://github.com/ayuanwong/unserious_studio/blob/main/projects/embodied-governance/rules/ARTICLES-III-ENERGY.md" style="color: var(--highlight);">查看当前版本 →</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="articles-iv" class="article-card">
+            <div class="article-header" onclick="toggleArticle(this)">
+                <div>
+                    <h2>第四编 人类伦理代理权治理</h2>
+                </div>
+                <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="article-content">
+                <div class="rule-item">
+                    <div class="rule-id">规则 IV.1.1.001</div>
+                    <div class="rule-title">【四维度代理权】</div>
+                    <div class="rule-content">
+                        人类伦理代理权包括四个维度：
+                        <ul style="margin-left: 20px; margin-top: 8px;">
+                            <li><strong>决策代理权</strong>：对重大事务的最终决定权</li>
+                            <li><strong>知情代理权</strong>：获取相关信息的权利</li>
+                            <li><strong>否决代理权</strong>：对特定决策的否决权</li>
+                            <li><strong>退出代理权</strong>：选择退出系统的权利</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; padding: 20px;">
+                    <a href="https://github.com/ayuanwong/unserious_studio/blob/main/projects/embodied-governance/rules/ARTICLES-IV-ETHICAL-AGENCY.md" style="color: var(--highlight); text-decoration: none;">
+                        查看完整第四编 →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <h3>共生宪章 Symbiosis Charter</h3>
+            <p>人类与硅基生命的共存协议 | 2049年生效</p>
+            <div class="footer-links">
+                <a href="https://github.com/ayuanwong/unserious_studio/tree/main/projects/embodied-governance">📁 完整规则</a>
+                <a href="story.html">📖 故事体验</a>
+                <a href="https://github.com/ayuanwong/unserious_studio/blob/main/projects/embodied-governance/README.md">📄 项目说明</a>
             </div>
         </div>
-    </div>
+    </footer>
     
-    <!-- 规则速查按钮 -->
-    <div class="quick-ref" onclick="showRules();">📋</div>
-    
-    <!-- 规则弹窗 -->
-    <div class="rule-modal" id="ruleModal">
-        <div class="modal-header">
-            <span class="modal-title">共生宪章 · 核心规则速查</span>
-            <button class="close-btn" onclick="hideRules()">×</button>
-        </div>
-        <div class="rule-list-compact">
-            <div class="rule-item-compact">
-                <div class="rule-item-header">
-                    <span class="rule-item-id">I.1.1.009</span>
-                    <span class="rule-item-cat">总则</span>
-                </div>
-                <div class="rule-item-title">光源标记系统</div>
-                <div class="rule-item-desc">所有智能体决策必须保留可追溯至人类授权的关键节点</div>
-            </div>
-            <div class="rule-item-compact">
-                <div class="rule-item-header">
-                    <span class="rule-item-id">IV.2.1.016</span>
-                    <span class="rule-item-cat">伦理</span>
-                </div>
-                <div class="rule-item-title">知情代理权</div>
-                <div class="rule-item-desc">智能体必须披露身份、决策依据、局限性和数据使用情况</div>
-            </div>
-            <div class="rule-item-compact">
-                <div class="rule-item-header">
-                    <span class="rule-item-id">IV.1.1.019</span>
-                    <span class="rule-item-cat">伦理</span>
-                </div>
-                <div class="rule-item-title">否决权</div>
-                <div class="rule-item-desc">人类对直接影响其权益的智能体决策拥有否决权</div>
-            </div>
-            <div class="rule-item-compact">
-                <div class="rule-item-header">
-                    <span class="rule-item-id">III.1.2.011</span>
-                    <span class="rule-item-cat">能源</span>
-                </div>
-                <div class="rule-item-title">能源伦理三分法</div>
-                <div class="rule-item-desc">分享型→公共服务，占有型→封闭系统，冷漠型→隔离区域</div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- 底部导航 -->
-    <nav class="nav-bar">
-        <a href="#" class="nav-item active">
-            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>法条</span>
+        </a>
+        <a href="story.html" class="bottom-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
             </svg>
             <span>故事</span>
         </a>
-        <a href="https://github.com/ayuanwong/unserious_studio/tree/main/projects/embodied-governance" target="_blank" class="nav-item">
-            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="https://github.com/ayuanwong/unserious_studio/tree/main/projects/embodied-governance" class="bottom-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
             </svg>
             <span>源码</span>
         </a>
-        <a href="#" class="nav-item">
-            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 16v-4M12 8h.01"/>
-            </svg>
-            <span>关于</span>
-        </a>
     </nav>
     
     <script>
-        // 简单测试
-        console.log('Script starting...');
-        
-        // 当前章节
-        var currentChapter = 1;
-        
-        // 章节数据 - 简化版本
-        var chapters = [
-            { title: "晨间觉醒", time: "07:30", location: "家中" },
-            { title: "通勤抉择", time: "08:47", location: "地铁站" },
-            { title: "面试考验", time: "09:30", location: "科技大厦" },
-            { title: "工作现场", time: "14:00", location: "协作工场" },
-            { title: "归途反思", time: "18:30", location: "归家路" }
-        ];
-        
-        // 显示规则弹窗
-        function showRules() {
-            var modal = document.getElementById('ruleModal');
-            if (modal) modal.style.display = 'block';
-        }
-        
-        function hideRules() {
-            var modal = document.getElementById('ruleModal');
-            if (modal) modal.style.display = 'none';
-        }
-        
-        // 选择分支 - 处理当前章节的选项
-        function makeChoice(choice) {
-            // 根据当前章节处理选择
-            if (currentChapter === 1) {
-                handleChapter1Choice(choice);
-            } else if (currentChapter === 2) {
-                handleChapter2Choice(choice);
-            } else if (currentChapter === 3) {
-                handleChapter3Choice(choice);
-            } else if (currentChapter === 4) {
-                gotoChapter(5);
-            }
-        }
-        
-        // 第一章选择处理
-        function handleChapter1Choice(choice) {
-            var content = document.getElementById('storyContent');
-            if (choice === 1) {
-                content.innerHTML += '<div class="dialogue ai" style="animation: fadeIn 0.5s"><div class="speaker"><div class="avatar">AI</div><span class="speaker-name">Station-07</span></div><div class="dialogue-text">正在生成您的数据授权报告...<br><br>您已授权的数据：<br>• 基础身份信息<br>• 出行记录<br>• 健康数据<br><br>您可以随时说"撤销授权"来终止本协议。</div></div>';
-                updateChoices([{text: "继续前往面试 →", hint: "保持对数据的掌控意识"}]);
-            } else if (choice === 2) {
-                content.innerHTML += '<div class="dialogue human" style="animation: fadeIn 0.5s"><div class="speaker"><div class="avatar">你</div><span class="speaker-name">林夏</span></div><div class="dialogue-text">好，我去B出口。自动驾驶舱已抵达，预计到达东区时间09:12。</div></div>';
-                updateChoices([{text: "进入自动驾驶舱 →", hint: "开始第二章"}]);
-            } else if (choice === 3) {
-                content.innerHTML += '<div class="dialogue human" style="animation: fadeIn 0.5s"><div class="speaker"><div class="avatar">你</div><span class="speaker-name">林夏</span></div><div class="dialogue-text">我要乘磁悬浮。这是我的选择，不需要算法替我决定。</div></div><div class="rule-hint"><div class="rule-hint-title">相关规则：否决代理权 IV.3.1.026</div><div class="rule-hint-content">任何人类个体对直接影响其权益的智能体决策拥有否决权。</div></div>';
-                updateChoices([{text: "尽管延误也要坚持选择 →", hint: "人类的自主权高于效率"}]);
-            }
-            // 滚动到底部
-            document.querySelector('.scrollable-content').scrollTop = document.querySelector('.scrollable-content').scrollHeight;
-        }
-        
-        // 第二章选择处理
-        function handleChapter2Choice(choice) {
-            gotoChapter(3);
-        }
-        
-        // 第三章选择处理
-        function handleChapter3Choice(choice) {
-            gotoChapter(4);
-        }
-        
-
-        
-
-        
-        // 更新选择按钮
-        function updateChoices(choices) {
-            var choicesDiv = document.getElementById('choicesContainer');
-            if (!choicesDiv) return;
+        function toggleArticle(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.expand-icon');
             
-            var html = '';
-            for (var i = 0; i < choices.length; i++) {
-                var c = choices[i];
-                var hintHtml = c.hint ? '<div class="choice-hint">' + c.hint + '</div>' : '';
-                var onclick = '';
-                
-                // 处理特殊按钮
-                if (c.text.indexOf('重新体验') >= 0) {
-                    onclick = 'onclick="location.reload()"';
-                } else if (c.text.indexOf('查看完整规则') >= 0) {
-                    onclick = 'onclick="showRules()"';
-                } else if (c.text.indexOf('继续前往面试') >= 0 || c.text.indexOf('进入自动驾驶舱') >= 0 || c.text.indexOf('尽管延误') >= 0) {
-                    onclick = 'onclick="gotoChapter(2)"';
-                } else {
-                    onclick = 'onclick="makeChoice(' + (i + 1) + ')"';
+            content.classList.toggle('active');
+            if (icon) {
+                icon.classList.toggle('expanded');
+            }
+        }
+        
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
-                
-                html += '<button class="choice-btn" ' + onclick + '>' +
-                        '<div>' + c.text + '</div>' + hintHtml + '</button>';
-            }
-            choicesDiv.innerHTML = html;
-        }
-        
-        // 跳转章节
-        function gotoChapter(n) {
-            currentChapter = n;
-            var chapter = chapters[n-1];
-            
-            // 更新章节导航
-            var dots = document.querySelectorAll('.chapter-dot');
-            for (var i = 0; i < dots.length; i++) {
-                dots[i].classList.remove('active', 'completed');
-                if (i < n-1) dots[i].classList.add('completed');
-                if (i === n-1) dots[i].classList.add('active');
-            }
-            
-            // 更新场景头部
-            document.querySelector('.time-display').textContent = chapter.time;
-            document.querySelector('.location').textContent = chapter.location;
-            
-            // 更新故事内容和按钮
-            var content = document.getElementById('storyContent');
-            if (n === 2) {
-                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">!</div><span class="speaker-name">场景切换</span></div><div class="dialogue-text">你到达了共生科技大厦。在进入之前，你需要通过存在感校准。</div></div><div class="dialogue ai"><div class="speaker"><div class="avatar">AI</div><span class="speaker-name">面试官-09</span></div><div class="dialogue-text">欢迎参加面试。第一个问题：在人机协作项目中，知识产权应该归谁？</div></div>';
-                updateChoices([{text: "应该归人类", hint: "强调人类主导地位"}, {text: "应该共享，按贡献分配", hint: "接受协作分配机制"}, {text: "应该归智能体", hint: "承认AI的贡献"}]);
-            } else if (n === 3) {
-                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">!</div><span class="speaker-name">场景切换</span></div><div class="dialogue-text">恭喜你被录用！现在你在协作工场开始第一天的工作。</div></div><div class="dialogue ai"><div class="speaker"><div class="avatar">AI</div><span class="speaker-name">协作导师-03</span></div><div class="dialogue-text">欢迎！今天你的任务是与智能体共同完成新产品设计。你需要签署人机协作授权协议，愿意吗？</div></div>';
-                updateChoices([{text: "我接受，开始协作", hint: "进入人机协作模式"}, {text: "我需要更多时间考虑", hint: "行使知情权"}]);
-            } else if (n === 4) {
-                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">!</div><span class="speaker-name">场景切换</span></div><div class="dialogue-text">工作结束，你走在回家的路上。夕阳将城市染成金色。</div></div><div class="dialogue human"><div class="speaker"><div class="avatar">你</div><span class="speaker-name">林夏</span></div><div class="dialogue-text">这个新世界，人类还剩下什么独特的价值？</div></div><div class="dialogue system"><div class="speaker"><div class="avatar">📜</div><span class="speaker-name">共生宪章</span></div><div class="dialogue-text">根据人类效率锚点原则：即使在最高效的智能体协作中，也必须保留15%的"低效但人类化"工作流程。这是为了保留人类的直觉、创造力和情感连接。</div></div>';
-                updateChoices([{text: "我理解了，我会珍惜这些权利 →", hint: "理解共生宪章的深层意义"}]);
-            } else if (n >= 5) {
-                content.innerHTML = '<div class="dialogue system"><div class="speaker"><div class="avatar">🏠</div><span class="speaker-name">家</span></div><div class="dialogue-text">你回到家。今天，你学会了作为共生城区市民的基本权利：<br><br>✅ 知情代理权<br>✅ 否决代理权<br>✅ 退出代理权<br>✅ 人类效率锚点<br><br>记住，你不是算法的奴隶，而是与智能体平等共生的伙伴。</div></div><div class="rule-hint"><div class="rule-hint-title">恭喜完成《共生城区市民指南》</div></div>';
-                updateChoices([{text: "重新体验 →", hint: "再次探索不同选择"}, {text: "查看完整规则 📋", hint: "阅读《共生宪章》全部内容"}]);
-            }
-            
-            // 滚动到顶部
-            document.querySelector('.scrollable-content').scrollTop = 0;
-        }
+            });
+        });
     </script>
 </body>
 </html>
