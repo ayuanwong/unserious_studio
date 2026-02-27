@@ -3,15 +3,24 @@
 Symbiosis Charter Rule Purification Agent
 共生宪章规则纯化代理
 
-Purpose: Ensure rules/ directory contains ONLY rules
-Purpose: Move all supplementary content to annotations/
-Purpose: Optimize rule expression for clarity and precision
+MISSION: Keep rules/ directory clean - ONLY rules, no explanations
 
-Core Principles:
-1. Rules document = ONLY rules (no principles, no cases, no boundaries)
-2. Supplementary content → annotations/ directory
-3. Deep thinking: analyze rule quality, logic, consistency
-4. Iterative refinement of rule expression
+What This Agent Does:
+1. REMOVES from rules/: Principles, cases, boundaries, explanations
+2. MOVES to annotations/: All supplementary content
+3. ANALYZES: Rule clarity, precision, logic, consistency
+4. OPTIMIZES: Rule expression through deep thinking
+
+What This Agent Does NOT Do:
+- Does NOT add "principles" to rules
+- Does NOT add "cases" to rules  
+- Does NOT add "boundaries" to rules
+- Does NOT add explanatory text to rules
+
+Core Philosophy:
+- Rules should be standalone, clear, actionable
+- Explanations belong in annotations/
+- Quality through precision, not verbosity
 """
 
 import os
